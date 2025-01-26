@@ -11,7 +11,7 @@
 #define OP_C_FUNCT4(inst)    (((inst) & 0b1111000000000000) >> 12)
 #define OP_C_RS1(inst)       (((inst) & 0b0000111110000000) >> 7)
 #define OP_C_RS2(inst)       (((inst) & 0b0000000001111100) >> 2)
-#define OP_C_ADD(inst)       (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS2(inst) != 0b00000)
+#define OP_C_ADD(inst)       (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) != 0b00000)
 #define OP_C_ADDI(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b000 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_ADDI16SP(inst)  (0) // TODO
 #define OP_C_ADDI4SPN(inst)  (0) // TODO
