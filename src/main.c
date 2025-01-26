@@ -68,43 +68,43 @@ int main() {
         uint32_t inst = program[i];
 
         if (OP_C_ADDI(inst)) {
-            printf("Matched C.ADDI instruction at index %u!\n", i);
+            printf("Matched C.ADDI instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_C_JAL(inst)) {
-            printf("Matched C.JAL instruction at index %u!\n", i);
+            printf("Matched C.JAL instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_C_LW(inst)) {
-            printf("Matched C.LW instruction at index %u!\n", i);
+            printf("Matched C.LW instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_C_SW(inst)) {
-            printf("Matched C.SW instruction at index %u!\n", i);
+            printf("Matched C.SW instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_C_BEQZ(inst)) {
-            printf("Matched C.BEQZ instruction at index %u!\n", i);
+            printf("Matched C.BEQZ instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_C_BNEZ(inst)) {
-            printf("Matched C.BNEZ instruction at index %u!\n", i);
+            printf("Matched C.BNEZ instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_C_SDSP(inst)) {
-            printf("Matched C.SDSP instruction at index %u!\n", i);
+            printf("Matched C.SDSP instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_I_ADDI(inst)) {
-            printf("Matched ADDI instruction at index %u!\n", i);
+            printf("Matched ADDI instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_I_AUIPC(inst)) {
-            printf("Matched AUIPC instruction at index %u!\n", i);
+            printf("Matched AUIPC instruction at index %u (0x%X)!\n", i, inst);
         }
 
         if (OP_I_JAL(inst)) {
-            printf("Matched JAL instruction at index %u!\n", i);
+            printf("Matched JAL instruction at index %u (0x%X)!\n", i, inst);
         }
     }
 
