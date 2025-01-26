@@ -1,31 +1,31 @@
-0001    nop
-0800    addi s0,sp,16
-1000    addi s0,sp,32
-1800    addi s0,sp,48
-2781    sext.w a5,a5
-4515    li a0,5
-4781    li a5,0
-4785    li a5,1
-4795    li a5,5
-479d    li a5,7
-60a2    ld ra,8(sp)
-60e2    ld ra,24(sp)
-6105    addi sp,sp,32
-6145    addi sp,sp,48
-6402    ld s0,0(sp)
-6442    ld s0,16(sp)
-64e2    ld s1,24(sp)
-70a2    ld ra,40(sp)
-7179    addi sp,sp,-48
-7402    ld s0,32(sp)
-8082    ret
-84be    mv s1,a5
-853e    mv a0,a5
-85ba    mv a1,a4
-872e    mv a4,a1
-873e    mv a4,a5
-87aa    mv a5,a0
-87ba    mv a5,a4
-a025    j 80000056 <fibonacci+0x4a>
-a821    j 8000005e <uart_puts+0x24>
-a831    j 80000040 <factorial+0x34>
+0x0001    nop
+0x0800    addi s0,sp,16
+0x1000    addi s0,sp,32
+0x1800    addi s0,sp,48
+0x2781    sext.w a5,a5
+0x4515    li a0,5
+0x4781    li a5,0
+0x4785    li a5,1
+0x4795    li a5,5
+0x479D    li a5,7
+0x60A2    ld ra,8(sp)
+0x60E2    ld ra,24(sp)
+0x6105    addi sp,sp,32
+0x6145    addi sp,sp,48
+0x6402    ld s0,0(sp)
+0x6442    ld s0,16(sp)
+0x64E2    ld s1,24(sp)
+0x70A2    ld ra,40(sp)
+0x7179    addi sp,sp,-48
+0x7402    ld s0,32(sp)
+0x8082    ret
+0x84BE    mv s1,a5
+0x853E    mv a0,a5
+0x85BA    mv a1,a4
+0x872E    mv a4,a1
+0x873E    mv a4,a5
+0x87AA    mv a5,a0
+0x87BA    mv a5,a4
+0xA025    j 80000056 <fibonacci+0x4a>
+0xA821    j 8000005e <uart_puts+0x24>
+0xA831    j 80000040 <factorial+0x34>
