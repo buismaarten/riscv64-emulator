@@ -1,8 +1,10 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define OP(inst, s, w)   (((inst) >> (s)) & ((1U << (w)) - 1))
-#define OP_I_ADDI(inst)  (OP(inst, 12, 3) == 0b000 && OP(inst, 2, 5) == 0b00100 && OP(inst, 0, 2) == 0b11)
+#define OP(inst, s, w)    (((inst) >> (s)) & ((1U << (w)) - 1))
+#define OP_I_ADDI(inst)   (OP(inst, 0, 2) == 0b11 && OP(inst, 2, 5) == 0b00100 && OP(inst, 12, 3) == 0b000)
+#define OP_I_AUIPC(inst)  (OP(inst, 0, 2) == 0b11 && OP(inst, 2, 5) == 0b00101)
+#define OP_I_JAL(inst)    (OP(inst, 0, 2) == 0b11 && OP(inst, 2, 5) == 0b11011)
 
 uint64_t pc = 0;
 uint32_t program[] = {
@@ -57,6 +59,14 @@ int main() {
 
         if (OP_I_ADDI(inst)) {
             printf("Matched ADDI instruction at index %u!\n", i);
+        }
+
+        if (OP_I_AUIPC(inst)) {
+            printf("Matched AUIPC instruction at index %u!\n", i);
+        }
+
+        if (OP_I_JAL(inst)) {
+            printf("Matched JAL instruction at index %u!\n", i);
         }
     }
 

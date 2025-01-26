@@ -1,1 +1,4 @@
-Matched ADDI instruction at 1!
+Matched AUIPC instruction at index 0!
+Matched ADDI instruction at index 1!
+Matched JAL instruction at index 2!
+Matched JAL instruction at index 34!
