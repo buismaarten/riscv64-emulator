@@ -1,6 +1,9 @@
 #include <stdint.h>
 #include <stdio.h>
 
+#define OP(inst, s, w)   (((inst) >> (s)) & ((1U << (w)) - 1))
+#define OP_I_ADDI(inst)  (OP(inst, 12, 3) == 0b000 && OP(inst, 2, 5) == 0b00100 && OP(inst, 0, 2) == 0b11)
+
 uint64_t pc = 0;
 uint32_t program[] = {
     /* 80000000: */ 0x00010117,  // auipc sp,0x10
@@ -50,7 +53,11 @@ uint32_t program[] = {
 
 int main() {
     for (uint32_t i = 0; i < sizeof(program) / sizeof(program[0]); i++) {
-        //
+        uint32_t inst = program[i];
+
+        if (OP_I_ADDI(inst)) {
+            printf("Matched ADDI instruction at index %u!\n", i);
+        }
     }
 
     return 0;
