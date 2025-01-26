@@ -4,6 +4,7 @@ Matched C.BEQZ instruction 0xC001
 Matched C.BNEZ instruction 0xE001
 Matched C.JAL instruction 0x2781
 Matched C.JAL instruction 0x3001
+Matched C.JALR instruction 0x9002
 Matched C.LW instruction 0x4000
 Matched C.SDSP instruction 0xE822
 Matched C.SDSP instruction 0xEC06
