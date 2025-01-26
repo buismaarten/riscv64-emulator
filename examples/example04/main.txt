@@ -1,0 +1,62 @@
+
+./example04/main.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000080000000 <_start>:
+    80000000:	00010117          	auipc	sp,0x10
+    80000004:	00010113          	mv	sp,sp
+    80000008:	05a0006f          	j	80000062 <main>
+
+000000008000000c <fibonacci>:
+    8000000c:	7179                	addi	sp,sp,-48
+    8000000e:	f406                	sd	ra,40(sp)
+    80000010:	f022                	sd	s0,32(sp)
+    80000012:	ec26                	sd	s1,24(sp)
+    80000014:	1800                	addi	s0,sp,48
+    80000016:	87aa                	mv	a5,a0
+    80000018:	fcf42e23          	sw	a5,-36(s0)
+    8000001c:	fdc42783          	lw	a5,-36(s0)
+    80000020:	0007871b          	sext.w	a4,a5
+    80000024:	4785                	li	a5,1
+    80000026:	00e7c563          	blt	a5,a4,80000030 <fibonacci+0x24>
+    8000002a:	fdc42783          	lw	a5,-36(s0)
+    8000002e:	a025                	j	80000056 <fibonacci+0x4a>
+    80000030:	fdc42783          	lw	a5,-36(s0)
+    80000034:	37fd                	addiw	a5,a5,-1
+    80000036:	2781                	sext.w	a5,a5
+    80000038:	853e                	mv	a0,a5
+    8000003a:	fd3ff0ef          	jal	8000000c <fibonacci>
+    8000003e:	87aa                	mv	a5,a0
+    80000040:	84be                	mv	s1,a5
+    80000042:	fdc42783          	lw	a5,-36(s0)
+    80000046:	37f9                	addiw	a5,a5,-2
+    80000048:	2781                	sext.w	a5,a5
+    8000004a:	853e                	mv	a0,a5
+    8000004c:	fc1ff0ef          	jal	8000000c <fibonacci>
+    80000050:	87aa                	mv	a5,a0
+    80000052:	9fa5                	addw	a5,a5,s1
+    80000054:	2781                	sext.w	a5,a5
+    80000056:	853e                	mv	a0,a5
+    80000058:	70a2                	ld	ra,40(sp)
+    8000005a:	7402                	ld	s0,32(sp)
+    8000005c:	64e2                	ld	s1,24(sp)
+    8000005e:	6145                	addi	sp,sp,48
+    80000060:	8082                	ret
+
+0000000080000062 <main>:
+    80000062:	1101                	addi	sp,sp,-32 # 8000ffe0 <main+0xff7e>
+    80000064:	ec06                	sd	ra,24(sp)
+    80000066:	e822                	sd	s0,16(sp)
+    80000068:	1000                	addi	s0,sp,32
+    8000006a:	4515                	li	a0,5
+    8000006c:	fa1ff0ef          	jal	8000000c <fibonacci>
+    80000070:	87aa                	mv	a5,a0
+    80000072:	fef42623          	sw	a5,-20(s0)
+    80000076:	4781                	li	a5,0
+    80000078:	853e                	mv	a0,a5
+    8000007a:	60e2                	ld	ra,24(sp)
+    8000007c:	6442                	ld	s0,16(sp)
+    8000007e:	6105                	addi	sp,sp,32
+    80000080:	8082                	ret

@@ -1,0 +1,53 @@
+
+./example03/main.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000080000000 <_start>:
+    80000000:	00010117          	auipc	sp,0x10
+    80000004:	00010113          	mv	sp,sp
+    80000008:	0420006f          	j	8000004a <main>
+
+000000008000000c <factorial>:
+    8000000c:	1101                	addi	sp,sp,-32 # 8000ffe0 <main+0xff96>
+    8000000e:	ec06                	sd	ra,24(sp)
+    80000010:	e822                	sd	s0,16(sp)
+    80000012:	1000                	addi	s0,sp,32
+    80000014:	87aa                	mv	a5,a0
+    80000016:	fef42623          	sw	a5,-20(s0)
+    8000001a:	fec42783          	lw	a5,-20(s0)
+    8000001e:	2781                	sext.w	a5,a5
+    80000020:	e399                	bnez	a5,80000026 <factorial+0x1a>
+    80000022:	4785                	li	a5,1
+    80000024:	a831                	j	80000040 <factorial+0x34>
+    80000026:	fec42783          	lw	a5,-20(s0)
+    8000002a:	37fd                	addiw	a5,a5,-1
+    8000002c:	2781                	sext.w	a5,a5
+    8000002e:	853e                	mv	a0,a5
+    80000030:	fddff0ef          	jal	8000000c <factorial>
+    80000034:	87aa                	mv	a5,a0
+    80000036:	fec42703          	lw	a4,-20(s0)
+    8000003a:	02f707bb          	mulw	a5,a4,a5
+    8000003e:	2781                	sext.w	a5,a5
+    80000040:	853e                	mv	a0,a5
+    80000042:	60e2                	ld	ra,24(sp)
+    80000044:	6442                	ld	s0,16(sp)
+    80000046:	6105                	addi	sp,sp,32
+    80000048:	8082                	ret
+
+000000008000004a <main>:
+    8000004a:	1101                	addi	sp,sp,-32
+    8000004c:	ec06                	sd	ra,24(sp)
+    8000004e:	e822                	sd	s0,16(sp)
+    80000050:	1000                	addi	s0,sp,32
+    80000052:	4515                	li	a0,5
+    80000054:	fb9ff0ef          	jal	8000000c <factorial>
+    80000058:	87aa                	mv	a5,a0
+    8000005a:	fef42623          	sw	a5,-20(s0)
+    8000005e:	4781                	li	a5,0
+    80000060:	853e                	mv	a0,a5
+    80000062:	60e2                	ld	ra,24(sp)
+    80000064:	6442                	ld	s0,16(sp)
+    80000066:	6105                	addi	sp,sp,32
+    80000068:	8082                	ret
