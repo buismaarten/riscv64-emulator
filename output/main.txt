@@ -1,5 +1,7 @@
 Matched C.ADD instruction 0x9852
 Matched C.ADDI instruction 0x1101
+Matched C.ADDW instruction 0x9FA5
+Matched C.ADDW instruction 0x9FB9
 Matched C.BEQZ instruction 0xC001
 Matched C.BNEZ instruction 0xE001
 Matched C.JAL instruction 0x2781

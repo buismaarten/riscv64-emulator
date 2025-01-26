@@ -15,7 +15,7 @@
 #define OP_C_ADDI16SP(inst)  (0) // TODO
 #define OP_C_ADDI4SPN(inst)  (0) // TODO
 #define OP_C_ADDIW(inst)     (0) // TODO
-#define OP_C_ADDW(inst)      (0) // TODO
+#define OP_C_ADDW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b1001)
 #define OP_C_AND(inst)       (0) // TODO
 #define OP_C_ANDI(inst)      (0) // TODO
 #define OP_C_BEQZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b110)
@@ -56,6 +56,8 @@
 uint16_t program[] = {
     /* C.ADD  */ 0x9852,
     /* C.ADDI */ 0x1101,
+    /* C.ADDW */ 0x9FA5,
+    /* C.ADDW */ 0x9FB9,
     /* C.BEQZ */ 0xC001,
     /* C.BNEZ */ 0xE001,
     /* C.JAL  */ 0x2781,
@@ -79,6 +81,11 @@ int main() {
 
         if (OP_C_ADDI(inst)) {
             printf("Matched C.ADDI instruction 0x%X\n", inst);
+            count++;
+        }
+
+        if (OP_C_ADDW(inst)) {
+            printf("Matched C.ADDW instruction 0x%X\n", inst);
             count++;
         }
 
