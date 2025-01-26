@@ -1,8 +1,6 @@
 0001    nop
-0141    addi sp,sp,16
 0800    addi s0,sp,16
 1000    addi s0,sp,32
-1141    addi sp,sp,-16
 1800    addi s0,sp,48
 2781    sext.w a5,a5
 4515    li a0,5
