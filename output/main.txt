@@ -1,11 +1,9 @@
-Matched AUIPC instruction at index 0 (0x10117)!
-Matched ADDI instruction at index 1 (0x10113)!
-Matched JAL instruction at index 2 (0x320006F)!
-Matched C.ADDI instruction at index 3 (0x1101)!
-Matched C.SDSP instruction at index 4 (0xEC06)!
-Matched C.SDSP instruction at index 5 (0xE822)!
-Matched C.JAL instruction at index 16 (0x2781)!
-Matched C.ADDI instruction at index 22 (0x1101)!
-Matched C.SDSP instruction at index 23 (0xEC06)!
-Matched C.SDSP instruction at index 24 (0xE822)!
-Matched JAL instruction at index 34 (0xFB3FF0EF)!
+Matched C.ADDI instruction 0x1101
+Matched C.BEQZ instruction 0xC001
+Matched C.BNEZ instruction 0xE001
+Matched C.JAL instruction 0x2781
+Matched C.JAL instruction 0x3001
+Matched C.LW instruction 0x4000
+Matched C.SDSP instruction 0xE822
+Matched C.SDSP instruction 0xEC06
+Matched C.SW instruction 0xC000
