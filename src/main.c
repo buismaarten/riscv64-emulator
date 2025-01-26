@@ -6,6 +6,16 @@
 #define OP_I_AUIPC(inst)  (OP(inst, 0, 2) == 0b11 && OP(inst, 2, 5) == 0b00101)
 #define OP_I_JAL(inst)    (OP(inst, 0, 2) == 0b11 && OP(inst, 2, 5) == 0b11011)
 
+#define OP_C_OPCODE(inst)   (((inst) & 0b11))
+#define OP_C_FUNCT3(inst)   (((inst) & 0b01110000000000000) >> 13)
+#define OP_C_ADDI(instr)    (OP_C_OPCODE(instr) == 0b01 && OP_C_FUNCT3(instr) == 0b0000)
+#define OP_C_JAL(instr)     (OP_C_OPCODE(instr) == 0b01 && OP_C_FUNCT3(instr) == 0b0001)
+#define OP_C_LW(instr)      (OP_C_OPCODE(instr) == 0b00 && OP_C_FUNCT3(instr) == 0b0010)
+#define OP_C_SW(instr)      (OP_C_OPCODE(instr) == 0b00 && OP_C_FUNCT3(instr) == 0b0110)
+#define OP_C_BEQZ(instr)    (OP_C_OPCODE(instr) == 0b01 && OP_C_FUNCT3(instr) == 0b1100)
+#define OP_C_BNEZ(instr)    (OP_C_OPCODE(instr) == 0b01 && OP_C_FUNCT3(instr) == 0b1110)
+#define OP_C_SDSP(instr)    (OP_C_OPCODE(instr) == 0b10 && OP_C_FUNCT3(instr) == 0b0111)
+
 uint64_t pc = 0;
 uint32_t program[] = {
     /* 80000000: */ 0x00010117,  // auipc sp,0x10
@@ -56,6 +66,34 @@ uint32_t program[] = {
 int main() {
     for (uint32_t i = 0; i < sizeof(program) / sizeof(program[0]); i++) {
         uint32_t inst = program[i];
+
+        if (OP_C_ADDI(inst)) {
+            printf("Matched C.ADDI instruction at index %u!\n", i);
+        }
+
+        if (OP_C_JAL(inst)) {
+            printf("Matched C.JAL instruction at index %u!\n", i);
+        }
+
+        if (OP_C_LW(inst)) {
+            printf("Matched C.LW instruction at index %u!\n", i);
+        }
+
+        if (OP_C_SW(inst)) {
+            printf("Matched C.SW instruction at index %u!\n", i);
+        }
+
+        if (OP_C_BEQZ(inst)) {
+            printf("Matched C.BEQZ instruction at index %u!\n", i);
+        }
+
+        if (OP_C_BNEZ(inst)) {
+            printf("Matched C.BNEZ instruction at index %u!\n", i);
+        }
+
+        if (OP_C_SDSP(inst)) {
+            printf("Matched C.SDSP instruction at index %u!\n", i);
+        }
 
         if (OP_I_ADDI(inst)) {
             printf("Matched ADDI instruction at index %u!\n", i);
