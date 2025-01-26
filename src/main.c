@@ -63,12 +63,20 @@ uint16_t program[] = {
     /* C.ADDW */  0x9FB9,
     /* C.BEQZ */  0xC001,
     /* C.BNEZ */  0xE001,
+    /* C.BNEZ */  0xE399,
+    /* C.BNEZ */  0xF3ED,
     /* C.JAL  */  0x3001,
     /* C.JALR */  0x9002,
     /* C.LW   */  0x4000,
+    /* C.SDSP */  0xE022,
+    /* C.SDSP */  0xE406,
     /* C.SDSP */  0xE822,
     /* C.SDSP */  0xEC06,
+    /* C.SDSP */  0xEC26,
+    /* C.SDSP */  0xF022,
+    /* C.SDSP */  0xF406,
     /* C.SW   */  0xC000,
+    /* C.SW   */  0xC398,
 };
 
 int main() {

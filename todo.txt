@@ -31,11 +31,3 @@
 a025    j 80000056 <fibonacci+0x4a>
 a821    j 8000005e <uart_puts+0x24>
 a831    j 80000040 <factorial+0x34>
-c398    sw a4,0(a5)
-e022    sd s0,0(sp)
-e399    bnez a5,80000026 <factorial+0x1a>
-e406    sd ra,8(sp)
-ec26    sd s1,24(sp)
-f022    sd s0,32(sp)
-f3ed    bnez a5,80000048 <uart_puts+0xe>
-f406    sd ra,40(sp)
