@@ -54,19 +54,19 @@
 #define OP_C_XOR(inst)       (0) // TODO
 
 uint16_t program[] = {
-    /* C.ADD  */ 0x9852,
-    /* C.ADDI */ 0x1101,
-    /* C.ADDW */ 0x9FA5,
-    /* C.ADDW */ 0x9FB9,
-    /* C.BEQZ */ 0xC001,
-    /* C.BNEZ */ 0xE001,
-    /* C.JAL  */ 0x2781,
-    /* C.JAL  */ 0x3001,
-    /* C.JALR */ 0x9002,
-    /* C.LW   */ 0x4000,
-    /* C.SDSP */ 0xE822,
-    /* C.SDSP */ 0xEC06,
-    /* C.SW   */ 0xC000,
+    /* C.ADD  */  0x9852,
+    /* C.ADDI */  0x1101,
+    /* C.ADDW */  0x9FA5,
+    /* C.ADDW */  0x9FB9,
+    /* C.BEQZ */  0xC001,
+    /* C.BNEZ */  0xE001,
+    /* C.JAL  */  0x2781,
+    /* C.JAL  */  0x3001,
+    /* C.JALR */  0x9002,
+    /* C.LW   */  0x4000,
+    /* C.SDSP */  0xE822,
+    /* C.SDSP */  0xEC06,
+    /* C.SW   */  0xC000,
 };
 
 int main() {
