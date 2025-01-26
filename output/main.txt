@@ -1,3 +1,4 @@
+Matched C.ADD instruction 0x9852
 Matched C.ADDI instruction 0x1101
 Matched C.BEQZ instruction 0xC001
 Matched C.BNEZ instruction 0xE001
