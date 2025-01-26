@@ -56,6 +56,8 @@
 uint16_t program[] = {
     /* C.ADD  */  0x9852,
     /* C.ADDI */  0x1101,
+    /* C.ADDIW */ 0x37F9,
+    /* C.ADDIW */ 0x37FD,
     /* C.ADDW */  0x9FA5,
     /* C.ADDW */  0x9FB9,
     /* C.BEQZ */  0xC001,
@@ -81,6 +83,11 @@ int main() {
 
         if (OP_C_ADDI(inst)) {
             printf("Matched C.ADDI instruction 0x%X\n", inst);
+            count++;
+        }
+
+        if (OP_C_ADDIW(inst)) {
+            printf("Matched C.ADDIW instruction 0x%X\n", inst);
             count++;
         }
 
