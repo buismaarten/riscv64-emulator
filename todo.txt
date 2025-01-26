@@ -1,0 +1,48 @@
+0001    nop
+0141    addi sp,sp,16
+0800    addi s0,sp,16
+1000    addi s0,sp,32
+1101    addi sp,sp,-32
+1141    addi sp,sp,-16
+1800    addi s0,sp,48
+2781    sext.w a5,a5
+37f9    addiw a5,a5,-2
+37fd    addiw a5,a5,-1
+4515    li a0,5
+4781    li a5,0
+4785    li a5,1
+4795    li a5,5
+479d    li a5,7
+60a2    ld ra,8(sp)
+60e2    ld ra,24(sp)
+6105    addi sp,sp,32
+6145    addi sp,sp,48
+6402    ld s0,0(sp)
+6442    ld s0,16(sp)
+64e2    ld s1,24(sp)
+70a2    ld ra,40(sp)
+7179    addi sp,sp,-48
+7402    ld s0,32(sp)
+8082    ret
+84be    mv s1,a5
+853e    mv a0,a5
+85ba    mv a1,a4
+872e    mv a4,a1
+873e    mv a4,a5
+87aa    mv a5,a0
+87ba    mv a5,a4
+9fa5    addw a5,a5,s1
+9fb9    addw a5,a5,a4
+a025    j 80000056 <fibonacci+0x4a>
+a821    j 8000005e <uart_puts+0x24>
+a831    j 80000040 <factorial+0x34>
+c398    sw a4,0(a5)
+e022    sd s0,0(sp)
+e399    bnez a5,80000026 <factorial+0x1a>
+e406    sd ra,8(sp)
+e822    sd s0,16(sp)
+ec06    sd ra,24(sp)
+ec26    sd s1,24(sp)
+f022    sd s0,32(sp)
+f3ed    bnez a5,80000048 <uart_puts+0xe>
+f406    sd ra,40(sp)
