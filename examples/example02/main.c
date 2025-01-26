@@ -1,7 +1,7 @@
 #include <stdint.h>
 
 void uart_putc(char c) {
-    volatile uint32_t* uart0_thr = (volatile uint32_t*) 0x09000000;
+    volatile uint32_t* uart0_thr = (volatile uint32_t*) 0x10000000;
     *uart0_thr = c;
 }
 

@@ -16,7 +16,7 @@ Disassembly of section .text:
     80000012:	1800                	addi	s0,sp,48
     80000014:	87aa                	mv	a5,a0
     80000016:	fcf40fa3          	sb	a5,-33(s0)
-    8000001a:	090007b7          	lui	a5,0x9000
+    8000001a:	100007b7          	lui	a5,0x10000
     8000001e:	fef43423          	sd	a5,-24(s0)
     80000022:	fdf44783          	lbu	a5,-33(s0)
     80000026:	0007871b          	sext.w	a4,a5
@@ -36,7 +36,7 @@ Disassembly of section .text:
     80000042:	fea43423          	sd	a0,-24(s0)
     80000046:	a821                	j	8000005e <uart_puts+0x24>
     80000048:	fe843783          	ld	a5,-24(s0)
-    8000004c:	00178713          	addi	a4,a5,1 # 9000001 <_start-0x76ffffff>
+    8000004c:	00178713          	addi	a4,a5,1 # 10000001 <_start-0x6fffffff>
     80000050:	fee43423          	sd	a4,-24(s0)
     80000054:	0007c783          	lbu	a5,0(a5)
     80000058:	853e                	mv	a0,a5
