@@ -21,7 +21,7 @@
 #define OP_C_ANDI(inst)      (0) // TODO
 #define OP_C_BEQZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b110)
 #define OP_C_BNEZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b111)
-#define OP_C_EBREAK(inst)    (0) // TODO
+#define OP_C_EBREAK(inst)    (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) == 0b00000 && OP_C_RS2(inst) == 0b00000)
 #define OP_C_FLD(inst)       (0) // TODO
 #define OP_C_FLDSP(inst)     (0) // TODO
 #define OP_C_FLW(inst)       (0) // TODO
@@ -74,6 +74,7 @@ uint16_t program[] = {
     /* C.BNEZ */     0xE001,
     /* C.BNEZ */     0xE399,
     /* C.BNEZ */     0xF3ED,
+    /* C.EBREAK */   0x9002,
     /* C.J */        0xA025,
     /* C.J */        0xA821,
     /* C.J */        0xA831,
@@ -153,6 +154,11 @@ int main() {
 
         if (OP_C_BNEZ(inst)) {
             printf("Matched C.BNEZ instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_EBREAK(inst)) {
+            printf("Matched C.EBREAK instruction 0x%04X\n", inst);
             count++;
         }
 

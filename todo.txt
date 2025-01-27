@@ -4,5 +4,4 @@
 0x8FB9    xor a5,a5,a4
 0x8FD9    or a5,a5,a4
 0x8FF9    and a5,a5,a4
-0x9002    ebreak
 0x9F99    subw a5,a5,a4
