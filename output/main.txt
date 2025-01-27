@@ -53,5 +53,6 @@ Matched C.SDSP instruction 0xEC06
 Matched C.SDSP instruction 0xEC26
 Matched C.SDSP instruction 0xF022
 Matched C.SDSP instruction 0xF406
+Matched C.SUB instruction 0x8F99
 Matched C.SW instruction 0xC000
 Matched C.SW instruction 0xC398
