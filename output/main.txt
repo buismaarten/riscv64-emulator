@@ -12,6 +12,13 @@ Matched C.BNEZ instruction 0xE399
 Matched C.BNEZ instruction 0xF3ED
 Matched C.JAL instruction 0x3001
 Matched C.JALR instruction 0x9082
+Matched C.LDSP instruction 0x60A2
+Matched C.LDSP instruction 0x60E2
+Matched C.LDSP instruction 0x6402
+Matched C.LDSP instruction 0x6442
+Matched C.LDSP instruction 0x64E2
+Matched C.LDSP instruction 0x70A2
+Matched C.LDSP instruction 0x7402
 Matched C.LI instruction 0x4515
 Matched C.LI instruction 0x4781
 Matched C.LI instruction 0x4785

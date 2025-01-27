@@ -35,7 +35,7 @@
 #define OP_C_JALR(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) == 0b00000)
 #define OP_C_JR(inst)        (0) // TODO
 #define OP_C_LD(inst)        (0) // TODO
-#define OP_C_LDSP(inst)      (0) // TODO
+#define OP_C_LDSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b011 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_LI(inst)        (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b010 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_LUI(inst)       (0) // TODO
 #define OP_C_LW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b010)
@@ -69,6 +69,13 @@ uint16_t program[] = {
     /* C.BNEZ */  0xF3ED,
     /* C.JAL  */  0x3001,
     /* C.JALR */  0x9082,
+    /* C.LDSP */  0x60A2,
+    /* C.LDSP */  0x60E2,
+    /* C.LDSP */  0x6402,
+    /* C.LDSP */  0x6442,
+    /* C.LDSP */  0x64E2,
+    /* C.LDSP */  0x70A2,
+    /* C.LDSP */  0x7402,
     /* C.LI   */  0x4515,
     /* C.LI   */  0x4781,
     /* C.LI   */  0x4785,
@@ -129,6 +136,11 @@ int main() {
 
         if (OP_C_JALR(inst)) {
             printf("Matched C.JALR instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_LDSP(inst)) {
+            printf("Matched C.LDSP instruction 0x%04X\n", inst);
             count++;
         }
 
