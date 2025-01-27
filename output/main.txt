@@ -25,6 +25,13 @@ Matched C.LI instruction 0x4785
 Matched C.LI instruction 0x4795
 Matched C.LI instruction 0x479D
 Matched C.LW instruction 0x4000
+Matched C.MV instruction 0x84BE
+Matched C.MV instruction 0x853E
+Matched C.MV instruction 0x85BA
+Matched C.MV instruction 0x872E
+Matched C.MV instruction 0x873E
+Matched C.MV instruction 0x87AA
+Matched C.MV instruction 0x87BA
 Matched C.NOP instruction 0x0001
 Matched C.SDSP instruction 0xE022
 Matched C.SDSP instruction 0xE406

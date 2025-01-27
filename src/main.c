@@ -40,7 +40,7 @@
 #define OP_C_LUI(inst)       (0) // TODO
 #define OP_C_LW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b010)
 #define OP_C_LWSP(inst)      (0) // TODO
-#define OP_C_MV(inst)        (0) // TODO
+#define OP_C_MV(inst)        (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1000 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) != 0b00000)
 #define OP_C_NOP(inst)       (inst == 0b0000000000000001)
 #define OP_C_OR(inst)        (0) // TODO
 #define OP_C_SD(inst)        (0) // TODO
@@ -82,6 +82,13 @@ uint16_t program[] = {
     /* C.LI   */  0x4795,
     /* C.LI   */  0x479D,
     /* C.LW   */  0x4000,
+    /* C.MV   */  0x84BE,
+    /* C.MV   */  0x853E,
+    /* C.MV   */  0x85BA,
+    /* C.MV   */  0x872E,
+    /* C.MV   */  0x873E,
+    /* C.MV   */  0x87AA,
+    /* C.MV   */  0x87BA,
     /* C.NOP  */  0x0001,
     /* C.SDSP */  0xE022,
     /* C.SDSP */  0xE406,
@@ -151,6 +158,11 @@ int main() {
 
         if (OP_C_LW(inst)) {
             printf("Matched C.LW instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_MV(inst)) {
+            printf("Matched C.MV instruction 0x%04X\n", inst);
             count++;
         }
 
