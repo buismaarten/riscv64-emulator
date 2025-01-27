@@ -37,7 +37,7 @@
 #define OP_C_LD(inst)        (0) // TODO
 #define OP_C_LDSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b011 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_LI(inst)        (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b010 && OP_C_RS1(inst) != 0b00000)
-#define OP_C_LUI(inst)       (0) // TODO
+#define OP_C_LUI(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b011 && OP_C_RS1(inst) != 0b00000 && OP_C_RS1(inst) != 0b00010)
 #define OP_C_LW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b010)
 #define OP_C_LWSP(inst)      (0) // TODO
 #define OP_C_MV(inst)        (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1000 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) != 0b00000)
@@ -92,6 +92,7 @@ uint16_t program[] = {
     /* C.LI */       0x4785,
     /* C.LI */       0x4795,
     /* C.LI */       0x479D,
+    /* C.LUI */      0x67C9,
     /* C.LW */       0x4000,
     /* C.MV */       0x84BE,
     /* C.MV */       0x853E,
@@ -184,6 +185,11 @@ int main() {
 
         if (OP_C_LI(inst)) {
             printf("Matched C.LI instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_LUI(inst)) {
+            printf("Matched C.LUI instruction 0x%04X\n", inst);
             count++;
         }
 

@@ -35,6 +35,7 @@ Matched C.LI instruction 0x4781
 Matched C.LI instruction 0x4785
 Matched C.LI instruction 0x4795
 Matched C.LI instruction 0x479D
+Matched C.LUI instruction 0x67C9
 Matched C.LW instruction 0x4000
 Matched C.MV instruction 0x84BE
 Matched C.MV instruction 0x853E
