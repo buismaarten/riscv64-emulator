@@ -65,6 +65,7 @@ uint16_t program[] = {
     /* C.ADDI4SPN */ 0x0800,
     /* C.ADDI4SPN */ 0x1000,
     /* C.ADDI4SPN */ 0x1800,
+    /* C.ADDIW */    0x2781,
     /* C.ADDIW */    0x37F9,
     /* C.ADDIW */    0x37FD,
     /* C.ADDW */     0x9FA5,

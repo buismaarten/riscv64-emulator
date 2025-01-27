@@ -8,6 +8,7 @@ Matched C.ADDI16SP instruction 0x7179
 Matched C.ADDI4SPN instruction 0x0800
 Matched C.ADDI4SPN instruction 0x1000
 Matched C.ADDI4SPN instruction 0x1800
+Matched C.ADDIW instruction 0x2781
 Matched C.ADDIW instruction 0x37F9
 Matched C.ADDIW instruction 0x37FD
 Matched C.ADDW instruction 0x9FA5
