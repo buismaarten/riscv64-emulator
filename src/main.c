@@ -41,7 +41,7 @@
 #define OP_C_LW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b010)
 #define OP_C_LWSP(inst)      (0) // TODO
 #define OP_C_MV(inst)        (0) // TODO
-#define OP_C_NOP(inst)       (inst == 0b000000001)
+#define OP_C_NOP(inst)       (inst == 0b0000000000000001)
 #define OP_C_OR(inst)        (0) // TODO
 #define OP_C_SD(inst)        (0) // TODO
 #define OP_C_SDSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b111)
