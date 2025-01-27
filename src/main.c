@@ -41,7 +41,7 @@
 #define OP_C_LW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b010)
 #define OP_C_LWSP(inst)      (0) // TODO
 #define OP_C_MV(inst)        (0) // TODO
-#define OP_C_NOP(inst)       (0) // TODO
+#define OP_C_NOP(inst)       (inst == 0b000000001)
 #define OP_C_OR(inst)        (0) // TODO
 #define OP_C_SD(inst)        (0) // TODO
 #define OP_C_SDSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b111)
@@ -70,6 +70,7 @@ uint16_t program[] = {
     /* C.JAL  */  0x3001,
     /* C.JALR */  0x9002,
     /* C.LW   */  0x4000,
+    /* C.NOP  */  0x0001,
     /* C.SDSP */  0xE022,
     /* C.SDSP */  0xE406,
     /* C.SDSP */  0xE822,
@@ -87,66 +88,71 @@ int main() {
         uint16_t count = 0;
 
         if (OP_C_ADD(inst)) {
-            printf("Matched C.ADD instruction 0x%X\n", inst);
+            printf("Matched C.ADD instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_ADDI(inst)) {
-            printf("Matched C.ADDI instruction 0x%X\n", inst);
+            printf("Matched C.ADDI instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_ADDIW(inst)) {
-            printf("Matched C.ADDIW instruction 0x%X\n", inst);
+            printf("Matched C.ADDIW instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_ADDW(inst)) {
-            printf("Matched C.ADDW instruction 0x%X\n", inst);
+            printf("Matched C.ADDW instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_BEQZ(inst)) {
-            printf("Matched C.BEQZ instruction 0x%X\n", inst);
+            printf("Matched C.BEQZ instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_BNEZ(inst)) {
-            printf("Matched C.BNEZ instruction 0x%X\n", inst);
+            printf("Matched C.BNEZ instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_JAL(inst)) {
-            printf("Matched C.JAL instruction 0x%X\n", inst);
+            printf("Matched C.JAL instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_JALR(inst)) {
-            printf("Matched C.JALR instruction 0x%X\n", inst);
+            printf("Matched C.JALR instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_LW(inst)) {
-            printf("Matched C.LW instruction 0x%X\n", inst);
+            printf("Matched C.LW instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_NOP(inst)) {
+            printf("Matched C.NOP instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_SDSP(inst)) {
-            printf("Matched C.SDSP instruction 0x%X\n", inst);
+            printf("Matched C.SDSP instruction 0x%04X\n", inst);
             count++;
         }
 
         if (OP_C_SW(inst)) {
-            printf("Matched C.SW instruction 0x%X\n", inst);
+            printf("Matched C.SW instruction 0x%04X\n", inst);
             count++;
         }
 
         if (count == 0) {
-            printf("Error: no match for instruction 0x%X\n", inst);
+            printf("Error: no match for instruction 0x%04X\n", inst);
         }
 
         if (count >= 2) {
-            printf("Error: multiple matches for instruction 0x%X\n", inst);
+            printf("Error: multiple matches for instruction 0x%04X\n", inst);
         }
     }
 

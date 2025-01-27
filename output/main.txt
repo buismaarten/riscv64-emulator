@@ -1,5 +1,5 @@
 Matched C.ADD instruction 0x9852
-Matched C.ADDI instruction 0x141
+Matched C.ADDI instruction 0x0141
 Matched C.ADDI instruction 0x1101
 Matched C.ADDI instruction 0x1141
 Matched C.ADDIW instruction 0x37F9
@@ -13,6 +13,7 @@ Matched C.BNEZ instruction 0xF3ED
 Matched C.JAL instruction 0x3001
 Matched C.JALR instruction 0x9002
 Matched C.LW instruction 0x4000
+Matched C.NOP instruction 0x0001
 Matched C.SDSP instruction 0xE022
 Matched C.SDSP instruction 0xE406
 Matched C.SDSP instruction 0xE822
