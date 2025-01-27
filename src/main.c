@@ -30,7 +30,7 @@
 #define OP_C_FSDSP(inst)     (0) // TODO
 #define OP_C_FSW(inst)       (0) // TODO
 #define OP_C_FSWSP(inst)     (0) // TODO
-#define OP_C_J(inst)         (0) // TODO
+#define OP_C_J(inst)         (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b101)
 #define OP_C_JAL(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001 && OP_C_RS1(inst) == 0b00000)
 #define OP_C_JALR(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) == 0b00000)
 #define OP_C_JR(inst)        (0) // TODO
@@ -73,6 +73,9 @@ uint16_t program[] = {
     /* C.BNEZ */     0xE001,
     /* C.BNEZ */     0xE399,
     /* C.BNEZ */     0xF3ED,
+    /* C.J  */       0xA025,
+    /* C.J  */       0xA821,
+    /* C.J  */       0xA831,
     /* C.JAL  */     0x3001,
     /* C.JALR */     0x9082,
     /* C.LDSP */     0x60A2,
@@ -149,6 +152,11 @@ int main() {
 
         if (OP_C_BNEZ(inst)) {
             printf("Matched C.BNEZ instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_J(inst)) {
+            printf("Matched C.J instruction 0x%04X\n", inst);
             count++;
         }
 

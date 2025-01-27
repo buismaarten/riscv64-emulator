@@ -16,6 +16,9 @@ Matched C.BEQZ instruction 0xC001
 Matched C.BNEZ instruction 0xE001
 Matched C.BNEZ instruction 0xE399
 Matched C.BNEZ instruction 0xF3ED
+Matched C.J instruction 0xA025
+Matched C.J instruction 0xA821
+Matched C.J instruction 0xA831
 Matched C.JAL instruction 0x3001
 Matched C.JALR instruction 0x9082
 Matched C.LDSP instruction 0x60A2
