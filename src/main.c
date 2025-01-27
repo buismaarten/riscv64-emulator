@@ -54,7 +54,7 @@
 #define OP_C_SUBW(inst)      (0) // TODO
 #define OP_C_SW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b110)
 #define OP_C_SWSP(inst)      (0) // TODO
-#define OP_C_XOR(inst)       (0) // TODO
+#define OP_C_XOR(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b01)
 
 uint16_t program[] = {
     /* C.ADD */      0x9852,
@@ -115,6 +115,7 @@ uint16_t program[] = {
     /* C.SUB */      0x8F99,
     /* C.SW */       0xC000,
     /* C.SW */       0xC398,
+    /* C.XOR */      0x8FB9,
 };
 
 int main() {
@@ -229,6 +230,11 @@ int main() {
 
         if (OP_C_SW(inst)) {
             printf("Matched C.SW instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_XOR(inst)) {
+            printf("Matched C.XOR instruction 0x%04X\n", inst);
             count++;
         }
 
