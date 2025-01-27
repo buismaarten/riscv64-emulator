@@ -19,7 +19,7 @@
 #define OP_C_ADDI4SPN(inst)  (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b000)
 #define OP_C_ADDIW(inst)     (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_ADDW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b1001)
-#define OP_C_AND(inst)       (0) // TODO
+#define OP_C_AND(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b11)
 #define OP_C_ANDI(inst)      (0) // TODO
 #define OP_C_BEQZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b110)
 #define OP_C_BNEZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b111)
@@ -44,7 +44,7 @@
 #define OP_C_LWSP(inst)      (0) // TODO
 #define OP_C_MV(inst)        (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1000 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) != 0b00000)
 #define OP_C_NOP(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b0000 && OP_C_RS1(inst) == 0b00000 && OP_C_RS2(inst) == 0b00000)
-#define OP_C_OR(inst)        (0) // TODO
+#define OP_C_OR(inst)        (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b10)
 #define OP_C_SD(inst)        (0) // TODO
 #define OP_C_SDSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b111)
 #define OP_C_SLLI(inst)      (0) // TODO
@@ -72,6 +72,7 @@ uint16_t program[] = {
     /* C.ADDIW */    0x37FD,
     /* C.ADDW */     0x9FA5,
     /* C.ADDW */     0x9FB9,
+    /* C.AND */      0x8FF9,
     /* C.BEQZ */     0xC001,
     /* C.BNEZ */     0xE001,
     /* C.BNEZ */     0xE399,
@@ -105,6 +106,7 @@ uint16_t program[] = {
     /* C.MV */       0x87AA,
     /* C.MV */       0x87BA,
     /* C.NOP */      0x0001,
+    /* C.OR */       0x8FD9,
     /* C.SDSP */     0xE022,
     /* C.SDSP */     0xE406,
     /* C.SDSP */     0xE822,
@@ -150,6 +152,11 @@ int main() {
 
         if (OP_C_ADDW(inst)) {
             printf("Matched C.ADDW instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_AND(inst)) {
+            printf("Matched C.AND instruction 0x%04X\n", inst);
             count++;
         }
 
@@ -215,6 +222,11 @@ int main() {
 
         if (OP_C_NOP(inst)) {
             printf("Matched C.NOP instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_OR(inst)) {
+            printf("Matched C.OR instruction 0x%04X\n", inst);
             count++;
         }
 

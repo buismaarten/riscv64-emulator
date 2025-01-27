@@ -13,6 +13,7 @@ Matched C.ADDIW instruction 0x37F9
 Matched C.ADDIW instruction 0x37FD
 Matched C.ADDW instruction 0x9FA5
 Matched C.ADDW instruction 0x9FB9
+Matched C.AND instruction 0x8FF9
 Matched C.BEQZ instruction 0xC001
 Matched C.BNEZ instruction 0xE001
 Matched C.BNEZ instruction 0xE399
@@ -46,6 +47,7 @@ Matched C.MV instruction 0x873E
 Matched C.MV instruction 0x87AA
 Matched C.MV instruction 0x87BA
 Matched C.NOP instruction 0x0001
+Matched C.OR instruction 0x8FD9
 Matched C.SDSP instruction 0xE022
 Matched C.SDSP instruction 0xE406
 Matched C.SDSP instruction 0xE822
