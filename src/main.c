@@ -32,7 +32,7 @@
 #define OP_C_FSWSP(inst)     (0) // TODO
 #define OP_C_J(inst)         (0) // TODO
 #define OP_C_JAL(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001  && OP_C_RS1(inst) == 0b00000)
-#define OP_C_JALR(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS2(inst) == 0b00000)
+#define OP_C_JALR(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) == 0b00000)
 #define OP_C_JR(inst)        (0) // TODO
 #define OP_C_LD(inst)        (0) // TODO
 #define OP_C_LDSP(inst)      (0) // TODO
@@ -68,7 +68,7 @@ uint16_t program[] = {
     /* C.BNEZ */  0xE399,
     /* C.BNEZ */  0xF3ED,
     /* C.JAL  */  0x3001,
-    /* C.JALR */  0x9002,
+    /* C.JALR */  0x9082,
     /* C.LW   */  0x4000,
     /* C.NOP  */  0x0001,
     /* C.SDSP */  0xE022,
