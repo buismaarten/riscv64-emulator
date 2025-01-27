@@ -13,7 +13,7 @@
 #define OP_C_RS2(inst)       (((inst) & 0b0000000001111100) >> 2)
 #define OP_C_ADD(inst)       (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) != 0b00000)
 #define OP_C_ADDI(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b000 && OP_C_RS1(inst) != 0b00000)
-#define OP_C_ADDI16SP(inst)  (0) // TODO
+#define OP_C_ADDI16SP(inst)  (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b011 && OP_C_RS1(inst) == 0b00010)
 #define OP_C_ADDI4SPN(inst)  (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b000)
 #define OP_C_ADDIW(inst)     (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_ADDW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b1001)
@@ -59,6 +59,9 @@ uint16_t program[] = {
     /* C.ADDI */     0x0141,
     /* C.ADDI */     0x1101,
     /* C.ADDI */     0x1141,
+    /* C.ADDI16SP */ 0x6105,
+    /* C.ADDI16SP */ 0x6145,
+    /* C.ADDI16SP */ 0x7179,
     /* C.ADDI4SPN */ 0x0800,
     /* C.ADDI4SPN */ 0x1000,
     /* C.ADDI4SPN */ 0x1800,
@@ -121,6 +124,11 @@ int main() {
 
         if (OP_C_ADDI4SPN(inst)) {
             printf("Matched C.ADDI4SPN instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_ADDI16SP(inst)) {
+            printf("Matched C.ADDI16SP instruction 0x%04X\n", inst);
             count++;
         }
 

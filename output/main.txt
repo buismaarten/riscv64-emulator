@@ -2,6 +2,9 @@ Matched C.ADD instruction 0x9852
 Matched C.ADDI instruction 0x0141
 Matched C.ADDI instruction 0x1101
 Matched C.ADDI instruction 0x1141
+Matched C.ADDI16SP instruction 0x6105
+Matched C.ADDI16SP instruction 0x6145
+Matched C.ADDI16SP instruction 0x7179
 Matched C.ADDI4SPN instruction 0x0800
 Matched C.ADDI4SPN instruction 0x1000
 Matched C.ADDI4SPN instruction 0x1800
