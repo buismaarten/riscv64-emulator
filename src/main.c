@@ -18,7 +18,7 @@
 #define OP_C_ADDI16SP(inst)  (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b011 && OP_C_RS1(inst) == 0b00010)
 #define OP_C_ADDI4SPN(inst)  (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b000)
 #define OP_C_ADDIW(inst)     (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001 && OP_C_RS1(inst) != 0b00000)
-#define OP_C_ADDW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b1001)
+#define OP_C_ADDW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100111 && OP_C_FUNCT2(inst) == 0b01)
 #define OP_C_AND(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b11)
 #define OP_C_ANDI(inst)      (0) // TODO
 #define OP_C_BEQZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b110)
@@ -51,7 +51,7 @@
 #define OP_C_SRAI(inst)      (0) // TODO
 #define OP_C_SRLI(inst)      (0) // TODO
 #define OP_C_SUB(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b00)
-#define OP_C_SUBW(inst)      (0) // TODO
+#define OP_C_SUBW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100111 && OP_C_FUNCT2(inst) == 0b00)
 #define OP_C_SW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b110)
 #define OP_C_SWSP(inst)      (0) // TODO
 #define OP_C_XOR(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b01)
@@ -115,6 +115,7 @@ uint16_t program[] = {
     /* C.SDSP */     0xF022,
     /* C.SDSP */     0xF406,
     /* C.SUB */      0x8F99,
+    /* C.SUBW */     0x9F99,
     /* C.SW */       0xC000,
     /* C.SW */       0xC398,
     /* C.XOR */      0x8FB9,
@@ -237,6 +238,11 @@ int main() {
 
         if (OP_C_SUB(inst)) {
             printf("Matched C.SUB instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_SUBW(inst)) {
+            printf("Matched C.SUBW instruction 0x%04X\n", inst);
             count++;
         }
 
