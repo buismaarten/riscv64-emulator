@@ -14,7 +14,7 @@
 #define OP_C_ADD(inst)       (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) != 0b00000)
 #define OP_C_ADDI(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b000 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_ADDI16SP(inst)  (0) // TODO
-#define OP_C_ADDI4SPN(inst)  (0) // TODO
+#define OP_C_ADDI4SPN(inst)  (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b000)
 #define OP_C_ADDIW(inst)     (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_ADDW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b1001)
 #define OP_C_AND(inst)       (0) // TODO
@@ -55,50 +55,53 @@
 #define OP_C_XOR(inst)       (0) // TODO
 
 uint16_t program[] = {
-    /* C.ADD  */  0x9852,
-    /* C.ADDI */  0x0141,
-    /* C.ADDI */  0x1101,
-    /* C.ADDI */  0x1141,
-    /* C.ADDIW */ 0x37F9,
-    /* C.ADDIW */ 0x37FD,
-    /* C.ADDW */  0x9FA5,
-    /* C.ADDW */  0x9FB9,
-    /* C.BEQZ */  0xC001,
-    /* C.BNEZ */  0xE001,
-    /* C.BNEZ */  0xE399,
-    /* C.BNEZ */  0xF3ED,
-    /* C.JAL  */  0x3001,
-    /* C.JALR */  0x9082,
-    /* C.LDSP */  0x60A2,
-    /* C.LDSP */  0x60E2,
-    /* C.LDSP */  0x6402,
-    /* C.LDSP */  0x6442,
-    /* C.LDSP */  0x64E2,
-    /* C.LDSP */  0x70A2,
-    /* C.LDSP */  0x7402,
-    /* C.LI   */  0x4515,
-    /* C.LI   */  0x4781,
-    /* C.LI   */  0x4785,
-    /* C.LI   */  0x4795,
-    /* C.LI   */  0x479D,
-    /* C.LW   */  0x4000,
-    /* C.MV   */  0x84BE,
-    /* C.MV   */  0x853E,
-    /* C.MV   */  0x85BA,
-    /* C.MV   */  0x872E,
-    /* C.MV   */  0x873E,
-    /* C.MV   */  0x87AA,
-    /* C.MV   */  0x87BA,
-    /* C.NOP  */  0x0001,
-    /* C.SDSP */  0xE022,
-    /* C.SDSP */  0xE406,
-    /* C.SDSP */  0xE822,
-    /* C.SDSP */  0xEC06,
-    /* C.SDSP */  0xEC26,
-    /* C.SDSP */  0xF022,
-    /* C.SDSP */  0xF406,
-    /* C.SW   */  0xC000,
-    /* C.SW   */  0xC398,
+    /* C.ADD  */     0x9852,
+    /* C.ADDI */     0x0141,
+    /* C.ADDI */     0x1101,
+    /* C.ADDI */     0x1141,
+    /* C.ADDI4SPN */ 0x0800,
+    /* C.ADDI4SPN */ 0x1000,
+    /* C.ADDI4SPN */ 0x1800,
+    /* C.ADDIW */    0x37F9,
+    /* C.ADDIW */    0x37FD,
+    /* C.ADDW */     0x9FA5,
+    /* C.ADDW */     0x9FB9,
+    /* C.BEQZ */     0xC001,
+    /* C.BNEZ */     0xE001,
+    /* C.BNEZ */     0xE399,
+    /* C.BNEZ */     0xF3ED,
+    /* C.JAL  */     0x3001,
+    /* C.JALR */     0x9082,
+    /* C.LDSP */     0x60A2,
+    /* C.LDSP */     0x60E2,
+    /* C.LDSP */     0x6402,
+    /* C.LDSP */     0x6442,
+    /* C.LDSP */     0x64E2,
+    /* C.LDSP */     0x70A2,
+    /* C.LDSP */     0x7402,
+    /* C.LI   */     0x4515,
+    /* C.LI   */     0x4781,
+    /* C.LI   */     0x4785,
+    /* C.LI   */     0x4795,
+    /* C.LI   */     0x479D,
+    /* C.LW   */     0x4000,
+    /* C.MV   */     0x84BE,
+    /* C.MV   */     0x853E,
+    /* C.MV   */     0x85BA,
+    /* C.MV   */     0x872E,
+    /* C.MV   */     0x873E,
+    /* C.MV   */     0x87AA,
+    /* C.MV   */     0x87BA,
+    /* C.NOP  */     0x0001,
+    /* C.SDSP */     0xE022,
+    /* C.SDSP */     0xE406,
+    /* C.SDSP */     0xE822,
+    /* C.SDSP */     0xEC06,
+    /* C.SDSP */     0xEC26,
+    /* C.SDSP */     0xF022,
+    /* C.SDSP */     0xF406,
+    /* C.SW   */     0xC000,
+    /* C.SW   */     0xC398,
 };
 
 int main() {
@@ -113,6 +116,11 @@ int main() {
 
         if (OP_C_ADDI(inst)) {
             printf("Matched C.ADDI instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_ADDI4SPN(inst)) {
+            printf("Matched C.ADDI4SPN instruction 0x%04X\n", inst);
             count++;
         }
 
