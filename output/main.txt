@@ -323,6 +323,7 @@ Matched C.SDSP instruction 0xFD66
 Matched C.SDSP instruction 0xFDA6
 Matched C.SLLI instruction 0x078E
 Matched C.SRAI instruction 0x878D
+Matched C.SRLI instruction 0x8389
 Matched C.SUB instruction 0x8F99
 Matched C.SUBW instruction 0x9C09
 Matched C.SUBW instruction 0x9F99
