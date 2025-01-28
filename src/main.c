@@ -48,7 +48,7 @@
 #define OP_C_SD(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b111)
 #define OP_C_SDSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b111)
 #define OP_C_SLLI(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b000 && OP_C_RS1(inst) != 0b00000)
-#define OP_C_SRAI(inst)      (0) // TODO
+#define OP_C_SRAI(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b100 && OP_C_RS1_TWO(inst) == 0b01)
 #define OP_C_SRLI(inst)      (0) // TODO
 #define OP_C_SUB(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b1000 && OP_C_RS1_TWO(inst) == 0b11 && OP_C_RS2_TWO(inst) == 0b00)
 #define OP_C_SUBW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1_TWO(inst) == 0b11 && OP_C_RS2_TWO(inst) == 0b00)
@@ -381,6 +381,7 @@ uint16_t program[] = {
     /* C.SDSP */     0xFD66,
     /* C.SDSP */     0xFDA6,
     /* C.SLLI */     0x078E,
+    /* C.SRAI */     0x878D,
     /* C.SUB */      0x8F99,
     /* C.SUBW */     0x9C09,
     /* C.SUBW */     0x9F99,
@@ -550,6 +551,11 @@ int main() {
 
         if (OP_C_SLLI(inst)) {
             printf("Matched C.SLLI instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_SRAI(inst)) {
+            printf("Matched C.SRAI instruction 0x%04X\n", inst);
             count++;
         }
 
