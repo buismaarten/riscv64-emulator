@@ -267,6 +267,7 @@ Matched C.MV instruction 0x8F5E
 Matched C.MV instruction 0x8F7E
 Matched C.NOP instruction 0x0001
 Matched C.OR instruction 0x8FD9
+Matched C.SD instruction 0xF550
 Matched C.SDSP instruction 0xE022
 Matched C.SDSP instruction 0xE0BA
 Matched C.SDSP instruction 0xE0BE
