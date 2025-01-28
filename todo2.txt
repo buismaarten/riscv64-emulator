@@ -200,9 +200,7 @@
 0x9F29        addw a4,a4,a0
 0x9FA9        addw a5,a5,a0
 0xA021        j 800001f6
-0xA021        j 8000024e
 0xA029        j 800001ee
-0xA029        j 8000026e
 0xA839        j 80000238
 0xB5ED        j 800001de
 0xB711        j 800001d4
@@ -256,7 +254,6 @@
 0xF96A        sd s10,176(sp)
 0xF9CA        sd s2,240(sp)
 0xFBFD        bnez a5,8000001e
-0xFBFD        bnez a5,8000003c
 0xFC16        sd t0,56(sp)
 0xFCAE        sd a1,120(sp)
 0xFCC2        sd a6,120(sp)
