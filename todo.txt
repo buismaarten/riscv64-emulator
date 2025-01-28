@@ -1,0 +1,5 @@
+0x239C    fld fa5,0(a5)
+0x239C    fld fa5,0(a5)
+0x239C    fld fa5,0(a5)
+0x4792    lw a5,4(sp)
+0x679C    ld a5,8(a5)
