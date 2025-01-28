@@ -18,34 +18,22 @@
 4501        li a0,0
 4505        li a0,1
 450d        li a0,3
-4515        li a0,5
 4605        li a2,1
 4701        li a4,0
 4705        li a4,1
-4781        li a5,0
-4785        li a5,1
-4795        li a5,5
-479d        li a5,7
 4901        li s2,0
 4981        li s3,0
 4b01        li s6,0
 4c01        li s8,0
 4d01        li s10,0
-60a2        ld ra,8(sp)
 60b2        ld ra,264(sp)
-60e2        ld ra,24(sp)
-6105        addi sp,sp,32
-6145        addi sp,sp,48
 6151        addi sp,sp,272
 6346        ld t1,80(sp)
 6366        ld t1,88(sp)
 63e2        ld t2,24(sp)
 63ea        ld t2,152(sp)
-6402        ld s0,0(sp)
 6412        ld s0,256(sp)
-6442        ld s0,16(sp)
 64a2        ld s1,8(sp)
-64e2        ld s1,24(sp)
 65e6        ld a1,88(sp)
 6706        ld a4,64(sp)
 6722        ld a4,8(sp)
@@ -64,11 +52,8 @@
 6e46        ld t3,80(sp)
 6eca        ld t4,144(sp)
 6f26        ld t5,72(sp)
-70a2        ld ra,40(sp)
 716d        addi sp,sp,-272
-7179        addi sp,sp,-48
 72e2        ld t0,56(sp)
-7402        ld s0,32(sp)
 74ee        ld s1,248(sp)
 75c2        ld a1,48(sp)
 75e6        ld a1,120(sp)
@@ -106,7 +91,6 @@
 84a2        mv s1,s0
 84aa        mv s1,a0
 84ba        mv s1,a4
-84be        mv s1,a5
 84c2        mv s1,a6
 84d2        mv s1,s4
 84d6        mv s1,s5
@@ -114,12 +98,10 @@
 84e6        mv s1,s9
 8522        mv a0,s0
 8526        mv a0,s1
-853e        mv a0,a5
 854e        mv a0,s3
 8562        mv a0,s8
 856e        mv a0,s11
 85a2        mv a1,s0
-85ba        mv a1,a4
 85ca        mv a1,s2
 85d2        mv a1,s4
 85e6        mv a1,s9
@@ -132,15 +114,11 @@
 86e6        mv a3,s9
 86f6        mv a3,t4
 871a        mv a4,t1
-872e        mv a4,a1
-873e        mv a4,a5
 8756        mv a4,s5
 875e        mv a4,s7
 876a        mv a4,s10
 8772        mv a4,t3
 879e        mv a5,t2
-87aa        mv a5,a0
-87ba        mv a5,a4
 87c6        mv a5,a7
 87ce        mv a5,s3
 87d6        mv a5,s5
@@ -220,17 +198,11 @@
 9d2d        addw a0,a0,a1
 9ea1        addw a3,a3,s0
 9f29        addw a4,a4,a0
-9fa5        addw a5,a5,s1
 9fa9        addw a5,a5,a0
-9fb9        addw a5,a5,a4
 a021        j 800001f6 <fibonacci+0x1ea>
 a021        j 8000024e <fibonacci+0x242>
-a025        j 80000056 <fibonacci+0x4a>
-a025        j 80000254 <fibonacci+0x248>
 a029        j 800001ee <fibonacci+0x1e2>
 a029        j 8000026e <fibonacci+0x262>
-a821        j 8000005e <uart_puts+0x24>
-a831        j 80000040 <factorial+0x34>
 a839        j 80000238 <fibonacci+0x22c>
 b5ed        j 800001de <fibonacci+0x1d2>
 b711        j 800001d4 <fibonacci+0x1c8>
@@ -240,10 +212,8 @@ bff9        j 8000001a <fibonacci+0xe>
 c29c        sw a5,0(a3)
 c31c        sw a5,0(a4)
 c388        sw a0,0(a5)
-c398        sw a4,0(a5)
 c791        beqz a5,8000001c <factorial+0x10>
 cb89        beqz a5,8000002a <uart_puts+0x16>
-e022        sd s0,0(sp)
 e0ba        sd a4,64(sp)
 e0be        sd a5,64(sp)
 e119        bnez a0,80000012 <factorial+0x6>
@@ -251,8 +221,6 @@ e142        sd a6,128(sp)
 e146        sd a7,128(sp)
 e1e2        sd s8,192(sp)
 e222        sd s0,256(sp)
-e399        bnez a5,80000026 <factorial+0x1a>
-e406        sd ra,8(sp)
 e426        sd s1,8(sp)
 e43a        sd a4,8(sp)
 e43e        sd a5,8(sp)
@@ -261,27 +229,21 @@ e546        sd a7,136(sp)
 e572        sd t3,136(sp)
 e5de        sd s7,200(sp)
 e606        sd ra,264(sp)
-e822        sd s0,16(sp)
 e82a        sd a0,16(sp)
 e876        sd t4,16(sp)
 e89a        sd t1,80(sp)
 e8f2        sd t3,80(sp)
 e976        sd t4,144(sp)
 e9da        sd s6,208(sp)
-ec06        sd ra,24(sp)
 ec1e        sd t2,24(sp)
-ec26        sd s1,24(sp)
 ec9a        sd t1,88(sp)
 ecae        sd a1,88(sp)
 ed1e        sd t2,152(sp)
 edd6        sd s5,216(sp)
-f022        sd s0,32(sp)
 f076        sd t4,32(sp)
 f0b6        sd a3,96(sp)
 f0ba        sd a4,96(sp)
 f1d2        sd s4,224(sp)
-f3ed        bnez a5,80000048 <uart_puts+0xe>
-f406        sd ra,40(sp)
 f442        sd a6,40(sp)
 f446        sd a7,40(sp)
 f4b6        sd a3,104(sp)
