@@ -53,7 +53,7 @@
 #define OP_C_SUB(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b00)
 #define OP_C_SUBW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100111 && OP_C_FUNCT2(inst) == 0b00)
 #define OP_C_SW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b110)
-#define OP_C_SWSP(inst)      (0) // TODO
+#define OP_C_SWSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b110)
 #define OP_C_XOR(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b01)
 
 uint16_t program[] = {
@@ -386,6 +386,7 @@ uint16_t program[] = {
     /* C.SW */       0xC31C,
     /* C.SW */       0xC388,
     /* C.SW */       0xC398,
+    /* C.SWSP */     0xC286,
     /* C.XOR */      0x8FB9,
 };
 
@@ -546,6 +547,11 @@ int main() {
 
         if (OP_C_SW(inst)) {
             printf("Matched C.SW instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_SWSP(inst)) {
+            printf("Matched C.SWSP instruction 0x%04X\n", inst);
             count++;
         }
 
