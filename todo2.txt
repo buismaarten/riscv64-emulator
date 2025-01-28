@@ -1,262 +1,262 @@
-0x0505        addi a0,a0,1
-0x0705        addi a4,a4,1
-0x3379        addiw t1,t1,-2
-0x3479        addiw s0,s0,-2
-0x34F9        addiw s1,s1,-2
-0x356D        addiw a0,a0,-5
-0x357D        addiw a0,a0,-1
-0x35ED        addiw a1,a1,-5
-0x35F9        addiw a1,a1,-2
-0x3779        addiw a4,a4,-2
-0x3979        addiw s2,s2,-2
-0x39F9        addiw s3,s3,-2
-0x3AF9        addiw s5,s5,-2
-0x3BF9        addiw s7,s7,-2
-0x3E79        addiw t3,t3,-2
-0x4281        li t0,0
-0x4401        li s0,0
-0x4501        li a0,0
-0x4505        li a0,1
-0x450D        li a0,3
-0x4605        li a2,1
-0x4701        li a4,0
-0x4705        li a4,1
-0x4901        li s2,0
-0x4981        li s3,0
-0x4B01        li s6,0
-0x4C01        li s8,0
-0x4D01        li s10,0
-0x60B2        ld ra,264(sp)
-0x6151        addi sp,sp,272
-0x6346        ld t1,80(sp)
-0x6366        ld t1,88(sp)
-0x63E2        ld t2,24(sp)
-0x63EA        ld t2,152(sp)
-0x6412        ld s0,256(sp)
-0x64A2        ld s1,8(sp)
-0x65E6        ld a1,88(sp)
-0x6706        ld a4,64(sp)
-0x6722        ld a4,8(sp)
-0x6742        ld a4,16(sp)
-0x6786        ld a5,64(sp)
-0x67A2        ld a5,8(sp)
-0x67C2        ld a5,16(sp)
-0x680A        ld a6,128(sp)
-0x688A        ld a7,128(sp)
-0x68AA        ld a7,136(sp)
-0x6AEE        ld s5,216(sp)
-0x6B4E        ld s6,208(sp)
-0x6BAE        ld s7,200(sp)
-0x6C0E        ld s8,192(sp)
-0x6E2A        ld t3,136(sp)
-0x6E46        ld t3,80(sp)
-0x6ECA        ld t4,144(sp)
-0x6F26        ld t5,72(sp)
-0x716D        addi sp,sp,-272
-0x72E2        ld t0,56(sp)
-0x74EE        ld s1,248(sp)
-0x75C2        ld a1,48(sp)
-0x75E6        ld a1,120(sp)
-0x7686        ld a3,96(sp)
-0x76A6        ld a3,104(sp)
-0x7706        ld a4,96(sp)
-0x77A6        ld a5,104(sp)
-0x7822        ld a6,40(sp)
-0x7842        ld a6,48(sp)
-0x7866        ld a6,120(sp)
-0x78A2        ld a7,40(sp)
-0x794E        ld s2,240(sp)
-0x79AE        ld s3,232(sp)
-0x7A0E        ld s4,224(sp)
-0x7CEA        ld s9,184(sp)
-0x7D4A        ld s10,176(sp)
-0x7DAA        ld s11,168(sp)
-0x7E82        ld t4,32(sp)
-0x7FC6        ld t6,112(sp)
-0x8082        ret
-0x833A        mv t1,a4
-0x836A        mv t1,s10
-0x8376        mv t1,t4
-0x837A        mv t1,t5
-0x837E        mv t1,t6
-0x83A2        mv t2,s0
-0x83EE        mv t2,s11
-0x83F2        mv t2,t3
-0x83F6        mv t2,t4
-0x841E        mv s0,t2
-0x842A        mv s0,a0
-0x8452        mv s0,s4
-0x8466        mv s0,s9
-0x846A        mv s0,s10
-0x84A2        mv s1,s0
-0x84AA        mv s1,a0
-0x84BA        mv s1,a4
-0x84C2        mv s1,a6
-0x84D2        mv s1,s4
-0x84D6        mv s1,s5
-0x84DE        mv s1,s7
-0x84E6        mv s1,s9
-0x8522        mv a0,s0
-0x8526        mv a0,s1
-0x854E        mv a0,s3
-0x8562        mv a0,s8
-0x856E        mv a0,s11
-0x85A2        mv a1,s0
-0x85CA        mv a1,s2
-0x85D2        mv a1,s4
-0x85E6        mv a1,s9
-0x85F2        mv a1,t3
-0x85FA        mv a1,t5
-0x863A        mv a2,a4
-0x869E        mv a3,t2
-0x86CA        mv a3,s2
-0x86CE        mv a3,s3
-0x86E6        mv a3,s9
-0x86F6        mv a3,t4
-0x871A        mv a4,t1
-0x8756        mv a4,s5
-0x875E        mv a4,s7
-0x876A        mv a4,s10
-0x8772        mv a4,t3
-0x879E        mv a5,t2
-0x87C6        mv a5,a7
-0x87CE        mv a5,s3
-0x87D6        mv a5,s5
-0x8826        mv a6,s1
-0x8856        mv a6,s5
-0x886E        mv a6,s11
-0x88BE        mv a7,a5
-0x88CE        mv a7,s3
-0x88D6        mv a7,s5
-0x892E        mv s2,a1
-0x8952        mv s2,s4
-0x8956        mv s2,s5
-0x8976        mv s2,t4
-0x89A6        mv s3,s1
-0x89B6        mv s3,a3
-0x89C6        mv s3,a7
-0x89D6        mv s3,s5
-0x89E2        mv s3,s8
-0x89F6        mv s3,t4
-0x8A22        mv s4,s0
-0x8A26        mv s4,s1
-0x8A2E        mv s4,a1
-0x8A3E        mv s4,a5
-0x8A4A        mv s4,s2
-0x8A56        mv s4,s5
-0x8A5A        mv s4,s6
-0x8A62        mv s4,s8
-0x8AA6        mv s5,s1
-0x8ABA        mv s5,a4
-0x8ABE        mv s5,a5
-0x8AC2        mv s5,a6
-0x8AC6        mv s5,a7
-0x8ACA        mv s5,s2
-0x8ACE        mv s5,s3
-0x8AD2        mv s5,s4
-0x8ADA        mv s5,s6
-0x8B52        mv s6,s4
-0x8B66        mv s6,s9
-0x8B6A        mv s6,s10
-0x8B6E        mv s6,s11
-0x8BA6        mv s7,s1
-0x8BBA        mv s7,a4
-0x8C4E        mv s8,s3
-0x8C52        mv s8,s4
-0x8C66        mv s8,s9
-0x8C6E        mv s8,s11
-0x8CA2        mv s9,s0
-0x8CA6        mv s9,s1
-0x8CAE        mv s9,a1
-0x8CB6        mv s9,a3
-0x8CDA        mv s9,s6
-0x8CE2        mv s9,s8
-0x8CEE        mv s9,s11
-0x8D1A        mv s10,t1
-0x8D22        mv s10,s0
-0x8D3A        mv s10,a4
-0x8D5A        mv s10,s6
-0x8D9E        mv s11,t2
-0x8DC2        mv s11,a6
-0x8DDA        mv s11,s6
-0x8DE2        mv s11,s8
-0x8DE6        mv s11,s9
-0x8E1E        mv t3,t2
-0x8E2E        mv t3,a1
-0x8E3A        mv t3,a4
-0x8E7E        mv t3,t6
-0x8E9A        mv t4,t1
-0x8E9E        mv t4,t2
-0x8EB6        mv t4,a3
-0x8ECA        mv t4,s2
-0x8ECE        mv t4,s3
-0x8F26        mv t5,s1
-0x8F5E        mv t5,s7
-0x8F7E        mv t5,t6
-0x9C09        subw s0,s0,a0
-0x9CAD        addw s1,s1,a1
-0x9D2D        addw a0,a0,a1
-0x9EA1        addw a3,a3,s0
-0x9F29        addw a4,a4,a0
-0x9FA9        addw a5,a5,a0
-0xA021        j 800001f6
-0xA029        j 800001ee
-0xA839        j 80000238
-0xB5ED        j 800001de
-0xB711        j 800001d4
-0xBFC9        j 80000216
-0xBFF1        j 8000020c
-0xBFF9        j 8000001a
-0xC29C        sw a5,0(a3)
-0xC31C        sw a5,0(a4)
-0xC388        sw a0,0(a5)
-0xC791        beqz a5,8000001c
-0xCB89        beqz a5,8000002a
-0xE0BA        sd a4,64(sp)
-0xE0BE        sd a5,64(sp)
-0xE119        bnez a0,80000012
-0xE142        sd a6,128(sp)
-0xE146        sd a7,128(sp)
-0xE1E2        sd s8,192(sp)
-0xE222        sd s0,256(sp)
-0xE426        sd s1,8(sp)
-0xE43A        sd a4,8(sp)
-0xE43E        sd a5,8(sp)
-0xE4FA        sd t5,72(sp)
-0xE546        sd a7,136(sp)
-0xE572        sd t3,136(sp)
-0xE5DE        sd s7,200(sp)
-0xE606        sd ra,264(sp)
-0xE82A        sd a0,16(sp)
-0xE876        sd t4,16(sp)
-0xE89A        sd t1,80(sp)
-0xE8F2        sd t3,80(sp)
-0xE976        sd t4,144(sp)
-0xE9DA        sd s6,208(sp)
-0xEC1E        sd t2,24(sp)
-0xEC9A        sd t1,88(sp)
-0xECAE        sd a1,88(sp)
-0xED1E        sd t2,152(sp)
-0xEDD6        sd s5,216(sp)
-0xF076        sd t4,32(sp)
-0xF0B6        sd a3,96(sp)
-0xF0BA        sd a4,96(sp)
-0xF1D2        sd s4,224(sp)
-0xF442        sd a6,40(sp)
-0xF446        sd a7,40(sp)
-0xF4B6        sd a3,104(sp)
-0xF4BE        sd a5,104(sp)
-0xF56E        sd s11,168(sp)
-0xF5CE        sd s3,232(sp)
-0xF82E        sd a1,48(sp)
-0xF842        sd a6,48(sp)
-0xF8FE        sd t6,112(sp)
-0xF96A        sd s10,176(sp)
-0xF9CA        sd s2,240(sp)
-0xFBFD        bnez a5,8000001e
-0xFC16        sd t0,56(sp)
-0xFCAE        sd a1,120(sp)
-0xFCC2        sd a6,120(sp)
-0xFD66        sd s9,184(sp)
-0xFDA6        sd s1,248(sp)
-0xFFE5        bnez a5,80000012
+C.ADDI        0x0505
+C.ADDI        0x0705
+C.ADDI        0x6151
+C.ADDI        0x716D
+C.ADDIW        0x3379
+C.ADDIW        0x3479
+C.ADDIW        0x34F9
+C.ADDIW        0x356D
+C.ADDIW        0x357D
+C.ADDIW        0x35ED
+C.ADDIW        0x35F9
+C.ADDIW        0x3779
+C.ADDIW        0x3979
+C.ADDIW        0x39F9
+C.ADDIW        0x3AF9
+C.ADDIW        0x3BF9
+C.ADDIW        0x3E79
+C.ADDW        0x9CAD
+C.ADDW        0x9D2D
+C.ADDW        0x9EA1
+C.ADDW        0x9F29
+C.ADDW        0x9FA9
+C.BEQZ        0xC791
+C.BEQZ        0xCB89
+C.BNEZ        0xE119
+C.BNEZ        0xFBFD
+C.BNEZ        0xFFE5
+C.J        0xA021
+C.J        0xA029
+C.J        0xA839
+C.J        0xB5ED
+C.J        0xB711
+C.J        0xBFC9
+C.J        0xBFF1
+C.J        0xBFF9
+C.LD        0x60B2
+C.LD        0x6346
+C.LD        0x6366
+C.LD        0x63E2
+C.LD        0x63EA
+C.LD        0x6412
+C.LD        0x64A2
+C.LD        0x65E6
+C.LD        0x6706
+C.LD        0x6722
+C.LD        0x6742
+C.LD        0x6786
+C.LD        0x67A2
+C.LD        0x67C2
+C.LD        0x680A
+C.LD        0x688A
+C.LD        0x68AA
+C.LD        0x6AEE
+C.LD        0x6B4E
+C.LD        0x6BAE
+C.LD        0x6C0E
+C.LD        0x6E2A
+C.LD        0x6E46
+C.LD        0x6ECA
+C.LD        0x6F26
+C.LD        0x72E2
+C.LD        0x74EE
+C.LD        0x75C2
+C.LD        0x75E6
+C.LD        0x7686
+C.LD        0x76A6
+C.LD        0x7706
+C.LD        0x77A6
+C.LD        0x7822
+C.LD        0x7842
+C.LD        0x7866
+C.LD        0x78A2
+C.LD        0x794E
+C.LD        0x79AE
+C.LD        0x7A0E
+C.LD        0x7CEA
+C.LD        0x7D4A
+C.LD        0x7DAA
+C.LD        0x7E82
+C.LD        0x7FC6
+C.LI        0x4281
+C.LI        0x4401
+C.LI        0x4501
+C.LI        0x4505
+C.LI        0x450D
+C.LI        0x4605
+C.LI        0x4701
+C.LI        0x4705
+C.LI        0x4901
+C.LI        0x4981
+C.LI        0x4B01
+C.LI        0x4C01
+C.LI        0x4D01
+C.MV        0x833A
+C.MV        0x836A
+C.MV        0x8376
+C.MV        0x837A
+C.MV        0x837E
+C.MV        0x83A2
+C.MV        0x83EE
+C.MV        0x83F2
+C.MV        0x83F6
+C.MV        0x841E
+C.MV        0x842A
+C.MV        0x8452
+C.MV        0x8466
+C.MV        0x846A
+C.MV        0x84A2
+C.MV        0x84AA
+C.MV        0x84BA
+C.MV        0x84C2
+C.MV        0x84D2
+C.MV        0x84D6
+C.MV        0x84DE
+C.MV        0x84E6
+C.MV        0x8522
+C.MV        0x8526
+C.MV        0x854E
+C.MV        0x8562
+C.MV        0x856E
+C.MV        0x85A2
+C.MV        0x85CA
+C.MV        0x85D2
+C.MV        0x85E6
+C.MV        0x85F2
+C.MV        0x85FA
+C.MV        0x863A
+C.MV        0x869E
+C.MV        0x86CA
+C.MV        0x86CE
+C.MV        0x86E6
+C.MV        0x86F6
+C.MV        0x871A
+C.MV        0x8756
+C.MV        0x875E
+C.MV        0x876A
+C.MV        0x8772
+C.MV        0x879E
+C.MV        0x87C6
+C.MV        0x87CE
+C.MV        0x87D6
+C.MV        0x8826
+C.MV        0x8856
+C.MV        0x886E
+C.MV        0x88BE
+C.MV        0x88CE
+C.MV        0x88D6
+C.MV        0x892E
+C.MV        0x8952
+C.MV        0x8956
+C.MV        0x8976
+C.MV        0x89A6
+C.MV        0x89B6
+C.MV        0x89C6
+C.MV        0x89D6
+C.MV        0x89E2
+C.MV        0x89F6
+C.MV        0x8A22
+C.MV        0x8A26
+C.MV        0x8A2E
+C.MV        0x8A3E
+C.MV        0x8A4A
+C.MV        0x8A56
+C.MV        0x8A5A
+C.MV        0x8A62
+C.MV        0x8AA6
+C.MV        0x8ABA
+C.MV        0x8ABE
+C.MV        0x8AC2
+C.MV        0x8AC6
+C.MV        0x8ACA
+C.MV        0x8ACE
+C.MV        0x8AD2
+C.MV        0x8ADA
+C.MV        0x8B52
+C.MV        0x8B66
+C.MV        0x8B6A
+C.MV        0x8B6E
+C.MV        0x8BA6
+C.MV        0x8BBA
+C.MV        0x8C4E
+C.MV        0x8C52
+C.MV        0x8C66
+C.MV        0x8C6E
+C.MV        0x8CA2
+C.MV        0x8CA6
+C.MV        0x8CAE
+C.MV        0x8CB6
+C.MV        0x8CDA
+C.MV        0x8CE2
+C.MV        0x8CEE
+C.MV        0x8D1A
+C.MV        0x8D22
+C.MV        0x8D3A
+C.MV        0x8D5A
+C.MV        0x8D9E
+C.MV        0x8DC2
+C.MV        0x8DDA
+C.MV        0x8DE2
+C.MV        0x8DE6
+C.MV        0x8E1E
+C.MV        0x8E2E
+C.MV        0x8E3A
+C.MV        0x8E7E
+C.MV        0x8E9A
+C.MV        0x8E9E
+C.MV        0x8EB6
+C.MV        0x8ECA
+C.MV        0x8ECE
+C.MV        0x8F26
+C.MV        0x8F5E
+C.MV        0x8F7E
+C.RE        0x8082
+C.SD        0xE0BA
+C.SD        0xE0BE
+C.SD        0xE142
+C.SD        0xE146
+C.SD        0xE1E2
+C.SD        0xE222
+C.SD        0xE426
+C.SD        0xE43A
+C.SD        0xE43E
+C.SD        0xE4FA
+C.SD        0xE546
+C.SD        0xE572
+C.SD        0xE5DE
+C.SD        0xE606
+C.SD        0xE82A
+C.SD        0xE876
+C.SD        0xE89A
+C.SD        0xE8F2
+C.SD        0xE976
+C.SD        0xE9DA
+C.SD        0xEC1E
+C.SD        0xEC9A
+C.SD        0xECAE
+C.SD        0xED1E
+C.SD        0xEDD6
+C.SD        0xF076
+C.SD        0xF0B6
+C.SD        0xF0BA
+C.SD        0xF1D2
+C.SD        0xF442
+C.SD        0xF446
+C.SD        0xF4B6
+C.SD        0xF4BE
+C.SD        0xF56E
+C.SD        0xF5CE
+C.SD        0xF82E
+C.SD        0xF842
+C.SD        0xF8FE
+C.SD        0xF96A
+C.SD        0xF9CA
+C.SD        0xFC16
+C.SD        0xFCAE
+C.SD        0xFCC2
+C.SD        0xFD66
+C.SD        0xFDA6
+C.SUBW        0x9C09
+C.SW        0xC29C
+C.SW        0xC31C
+C.SW        0xC388
