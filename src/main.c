@@ -24,24 +24,24 @@
 #define OP_C_BEQZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b110)
 #define OP_C_BNEZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b111)
 #define OP_C_EBREAK(inst)    (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) == 0b00000 && OP_C_RS2(inst) == 0b00000)
-#define OP_C_FLD(inst)       (0) // TODO
-#define OP_C_FLDSP(inst)     (0) // TODO
+#define OP_C_FLD(inst)       (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b001)
+#define OP_C_FLDSP(inst)     (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b001)
 #define OP_C_FLW(inst)       (0) // TODO
 #define OP_C_FLWSP(inst)     (0) // TODO
-#define OP_C_FSD(inst)       (0) // TODO
-#define OP_C_FSDSP(inst)     (0) // TODO
+#define OP_C_FSD(inst)       (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b101)
+#define OP_C_FSDSP(inst)     (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b101)
 #define OP_C_FSW(inst)       (0) // TODO
 #define OP_C_FSWSP(inst)     (0) // TODO
 #define OP_C_J(inst)         (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b101)
 #define OP_C_JAL(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001 && OP_C_RS1(inst) == 0b00000)
 #define OP_C_JALR(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) == 0b00000)
 #define OP_C_JR(inst)        (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1000 && OP_C_RS2(inst) == 0b00000)
-#define OP_C_LD(inst)        (0) // TODO
+#define OP_C_LD(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b011)
 #define OP_C_LDSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b011 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_LI(inst)        (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b010 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_LUI(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b011 && OP_C_RS1(inst) != 0b00000 && OP_C_RS1(inst) != 0b00010)
 #define OP_C_LW(inst)        (OP_C(inst) == 0b00 && OP_C_FUNCT3(inst) == 0b010)
-#define OP_C_LWSP(inst)      (0) // TODO
+#define OP_C_LWSP(inst)      (OP_C(inst) == 0b10 && OP_C_FUNCT3(inst) == 0b010)
 #define OP_C_MV(inst)        (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1000 && OP_C_RS1(inst) != 0b00000 && OP_C_RS2(inst) != 0b00000)
 #define OP_C_NOP(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT4(inst) == 0b0000 && OP_C_RS1(inst) == 0b00000 && OP_C_RS2(inst) == 0b00000)
 #define OP_C_OR(inst)        (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b10)
@@ -78,12 +78,17 @@ uint16_t program[] = {
     /* C.BNEZ */     0xE399,
     /* C.BNEZ */     0xF3ED,
     /* C.EBREAK */   0x9002,
+    /* C.FLD */      0x239C,
+    /* C.FLDSP */    0x2022,
+    /* C.FSD */      0xA79C,
+    /* C.FSDSP */    0xA43E,
     /* C.J */        0xA025,
     /* C.J */        0xA821,
     /* C.J */        0xA831,
     /* C.JAL */      0x3001,
     /* C.JALR */     0x9082,
     /* C.JR */       0x8782,
+    /* C.LD */       0x679C,
     /* C.LDSP */     0x60A2,
     /* C.LDSP */     0x60E2,
     /* C.LDSP */     0x6402,
@@ -98,6 +103,7 @@ uint16_t program[] = {
     /* C.LI */       0x479D,
     /* C.LUI */      0x67C9,
     /* C.LW */       0x4000,
+    /* C.LWSP */     0x4792,
     /* C.MV */       0x84BE,
     /* C.MV */       0x853E,
     /* C.MV */       0x85BA,
@@ -176,6 +182,26 @@ int main() {
             count++;
         }
 
+        if (OP_C_FLD(inst)) {
+            printf("Matched C.FLD instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_FLDSP(inst)) {
+            printf("Matched C.FLDSP instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_FSD(inst)) {
+            printf("Matched C.FSD instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_FSDSP(inst)) {
+            printf("Matched C.FSDSP instruction 0x%04X\n", inst);
+            count++;
+        }
+
         if (OP_C_J(inst)) {
             printf("Matched C.J instruction 0x%04X\n", inst);
             count++;
@@ -196,6 +222,11 @@ int main() {
             count++;
         }
 
+        if (OP_C_LD(inst)) {
+            printf("Matched C.LD instruction 0x%04X\n", inst);
+            count++;
+        }
+
         if (OP_C_LDSP(inst)) {
             printf("Matched C.LDSP instruction 0x%04X\n", inst);
             count++;
@@ -213,6 +244,11 @@ int main() {
 
         if (OP_C_LW(inst)) {
             printf("Matched C.LW instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_LWSP(inst)) {
+            printf("Matched C.LWSP instruction 0x%04X\n", inst);
             count++;
         }
 
