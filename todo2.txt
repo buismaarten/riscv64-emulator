@@ -1,4 +1,3 @@
-C.RE        0x8082
 C.SD        0xE0BA
 C.SD        0xE0BE
 C.SD        0xE142

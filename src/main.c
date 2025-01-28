@@ -122,6 +122,7 @@ uint16_t program[] = {
     /* C.J */        0xBFF9,
     /* C.JAL */      0x3001,
     /* C.JALR */     0x9082,
+    /* C.JR */       0x8082,
     /* C.JR */       0x8782,
     /* C.LD */       0x60B2,
     /* C.LD */       0x6346,
