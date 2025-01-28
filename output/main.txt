@@ -36,6 +36,7 @@ Matched C.ADDW instruction 0x9FA5
 Matched C.ADDW instruction 0x9FA9
 Matched C.ADDW instruction 0x9FB9
 Matched C.AND instruction 0x8FF9
+Matched C.ANDI instruction 0x8A25
 Matched C.BEQZ instruction 0xC001
 Matched C.BEQZ instruction 0xC791
 Matched C.BEQZ instruction 0xCB89

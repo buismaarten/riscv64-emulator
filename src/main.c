@@ -20,7 +20,7 @@
 #define OP_C_ADDIW(inst)     (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b001 && OP_C_RS1(inst) != 0b00000)
 #define OP_C_ADDW(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100111 && OP_C_FUNCT2(inst) == 0b01)
 #define OP_C_AND(inst)       (OP_C(inst) == 0b01 && OP_C_FUNCT6(inst) == 0b100011 && OP_C_FUNCT2(inst) == 0b11)
-#define OP_C_ANDI(inst)      (0) // TODO
+#define OP_C_ANDI(inst)      (OP_C(inst) == 0b01 && (OP_C_FUNCT6(inst) == 0b100010 || OP_C_FUNCT6(inst) == 0b100110)) // TODO
 #define OP_C_BEQZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b110)
 #define OP_C_BNEZ(inst)      (OP_C(inst) == 0b01 && OP_C_FUNCT3(inst) == 0b111)
 #define OP_C_EBREAK(inst)    (OP_C(inst) == 0b10 && OP_C_FUNCT4(inst) == 0b1001 && OP_C_RS1(inst) == 0b00000 && OP_C_RS2(inst) == 0b00000)
@@ -95,6 +95,7 @@ uint16_t program[] = {
     /* C.ADDW */     0x9FA9,
     /* C.ADDW */     0x9FB9,
     /* C.AND */      0x8FF9,
+    /* C.ANDI */     0x8A25,
     /* C.BEQZ */     0xC001,
     /* C.BEQZ */     0xC791,
     /* C.BEQZ */     0xCB89,
@@ -428,6 +429,11 @@ int main() {
 
         if (OP_C_AND(inst)) {
             printf("Matched C.AND instruction 0x%04X\n", inst);
+            count++;
+        }
+
+        if (OP_C_ANDI(inst)) {
+            printf("Matched C.ANDI instruction 0x%04X\n", inst);
             count++;
         }
 
