@@ -1,79 +1,9 @@
-
-00000517          	auipc	a0,0x0
-00000717          	auipc	a4,0x0
 0001                	nop
-00054783          	lbu	a5,0(a0)
-0007871b          	sext.w	a4,a5
-0007c783          	lbu	a5,0(a5)
-0014069b          	addiw	a3,s0,1
-0014879b          	addiw	a5,s1,1
-00154783          	lbu	a5,1(a0)
-0017059b          	addiw	a1,a4,1
-00174783          	lbu	a5,1(a4)
-0017851b          	addiw	a0,a5,1
-00178713          	addi	a4,a5,1 # 10000001 <_start-0x6fffffff>
-0019051b          	addiw	a0,s2,1
-0019069b          	addiw	a3,s2,1
-0019079b          	addiw	a5,s2,1
-0019851b          	addiw	a0,s3,1
-001b051b          	addiw	a0,s6,1
-001c059b          	addiw	a1,s8,1
-001c0a9b          	addiw	s5,s8,1
-001c0b1b          	addiw	s6,s8,1
-001d0a9b          	addiw	s5,s10,1
-001d0b1b          	addiw	s6,s10,1
-001f051b          	addiw	a0,t5,1
-0054043b          	addw	s0,s0,t0
-005502bb          	addw	t0,a0,t0
-0059093b          	addw	s2,s2,t0
-005f02bb          	addw	t0,t5,t0
-00a282bb          	addw	t0,t0,a0
-00a4843b          	addw	s0,s1,a0
-00a7c763          	blt	a5,a0,80000024 <fibonacci+0x18>
-00a9093b          	addw	s2,s2,a0
-00b282bb          	addw	t0,t0,a1
-00db0b3b          	addw	s6,s6,a3
-00dc0c3b          	addw	s8,s8,a3
-00e7c563          	blt	a5,a4,80000030 <fibonacci+0x24>
-00fc0c3b          	addw	s8,s8,a5
-0125053b          	addw	a0,a0,s2
-0125093b          	addw	s2,a0,s2
-012686bb          	addw	a3,a3,s2
-0127853b          	addw	a0,a5,s2
-012787bb          	addw	a5,a5,s2
-0137853b          	addw	a0,a5,s3
 0141                	addi	sp,sp,16
-0159093b          	addw	s2,s2,s5
-015d0d3b          	addw	s10,s10,s5
-0165053b          	addw	a0,a0,s6
-016989bb          	addw	s3,s3,s6
-016d0d3b          	addw	s10,s10,s6
-01850513          	addi	a0,a0,24 # 80000048 <main+0x1c>
-018585bb          	addw	a1,a1,s8
-01870b3b          	addw	s6,a4,s8
-01878abb          	addw	s5,a5,s8
-01aa8abb          	addw	s5,s5,s10
-01ab0b3b          	addw	s6,s6,s10
-01c50513          	addi	a0,a0,28 # 80000098 <main+0x24>
-02070713          	addi	a4,a4,32 # 80000050 <main+0x24>
-0285053b          	mulw	a0,a0,s0
-02a7053b          	mulw	a0,a4,a0
-02cc1c63          	bne	s8,a2,800002bc <fibonacci+0x2b0>
-02cd9b63          	bne	s11,a2,80000298 <fibonacci+0x28c>
-02f707bb          	mulw	a5,a4,a5
-04800793          	li	a5,72
 0505                	addi	a0,a0,1
-06c30a63          	beq	t1,a2,800001a2 <fibonacci+0x196>
-06c58a63          	beq	a1,a2,80000198 <fibonacci+0x18c>
 0705                	addi	a4,a4,1
 0800                	addi	s0,sp,16
-0de70763          	beq	a4,t5,800001ca <fibonacci+0x1be>
-0de78763          	beq	a5,t5,800001d4 <fibonacci+0x1c8>
 1000                	addi	s0,sp,32
-100006b7          	lui	a3,0x10000
-10000737          	lui	a4,0x10000
-100007b7          	lui	a5,0x10000
-10bc8e63          	beq	s9,a1,800001e6 <fibonacci+0x1da>
 1101                	addi	sp,sp,-32
 1101                	addi	sp,sp,-32 # 8000ffe0 <main+0xff6c>
 1101                	addi	sp,sp,-32 # 8000ffe0 <main+0xff7e>
@@ -84,23 +14,8 @@
 1141                	addi	sp,sp,-16 # 8000fff0 <main+0xfcfa>
 1141                	addi	sp,sp,-16 # 8000fff0 <main+0xfd1e>
 1141                	addi	sp,sp,-16 # 8000fff0 <main+0xffc4>
-11850e63          	beq	a0,s8,800001f0 <fibonacci+0x1e4>
-11f78663          	beq	a5,t6,800002c6 <fibonacci+0x2ba>
-13f68363          	beq	a3,t6,800002ea <fibonacci+0x2de>
-16968863          	beq	a3,s1,8000022e <fibonacci+0x222>
-16fd0463          	beq	s10,a5,8000021c <fibonacci+0x210>
 1800                	addi	s0,sp,48
-1a978863          	beq	a5,s1,80000246 <fibonacci+0x23a>
-1aeb0263          	beq	s6,a4,80000232 <fibonacci+0x226>
-1d5a0a63          	beq	s4,s5,80000248 <fibonacci+0x23c>
-1f3a8863          	beq	s5,s3,80000266 <fibonacci+0x25a>
-22990663          	beq	s2,s1,80000288 <fibonacci+0x27c>
-25b40663          	beq	s0,s11,800002aa <fibonacci+0x29e>
 2781                	sext.w	a5,a5
-28850063          	beq	a0,s0,800002b2 <fibonacci+0x2a6>
-2a950263          	beq	a0,s1,800002d6 <fibonacci+0x2ca>
-2aa75b63          	bge	a4,a0,800002c4 <fibonacci+0x2b8>
-2ca75d63          	bge	a4,a0,800002e8 <fibonacci+0x2dc>
 3379                	addiw	t1,t1,-2
 3479                	addiw	s0,s0,-2
 34f9                	addiw	s1,s1,-2
@@ -116,24 +31,6 @@
 3af9                	addiw	s5,s5,-2
 3bf9                	addiw	s7,s7,-2
 3e79                	addiw	t3,t3,-2
-4086843b          	subw	s0,a3,s0
-4087843b          	subw	s0,a5,s0
-40a3053b          	subw	a0,t1,a0
-40a5853b          	subw	a0,a1,a0
-40af053b          	subw	a0,t5,a0
-40d503bb          	subw	t2,a0,a3
-40d50cbb          	subw	s9,a0,a3
-40d50d3b          	subw	s10,a0,a3
-40e7873b          	subw	a4,a5,a4
-40f583bb          	subw	t2,a1,a5
-40f70b3b          	subw	s6,a4,a5
-40fa0dbb          	subw	s11,s4,a5
-40fa84bb          	subw	s1,s5,a5
-40fa89bb          	subw	s3,s5,a5
-40fb0a3b          	subw	s4,s6,a5
-41850c3b          	subw	s8,a0,s8
-41958cbb          	subw	s9,a1,s9
-41df0ebb          	subw	t4,t5,t4
 4281                	li	t0,0
 4401                	li	s0,0
 4501                	li	a0,0
@@ -364,24 +261,14 @@ c388                	sw	a0,0(a5)
 c398                	sw	a4,0(a5)
 c791                	beqz	a5,8000001c <factorial+0x10>
 cb89                	beqz	a5,8000002a <uart_puts+0x16>
-d05ff0ef          	jal	8000000c <fibonacci>
-d0bff0ef          	jal	8000000c <fibonacci>
-d11ff0ef          	jal	8000000c <fibonacci>
-d35ff0ef          	jal	8000000c <fibonacci>
-d69512e3          	bne	a0,s1,80000036 <fibonacci+0x2a>
-d88514e3          	bne	a0,s0,80000036 <fibonacci+0x2a>
-dec414e3          	bne	s0,a2,8000005a <fibonacci+0x4e>
 e022                	sd	s0,0(sp)
 e0ba                	sd	a4,64(sp)
 e0be                	sd	a5,64(sp)
-e0c913e3          	bne	s2,a2,80000058 <fibonacci+0x4c>
-e0ca9de3          	bne	s5,a2,80000072 <fibonacci+0x66>
 e119                	bnez	a0,80000012 <factorial+0x6>
 e142                	sd	a6,128(sp)
 e146                	sd	a7,128(sp)
 e1e2                	sd	s8,192(sp)
 e222                	sd	s0,256(sp)
-e2ca9ae3          	bne	s5,a2,80000070 <fibonacci+0x64>
 e399                	bnez	a5,80000026 <factorial+0x1a>
 e406                	sd	ra,8(sp)
 e426                	sd	s1,8(sp)
@@ -392,8 +279,6 @@ e546                	sd	a7,136(sp)
 e572                	sd	t3,136(sp)
 e5de                	sd	s7,200(sp)
 e606                	sd	ra,264(sp)
-e6c71ee3          	bne	a4,a2,8000008a <fibonacci+0x7e>
-e6c79ce3          	bne	a5,a2,80000092 <fibonacci+0x86>
 e822                	sd	s0,16(sp)
 e82a                	sd	a0,16(sp)
 e876                	sd	t4,16(sp)
@@ -401,10 +286,6 @@ e89a                	sd	t1,80(sp)
 e8f2                	sd	t3,80(sp)
 e976                	sd	t4,144(sp)
 e9da                	sd	s6,208(sp)
-eabff0ef          	jal	8000000c <fibonacci>
-eac91fe3          	bne	s2,a2,800000ba <fibonacci+0xae>
-eac99ee3          	bne	s3,a2,800000b0 <fibonacci+0xa4>
-eb5ff0ef          	jal	8000000c <fibonacci>
 ec06                	sd	ra,24(sp)
 ec1e                	sd	t2,24(sp)
 ec26                	sd	s1,24(sp)
@@ -412,15 +293,11 @@ ec9a                	sd	t1,88(sp)
 ecae                	sd	a1,88(sp)
 ed1e                	sd	t2,152(sp)
 edd6                	sd	s5,216(sp)
-eec417e3          	bne	s0,a2,800000ca <fibonacci+0xbe>
-eecd97e3          	bne	s11,a2,800000d4 <fibonacci+0xc8>
 f022                	sd	s0,32(sp)
 f076                	sd	t4,32(sp)
 f0b6                	sd	a3,96(sp)
 f0ba                	sd	a4,96(sp)
 f1d2                	sd	s4,224(sp)
-f3e71de3          	bne	a4,t5,80000100 <fibonacci+0xf4>
-f3e79de3          	bne	a5,t5,8000010a <fibonacci+0xfe>
 f3ed                	bnez	a5,80000048 <uart_puts+0xe>
 f406                	sd	ra,40(sp)
 f442                	sd	a6,40(sp)
@@ -431,92 +308,14 @@ f56e                	sd	s11,168(sp)
 f5ce                	sd	s3,232(sp)
 f82e                	sd	a1,48(sp)
 f842                	sd	a6,48(sp)
-f8c498e3          	bne	s1,a2,80000124 <fibonacci+0x118>
-f8c498e3          	bne	s1,a2,8000012e <fibonacci+0x122>
 f8fe                	sd	t6,112(sp)
 f96a                	sd	s10,176(sp)
 f9ca                	sd	s2,240(sp)
-fa1ff0ef          	jal	8000000c <fibonacci>
-fb341fe3          	bne	s0,s3,8000013a <fibonacci+0x12e>
-fb341fe3          	bne	s0,s3,80000144 <fibonacci+0x138>
-fb3ff0ef          	jal	8000000c <add>
-fb3ff0ef          	jal	8000000c <uart_putc>
-fb7ff0ef          	jal	8000003a <uart_puts>
-fb9ff0ef          	jal	8000000c <factorial>
 fbfd                	bnez	a5,8000001e <uart_puts+0xa>
 fbfd                	bnez	a5,8000003c <main+0x10>
 fc16                	sd	t0,56(sp)
-fc1ff0ef          	jal	8000000c <fibonacci>
-fc9ff0ef          	jal	8000000c <fibonacci>
 fcae                	sd	a1,120(sp)
 fcc2                	sd	a6,120(sp)
-fccc08e3          	beq	s8,a2,80000288 <fibonacci+0x27c>
-fccd89e3          	beq	s11,a2,80000266 <fibonacci+0x25a>
-fcf40fa3          	sb	a5,-33(s0)
-fcf42e23          	sw	a5,-36(s0)
-fd3ff0ef          	jal	8000000c <fibonacci>
 fd66                	sd	s9,184(sp)
 fda6                	sd	s1,248(sp)
-fdbff0ef          	jal	8000000c <factorial>
-fdbff0ef          	jal	8000000c <fibonacci>
-fdc42783          	lw	a5,-36(s0)
-fddff0ef          	jal	8000000c <factorial>
-fddff0ef          	jal	80000014 <uart_puts>
-fdf44783          	lbu	a5,-33(s0)
-fe5ff0ef          	jal	8000000c <fibonacci>
-fe842703          	lw	a4,-24(s0)
-fe842783          	lw	a5,-24(s0)
-fe843783          	ld	a5,-24(s0)
-fea43423          	sd	a0,-24(s0)
-fec42703          	lw	a4,-20(s0)
-fec42783          	lw	a5,-20(s0)
-fee43423          	sd	a4,-24(s0)
-fef42223          	sw	a5,-28(s0)
-fef42423          	sw	a5,-24(s0)
-fef42623          	sw	a5,-20(s0)
-fef43423          	sd	a5,-24(s0)
-ff1ff0ef          	jal	8000000c <factorial>
-ffc5041b          	addiw	s0,a0,-4
-ffc68b9b          	addiw	s7,a3,-4
-ffc7849b          	addiw	s1,a5,-4
-ffd50f1b          	addiw	t5,a0,-3
-ffd58f1b          	addiw	t5,a1,-3
-ffe37513          	andi	a0,t1,-2
-ffe4051b          	addiw	a0,s0,-2
-ffe47513          	andi	a0,s0,-2
-ffe47793          	andi	a5,s0,-2
-ffe4f793          	andi	a5,s1,-2
 ffe5                	bnez	a5,80000012 <factorial+0x6>
-ffe5049b          	addiw	s1,a0,-2
-ffe50c1b          	addiw	s8,a0,-2
-ffe50d9b          	addiw	s11,a0,-2
-ffe5841b          	addiw	s0,a1,-2
-ffe6891b          	addiw	s2,a3,-2
-ffe77413          	andi	s0,a4,-2
-ffe7899b          	addiw	s3,a5,-2
-ffe7f413          	andi	s0,a5,-2
-ffe7f693          	andi	a3,a5,-2
-ffe97793          	andi	a5,s2,-2
-ffe97c13          	andi	s8,s2,-2
-ffe9fc93          	andi	s9,s3,-2
-ffeaf713          	andi	a4,s5,-2
-ffeaf793          	andi	a5,s5,-2
-ffebf693          	andi	a3,s7,-2
-ffec7793          	andi	a5,s8,-2
-ffedf793          	andi	a5,s11,-2
-ffedfe93          	andi	t4,s11,-2
-ffee7513          	andi	a0,t3,-2
-ffef0f9b          	addiw	t6,t5,-2
-fff40a9b          	addiw	s5,s0,-1
-fff5069b          	addiw	a3,a0,-1
-fff5079b          	addiw	a5,a0,-1
-fff6851b          	addiw	a0,a3,-1
-fff7079b          	addiw	a5,a4,-1
-fff7859b          	addiw	a1,a5,-1
-fff7869b          	addiw	a3,a5,-1
-fff90b1b          	addiw	s6,s2,-1
-fffa871b          	addiw	a4,s5,-1
-fffa879b          	addiw	a5,s5,-1
-fffc079b          	addiw	a5,s8,-1
-fffc879b          	addiw	a5,s9,-1
-fffd879b          	addiw	a5,s11,-1
