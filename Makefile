@@ -1,5 +1,5 @@
 TOOLCHAIN = gcc -std=c11
-TOOLCHAIN_FLAGS = -fsanitize=address
+TOOLCHAIN_FLAGS = -I./include -fsanitize=address
 
 .PHONY: default
 default:
