@@ -50,6 +50,34 @@ static uint32_t program32[] = {
     /* ADDIW */ 0xFFFC079B,
     /* ADDIW */ 0xFFFC879B,
     /* ADDIW */ 0xFFFD879B,
+    /* ADDW */  0x0054043B,
+    /* ADDW */  0x005502BB,
+    /* ADDW */  0x0059093B,
+    /* ADDW */  0x005F02BB,
+    /* ADDW */  0x0094053B,
+    /* ADDW */  0x00A282BB,
+    /* ADDW */  0x00A4843B,
+    /* ADDW */  0x00A9093B,
+    /* ADDW */  0x00B282BB,
+    /* ADDW */  0x00DB0B3B,
+    /* ADDW */  0x00DC0C3B,
+    /* ADDW */  0x00FC0C3B,
+    /* ADDW */  0x0125053B,
+    /* ADDW */  0x0125093B,
+    /* ADDW */  0x012686BB,
+    /* ADDW */  0x0127853B,
+    /* ADDW */  0x012787BB,
+    /* ADDW */  0x0137853B,
+    /* ADDW */  0x0159093B,
+    /* ADDW */  0x015D0D3B,
+    /* ADDW */  0x0165053B,
+    /* ADDW */  0x016989BB,
+    /* ADDW */  0x016D0D3B,
+    /* ADDW */  0x018585BB,
+    /* ADDW */  0x01870B3B,
+    /* ADDW */  0x01878ABB,
+    /* ADDW */  0x01AA8ABB,
+    /* ADDW */  0x01AB0B3B,
     /* AUIPC */ 0x00000517,
     /* AUIPC */ 0x00000717,
     /* AUIPC */ 0x00010117,
@@ -86,6 +114,11 @@ void test_inst32() {
 
         if (OP_I_ADDIW(inst)) {
             printf("Matched ADDIW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_I_ADDW(inst)) {
+            printf("Matched ADDW instruction 0x%08X\n", inst);
             count++;
         }
 
