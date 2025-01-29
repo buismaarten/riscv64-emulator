@@ -449,6 +449,9 @@ Matched BEQ instruction 0x28850063
 Matched BEQ instruction 0x2A950263
 Matched BEQ instruction 0xFCCC08E3
 Matched BEQ instruction 0xFCCD89E3
+Matched BGE instruction 0x00895963
+Matched BGE instruction 0x2AA75B63
+Matched BGE instruction 0x2CA75D63
 Matched BNE instruction 0x02CC1C63
 Matched BNE instruction 0x02CD9B63
 Matched BNE instruction 0xD69512E3

@@ -118,6 +118,9 @@ static uint32_t program32[] = {
     /* BEQ */   0x2A950263,
     /* BEQ */   0xFCCC08E3,
     /* BEQ */   0xFCCD89E3,
+    /* BGE */   0x00895963,
+    /* BGE */   0x2AA75B63,
+    /* BGE */   0x2CA75D63,
     /* BNE */   0x02CC1C63,
     /* BNE */   0x02CD9B63,
     /* BNE */   0xD69512E3,
@@ -219,6 +222,11 @@ void test_inst32() {
 
         if (OP_BEQ(inst)) {
             printf("Matched BEQ instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_BGE(inst)) {
+            printf("Matched BGE instruction 0x%08X\n", inst);
             count++;
         }
 
