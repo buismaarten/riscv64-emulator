@@ -452,6 +452,8 @@ Matched BEQ instruction 0xFCCD89E3
 Matched BGE instruction 0x00895963
 Matched BGE instruction 0x2AA75B63
 Matched BGE instruction 0x2CA75D63
+Matched BLT instruction 0x00A7C763
+Matched BLT instruction 0x00E7C563
 Matched BNE instruction 0x02CC1C63
 Matched BNE instruction 0x02CD9B63
 Matched BNE instruction 0xD69512E3

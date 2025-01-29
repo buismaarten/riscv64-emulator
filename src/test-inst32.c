@@ -121,6 +121,8 @@ static uint32_t program32[] = {
     /* BGE */   0x00895963,
     /* BGE */   0x2AA75B63,
     /* BGE */   0x2CA75D63,
+    /* BLT */   0x00A7C763,
+    /* BLT */   0x00E7C563,
     /* BNE */   0x02CC1C63,
     /* BNE */   0x02CD9B63,
     /* BNE */   0xD69512E3,
@@ -251,6 +253,11 @@ void test_inst32() {
 
         if (OP_BGE(inst)) {
             printf("Matched BGE instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_BLT(inst)) {
+            printf("Matched BLT instruction 0x%08X\n", inst);
             count++;
         }
 
