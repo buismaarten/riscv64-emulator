@@ -98,6 +98,26 @@ static uint32_t program32[] = {
     /* AUIPC */ 0x00000517,
     /* AUIPC */ 0x00000717,
     /* AUIPC */ 0x00010117,
+    /* BEQ */   0x06C30A63,
+    /* BEQ */   0x06C58A63,
+    /* BEQ */   0x0DE70763,
+    /* BEQ */   0x0DE78763,
+    /* BEQ */   0x10BC8E63,
+    /* BEQ */   0x11850E63,
+    /* BEQ */   0x11F78663,
+    /* BEQ */   0x13F68363,
+    /* BEQ */   0x16968863,
+    /* BEQ */   0x16FD0463,
+    /* BEQ */   0x1A978863,
+    /* BEQ */   0x1AEB0263,
+    /* BEQ */   0x1D5A0A63,
+    /* BEQ */   0x1F3A8863,
+    /* BEQ */   0x22990663,
+    /* BEQ */   0x25B40663,
+    /* BEQ */   0x28850063,
+    /* BEQ */   0x2A950263,
+    /* BEQ */   0xFCCC08E3,
+    /* BEQ */   0xFCCD89E3,
     /* JAL */   0xD05FF0EF,
     /* JAL */   0xD0BFF0EF,
     /* JAL */   0xD11FF0EF,
@@ -146,6 +166,11 @@ void test_inst32() {
 
         if (OP_I_AUIPC(inst)) {
             printf("Matched AUIPC instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_I_BEQ(inst)) {
+            printf("Matched BEQ instruction 0x%08X\n", inst);
             count++;
         }
 

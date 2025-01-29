@@ -21,5 +21,9 @@
 #define OP_I_AUIPC(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010111)
 
+#define OP_I_BEQ(inst) \
+    (OP_MASK(inst, 0, 7) == 0b1100011 && \
+     OP_MASK(inst, 12, 3) == 0b000)
+
 #define OP_I_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)
