@@ -8,6 +8,7 @@ static uint32_t program32[] = {
     /* ADDI */  0x01850513,
     /* ADDI */  0x01C50513,
     /* ADDI */  0x02070713,
+    /* ADDI */  0x04800793,
     /* ADDIW */ 0x0014069B,
     /* ADDIW */ 0x0014879B,
     /* ADDIW */ 0x0017059B,
@@ -190,6 +191,7 @@ static uint32_t program32[] = {
     /* MULW */  0x02A7053B,
     /* MULW */  0x02A7853B,
     /* MULW */  0x02F707BB,
+    /* SB */    0xFCF40FA3,
     /* SD */    0xFEA43423,
     /* SD */    0xFEE43423,
     /* SD */    0xFEF43423,
@@ -294,6 +296,11 @@ void test_inst32() {
 
         if (OP_MULW(inst)) {
             printf("Matched MULW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SB(inst)) {
+            printf("Matched SB instruction 0x%08X\n", inst);
             count++;
         }
 

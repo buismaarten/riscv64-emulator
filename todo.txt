@@ -1,4 +1,2 @@
-0x04800793          li a5,72
 0x00010113          mv sp,sp
-0xFCF40FA3          sb a5,-33(s0)
 0x0007871B          sext.w a4,a5

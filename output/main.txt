@@ -339,6 +339,7 @@ Matched ADDI instruction 0x01650513
 Matched ADDI instruction 0x01850513
 Matched ADDI instruction 0x01C50513
 Matched ADDI instruction 0x02070713
+Matched ADDI instruction 0x04800793
 Matched ADDIW instruction 0x0014069B
 Matched ADDIW instruction 0x0014879B
 Matched ADDIW instruction 0x0017059B
@@ -521,6 +522,7 @@ Matched MULW instruction 0x0285053B
 Matched MULW instruction 0x02A7053B
 Matched MULW instruction 0x02A7853B
 Matched MULW instruction 0x02F707BB
+Matched SB instruction 0xFCF40FA3
 Matched SD instruction 0xFEA43423
 Matched SD instruction 0xFEE43423
 Matched SD instruction 0xFEF43423
