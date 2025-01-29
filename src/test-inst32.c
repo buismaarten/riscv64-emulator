@@ -3,12 +3,14 @@
 #include <stdio.h>
 
 static uint32_t program32[] = {
+    /* ADDI */  0x00010113,
     /* ADDI */  0x00178713,
     /* ADDI */  0x01650513,
     /* ADDI */  0x01850513,
     /* ADDI */  0x01C50513,
     /* ADDI */  0x02070713,
     /* ADDI */  0x04800793,
+    /* ADDIW */ 0x0007871B,
     /* ADDIW */ 0x0014069B,
     /* ADDIW */ 0x0014879B,
     /* ADDIW */ 0x0017059B,

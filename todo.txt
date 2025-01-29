@@ -1,2 +1,0 @@
-0x00010113          mv sp,sp
-0x0007871B          sext.w a4,a5
