@@ -118,6 +118,24 @@ static uint32_t program32[] = {
     /* BEQ */   0x2A950263,
     /* BEQ */   0xFCCC08E3,
     /* BEQ */   0xFCCD89E3,
+    /* BNE */   0x02CC1C63,
+    /* BNE */   0x02CD9B63,
+    /* BNE */   0xD69512E3,
+    /* BNE */   0xD88514E3,
+    /* BNE */   0xDEC414E3,
+    /* BNE */   0xE0C913E3,
+    /* BNE */   0xE0CA9DE3,
+    /* BNE */   0xE2CA9AE3,
+    /* BNE */   0xE6C71EE3,
+    /* BNE */   0xE6C79CE3,
+    /* BNE */   0xEAC91FE3,
+    /* BNE */   0xEAC99EE3,
+    /* BNE */   0xEEC417E3,
+    /* BNE */   0xEECD97E3,
+    /* BNE */   0xF3E71DE3,
+    /* BNE */   0xF3E79DE3,
+    /* BNE */   0xF8C498E3,
+    /* BNE */   0xFB341FE3,
     /* JAL */   0xD05FF0EF,
     /* JAL */   0xD0BFF0EF,
     /* JAL */   0xD11FF0EF,
@@ -171,6 +189,11 @@ void test_inst32() {
 
         if (OP_I_BEQ(inst)) {
             printf("Matched BEQ instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_I_BNE(inst)) {
+            printf("Matched BNE instruction 0x%08X\n", inst);
             count++;
         }
 

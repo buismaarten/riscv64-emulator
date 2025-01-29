@@ -25,5 +25,9 @@
     (OP_MASK(inst, 0, 7) == 0b1100011 && \
      OP_MASK(inst, 12, 3) == 0b000)
 
+#define OP_I_BNE(inst) \
+    (OP_MASK(inst, 0, 7) == 0b1100011 && \
+     OP_MASK(inst, 12, 3) == 0b001)
+
 #define OP_I_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)
