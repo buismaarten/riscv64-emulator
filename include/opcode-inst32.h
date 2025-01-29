@@ -12,7 +12,8 @@
 
 #define OP_I_ADDW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
-     OP_MASK(inst, 12, 3) == 0b000)
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
 
 #define OP_I_ANDI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010011 && \
@@ -31,3 +32,8 @@
 
 #define OP_I_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)
+
+#define OP_I_SUBW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0111011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0100000)

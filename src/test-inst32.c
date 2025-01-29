@@ -155,6 +155,24 @@ static uint32_t program32[] = {
     /* JAL */   0xFE5FF0EF,
     /* JAL */   0xFE9FF0EF,
     /* JAL */   0xFF1FF0EF,
+    /* SUBW */  0x4086843B,
+    /* SUBW */  0x4087843B,
+    /* SUBW */  0x40A3053B,
+    /* SUBW */  0x40A5853B,
+    /* SUBW */  0x40AF053B,
+    /* SUBW */  0x40D503BB,
+    /* SUBW */  0x40D50CBB,
+    /* SUBW */  0x40D50D3B,
+    /* SUBW */  0x40E7873B,
+    /* SUBW */  0x40F583BB,
+    /* SUBW */  0x40F70B3B,
+    /* SUBW */  0x40FA0DBB,
+    /* SUBW */  0x40FA84BB,
+    /* SUBW */  0x40FA89BB,
+    /* SUBW */  0x40FB0A3B,
+    /* SUBW */  0x41850C3B,
+    /* SUBW */  0x41958CBB,
+    /* SUBW */  0x41DF0EBB,
 };
 
 void test_inst32() {
@@ -199,6 +217,11 @@ void test_inst32() {
 
         if (OP_I_JAL(inst)) {
             printf("Matched JAL instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_I_SUBW(inst)) {
+            printf("Matched SUBW instruction 0x%08X\n", inst);
             count++;
         }
 
