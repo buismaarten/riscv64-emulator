@@ -7,6 +7,11 @@
      OP_MASK(inst, 2, 5) == 0b00100 && \
      OP_MASK(inst, 12, 3) == 0b000)
 
+#define OP_I_ADDIW(inst) \
+    (OP_MASK(inst, 0, 2) == 0b11 && \
+     OP_MASK(inst, 2, 5) == 0b00110 && \
+     OP_MASK(inst, 12, 3) == 0b000)
+
 #define OP_I_AUIPC(inst) \
     (OP_MASK(inst, 0, 2) == 0b11 && \
      OP_MASK(inst, 2, 5) == 0b00101)
