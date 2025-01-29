@@ -2,38 +2,38 @@
 
 #define OP_MASK(inst, s, w)  (((inst) >> (s)) & ((1U << (w)) - 1))
 
-#define OP_I_ADDI(inst) \
+#define OP_ADDI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010011 && \
      OP_MASK(inst, 12, 3) == 0b000)
 
-#define OP_I_ADDIW(inst) \
+#define OP_ADDIW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0011011 && \
      OP_MASK(inst, 12, 3) == 0b000)
 
-#define OP_I_ADDW(inst) \
+#define OP_ADDW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
      OP_MASK(inst, 25, 7) == 0b0000000)
 
-#define OP_I_ANDI(inst) \
+#define OP_ANDI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010011 && \
      OP_MASK(inst, 12, 3) == 0b111)
 
-#define OP_I_AUIPC(inst) \
+#define OP_AUIPC(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010111)
 
-#define OP_I_BEQ(inst) \
+#define OP_BEQ(inst) \
     (OP_MASK(inst, 0, 7) == 0b1100011 && \
      OP_MASK(inst, 12, 3) == 0b000)
 
-#define OP_I_BNE(inst) \
+#define OP_BNE(inst) \
     (OP_MASK(inst, 0, 7) == 0b1100011 && \
      OP_MASK(inst, 12, 3) == 0b001)
 
-#define OP_I_JAL(inst) \
+#define OP_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)
 
-#define OP_I_SUBW(inst) \
+#define OP_SUBW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
      OP_MASK(inst, 25, 7) == 0b0100000)

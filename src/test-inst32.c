@@ -180,47 +180,47 @@ void test_inst32() {
         uint32_t inst = program32[i];
         uint32_t count = 0;
 
-        if (OP_I_ADDI(inst)) {
+        if (OP_ADDI(inst)) {
             printf("Matched ADDI instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_ADDIW(inst)) {
+        if (OP_ADDIW(inst)) {
             printf("Matched ADDIW instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_ADDW(inst)) {
+        if (OP_ADDW(inst)) {
             printf("Matched ADDW instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_ANDI(inst)) {
+        if (OP_ANDI(inst)) {
             printf("Matched ANDI instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_AUIPC(inst)) {
+        if (OP_AUIPC(inst)) {
             printf("Matched AUIPC instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_BEQ(inst)) {
+        if (OP_BEQ(inst)) {
             printf("Matched BEQ instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_BNE(inst)) {
+        if (OP_BNE(inst)) {
             printf("Matched BNE instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_JAL(inst)) {
+        if (OP_JAL(inst)) {
             printf("Matched JAL instruction 0x%08X\n", inst);
             count++;
         }
 
-        if (OP_I_SUBW(inst)) {
+        if (OP_SUBW(inst)) {
             printf("Matched SUBW instruction 0x%08X\n", inst);
             count++;
         }
