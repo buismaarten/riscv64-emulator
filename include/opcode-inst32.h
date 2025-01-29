@@ -37,6 +37,10 @@
 #define OP_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)
 
+#define OP_LBU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b00000011 && \
+     OP_MASK(inst, 12, 3) == 0b100)
+
 #define OP_SUBW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \

@@ -170,6 +170,11 @@ static uint32_t program32[] = {
     /* JAL */   0xFE5FF0EF,
     /* JAL */   0xFE9FF0EF,
     /* JAL */   0xFF1FF0EF,
+    /* LBU */   0x00054783,
+    /* LBU */   0x0007C783,
+    /* LBU */   0x00154783,
+    /* LBU */   0x00174783,
+    /* LBU */   0xFDF44783,
     /* SUBW */  0x4086843B,
     /* SUBW */  0x4087843B,
     /* SUBW */  0x40A3053B,
@@ -237,6 +242,11 @@ void test_inst32() {
 
         if (OP_JAL(inst)) {
             printf("Matched JAL instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_LBU(inst)) {
+            printf("Matched LBU instruction 0x%08X\n", inst);
             count++;
         }
 
