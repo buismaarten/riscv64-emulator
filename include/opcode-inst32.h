@@ -11,6 +11,6 @@
     (OP_MASK(inst, 0, 2) == 0b11 && \
      OP_MASK(inst, 2, 5) == 0b00101)
 
-// #define OP_I_JAL(inst) \
-//     (OP_MASK(inst, 0, 2) == 0b11 && \
-//      OP_MASK(inst, 2, 5) == 0b11011)
+#define OP_I_JAL(inst) \
+    (OP_MASK(inst, 0, 2) == 0b11 && \
+     OP_MASK(inst, 2, 5) == 0b11011)

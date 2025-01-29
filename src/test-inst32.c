@@ -11,6 +11,26 @@ static uint32_t program32[] = {
     /* AUIPC */ 0x00000517,
     /* AUIPC */ 0x00000717,
     /* AUIPC */ 0x00010117,
+    /* JAL */   0xD05FF0EF,
+    /* JAL */   0xD0BFF0EF,
+    /* JAL */   0xD11FF0EF,
+    /* JAL */   0xD35FF0EF,
+    /* JAL */   0xEABFF0EF,
+    /* JAL */   0xEB5FF0EF,
+    /* JAL */   0xFA1FF0EF,
+    /* JAL */   0xFB3FF0EF,
+    /* JAL */   0xFB7FF0EF,
+    /* JAL */   0xFB9FF0EF,
+    /* JAL */   0xFC1FF0EF,
+    /* JAL */   0xFC9FF0EF,
+    /* JAL */   0xFD3FF0EF,
+    /* JAL */   0xFDBFF0EF,
+    /* JAL */   0xFDDFF0EF,
+    /* JAL */   0xFDDFF0EF,
+    /* JAL */   0xFE1FF0EF,
+    /* JAL */   0xFE5FF0EF,
+    /* JAL */   0xFE9FF0EF,
+    /* JAL */   0xFF1FF0EF,
 };
 
 void test_inst32() {
@@ -25,6 +45,11 @@ void test_inst32() {
 
         if (OP_I_AUIPC(inst)) {
             printf("Matched AUIPC instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_I_JAL(inst)) {
+            printf("Matched JAL instruction 0x%08X\n", inst);
             count++;
         }
 
