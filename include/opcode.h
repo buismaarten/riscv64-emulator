@@ -77,12 +77,6 @@
     (OP_C_OPCODE(inst) == 0b10 && \
      OP_C_FUNCT3(inst) == 0b001)
 
-#define OP_C_FLW(inst) \
-    (0) // TODO
-
-#define OP_C_FLWSP(inst) \
-    (0) // TODO
-
 #define OP_C_FSD(inst) \
     (OP_C_OPCODE(inst) == 0b00 && \
      OP_C_FUNCT3(inst) == 0b101)
@@ -90,12 +84,6 @@
 #define OP_C_FSDSP(inst) \
     (OP_C_OPCODE(inst) == 0b10 && \
      OP_C_FUNCT3(inst) == 0b101)
-
-#define OP_C_FSW(inst) \
-    (0) // TODO
-
-#define OP_C_FSWSP(inst) \
-    (0) // TODO
 
 #define OP_C_J(inst) \
     (OP_C_OPCODE(inst) == 0b01 && \
