@@ -2,9 +2,6 @@
 0x00E7C563          blt a5,a4,80000030
 0xFE843783          ld a5,-24(s0)
 0x04800793          li a5,72
-0x100006B7          lui a3,0x10000
-0x10000737          lui a4,0x10000
-0x100007B7          lui a5,0x10000
 0x00010113          mv sp,sp
 0xFCF40FA3          sb a5,-33(s0)
 0xFEA43423          sd a0,-24(s0)

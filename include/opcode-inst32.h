@@ -41,6 +41,9 @@
     (OP_MASK(inst, 0, 7) == 0b00000011 && \
      OP_MASK(inst, 12, 3) == 0b100)
 
+#define OP_LUI(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110111)
+
 #define OP_LW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0000011 && \
      OP_MASK(inst, 12, 3) == 0b010)
