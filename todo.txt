@@ -8,7 +8,3 @@
 0xFEE43423          sd a4,-24(s0)
 0xFEF43423          sd a5,-24(s0)
 0x0007871B          sext.w a4,a5
-0xFEF42623          sw a5,-20(s0)
-0xFEF42423          sw a5,-24(s0)
-0xFEF42223          sw a5,-28(s0)
-0xFCF42E23          sw a5,-36(s0)

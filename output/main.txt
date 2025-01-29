@@ -536,3 +536,7 @@ Matched SUBW instruction 0x40FB0A3B
 Matched SUBW instruction 0x41850C3B
 Matched SUBW instruction 0x41958CBB
 Matched SUBW instruction 0x41DF0EBB
+Matched SW instruction 0xFCF42E23
+Matched SW instruction 0xFEF42223
+Matched SW instruction 0xFEF42423
+Matched SW instruction 0xFEF42623

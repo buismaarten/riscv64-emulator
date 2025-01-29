@@ -57,3 +57,7 @@
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
      OP_MASK(inst, 25, 7) == 0b0100000)
+
+#define OP_SW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0100011 && \
+     OP_MASK(inst, 12, 3) == 0b010)

@@ -205,6 +205,10 @@ static uint32_t program32[] = {
     /* SUBW */  0x41850C3B,
     /* SUBW */  0x41958CBB,
     /* SUBW */  0x41DF0EBB,
+    /* SW */    0xFCF42E23,
+    /* SW */    0xFEF42223,
+    /* SW */    0xFEF42423,
+    /* SW */    0xFEF42623,
 };
 
 void test_inst32() {
@@ -279,6 +283,11 @@ void test_inst32() {
 
         if (OP_SUBW(inst)) {
             printf("Matched SUBW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SW(inst)) {
+            printf("Matched SW instruction 0x%08X\n", inst);
             count++;
         }
 
