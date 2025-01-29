@@ -508,6 +508,7 @@ Matched LBU instruction 0x0007C783
 Matched LBU instruction 0x00154783
 Matched LBU instruction 0x00174783
 Matched LBU instruction 0xFDF44783
+Matched LD instruction 0xFE843783
 Matched LUI instruction 0x100006B7
 Matched LUI instruction 0x10000737
 Matched LUI instruction 0x100007B7
