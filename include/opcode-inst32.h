@@ -41,6 +41,10 @@
     (OP_MASK(inst, 0, 7) == 0b00000011 && \
      OP_MASK(inst, 12, 3) == 0b100)
 
+#define OP_LW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0000011 && \
+     OP_MASK(inst, 12, 3) == 0b010)
+
 #define OP_MULW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
