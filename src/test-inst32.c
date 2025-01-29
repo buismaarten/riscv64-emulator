@@ -175,6 +175,10 @@ static uint32_t program32[] = {
     /* LBU */   0x00154783,
     /* LBU */   0x00174783,
     /* LBU */   0xFDF44783,
+    /* MULW */  0x0285053B,
+    /* MULW */  0x02A7053B,
+    /* MULW */  0x02A7853B,
+    /* MULW */  0x02F707BB,
     /* SUBW */  0x4086843B,
     /* SUBW */  0x4087843B,
     /* SUBW */  0x40A3053B,
@@ -247,6 +251,11 @@ void test_inst32() {
 
         if (OP_LBU(inst)) {
             printf("Matched LBU instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_MULW(inst)) {
+            printf("Matched MULW instruction 0x%08X\n", inst);
             count++;
         }
 

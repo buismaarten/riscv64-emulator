@@ -506,6 +506,10 @@ Matched LBU instruction 0x0007C783
 Matched LBU instruction 0x00154783
 Matched LBU instruction 0x00174783
 Matched LBU instruction 0xFDF44783
+Matched MULW instruction 0x0285053B
+Matched MULW instruction 0x02A7053B
+Matched MULW instruction 0x02A7853B
+Matched MULW instruction 0x02F707BB
 Matched SUBW instruction 0x4086843B
 Matched SUBW instruction 0x4087843B
 Matched SUBW instruction 0x40A3053B
