@@ -334,3 +334,6 @@ Matched C.SW instruction 0xC388
 Matched C.SW instruction 0xC398
 Matched C.SWSP instruction 0xC286
 Matched C.XOR instruction 0x8FB9
+Matched AUIPC instruction 0x00000517
+Matched AUIPC instruction 0x00000717
+Matched AUIPC instruction 0x00010117

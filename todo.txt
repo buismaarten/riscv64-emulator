@@ -90,9 +90,6 @@
 0xFFE97C13          andi s8,s2,-2
 0xFFE9FC93          andi s9,s3,-2
 0xFFEDFE93          andi t4,s11,-2
-0x00000517          auipc a0,0x0
-0x00000717          auipc a4,0x0
-0x00010117          auipc sp,0x10
 0x28850063          beq a0,s0,800002b2
 0x2A950263          beq a0,s1,800002d6
 0x11850E63          beq a0,s8,800001f0
