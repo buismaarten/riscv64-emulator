@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 static uint16_t program16[] = {
+    /* C.ADD */      0x97BA,
     /* C.ADD */      0x9852,
     /* C.ADDI */     0x0141,
     /* C.ADDI */     0x0505,

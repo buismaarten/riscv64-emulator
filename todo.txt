@@ -1,4 +1,3 @@
-add
 amoadd.d
 amoadd.w
 amoand.d
