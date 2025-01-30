@@ -1,9 +1,6 @@
 0x00000013           nop
-0x00000517           auipc a0,0x0
 0x00000793           li a5,0
 0x00008067           ret
-0x00010113           mv sp,sp
-0x00010117           auipc sp,0x10
 0x00013403           ld s0,0(sp)
 0x00050793           mv a5,a0
 0x00058713           mv a4,a1
@@ -12,14 +9,11 @@
 0x00078493           mv s1,a5
 0x00078513           mv a0,a5
 0x00078713           mv a4,a5
-0x0007871B           sext.w a4,a5
 0x0007879B           sext.w a5,a5
-0x00079663           bnez a5,80000038 <factorial+0x2c>
-0x0007C783           lbu a5,0(a5)
+0x00079663           bnez a5,80000038
 0x00100793           li a5,1
 0x00113423           sd ra,8(sp)
 0x00113C23           sd ra,24(sp)
-0x00178713           addi a4,a5,1
 0x00500513           li a0,5
 0x00500793           li a5,5
 0x00700793           li a5,7
@@ -27,8 +21,8 @@
 0x00813083           ld ra,8(sp)
 0x00813823           sd s0,16(sp)
 0x00913C23           sd s1,24(sp)
-0x00E7A023           sw a4,0(a5) # 10000000 <_start-0x70000000>
-0x00E7C663           blt a5,a4,80000040 <fibonacci+0x34>
+0x00E7A023           sw a4,0(a5)
+0x00E7C663           blt a5,a4,80000040
 0x00F487BB           addw a5,s1,a5
 0x00F707BB           addw a5,a4,a5
 0x01010113           addi sp,sp,16
@@ -36,53 +30,33 @@
 0x01013403           ld s0,16(sp)
 0x01813083           ld ra,24(sp)
 0x01813483           ld s1,24(sp)
-0x01C0006F           j 80000080 <uart_puts+0x30>
+0x01C0006F           j 80000080
 0x02010113           addi sp,sp,32
 0x02010413           addi s0,sp,32
 0x02013403           ld s0,32(sp)
 0x02113423           sd ra,40(sp)
-0x02450513           addi a0,a0,36 # 800000d8 <main+0x34>
-0x0280006F           j 8000005c <factorial+0x50>
+0x02450513           addi a0,a0,36
+0x0280006F           j 8000005c
 0x02813023           sd s0,32(sp)
 0x02813083           ld ra,40(sp)
-0x02F707BB           mulw a5,a4,a5
 0x03010113           addi sp,sp,48
 0x03010413           addi s0,sp,48
-0x0400006F           j 8000007c <fibonacci+0x70>
-0x0500006F           j 80000058 <main>
-0x0680006F           j 80000070 <main>
-0x08C0006F           j 80000094 <main>
-0x09C0006F           j 800000a4 <main>
-0x100007B7           lui a5,0x10000
-0xF65FF0EF           jal 8000000c <fibonacci>
-0xF85FF0EF           jal 8000000c <add>
-0xF89FF0EF           jal 8000000c <factorial>
-0xF91FF0EF           jal 8000000c <uart_putc>
-0xF95FF0EF           jal 80000050 <uart_puts>
-0xFA1FF0EF           jal 8000000c <fibonacci>
-0xFBDFF0EF           jal 8000000c <fibonacci>
-0xFC5FF0EF           jal 8000000c <factorial>
-0xFCF40FA3           sb a5,-33(s0)
-0xFCF42E23           sw a5,-36(s0)
-0xFD010113           addi sp,sp,-48 # 8000ffd0 <main+0xff2c>
-0xFD010113           addi sp,sp,-48 # 8000ffd0 <main+0xff3c>
-0xFDC42783           lw a5,-36(s0)
-0xFDF44783           lbu a5,-33(s0)
+0x0400006F           j 8000007c
+0x0500006F           j 80000058
+0x0680006F           j 80000070
+0x08C0006F           j 80000094
+0x09C0006F           j 800000a4
+0xF65FF0EF           jal 8000000c
+0xF85FF0EF           jal 8000000c
+0xF89FF0EF           jal 8000000c
+0xF91FF0EF           jal 8000000c
+0xF95FF0EF           jal 80000050
+0xFA1FF0EF           jal 8000000c
+0xFBDFF0EF           jal 8000000c
+0xFC5FF0EF           jal 8000000c
+0xFD010113           addi sp,sp,-48
 0xFE010113           addi sp,sp,-32
-0xFE010113           addi sp,sp,-32 # 8000ffe0 <main+0xff70>
-0xFE010113           addi sp,sp,-32 # 8000ffe0 <main+0xff88>
-0xFE0790E3           bnez a5,80000068 <uart_puts+0x18>
-0xFE842703           lw a4,-24(s0)
-0xFE842783           lw a5,-24(s0)
-0xFE843783           ld a5,-24(s0)
-0xFEA43423           sd a0,-24(s0)
-0xFEC42703           lw a4,-20(s0)
-0xFEC42783           lw a5,-20(s0)
-0xFEE43423           sd a4,-24(s0)
-0xFEF42223           sw a5,-28(s0)
-0xFEF42423           sw a5,-24(s0)
-0xFEF42623           sw a5,-20(s0)
-0xFEF43423           sd a5,-24(s0)
+0xFE0790E3           bnez a5,80000068
 0xFF010113           addi sp,sp,-16
 0xFFE7879B           addiw a5,a5,-2
 0xFFF7879B           addiw a5,a5,-1
