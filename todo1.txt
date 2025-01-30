@@ -60,5 +60,4 @@ sub
 ul
 uret
 wfi
-xor
 xori

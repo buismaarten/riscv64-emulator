@@ -85,3 +85,8 @@
 #define OP_SW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b010)
+
+#define OP_XOR(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b100 && \
+     OP_MASK(inst, 27, 5) == 0b00000)
