@@ -217,11 +217,3 @@
 0x40D503BB                  subw t2,a0,a3
 0x40F583BB                  subw t2,a1,a5
 0x41DF0EBB                  subw t4,t5,t4
-0x00A7A023                  sw a0,0(a5)
-0x00E7A023                  sw a4,0(a5)
-0xFEF42623                  sw a5,-20(s0)
-0xFEF42423                  sw a5,-24(s0)
-0xFEF42223                  sw a5,-28(s0)
-0xFCF42E23                  sw a5,-36(s0)
-0x00F6A023                  sw a5,0(a3)
-0x00F72023                  sw a5,0(a4)
