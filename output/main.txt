@@ -335,6 +335,7 @@ Matched C.SW instruction 0xC388
 Matched C.SW instruction 0xC398
 Matched C.SWSP instruction 0xC286
 Matched C.XOR instruction 0x8FB9
+Matched ADDI instruction 0x00000013
 Matched ADDI instruction 0x00000293
 Matched ADDI instruction 0x00000413
 Matched ADDI instruction 0x00000493
