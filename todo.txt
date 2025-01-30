@@ -165,7 +165,6 @@ fsub.h
 fsub.q
 fsub.s
 fsw
-jalr
 lb
 ld
 lh
