@@ -23,7 +23,6 @@ fsh
 fsq
 fsw
 lb
-ld
 lh
 lhu
 lwu
