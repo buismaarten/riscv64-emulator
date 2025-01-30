@@ -504,6 +504,7 @@ Matched ADDI instruction 0xFD010113
 Matched ADDI instruction 0xFE010113
 Matched ADDI instruction 0xFF010113
 Matched ADDIW instruction 0x0007871B
+Matched ADDIW instruction 0x0007879B
 Matched ADDIW instruction 0x0014069B
 Matched ADDIW instruction 0x0014879B
 Matched ADDIW instruction 0x0017059B

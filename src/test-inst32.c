@@ -172,6 +172,7 @@ static uint32_t program32[] = {
     /* ADDI */  0xFE010113,
     /* ADDI */  0xFF010113,
     /* ADDIW */ 0x0007871B,
+    /* ADDIW */ 0x0007879B,
     /* ADDIW */ 0x0014069B,
     /* ADDIW */ 0x0014879B,
     /* ADDIW */ 0x0017059B,
