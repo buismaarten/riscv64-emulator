@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 static uint32_t program32[] = {
+    /* ADD */   0x00E787B3,
     /* ADDI */  0x00000013,
     /* ADDI */  0x00000293,
     /* ADDI */  0x00000413,
@@ -624,6 +625,11 @@ void test_inst32() {
     for (uint32_t i = 0; i < sizeof(program32) / sizeof(program32[0]); i++) {
         uint32_t inst = program32[i];
         uint32_t count = 0;
+
+        if (OP_ADD(inst)) {
+            printf("Matched ADD instruction 0x%08X\n", inst);
+            count++;
+        }
 
         if (OP_ADDI(inst)) {
             printf("Matched ADDI instruction 0x%08X\n", inst);
