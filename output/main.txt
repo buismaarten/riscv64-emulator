@@ -789,6 +789,7 @@ Matched JAL instruction 0xFE9FF0EF
 Matched JAL instruction 0xFEDFF06F
 Matched JAL instruction 0xFF1FF0EF
 Matched JAL instruction 0xFF5FF06F
+Matched JALR instruction 0x00008067
 Matched LBU instruction 0x00054783
 Matched LBU instruction 0x0007C783
 Matched LBU instruction 0x00154783
