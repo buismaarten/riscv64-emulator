@@ -385,6 +385,8 @@ static uint32_t program32[] = {
     /* BNE */   0xFE0790E3,
     /* BNE */   0xFE0798E3,
     /* BNE */   0xFE079AE3,
+    /* DIVUW */ 0x02F757BB,
+    /* DIVW */  0x02F747BB,
     /* JAL */   0x0080006F,
     /* JAL */   0x00C0006F,
     /* JAL */   0x0100006F,
@@ -680,6 +682,16 @@ void test_inst32() {
 
         if (OP_BNE(inst)) {
             printf("Matched BNE instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_DIVUW(inst)) {
+            printf("Matched DIVUW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_DIVW(inst)) {
+            printf("Matched DIVW instruction 0x%08X\n", inst);
             count++;
         }
 

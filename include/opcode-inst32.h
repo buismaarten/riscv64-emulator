@@ -47,6 +47,16 @@
     (OP_MASK(inst, 0, 7) == 0b1100011 && \
      OP_MASK(inst, 12, 3) == 0b001)
 
+#define OP_DIVUW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0111011 && \
+     OP_MASK(inst, 12, 3) == 0b101 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
+#define OP_DIVW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0111011 && \
+     OP_MASK(inst, 12, 3) == 0b100 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
 #define OP_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)
 
