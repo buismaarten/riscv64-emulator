@@ -1,3 +1,6 @@
+0x02F757BB           divuw a5,a4,a5
+0x02F747BB           divw a5,a4,a5
+
 bgeu
 bltu
 csrrc
