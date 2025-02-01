@@ -541,6 +541,10 @@ static uint32_t program32[] = {
     /* MULW */  0x02A7853B,
     /* MULW */  0x02F707BB,
     /* OR */    0x00F767B3,
+    /* REM */   0x02E7E7B3,
+    /* REMU */  0x02E7F7B3,
+    /* REMUW */ 0x02F777BB,
+    /* REMW */  0x02F767BB,
     /* SB */    0xFCF40FA3,
     /* SD */    0x00113423,
     /* SD */    0x00113C23,
@@ -745,6 +749,26 @@ void test_inst32() {
 
         if (OP_OR(inst)) {
             printf("Matched OR instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_REM(inst)) {
+            printf("Matched REM instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_REMU(inst)) {
+            printf("Matched REMU instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_REMUW(inst)) {
+            printf("Matched REMUW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_REMW(inst)) {
+            printf("Matched REMW instruction 0x%08X\n", inst);
             count++;
         }
 

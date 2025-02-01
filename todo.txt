@@ -41,10 +41,6 @@ mulhsu
 mulhu
 ori
 pause
-rem
-remu
-remuw
-remw
 sc.d
 sc.w
 sfence.vma

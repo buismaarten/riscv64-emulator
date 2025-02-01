@@ -99,6 +99,26 @@
      OP_MASK(inst, 12, 3) == 0b110 && \
      OP_MASK(inst, 25, 7) == 0b0000000)
 
+#define OP_REM(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b110 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
+#define OP_REMU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b111 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
+#define OP_REMUW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0111011 && \
+     OP_MASK(inst, 12, 3) == 0b111 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
+#define OP_REMW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0111011 && \
+     OP_MASK(inst, 12, 3) == 0b110 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
 #define OP_SB(inst) \
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b000)
