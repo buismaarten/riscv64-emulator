@@ -6,8 +6,6 @@ csrrs
 csrrsi
 csrrw
 csrrwi
-div
-divu
 ebreak
 ecall
 fence

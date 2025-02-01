@@ -717,6 +717,8 @@ Matched BNE instruction 0xFB341FE3
 Matched BNE instruction 0xFE0790E3
 Matched BNE instruction 0xFE0798E3
 Matched BNE instruction 0xFE079AE3
+Matched DIV instruction 0x02F747B3
+Matched DIVU instruction 0x02F757B3
 Matched DIVUW instruction 0x02F757BB
 Matched DIVW instruction 0x02F747BB
 Matched JAL instruction 0x0080006F
