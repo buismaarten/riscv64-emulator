@@ -94,6 +94,11 @@
      OP_MASK(inst, 12, 3) == 0b000 && \
      OP_MASK(inst, 25, 7) == 0b0000001)
 
+#define OP_OR(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b110 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
 #define OP_SB(inst) \
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b000)

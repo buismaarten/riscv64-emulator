@@ -540,6 +540,7 @@ static uint32_t program32[] = {
     /* MULW */  0x02A7053B,
     /* MULW */  0x02A7853B,
     /* MULW */  0x02F707BB,
+    /* OR */    0x00F767B3,
     /* SB */    0xFCF40FA3,
     /* SD */    0x00113423,
     /* SD */    0x00113C23,
@@ -739,6 +740,11 @@ void test_inst32() {
 
         if (OP_MULW(inst)) {
             printf("Matched MULW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_OR(inst)) {
+            printf("Matched OR instruction 0x%08X\n", inst);
             count++;
         }
 

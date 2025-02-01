@@ -39,7 +39,6 @@ mul
 mulh
 mulhsu
 mulhu
-or
 ori
 pause
 rem

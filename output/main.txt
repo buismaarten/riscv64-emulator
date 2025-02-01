@@ -872,6 +872,7 @@ Matched MULW instruction 0x0285053B
 Matched MULW instruction 0x02A7053B
 Matched MULW instruction 0x02A7853B
 Matched MULW instruction 0x02F707BB
+Matched OR instruction 0x00F767B3
 Matched SB instruction 0xFCF40FA3
 Matched SD instruction 0x00113423
 Matched SD instruction 0x00113C23
