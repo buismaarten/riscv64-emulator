@@ -45,10 +45,6 @@ sc.d
 sc.w
 sfence.vma
 sh
-sll
-slli
-slliw
-sllw
 slt
 slti
 sltiu

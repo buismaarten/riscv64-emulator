@@ -127,6 +127,26 @@
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b011)
 
+#define OP_SLL(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
+#define OP_SLLI(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
+#define OP_SLLIW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0011011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
+#define OP_SLLW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0111011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
 #define OP_SUBW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \

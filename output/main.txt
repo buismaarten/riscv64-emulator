@@ -934,6 +934,10 @@ Matched SD instruction 0x10813023
 Matched SD instruction 0xFEA43423
 Matched SD instruction 0xFEE43423
 Matched SD instruction 0xFEF43423
+Matched SLL instruction 0x00E797B3
+Matched SLLI instruction 0x00579793
+Matched SLLIW instruction 0x0057979B
+Matched SLLW instruction 0x00F717BB
 Matched SUBW instruction 0x4086843B
 Matched SUBW instruction 0x4087843B
 Matched SUBW instruction 0x40A3053B
