@@ -54,10 +54,6 @@ srai
 sraiw
 sraw
 sret
-srl
-srli
-srliw
-srlw
 sub
 uret
 wfi

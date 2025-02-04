@@ -147,6 +147,26 @@
      OP_MASK(inst, 12, 3) == 0b001 && \
      OP_MASK(inst, 25, 7) == 0b0000000)
 
+#define OP_SRL(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b101 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
+#define OP_SRLI(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0010011 && \
+     OP_MASK(inst, 12, 3) == 0b101 && \
+     OP_MASK(inst, 28, 4) == 0b000000)
+
+#define OP_SRLIW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0011011 && \
+     OP_MASK(inst, 12, 3) == 0b101 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
+#define OP_SRLW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0111011 && \
+     OP_MASK(inst, 12, 3) == 0b101 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
 #define OP_SUBW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
