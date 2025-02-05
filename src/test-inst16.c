@@ -541,7 +541,7 @@ void test_inst16() {
             printf("Error: no match for instruction 0x%04X\n", inst);
         }
 
-        if (count >= 2) {
+        if (count > 1) {
             printf("Error: multiple matches for instruction 0x%04X\n", inst);
         }
     }
