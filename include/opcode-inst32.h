@@ -147,6 +147,24 @@
      OP_MASK(inst, 12, 3) == 0b001 && \
      OP_MASK(inst, 25, 7) == 0b0000000)
 
+#define OP_SLT(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
+#define OP_SLTI(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0010011 && \
+     OP_MASK(inst, 12, 3) == 0b010)
+
+#define OP_SLTIU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0010011 && \
+     OP_MASK(inst, 12, 3) == 0b011)
+
+#define OP_SLTU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
 #define OP_SRA(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b101 && \
