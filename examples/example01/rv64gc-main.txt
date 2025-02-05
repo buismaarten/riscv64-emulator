@@ -1,5 +1,5 @@
 
-./example01/rv64imac-main.elf:     file format elf64-littleriscv
+./example01/rv64gc-main.elf:     file format elf64-littleriscv
 
 
 Disassembly of section .text:
