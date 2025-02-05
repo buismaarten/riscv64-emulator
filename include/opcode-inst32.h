@@ -135,7 +135,7 @@
 #define OP_SLLI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010011 && \
      OP_MASK(inst, 12, 3) == 0b001 && \
-     OP_MASK(inst, 25, 7) == 0b0000000)
+     OP_MASK(inst, 26, 6) == 0b000000)
 
 #define OP_SLLIW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0011011 && \
