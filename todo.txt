@@ -49,10 +49,6 @@ slt
 slti
 sltiu
 sltu
-sra
-srai
-sraiw
-sraw
 sret
 sub
 uret

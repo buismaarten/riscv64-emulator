@@ -938,6 +938,10 @@ Matched SLL instruction 0x00E797B3
 Matched SLLI instruction 0x00579793
 Matched SLLIW instruction 0x0057979B
 Matched SLLW instruction 0x00F717BB
+Matched SRA instruction 0x40F757B3
+Matched SRAI instruction 0x4037D793
+Matched SRAIW instruction 0x4057D79B
+Matched SRAW instruction 0x40F757BB
 Matched SRL instruction 0x00E6D633
 Matched SRLI instruction 0x0056D793
 Matched SRLIW instruction 0x0056D79B

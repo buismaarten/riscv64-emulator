@@ -606,6 +606,10 @@ static uint32_t program32[] = {
     /* SLLI */  0x00579793,
     /* SLLIW */ 0x0057979B,
     /* SLLW */  0x00F717BB,
+    /* SRA */   0x40F757B3,
+    /* SRAI */  0x4037D793,
+    /* SRAIW */ 0x4057D79B,
+    /* SRAW */  0x40F757BB,
     /* SRL */   0x00E6D633,
     /* SRLI */  0x0056D793,
     /* SRLIW */ 0x0056D79B,
@@ -807,6 +811,26 @@ void test_inst32() {
 
         if (OP_SLLW(inst)) {
             printf("Matched SLLW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SRA(inst)) {
+            printf("Matched SRA instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SRAI(inst)) {
+            printf("Matched SRAI instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SRAIW(inst)) {
+            printf("Matched SRAIW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SRAW(inst)) {
+            printf("Matched SRAW instruction 0x%08X\n", inst);
             count++;
         }
 
