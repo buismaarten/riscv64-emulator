@@ -175,7 +175,7 @@
 #define OP_SRLI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010011 && \
      OP_MASK(inst, 12, 3) == 0b101 && \
-     OP_MASK(inst, 28, 4) == 0b000000)
+     OP_MASK(inst, 26, 6) == 0b000000)
 
 #define OP_SRLIW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0011011 && \
