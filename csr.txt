@@ -1,6 +1,0 @@
-0x3002B373           csrrc t1,mstatus,t0
-0x30047373           csrrci t1,mstatus,8
-0x3002A373           csrrs t1,mstatus,t0
-0x30046373           csrrsi t1,mstatus,8
-0x30029373           csrrw t1,mstatus,t0
-0x30045373           csrrwi t1,mstatus,8
