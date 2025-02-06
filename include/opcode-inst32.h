@@ -48,22 +48,28 @@
      OP_MASK(inst, 12, 3) == 0b001)
 
 #define OP_CSRRC(inst) \
-    0
+    (OP_MASK(inst, 0, 7) == 0b1110011 && \
+     OP_MASK(inst, 12, 3) == 0b011)
 
 #define OP_CSRRCI(inst) \
-    0
+    (OP_MASK(inst, 0, 7) == 0b1110011 && \
+     OP_MASK(inst, 12, 3) == 0b111)
 
 #define OP_CSRRS(inst) \
-    0
+    (OP_MASK(inst, 0, 7) == 0b1110011 && \
+     OP_MASK(inst, 12, 3) == 0b010)
 
 #define OP_CSRRSI(inst) \
-    0
+    (OP_MASK(inst, 0, 7) == 0b1110011 && \
+     OP_MASK(inst, 12, 3) == 0b110)
 
 #define OP_CSRRW(inst) \
-    0
+    (OP_MASK(inst, 0, 7) == 0b1110011 && \
+     OP_MASK(inst, 12, 3) == 0b001)
 
 #define OP_CSRRWI(inst) \
-    0
+    (OP_MASK(inst, 0, 7) == 0b1110011 && \
+     OP_MASK(inst, 12, 3) == 0b101)
 
 #define OP_DIV(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \

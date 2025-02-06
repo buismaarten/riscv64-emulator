@@ -717,12 +717,12 @@ Matched BNE instruction 0xFB341FE3
 Matched BNE instruction 0xFE0790E3
 Matched BNE instruction 0xFE0798E3
 Matched BNE instruction 0xFE079AE3
-Error: no match for instruction 0x3002B373
-Error: no match for instruction 0x30047373
-Error: no match for instruction 0x3002A373
-Error: no match for instruction 0x30046373
-Error: no match for instruction 0x30029373
-Error: no match for instruction 0x30045373
+Matched CSRRC instruction 0x3002B373
+Matched CSRRCI instruction 0x30047373
+Matched CSRRS instruction 0x3002A373
+Matched CSRRSI instruction 0x30046373
+Matched CSRRW instruction 0x30029373
+Matched CSRRWI instruction 0x30045373
 Matched DIV instruction 0x02F747B3
 Matched DIVU instruction 0x02F757B3
 Matched DIVUW instruction 0x02F757BB
