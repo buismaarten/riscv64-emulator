@@ -714,6 +714,36 @@ void test_inst32() {
             count++;
         }
 
+        if (OP_CSRRC(inst)) {
+            printf("Matched CSRRC instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_CSRRCI(inst)) {
+            printf("Matched CSRRCI instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_CSRRS(inst)) {
+            printf("Matched CSRRS instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_CSRRSI(inst)) {
+            printf("Matched CSRRSI instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_CSRRW(inst)) {
+            printf("Matched CSRRW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_CSRRWI(inst)) {
+            printf("Matched CSRRWI instruction 0x%08X\n", inst);
+            count++;
+        }
+
         if (OP_DIV(inst)) {
             printf("Matched DIV instruction 0x%08X\n", inst);
             count++;
