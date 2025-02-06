@@ -18,12 +18,6 @@ amoxor.d
 amoxor.w
 bgeu
 bltu
-csrrc
-csrrci
-csrrs
-csrrsi
-csrrw
-csrrwi
 ebreak
 ecall
 fence
