@@ -252,6 +252,9 @@
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b010)
 
+#define OP_WFI(inst) \
+    (inst == 0b00010000010100000000000001110011)
+
 #define OP_XOR(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b100 && \

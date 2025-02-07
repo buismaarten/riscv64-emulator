@@ -650,6 +650,7 @@ static uint32_t program32[] = {
     /* SW */         0xFEF42223,
     /* SW */         0xFEF42423,
     /* SW */         0xFEF42623,
+    /* WFI */        0x10500073,
     /* XOR */        0x00F747B3,
     /* XORI */       0x0F05C693,
 };
@@ -943,6 +944,11 @@ void test_inst32() {
             printf("Matched SW instruction 0x%08X\n", inst);
             count++;
         }
+
+        if (OP_WFI(inst)) {
+            printf("Matched WFI instruction 0x%08X\n", inst);
+            count++;
+        }   
 
         if (OP_XOR(inst)) {
             printf("Matched XOR instruction 0x%08X\n", inst);
