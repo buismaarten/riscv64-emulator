@@ -92,10 +92,10 @@
      OP_MASK(inst, 25, 7) == 0b0000001)
 
 #define OP_EBREAK(inst) \
-    0
+    (inst == 0b00000000000100000000000001110011)
 
 #define OP_ECALL(inst) \
-    0
+    (inst == 0b00000000000000000000000001110011)
 
 #define OP_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)

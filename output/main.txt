@@ -727,8 +727,8 @@ Matched DIV instruction 0x02F747B3
 Matched DIVU instruction 0x02F757B3
 Matched DIVUW instruction 0x02F757BB
 Matched DIVW instruction 0x02F747BB
-Error: no match for instruction 0x00100073
-Error: no match for instruction 0x00000073
+Matched EBREAK instruction 0x00100073
+Matched ECALL instruction 0x00000073
 Matched JAL instruction 0x0080006F
 Matched JAL instruction 0x00C0006F
 Matched JAL instruction 0x0100006F
