@@ -650,6 +650,7 @@ static uint32_t program32[] = {
     /* SW */         0xFEF42223,
     /* SW */         0xFEF42423,
     /* SW */         0xFEF42623,
+    /* URET */       0x00200073,
     /* WFI */        0x10500073,
     /* XOR */        0x00F747B3,
     /* XORI */       0x0F05C693,
@@ -942,6 +943,11 @@ void test_inst32() {
 
         if (OP_SW(inst)) {
             printf("Matched SW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_URET(inst)) {
+            printf("Matched URET instruction 0x%08X\n", inst);
             count++;
         }
 
