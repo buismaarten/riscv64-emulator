@@ -948,7 +948,7 @@ void test_inst32() {
         if (OP_WFI(inst)) {
             printf("Matched WFI instruction 0x%08X\n", inst);
             count++;
-        }   
+        }
 
         if (OP_XOR(inst)) {
             printf("Matched XOR instruction 0x%08X\n", inst);
