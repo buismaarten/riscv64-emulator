@@ -651,6 +651,7 @@ static uint32_t program32[] = {
     /* SW */         0xFEF42423,
     /* SW */         0xFEF42623,
     /* XOR */        0x00F747B3,
+    /* XORI */       0x0F05C693,
 };
 
 void test_inst32() {
@@ -945,6 +946,11 @@ void test_inst32() {
 
         if (OP_XOR(inst)) {
             printf("Matched XOR instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_XORI(inst)) {
+            printf("Matched XORI instruction 0x%08X\n", inst);
             count++;
         }
 

@@ -983,3 +983,4 @@ Matched SW instruction 0xFEF42223
 Matched SW instruction 0xFEF42423
 Matched SW instruction 0xFEF42623
 Matched XOR instruction 0x00F747B3
+Matched XORI instruction 0x0F05C693
