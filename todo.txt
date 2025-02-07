@@ -16,28 +16,28 @@ amoswap.d
 amoswap.w
 amoxor.d
 amoxor.w
-bgeu
-bltu
+bgeu: 0x00B57463
+bltu: 0x00B56463
 fence: 0x0FF0000F
 fence.i: 0x0000100F
 lb
 lh
 lhu
-lr.d
-lr.w
+lr.d: 0x1005B6AF, 0x1005B32F
+lr.w: 0x1005262F, 0x100522AF
 lwu
 mret: 0x30200073
 mul: 0x02B502B3
 mulh: 0x02B51333
 mulhs: 0x02B523B3
 mulhu: 0x02B53E33
-ori
-sc.d
-sc.w
+ori: 0x00F56613
+sc.d: 0x1865B6AF
+sc.w: 0x1855262F
 sfence.vma: 0x12000073
 sh
 sret: 0x10200073
 sub: 0x40B50533
 uret: 0x00200073
 wfi
-xori
+xori: 0x0F05C693
