@@ -865,6 +865,10 @@ Matched LD instruction 0x0F813483
 Matched LD instruction 0x10013403
 Matched LD instruction 0x10813083
 Matched LD instruction 0xFE843783
+Matched LR.D instruction 0x1005B32F
+Matched LR.D instruction 0x1005B6AF
+Matched LR.W instruction 0x100522AF
+Matched LR.W instruction 0x1005262F
 Matched LUI instruction 0x100006B7
 Matched LUI instruction 0x10000737
 Matched LUI instruction 0x100007B7

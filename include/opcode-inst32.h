@@ -121,6 +121,16 @@
     (OP_MASK(inst, 0, 7) == 0b0000011 && \
      OP_MASK(inst, 12, 3) == 0b011)
 
+#define OP_LR_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b00010)
+
+#define OP_LR_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b00010)
+
 #define OP_LUI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110111)
 

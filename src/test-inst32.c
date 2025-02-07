@@ -533,6 +533,10 @@ static uint32_t program32[] = {
     /* LD */         0x10013403,
     /* LD */         0x10813083,
     /* LD */         0xFE843783,
+    /* LR.D */       0x1005B32F,
+    /* LR.D */       0x1005B6AF,
+    /* LR.W */       0x100522AF,
+    /* LR.W */       0x1005262F,
     /* LUI */        0x100006B7,
     /* LUI */        0x10000737,
     /* LUI */        0x100007B7,
@@ -807,6 +811,16 @@ void test_inst32() {
 
         if (OP_LD(inst)) {
             printf("Matched LD instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_LR_D(inst)) {
+            printf("Matched LR.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_LR_W(inst)) {
+            printf("Matched LR.W instruction 0x%08X\n", inst);
             count++;
         }
 
