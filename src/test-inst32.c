@@ -395,6 +395,8 @@ static uint32_t program32[] = {
     /* DIVU */   0x02F757B3,
     /* DIVUW */  0x02F757BB,
     /* DIVW */   0x02F747BB,
+    /* EBREAK */ 0x00100073,
+    /* ECALL */  0x00000073,
     /* JAL */    0x0080006F,
     /* JAL */    0x00C0006F,
     /* JAL */    0x0100006F,
@@ -761,6 +763,16 @@ void test_inst32() {
 
         if (OP_DIVW(inst)) {
             printf("Matched DIVW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_EBREAK(inst)) {
+            printf("Matched EBREAK instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_ECALL(inst)) {
+            printf("Matched ECALL instruction 0x%08X\n", inst);
             count++;
         }
 
