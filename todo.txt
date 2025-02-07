@@ -1,45 +1,45 @@
-amoadd.d: 0x00A5B62F
-amoadd.w: 0x00A5A6AF
-amoand.d: 0x60A5B62F
-amoand.w: 0x60A5A6AF
-amomax.d: 0xA0A5B62F
-amomax.w: 0xA0A5A6AF
-amomaxu.d: 0xE0A5B62F
-amomaxu.w: 0xE0A5A6AF
-amomin.d: 0x80A5B62F
-amomin.w: 0x80A5A6AF
-amominu.d: 0xC0A5B62F
-amominu.w: 0xC0A5A6AF
-amoor.d: 0x40A5B62F
-amoor.w: 0x40A5A6AF
-amoswap.d: 0x08A5B62F
-amoswap.w: 0x08A5A6AF
-amoxor.d: 0x20A5B62F
-amoxor.w: 0x20A5A6AF
-bgeu: 0x00B57463
-bltu: 0x00B56463
-fence: 0x0FF0000F
-fence.i: 0x0000100F
-lb: 0x00050603
-lh: 0x00451683
-lhu: 0x00855703
-lr.d: 0x1005B32F
-lr.d: 0x1005B6AF
-lr.w: 0x100522AF
-lr.w: 0x1005262F
-lwu: 0x00056603
-mret: 0x30200073
-mul: 0x02B502B3
-mulh: 0x02B51333
-mulhs: 0x02B523B3
-mulhu: 0x02B53E33
-ori: 0x00F56613
-sc.d: 0x1865B6AF
-sc.w: 0x1855262F
-sfence.vma: 0x12000073
-sh: 0x00C51223
-sret: 0x10200073
-sub: 0x40B50533
-uret: 0x00200073
-wfi: 0x10500073
-xori: 0x0F05C693
+/* AMOADD.D */   0x00A5B62F,
+/* AMOADD.W */   0x00A5A6AF,
+/* AMOAND.D */   0x60A5B62F,
+/* AMOAND.W */   0x60A5A6AF,
+/* AMOMAX.D */   0xA0A5B62F,
+/* AMOMAX.W */   0xA0A5A6AF,
+/* AMOMAXU.D */  0xE0A5B62F,
+/* AMOMAXU.W */  0xE0A5A6AF,
+/* AMOMIN.D */   0x80A5B62F,
+/* AMOMIN.W */   0x80A5A6AF,
+/* AMOMINU.D */  0xC0A5B62F,
+/* AMOMINU.W */  0xC0A5A6AF,
+/* AMOOR.D */    0x40A5B62F,
+/* AMOOR.W */    0x40A5A6AF,
+/* AMOSWAP.D */  0x08A5B62F,
+/* AMOSWAP.W */  0x08A5A6AF,
+/* AMOXOR.D */   0x20A5B62F,
+/* AMOXOR.W */   0x20A5A6AF,
+/* BGEU */       0x00B57463,
+/* BLTU */       0x00B56463,
+/* FENCE */      0x0FF0000F,
+/* FENCE.I */    0x0000100F,
+/* LB */         0x00050603,
+/* LH */         0x00451683,
+/* LHU */        0x00855703,
+/* LR.D */       0x1005B32F,
+/* LR.D */       0x1005B6AF,
+/* LR.W */       0x100522AF,
+/* LR.W */       0x1005262F,
+/* LWU */        0x00056603,
+/* MRET */       0x30200073,
+/* MUL */        0x02B502B3,
+/* MULH */       0x02B51333,
+/* MULHS */      0x02B523B3,
+/* MULHU */      0x02B53E33,
+/* ORI */        0x00F56613,
+/* SC.D */       0x1865B6AF,
+/* SC.W */       0x1855262F,
+/* SFENCE.VMA */ 0x12000073,
+/* SH */         0x00C51223,
+/* SRET */       0x10200073,
+/* SUB */        0x40B50533,
+/* URET */       0x00200073,
+/* WFI */        0x10500073,
+/* XORI */       0x0F05C693,
