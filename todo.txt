@@ -18,8 +18,8 @@ amoxor.d
 amoxor.w
 bgeu
 bltu
-ebreak
-ecall
+ebreak: 0x00100073
+ecall: 0x00000073
 fence
 fence.i
 lb
