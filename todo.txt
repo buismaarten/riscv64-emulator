@@ -1,21 +1,21 @@
-amoadd.d
-amoadd.w
-amoand.d
-amoand.w
-amomax.d
-amomax.w
-amomaxu.d
-amomaxu.w
-amomin.d
-amomin.w
-amominu.d
-amominu.w
-amoor.d
-amoor.w
-amoswap.d
-amoswap.w
-amoxor.d
-amoxor.w
+amoadd.d: 0x00A5B62F
+amoadd.w: 0x00A5A6AF
+amoand.d: 0x60A5B62F
+amoand.w: 0x60A5A6AF
+amomax.d: 0xA0A5B62F
+amomax.w: 0xA0A5A6AF
+amomaxu.d: 0xE0A5B62F
+amomaxu.w: 0xE0A5A6AF
+amomin.d: 0x80A5B62F
+amomin.w: 0x80A5A6AF
+amominu.d: 0xC0A5B62F
+amominu.w: 0xC0A5A6AF
+amoor.d: 0x40A5B62F
+amoor.w: 0x40A5A6AF
+amoswap.d: 0x08A5B62F
+amoswap.w: 0x08A5A6AF
+amoxor.d: 0x20A5B62F
+amoxor.w: 0x20A5A6AF
 bgeu: 0x00B57463
 bltu: 0x00B56463
 fence: 0x0FF0000F
