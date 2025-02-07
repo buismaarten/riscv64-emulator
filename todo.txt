@@ -20,9 +20,9 @@ bgeu: 0x00B57463
 bltu: 0x00B56463
 fence: 0x0FF0000F
 fence.i: 0x0000100F
-lb
-lh
-lhu
+lb: 0x00050603
+lh: 0x00451683
+lhu: 0x00855703
 lr.d: 0x1005B6AF, 0x1005B32F
 lr.w: 0x1005262F, 0x100522AF
 lwu
