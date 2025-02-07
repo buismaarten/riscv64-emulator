@@ -39,9 +39,17 @@
     (OP_MASK(inst, 0, 7) == 0b1100011 && \
      OP_MASK(inst, 12, 3) == 0b101)
 
+#define OP_BGEU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b1100011 && \
+     OP_MASK(inst, 12, 3) == 0b111)
+
 #define OP_BLT(inst) \
     (OP_MASK(inst, 0, 7) == 0b1100011 && \
      OP_MASK(inst, 12, 3) == 0b100)
+
+#define OP_BLTU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b1100011 && \
+     OP_MASK(inst, 12, 3) == 0b110)
 
 #define OP_BNE(inst) \
     (OP_MASK(inst, 0, 7) == 0b1100011 && \
