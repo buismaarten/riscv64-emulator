@@ -608,6 +608,7 @@ static uint32_t program32[] = {
     /* SD */         0xFEA43423,
     /* SD */         0xFEE43423,
     /* SD */         0xFEF43423,
+    /* SH */         0x00C51223,
     /* SLL */        0x00E797B3,
     /* SLLI */       0x00579793,
     /* SLLIW */      0x0057979B,
@@ -861,6 +862,11 @@ void test_inst32() {
 
         if (OP_SD(inst)) {
             printf("Matched SD instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SH(inst)) {
+            printf("Matched SH instruction 0x%08X\n", inst);
             count++;
         }
 

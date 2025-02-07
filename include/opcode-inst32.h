@@ -169,6 +169,10 @@
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b011)
 
+#define OP_SH(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0100011 && \
+     OP_MASK(inst, 12, 3) == 0b001)
+
 #define OP_SLL(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b001 && \
