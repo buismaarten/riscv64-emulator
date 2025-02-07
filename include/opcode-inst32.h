@@ -4,7 +4,8 @@
 
 #define OP_ADD(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
-     OP_MASK(inst, 12, 3) == 0b000)
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 27, 5) == 0b00000)
 
 #define OP_ADDI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010011 && \
@@ -248,6 +249,11 @@
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b101 && \
      OP_MASK(inst, 25, 7) == 0b0000000)
+
+#define OP_SUB(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 27, 5) == 0b01000)
 
 #define OP_SUBW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
