@@ -27,6 +27,4 @@
 /* MULHS */      0x02B523B3,
 /* MULHU */      0x02B53E33,
 /* ORI */        0x00F56613,
-/* SC.D */       0x1865B6AF,
-/* SC.W */       0x1855262F,
 /* SFENCE.VMA */ 0x12000073,

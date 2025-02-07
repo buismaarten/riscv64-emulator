@@ -888,6 +888,8 @@ Matched REMU instruction 0x02E7F7B3
 Matched REMUW instruction 0x02F777BB
 Matched REMW instruction 0x02F767BB
 Matched SB instruction 0xFCF40FA3
+Matched SC.D instruction 0x1865B6AF
+Matched SC.W instruction 0x1855262F
 Matched SD instruction 0x00113423
 Matched SD instruction 0x00113C23
 Matched SD instruction 0x00713C23

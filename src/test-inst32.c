@@ -556,6 +556,8 @@ static uint32_t program32[] = {
     /* REMUW */      0x02F777BB,
     /* REMW */       0x02F767BB,
     /* SB */         0xFCF40FA3,
+    /* SC.D */       0x1865B6AF,
+    /* SC.W */       0x1855262F,
     /* SD */         0x00113423,
     /* SD */         0x00113C23,
     /* SD */         0x00713C23,
@@ -871,6 +873,16 @@ void test_inst32() {
 
         if (OP_SB(inst)) {
             printf("Matched SB instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SC_D(inst)) {
+            printf("Matched SC.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SC_W(inst)) {
+            printf("Matched SC.W instruction 0x%08X\n", inst);
             count++;
         }
 
