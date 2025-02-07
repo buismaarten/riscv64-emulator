@@ -873,6 +873,7 @@ Matched LW instruction 0xFE842703
 Matched LW instruction 0xFE842783
 Matched LW instruction 0xFEC42703
 Matched LW instruction 0xFEC42783
+Matched MRET instruction 0x30200073
 Matched MULW instruction 0x0285053B
 Matched MULW instruction 0x02A7053B
 Matched MULW instruction 0x02A7853B
@@ -951,6 +952,7 @@ Matched SRA instruction 0x40F757B3
 Matched SRAI instruction 0x4037D793
 Matched SRAIW instruction 0x4057D79B
 Matched SRAW instruction 0x40F757BB
+Matched SRET instruction 0x10200073
 Matched SRL instruction 0x00E6D633
 Matched SRLI instruction 0x0056D793
 Matched SRLIW instruction 0x0056D79B

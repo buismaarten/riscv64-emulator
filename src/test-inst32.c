@@ -541,6 +541,7 @@ static uint32_t program32[] = {
     /* LW */         0xFE842783,
     /* LW */         0xFEC42703,
     /* LW */         0xFEC42783,
+    /* MRET */       0x30200073,
     /* MULW */       0x0285053B,
     /* MULW */       0x02A7053B,
     /* MULW */       0x02A7853B,
@@ -619,6 +620,7 @@ static uint32_t program32[] = {
     /* SRAI */       0x4037D793,
     /* SRAIW */      0x4057D79B,
     /* SRAW */       0x40F757BB,
+    /* SRET */       0x10200073,
     /* SRL */        0x00E6D633,
     /* SRLI */       0x0056D793,
     /* SRLIW */      0x0056D79B,
@@ -816,6 +818,11 @@ void test_inst32() {
             count++;
         }
 
+        if (OP_MRET(inst)) {
+            printf("Matched MRET instruction 0x%08X\n", inst);
+            count++;
+        }
+
         if (OP_MULW(inst)) {
             printf("Matched MULW instruction 0x%08X\n", inst);
             count++;
@@ -913,6 +920,11 @@ void test_inst32() {
 
         if (OP_SRAW(inst)) {
             printf("Matched SRAW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_SRET(inst)) {
+            printf("Matched SRET instruction 0x%08X\n", inst);
             count++;
         }
 

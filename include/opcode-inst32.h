@@ -127,6 +127,9 @@
     (OP_MASK(inst, 0, 7) == 0b0000011 && \
      OP_MASK(inst, 12, 3) == 0b010)
 
+#define OP_MRET(inst) \
+    (inst == 0b00110000001000000000000001110011)
+
 #define OP_MULW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
@@ -222,6 +225,9 @@
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b101 && \
      OP_MASK(inst, 25, 7) == 0b0100000)
+
+#define OP_SRET(inst) \
+    (inst == 0b00010000001000000000000001110011)
 
 #define OP_SRL(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
