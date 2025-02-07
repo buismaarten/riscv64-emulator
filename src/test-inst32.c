@@ -548,6 +548,10 @@ static uint32_t program32[] = {
     /* LW */         0xFEC42703,
     /* LW */         0xFEC42783,
     /* MRET */       0x30200073,
+    /* MUL */        0x02B502B3,
+    /* MULH */       0x02B51333,
+    /* MULHSU */     0x02B523B3,
+    /* MULHU */      0x02B53E33,
     /* MULW */       0x0285053B,
     /* MULW */       0x02A7053B,
     /* MULW */       0x02A7853B,
@@ -850,6 +854,26 @@ void test_inst32() {
 
         if (OP_MRET(inst)) {
             printf("Matched MRET instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_MUL(inst)) {
+            printf("Matched MUL instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_MULH(inst)) {
+            printf("Matched MULH instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_MULHSU(inst)) {
+            printf("Matched MULHSU instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_MULHU(inst)) {
+            printf("Matched MULHU instruction 0x%08X\n", inst);
             count++;
         }
 

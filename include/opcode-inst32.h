@@ -5,7 +5,7 @@
 #define OP_ADD(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
-     OP_MASK(inst, 27, 5) == 0b00000)
+     OP_MASK(inst, 25, 7) == 0b0000000)
 
 #define OP_ADDI(inst) \
     (OP_MASK(inst, 0, 7) == 0b0010011 && \
@@ -148,6 +148,26 @@
 #define OP_MRET(inst) \
     (inst == 0b00110000001000000000000001110011)
 
+#define OP_MUL(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0110011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
+#define OP_MULH(inst) \
+    (OP_MASK(inst, 0, 7) == 0b00110011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b00000001)
+
+#define OP_MULHSU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b00110011 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 25, 7) == 0b00000001)
+
+#define OP_MULHU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b00110011 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 25, 7) == 0b00000001)
+
 #define OP_MULW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
@@ -284,7 +304,7 @@
 #define OP_SUB(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b000 && \
-     OP_MASK(inst, 27, 5) == 0b01000)
+     OP_MASK(inst, 25, 7) == 0b0100000)
 
 #define OP_SUBW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0111011 && \

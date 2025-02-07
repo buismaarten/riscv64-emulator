@@ -880,6 +880,10 @@ Matched LW instruction 0xFE842783
 Matched LW instruction 0xFEC42703
 Matched LW instruction 0xFEC42783
 Matched MRET instruction 0x30200073
+Matched MUL instruction 0x02B502B3
+Matched MULH instruction 0x02B51333
+Matched MULHSU instruction 0x02B523B3
+Matched MULHU instruction 0x02B53E33
 Matched MULW instruction 0x0285053B
 Matched MULW instruction 0x02A7053B
 Matched MULW instruction 0x02A7853B
