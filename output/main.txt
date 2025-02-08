@@ -601,6 +601,8 @@ Matched ADDW instruction 0x01870B3B
 Matched ADDW instruction 0x01878ABB
 Matched ADDW instruction 0x01AA8ABB
 Matched ADDW instruction 0x01AB0B3B
+Matched AMOADD.D instruction 0x00A5B62F
+Matched AMOADD.W instruction 0x00A5A6AF
 Matched AND instruction 0x00F777B3
 Matched ANDI instruction 0xFFE37513
 Matched ANDI instruction 0xFFE47513

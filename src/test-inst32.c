@@ -269,6 +269,8 @@ static uint32_t program32[] = {
     /* ADDW */       0x01878ABB,
     /* ADDW */       0x01AA8ABB,
     /* ADDW */       0x01AB0B3B,
+    /* AMOADD.D */   0x00A5B62F,
+    /* AMOADD.W */   0x00A5A6AF,
     /* AND */        0x00F777B3,
     /* ANDI */       0xFFE37513,
     /* ANDI */       0xFFE47513,
@@ -700,6 +702,16 @@ void test_inst32() {
 
         if (OP_ADDW(inst)) {
             printf("Matched ADDW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOADD_D(inst)) {
+            printf("Matched AMOADD.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOADD_W(inst)) {
+            printf("Matched AMOADD.W instruction 0x%08X\n", inst);
             count++;
         }
 

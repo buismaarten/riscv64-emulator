@@ -20,6 +20,16 @@
      OP_MASK(inst, 12, 3) == 0b000 && \
      OP_MASK(inst, 25, 7) == 0b0000000)
 
+#define OP_AMOADD_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b00000)
+
+#define OP_AMOADD_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b00000)
+
 #define OP_AND(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b111 && \
