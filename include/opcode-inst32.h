@@ -194,6 +194,10 @@
      OP_MASK(inst, 12, 3) == 0b110 && \
      OP_MASK(inst, 25, 7) == 0b0000000)
 
+#define OP_ORI(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0010011 && \
+     OP_MASK(inst, 12, 3) == 0b110)
+
 #define OP_REM(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b110 && \
