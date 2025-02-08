@@ -957,6 +957,7 @@ Matched SD instruction 0x10813023
 Matched SD instruction 0xFEA43423
 Matched SD instruction 0xFEE43423
 Matched SD instruction 0xFEF43423
+Matched SFENCE.VMA instruction 0x12000073
 Matched SH instruction 0x00C51223
 Matched SLL instruction 0x00E797B3
 Matched SLLI instruction 0x00579793

@@ -236,6 +236,11 @@
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b011)
 
+#define OP_SFENCE_VMA(inst) \
+    (OP_MASK(inst, 0, 7) == 0b1110011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0001001)
+
 #define OP_SH(inst) \
     (OP_MASK(inst, 0, 7) == 0b0100011 && \
      OP_MASK(inst, 12, 3) == 0b001)
