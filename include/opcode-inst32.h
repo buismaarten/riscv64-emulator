@@ -30,6 +30,21 @@
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b00000)
 
+#define OP_AMOAND_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b01100)
+
+#define OP_AMOMAX_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b10100)
+
+#define OP_AMOMAXU_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b11100)
+
 #define OP_AMOMIN_D(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \
      OP_MASK(inst, 12, 3) == 0b011 && \
@@ -49,6 +64,21 @@
     (OP_MASK(inst, 0, 7) == 0b0101111 && \
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b11000)
+
+#define OP_AMOOR_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b01000)
+
+#define OP_AMOSWAP_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b00001)
+
+#define OP_AMOXOR_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b00100)
 
 #define OP_AND(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \

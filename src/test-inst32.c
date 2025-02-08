@@ -271,10 +271,16 @@ static uint32_t program32[] = {
     /* ADDW */       0x01AB0B3B,
     /* AMOADD.D */   0x00A5B62F,
     /* AMOADD.W */   0x00A5A6AF,
+    /* AMOAND.W */   0x60A5A6AF,
+    /* AMOMAX.W */   0xA0A5A6AF,
+    /* AMOMAXU.W */  0xE0A5A6AF,
     /* AMOMIN.D */   0x80A5B62F,
     /* AMOMIN.W */   0x80A5A6AF,
     /* AMOMINU.D */  0xC0A5B62F,
     /* AMOMINU.W */  0xC0A5A6AF,
+    /* AMOOR.W */    0x40A5A6AF,
+    /* AMOSWAP.W */  0x08A5A6AF,
+    /* AMOXOR.W */   0x20A5A6AF,
     /* AND */        0x00F777B3,
     /* ANDI */       0xFFE37513,
     /* ANDI */       0xFFE47513,
@@ -719,6 +725,21 @@ void test_inst32() {
             count++;
         }
 
+        if (OP_AMOAND_W(inst)) {
+            printf("Matched AMOAND.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOMAX_W(inst)) {
+            printf("Matched AMOMAX.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOMAXU_W(inst)) {
+            printf("Matched AMOMAXU.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
         if (OP_AMOMIN_D(inst)) {
             printf("Matched AMOMIN.D instruction 0x%08X\n", inst);
             count++;
@@ -736,6 +757,21 @@ void test_inst32() {
 
         if (OP_AMOMINU_W(inst)) {
             printf("Matched AMOMINU.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOOR_W(inst)) {
+            printf("Matched AMOOR.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOSWAP_W(inst)) {
+            printf("Matched AMOSWAP.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOXOR_W(inst)) {
+            printf("Matched AMOXOR.W instruction 0x%08X\n", inst);
             count++;
         }
 
