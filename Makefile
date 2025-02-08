@@ -8,8 +8,8 @@ default:
 
 .PHONY: run
 run:
-	./output/main > ./output/main.txt
 	rm -rf ./output/*.o
+	./output/main > ./output/main.txt
 
 .PHONY: install
 install:
