@@ -476,6 +476,7 @@ static uint32_t program32[] = {
     /* JAL */        0xFF1FF0EF,
     /* JAL */        0xFF5FF06F,
     /* JALR */       0x00008067,
+    /* LB */         0x00050603,
     /* LBU */        0x00054783,
     /* LBU */        0x0007C783,
     /* LBU */        0x00154783,
@@ -535,6 +536,8 @@ static uint32_t program32[] = {
     /* LD */         0x10013403,
     /* LD */         0x10813083,
     /* LD */         0xFE843783,
+    /* LH */         0x00451683,
+    /* LHU */        0x00855703,
     /* LR.D */       0x1005B32F,
     /* LR.D */       0x1005B6AF,
     /* LR.W */       0x100522AF,
@@ -547,6 +550,7 @@ static uint32_t program32[] = {
     /* LW */         0xFE842783,
     /* LW */         0xFEC42703,
     /* LW */         0xFEC42783,
+    /* LWU */        0x00056603,
     /* MRET */       0x30200073,
     /* MUL */        0x02B502B3,
     /* MULH */       0x02B51333,
@@ -822,6 +826,11 @@ void test_inst32() {
             count++;
         }
 
+        if (OP_LB(inst)) {
+            printf("Matched LB instruction 0x%08X\n", inst);
+            count++;
+        }
+
         if (OP_LBU(inst)) {
             printf("Matched LBU instruction 0x%08X\n", inst);
             count++;
@@ -829,6 +838,16 @@ void test_inst32() {
 
         if (OP_LD(inst)) {
             printf("Matched LD instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_LH(inst)) {
+            printf("Matched LH instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_LHU(inst)) {
+            printf("Matched LHU instruction 0x%08X\n", inst);
             count++;
         }
 
@@ -849,6 +868,11 @@ void test_inst32() {
 
         if (OP_LW(inst)) {
             printf("Matched LW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_LWU(inst)) {
+            printf("Matched LWU instruction 0x%08X\n", inst);
             count++;
         }
 

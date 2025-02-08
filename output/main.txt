@@ -808,6 +808,7 @@ Matched JAL instruction 0xFEDFF06F
 Matched JAL instruction 0xFF1FF0EF
 Matched JAL instruction 0xFF5FF06F
 Matched JALR instruction 0x00008067
+Matched LB instruction 0x00050603
 Matched LBU instruction 0x00054783
 Matched LBU instruction 0x0007C783
 Matched LBU instruction 0x00154783
@@ -867,6 +868,8 @@ Matched LD instruction 0x0F813483
 Matched LD instruction 0x10013403
 Matched LD instruction 0x10813083
 Matched LD instruction 0xFE843783
+Matched LH instruction 0x00451683
+Matched LHU instruction 0x00855703
 Matched LR.D instruction 0x1005B32F
 Matched LR.D instruction 0x1005B6AF
 Matched LR.W instruction 0x100522AF
@@ -879,6 +882,7 @@ Matched LW instruction 0xFE842703
 Matched LW instruction 0xFE842783
 Matched LW instruction 0xFEC42703
 Matched LW instruction 0xFEC42783
+Matched LWU instruction 0x00056603
 Matched MRET instruction 0x30200073
 Matched MUL instruction 0x02B502B3
 Matched MULH instruction 0x02B51333

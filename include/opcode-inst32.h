@@ -120,6 +120,10 @@
     (OP_MASK(inst, 0, 7) == 0b1100111 && \
      OP_MASK(inst, 12, 3) == 0b000)
 
+#define OP_LB(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0000011 && \
+     OP_MASK(inst, 12, 3) == 0b000)
+
 #define OP_LBU(inst) \
     (OP_MASK(inst, 0, 7) == 0b0000011 && \
      OP_MASK(inst, 12, 3) == 0b100)
@@ -127,6 +131,14 @@
 #define OP_LD(inst) \
     (OP_MASK(inst, 0, 7) == 0b0000011 && \
      OP_MASK(inst, 12, 3) == 0b011)
+
+#define OP_LH(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0000011 && \
+     OP_MASK(inst, 12, 3) == 0b001)
+
+#define OP_LHU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0000011 && \
+     OP_MASK(inst, 12, 3) == 0b101)
 
 #define OP_LR_D(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \
@@ -144,6 +156,10 @@
 #define OP_LW(inst) \
     (OP_MASK(inst, 0, 7) == 0b0000011 && \
      OP_MASK(inst, 12, 3) == 0b010)
+
+#define OP_LWU(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0000011 && \
+     OP_MASK(inst, 12, 3) == 0b110)
 
 #define OP_MRET(inst) \
     (inst == 0b00110000001000000000000001110011)
