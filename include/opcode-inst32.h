@@ -90,10 +90,20 @@
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b01000)
 
+#define OP_AMOSWAP_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b00001)
+
 #define OP_AMOSWAP_W(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b00001)
+
+#define OP_AMOXOR_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b00100)
 
 #define OP_AMOXOR_W(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \

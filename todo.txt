@@ -1,2 +1,0 @@
-/* AMOSWAP.D */  0x08A5B62F,
-/* AMOXOR.D */   0x20A5B62F,
