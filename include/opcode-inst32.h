@@ -30,6 +30,26 @@
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b00000)
 
+#define OP_AMOMIN_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b10000)
+
+#define OP_AMOMIN_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b10000)
+
+#define OP_AMOMINU_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b11000)
+
+#define OP_AMOMINU_W(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b010 && \
+     OP_MASK(inst, 27, 5) == 0b11000)
+
 #define OP_AND(inst) \
     (OP_MASK(inst, 0, 7) == 0b0110011 && \
      OP_MASK(inst, 12, 3) == 0b111 && \
