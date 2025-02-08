@@ -30,15 +30,30 @@
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b00000)
 
+#define OP_AMOAND_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b01100)
+
 #define OP_AMOAND_W(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b01100)
 
+#define OP_AMOMAX_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b10100)
+
 #define OP_AMOMAX_W(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b10100)
+
+#define OP_AMOMAXU_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b11100)
 
 #define OP_AMOMAXU_W(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \

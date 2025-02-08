@@ -603,8 +603,11 @@ Matched ADDW instruction 0x01AA8ABB
 Matched ADDW instruction 0x01AB0B3B
 Matched AMOADD.D instruction 0x00A5B62F
 Matched AMOADD.W instruction 0x00A5A6AF
+Matched AMOAND.D instruction 0x60A5B62F
 Matched AMOAND.W instruction 0x60A5A6AF
+Matched AMOMAX.D instruction 0xA0A5B62F
 Matched AMOMAX.W instruction 0xA0A5A6AF
+Matched AMOMAXU.D instruction 0xE0A5B62F
 Matched AMOMAXU.W instruction 0xE0A5A6AF
 Matched AMOMIN.D instruction 0x80A5B62F
 Matched AMOMIN.W instruction 0x80A5A6AF

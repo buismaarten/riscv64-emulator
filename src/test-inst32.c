@@ -271,8 +271,11 @@ static uint32_t program32[] = {
     /* ADDW */       0x01AB0B3B,
     /* AMOADD.D */   0x00A5B62F,
     /* AMOADD.W */   0x00A5A6AF,
+    /* AMOAND.D */   0x60A5B62F,
     /* AMOAND.W */   0x60A5A6AF,
+    /* AMOMAX.D */   0xA0A5B62F,
     /* AMOMAX.W */   0xA0A5A6AF,
+    /* AMOMAXU.D */  0xE0A5B62F,
     /* AMOMAXU.W */  0xE0A5A6AF,
     /* AMOMIN.D */   0x80A5B62F,
     /* AMOMIN.W */   0x80A5A6AF,
@@ -725,13 +728,28 @@ void test_inst32() {
             count++;
         }
 
+        if (OP_AMOAND_D(inst)) {
+            printf("Matched AMOAND.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
         if (OP_AMOAND_W(inst)) {
             printf("Matched AMOAND.W instruction 0x%08X\n", inst);
             count++;
         }
 
+        if (OP_AMOMAX_D(inst)) {
+            printf("Matched AMOMAX.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
         if (OP_AMOMAX_W(inst)) {
             printf("Matched AMOMAX.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOMAXU_D(inst)) {
+            printf("Matched AMOMAXU.D instruction 0x%08X\n", inst);
             count++;
         }
 
