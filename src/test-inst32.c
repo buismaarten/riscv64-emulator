@@ -281,6 +281,7 @@ static uint32_t program32[] = {
     /* AMOMIN.W */   0x80A5A6AF,
     /* AMOMINU.D */  0xC0A5B62F,
     /* AMOMINU.W */  0xC0A5A6AF,
+    /* AMOOR.D */    0x40A5B62F,
     /* AMOOR.W */    0x40A5A6AF,
     /* AMOSWAP.W */  0x08A5A6AF,
     /* AMOXOR.W */   0x20A5A6AF,
@@ -775,6 +776,11 @@ void test_inst32() {
 
         if (OP_AMOMINU_W(inst)) {
             printf("Matched AMOMINU.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_AMOOR_D(inst)) {
+            printf("Matched AMOOR.D instruction 0x%08X\n", inst);
             count++;
         }
 

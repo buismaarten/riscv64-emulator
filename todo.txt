@@ -1,3 +1,2 @@
-/* AMOOR.D */    0x40A5B62F,
 /* AMOSWAP.D */  0x08A5B62F,
 /* AMOXOR.D */   0x20A5B62F,

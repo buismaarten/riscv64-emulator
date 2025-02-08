@@ -613,6 +613,7 @@ Matched AMOMIN.D instruction 0x80A5B62F
 Matched AMOMIN.W instruction 0x80A5A6AF
 Matched AMOMINU.D instruction 0xC0A5B62F
 Matched AMOMINU.W instruction 0xC0A5A6AF
+Matched AMOOR.D instruction 0x40A5B62F
 Matched AMOOR.W instruction 0x40A5A6AF
 Matched AMOSWAP.W instruction 0x08A5A6AF
 Matched AMOXOR.W instruction 0x20A5A6AF

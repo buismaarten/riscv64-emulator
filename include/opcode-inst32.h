@@ -80,6 +80,11 @@
      OP_MASK(inst, 12, 3) == 0b010 && \
      OP_MASK(inst, 27, 5) == 0b11000)
 
+#define OP_AMOOR_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0101111 && \
+     OP_MASK(inst, 12, 3) == 0b011 && \
+     OP_MASK(inst, 27, 5) == 0b01000)
+
 #define OP_AMOOR_W(inst) \
     (OP_MASK(inst, 0, 7) == 0b0101111 && \
      OP_MASK(inst, 12, 3) == 0b010 && \
