@@ -1,53 +1,53 @@
-fadd.d
-fadd.s
-fclass.d
-fclass.s
-fcvt.d.l
+fadd.d: 0x0210F1D3
+fadd.s: 0x00007153
+fclass.d: 0xE20093D3
+fclass.s: 0xE0001353
+fcvt.d.l: 0xD22F7353
 fcvt.d.lu
-fcvt.d.s
-fcvt.d.w
+fcvt.d.s: 0x42000253
+fcvt.d.w: 0xD2030353
 fcvt.d.wu
-fcvt.l.d
-fcvt.l.s
+fcvt.l.d: 0xC220FF53
+fcvt.l.s: 0xC0207FD3
 fcvt.lu.d
 fcvt.lu.s
-fcvt.s.d
-fcvt.s.l
+fcvt.s.d: 0x4010F2D3
+fcvt.s.l: 0xD02FF3D3
 fcvt.s.lu
-fcvt.s.w
+fcvt.s.w: 0xD003F3D3
 fcvt.s.wu
-fcvt.w.d
-fcvt.w.s
+fcvt.w.d: 0xC200FE53
+fcvt.w.s: 0xC0007ED3
 fcvt.wu.d
 fcvt.wu.s
-fdiv.d
-fdiv.s
-feq.d
-feq.s
+fdiv.d: 0x1A10FED3
+fdiv.s: 0x18007E53
+feq.d: 0xA210A353
+feq.s: 0xA00022D3
 fld
-fle.d
-fle.s
-flt.d
-flt.s
+fle.d: 0xA2108E53
+fle.s: 0xA00003D3
+flt.d: 0xA2109F53
+flt.s: 0xA0001ED3
 flw
-fmadd.d
-fmadd.s
-fmax.d
-fmax.s
-fmin.d
-fmin.s
-fmsub.d
-fmsub.s
+fmadd.d: 0x0A10FFC3
+fmadd.s: 0x00007F43
+fmax.d: 0x2A1090D3
+fmax.s: 0x28001053
+fmin.d: 0x2A1081D3
+fmin.s: 0x28000153
+fmsub.d: 0x0A10F2C7
+fmsub.s: 0x00007247
 fmul.d
 fmul.s
-fmv.d.x
-fmv.w.x
-fmv.x.d
-fmv.x.w
-fnmadd.d
-fnmadd.s
-fnmsub.d
-fnmsub.s
+fmv.d.x: 0xF2030053
+fmv.w.x: 0xF00380D3
+fmv.x.d: 0xE2000E53
+fmv.x.w: 0xE0008ED3
+fnmadd.d: 0x0A10F3CF
+fnmadd.s: 0x0000734F
+fnmsub.d: 0x0A10FECB
+fnmsub.s: 0x00007E4B
 fsd
 fsgnj.d
 fsgnj.s
@@ -55,8 +55,8 @@ fsgnjn.d
 fsgnjn.s
 fsgnjx.d
 fsgnjx.s
-fsqrt.d
-fsqrt.s
-fsub.d
-fsub.s
+fsqrt.d: 0x5A00FFD3
+fsqrt.s: 0x58007F53
+fsub.d: 0x0A10F0D3
+fsub.s: 0x08007053
 fsw
