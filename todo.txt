@@ -24,12 +24,12 @@ fdiv.d: 0x1A10FED3
 fdiv.s: 0x18007E53
 feq.d: 0xA210A353
 feq.s: 0xA00022D3
-fld
+fld: 0xFE843787
 fle.d: 0xA2108E53
 fle.s: 0xA00003D3
 flt.d: 0xA2109F53
 flt.s: 0xA0001ED3
-flw
+flw: 0xFEC42787
 fmadd.d: 0x0A10FFC3
 fmadd.s: 0x00007F43
 fmax.d: 0x2A1090D3
@@ -48,15 +48,15 @@ fnmadd.d: 0x0A10F3CF
 fnmadd.s: 0x0000734F
 fnmsub.d: 0x0A10FECB
 fnmsub.s: 0x00007E4B
-fsd
+fsd: 0x00F7B027
 fsgnj.d: 0x22310E53
 fsgnj.s: 0x20520ED3
 fsgnjn.d: 0x22311F53
 fsgnjn.s: 0x20521FD3
-fsgnjx.d
-fsgnjx.s
+fsgnjx.d: 0x22E7A7D3
+fsgnjx.s: 0x20E7A7D3
 fsqrt.d: 0x5A00FFD3
 fsqrt.s: 0x58007F53
 fsub.d: 0x0A10F0D3
 fsub.s: 0x08007053
-fsw
+fsw: 0x00F7A027
