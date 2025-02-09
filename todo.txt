@@ -3,23 +3,23 @@ fadd.s: 0x00007153
 fclass.d: 0xE20093D3
 fclass.s: 0xE0001353
 fcvt.d.l: 0xD22F7353
-fcvt.d.lu
+fcvt.d.lu: 0xD235F1D3
 fcvt.d.s: 0x42000253
 fcvt.d.w: 0xD2030353
-fcvt.d.wu
+fcvt.d.wu: 0xD2150153
 fcvt.l.d: 0xC220FF53
 fcvt.l.s: 0xC0207FD3
-fcvt.lu.d
-fcvt.lu.s
+fcvt.lu.d: 0xC231F753
+fcvt.lu.s: 0xC032F7D3
 fcvt.s.d: 0x4010F2D3
 fcvt.s.l: 0xD02FF3D3
-fcvt.s.lu
+fcvt.s.lu: 0xD035F2D3
 fcvt.s.w: 0xD003F3D3
-fcvt.s.wu
+fcvt.s.wu: 0xD0157253
 fcvt.w.d: 0xC200FE53
 fcvt.w.s: 0xC0007ED3
-fcvt.wu.d
-fcvt.wu.s
+fcvt.wu.d: 0xC2117653
+fcvt.wu.s: 0xC01276D3
 fdiv.d: 0x1A10FED3
 fdiv.s: 0x18007E53
 feq.d: 0xA210A353
@@ -38,8 +38,8 @@ fmin.d: 0x2A1081D3
 fmin.s: 0x28000153
 fmsub.d: 0x0A10F2C7
 fmsub.s: 0x00007247
-fmul.d
-fmul.s
+fmul.d: 0x12317353
+fmul.s: 0x105273D3
 fmv.d.x: 0xF2030053
 fmv.w.x: 0xF00380D3
 fmv.x.d: 0xE2000E53
@@ -49,10 +49,10 @@ fnmadd.s: 0x0000734F
 fnmsub.d: 0x0A10FECB
 fnmsub.s: 0x00007E4B
 fsd
-fsgnj.d
-fsgnj.s
-fsgnjn.d
-fsgnjn.s
+fsgnj.d: 0x22310E53
+fsgnj.s: 0x20520ED3
+fsgnjn.d: 0x22311F53
+fsgnjn.s: 0x20521FD3
 fsgnjx.d
 fsgnjx.s
 fsqrt.d: 0x5A00FFD3
