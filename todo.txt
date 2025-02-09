@@ -1,5 +1,3 @@
-fadd.d: 0x0210F1D3
-fadd.s: 0x00007153
 fclass.d: 0xE20093D3
 fclass.s: 0xE0001353
 fcvt.d.l: 0xD22F7353

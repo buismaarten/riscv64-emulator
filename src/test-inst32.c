@@ -417,6 +417,8 @@ static uint32_t program32[] = {
     /* DIVW */       0x02F747BB,
     /* EBREAK */     0x00100073,
     /* ECALL */      0x00000073,
+    /* FADD.D */     0x0210F1D3,
+    /* FADD.S */     0x00007153,
     /* FENCE */      0x0FF0000F,
     /* FENCE.I */    0x0000100F,
     /* JAL */        0x0080006F,
@@ -913,6 +915,16 @@ void test_inst32() {
 
         if (OP_ECALL(inst)) {
             printf("Matched ECALL instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FADD_D(inst)) {
+            printf("Matched FADD.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FADD_S(inst)) {
+            printf("Matched FADD.S instruction 0x%08X\n", inst);
             count++;
         }
 

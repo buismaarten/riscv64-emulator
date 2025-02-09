@@ -196,6 +196,14 @@
 #define OP_ECALL(inst) \
     (inst == 0b00000000000000000000000001110011)
 
+#define OP_FADD_D(inst) \
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
+
+#define OP_FADD_S(inst) \
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 25, 7) == 0b0000000)
+
 #define OP_FENCE(inst) \
     (OP_MASK(inst, 0, 20) == 0b00000000000000001111 && \
      OP_MASK(inst, 28, 4) == 0b0000)
