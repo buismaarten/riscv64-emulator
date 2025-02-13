@@ -211,6 +211,10 @@
 #define OP_FENCE_I(inst) \
     (inst == 0b00000000000000000001000000001111)
 
+#define OP_FSW(inst) \
+    (OP_MASK(inst, 0, 7) == 0b0100111 && \
+     OP_MASK(inst, 12, 3) == 0b010)
+
 #define OP_JAL(inst) \
     (OP_MASK(inst, 0, 7) == 0b1101111)
 

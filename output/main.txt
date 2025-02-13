@@ -753,6 +753,7 @@ Matched FADD.D instruction 0x0210F1D3
 Matched FADD.S instruction 0x00007153
 Matched FENCE instruction 0x0FF0000F
 Matched FENCE.I instruction 0x0000100F
+Matched FSW instruction 0x00F7A027
 Matched JAL instruction 0x0080006F
 Matched JAL instruction 0x00C0006F
 Matched JAL instruction 0x0100006F

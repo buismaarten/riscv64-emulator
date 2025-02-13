@@ -57,4 +57,3 @@ fsqrt.d: 0x5A00FFD3
 fsqrt.s: 0x58007F53
 fsub.d: 0x0A10F0D3
 fsub.s: 0x08007053
-fsw: 0x00F7A027

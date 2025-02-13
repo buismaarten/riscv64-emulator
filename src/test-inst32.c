@@ -421,6 +421,7 @@ static uint32_t program32[] = {
     /* FADD.S */     0x00007153,
     /* FENCE */      0x0FF0000F,
     /* FENCE.I */    0x0000100F,
+    /* FSW */        0x00F7A027,
     /* JAL */        0x0080006F,
     /* JAL */        0x00C0006F,
     /* JAL */        0x0100006F,
@@ -935,6 +936,11 @@ void test_inst32() {
 
         if (OP_FENCE_I(inst)) {
             printf("Matched FENCE.I instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSW(inst)) {
+            printf("Matched FSW instruction 0x%08X\n", inst);
             count++;
         }
 
