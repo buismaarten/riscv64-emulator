@@ -4,9 +4,9 @@
      OP_MASK(inst, 20, 12) == 0b111000100000)
 
 #define OP_FCLASS_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 20, 12) == 0b111000000000)
 
 #define OP_FCVT_D_L(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
@@ -19,9 +19,8 @@
      OP_MASK(inst, 25, 7) == XXX)
 
 #define OP_FCVT_D_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0010000100000)
 
 #define OP_FCVT_D_W(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
