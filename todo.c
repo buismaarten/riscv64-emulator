@@ -21,14 +21,12 @@
      OP_MASK(inst, 20, 12) == 0b010000100000)
 
 #define OP_FCVT_D_W(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110100100000)
 
 #define OP_FCVT_D_WU(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110100100001)
 
 #define OP_FCVT_L_D(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
