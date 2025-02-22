@@ -57,34 +57,28 @@
      OP_MASK(inst, 20, 12) == 0b110100000011)
 
 #define OP_FCVT_S_W(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110100000000)
 
 #define OP_FCVT_S_WU(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110100000001)
 
 #define OP_FCVT_W_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110000100000)
 
 #define OP_FCVT_W_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110000000000)
 
 #define OP_FCVT_WU_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110000100001)
 
 #define OP_FCVT_WU_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110000000001)
 
 #define OP_FDIV_D(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
