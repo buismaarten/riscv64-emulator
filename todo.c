@@ -49,14 +49,12 @@
      OP_MASK(inst, 20, 12) == 0b010000000001)
 
 #define OP_FCVT_S_L(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110100000010)
 
 #define OP_FCVT_S_LU(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 12, 3) == XXX && \
-     OP_MASK(inst, 25, 7) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b110100000011)
 
 #define OP_FCVT_S_W(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
