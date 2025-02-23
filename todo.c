@@ -145,20 +145,22 @@
      OP_MASK(inst, 25, 7) == 0b0010100)
 
 #define OP_FMIN_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0010101)
 
 #define OP_FMIN_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0010100)
 
 #define OP_FMSUB_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1000111 && \
+     OP_MASK(inst, 25, 2) == 0b01)
 
 #define OP_FMSUB_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1000111 && \
+     OP_MASK(inst, 25, 2) == 0b00)
 
 #define OP_FMUL_D(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
