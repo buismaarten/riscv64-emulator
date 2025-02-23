@@ -988,6 +988,116 @@ void test_inst32() {
             count++;
         }
 
+        if (OP_FCLASS_D(inst)) {
+            printf("Matched FCLASS.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCLASS_S(inst)) {
+            printf("Matched FCLASS.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_D_L(inst)) {
+            printf("Matched FCVT.D.L instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_D_LU(inst)) {
+            printf("Matched FCVT.D.LU instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_D_S(inst)) {
+            printf("Matched FCVT.D.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_D_W(inst)) {
+            printf("Matched FCVT.D.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_D_WU(inst)) {
+            printf("Matched FCVT.D.WU instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_L_D(inst)) {
+            printf("Matched FCVT.L.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_L_S(inst)) {
+            printf("Matched FCVT.L.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_LU_D(inst)) {
+            printf("Matched FCVT.LU.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_LU_S(inst)) {
+            printf("Matched FCVT.LU.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_S_D(inst)) {
+            printf("Matched FCVT.S.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_S_L(inst)) {
+            printf("Matched FCVT.S.L instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_S_LU(inst)) {
+            printf("Matched FCVT.S.LU instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_S_W(inst)) {
+            printf("Matched FCVT.S.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_S_WU(inst)) {
+            printf("Matched FCVT.S.WU instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_W_D(inst)) {
+            printf("Matched FCVT.W.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_W_S(inst)) {
+            printf("Matched FCVT.W.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_WU_D(inst)) {
+            printf("Matched FCVT.WU.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FCVT_WU_S(inst)) {
+            printf("Matched FCVT.WU.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FDIV_D(inst)) {
+            printf("Matched FDIV.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FDIV_S(inst)) {
+            printf("Matched FDIV.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
         if (OP_FENCE(inst)) {
             printf("Matched FENCE instruction 0x%08X\n", inst);
             count++;
@@ -995,6 +1105,191 @@ void test_inst32() {
 
         if (OP_FENCE_I(inst)) {
             printf("Matched FENCE.I instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FEQ_D(inst)) {
+            printf("Matched FEQ.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FEQ_S(inst)) {
+            printf("Matched FEQ.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FLD(inst)) {
+            printf("Matched FLD instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FLE_D(inst)) {
+            printf("Matched FLE.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FLE_S(inst)) {
+            printf("Matched FLE.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FLT_D(inst)) {
+            printf("Matched FLT.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FLT_S(inst)) {
+            printf("Matched FLT.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FLW(inst)) {
+            printf("Matched FLW instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMADD_D(inst)) {
+            printf("Matched FMADD.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMADD_S(inst)) {
+            printf("Matched FMADD.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMAX_D(inst)) {
+            printf("Matched FMAX.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMAX_S(inst)) {
+            printf("Matched FMAX.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMIN_D(inst)) {
+            printf("Matched FMIN.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMIN_S(inst)) {
+            printf("Matched FMIN.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMSUB_D(inst)) {
+            printf("Matched FMSUB.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMSUB_S(inst)) {
+            printf("Matched FMSUB.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMUL_D(inst)) {
+            printf("Matched FMUL.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMUL_S(inst)) {
+            printf("Matched FMUL.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMV_D_X(inst)) {
+            printf("Matched FMV.D.X instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMV_W_X(inst)) {
+            printf("Matched FMV.W.X instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMV_X_D(inst)) {
+            printf("Matched FMV.X.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FMV_X_W(inst)) {
+            printf("Matched FMV.X.W instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FNMADD_D(inst)) {
+            printf("Matched FNMADD.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FNMADD_S(inst)) {
+            printf("Matched FNMADD.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FNMSUB_D(inst)) {
+            printf("Matched FNMSUB.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FNMSUB_S(inst)) {
+            printf("Matched FNMSUB.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSD(inst)) {
+            printf("Matched FSD instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSGNJ_D(inst)) {
+            printf("Matched FSGNJ.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSGNJ_S(inst)) {
+            printf("Matched FSGNJ.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSGNJN_D(inst)) {
+            printf("Matched FSGNJN.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSGNJN_S(inst)) {
+            printf("Matched FSGNJN.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSGNJX_D(inst)) {
+            printf("Matched FSGNJX.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSGNJX_S(inst)) {
+            printf("Matched FSGNJX.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSQRT_D(inst)) {
+            printf("Matched FSQRT.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSQRT_S(inst)) {
+            printf("Matched FSQRT.S instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSUB_D(inst)) {
+            printf("Matched FSUB.D instruction 0x%08X\n", inst);
+            count++;
+        }
+
+        if (OP_FSUB_S(inst)) {
+            printf("Matched FSUB.S instruction 0x%08X\n", inst);
             count++;
         }
 
