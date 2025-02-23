@@ -127,20 +127,22 @@
      OP_MASK(inst, 12, 3) == 0b010)
 
 #define OP_FMADD_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1000011 && \
+     OP_MASK(inst, 25, 2) == 0b01)
 
 #define OP_FMADD_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1000011 && \
+     OP_MASK(inst, 25, 2) == 0b00)
 
 #define OP_FMAX_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0010101)
 
 #define OP_FMAX_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0010100)
 
 #define OP_FMIN_D(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
