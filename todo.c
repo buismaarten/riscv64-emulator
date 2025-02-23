@@ -199,12 +199,12 @@
      OP_MASK(inst, 20, 12) == XXX)
 
 #define OP_FNMSUB_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1001011 && \
+     OP_MASK(inst, 25, 2) == 0b01)
 
 #define OP_FNMSUB_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1001011 && \
+     OP_MASK(inst, 25, 2) == 0b00)
 
 #define OP_FSD(inst) \
     (OP_MASK(inst, 0, 7) == 0b0100111 && \
