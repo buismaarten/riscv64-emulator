@@ -191,12 +191,12 @@
      OP_MASK(inst, 20, 12) == 0b111000000000)
 
 #define OP_FNMADD_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1001111 && \
+     OP_MASK(inst, 25, 2) == 0b01)
 
 #define OP_FNMADD_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1001111 && \
+     OP_MASK(inst, 25, 2) == 0b00)
 
 #define OP_FNMSUB_D(inst) \
     (OP_MASK(inst, 0, 7) == 0b1001011 && \
