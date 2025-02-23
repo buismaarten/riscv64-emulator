@@ -207,24 +207,28 @@
      OP_MASK(inst, 20, 12) == XXX)
 
 #define OP_FSD(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b0100111 && \
+     OP_MASK(inst, 12, 3) == 0b011)
 
 #define OP_FSGNJ_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0010001)
 
 #define OP_FSGNJ_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b0010000)
 
 #define OP_FSGNJN_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0010001)
 
 #define OP_FSGNJN_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b0010000)
 
 #define OP_FSGNJX_D(inst) \
     (OP_MASK(inst, 0, 7) == 0b1010011 && \
