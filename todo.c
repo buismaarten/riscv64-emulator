@@ -99,28 +99,32 @@
      OP_MASK(inst, 25, 7) == 0b1010000)
 
 #define OP_FLD(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b0000111 && \
+     OP_MASK(inst, 12, 3) == 0b011)
 
 #define OP_FLE_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b1010001)
 
 #define OP_FLE_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b000 && \
+     OP_MASK(inst, 25, 7) == 0b1010000)
 
 #define OP_FLT_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b1010001)
 
 #define OP_FLT_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 12, 3) == 0b001 && \
+     OP_MASK(inst, 25, 7) == 0b1010000)
 
 #define OP_FLW(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b0000111 && \
+     OP_MASK(inst, 12, 3) == 0b010)
 
 #define OP_FMADD_D(inst) \
     (OP_MASK(inst, 0, 7) == XXX && \
