@@ -235,17 +235,17 @@
      OP_MASK(inst, 20, 12) == XXX)
 
 #define OP_FSQRT_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b010110100000)
 
 #define OP_FSQRT_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 20, 12) == 0b010110000000)
 
 #define OP_FSUB_D(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 25, 7) == 0b0000001)
 
 #define OP_FSUB_S(inst) \
-    (OP_MASK(inst, 0, 7) == XXX && \
-     OP_MASK(inst, 20, 12) == XXX)
+    (OP_MASK(inst, 0, 7) == 0b1010011 && \
+     OP_MASK(inst, 25, 7) == 0b0000100)
