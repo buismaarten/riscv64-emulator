@@ -751,8 +751,67 @@ Matched EBREAK instruction 0x00100073
 Matched ECALL instruction 0x00000073
 Matched FADD.D instruction 0x0210F1D3
 Matched FADD.S instruction 0x00007153
+Error: no match for instruction 0xE20093D3
+Error: no match for instruction 0xE0001353
+Error: no match for instruction 0xD22F7353
+Error: no match for instruction 0xD235F1D3
+Error: no match for instruction 0x42000253
+Error: no match for instruction 0xD2030353
+Error: no match for instruction 0xD2150153
+Error: no match for instruction 0xC220FF53
+Error: no match for instruction 0xC0207FD3
+Error: no match for instruction 0xC231F753
+Error: no match for instruction 0xC032F7D3
+Error: no match for instruction 0x4010F2D3
+Error: no match for instruction 0xD02FF3D3
+Error: no match for instruction 0xD035F2D3
+Error: no match for instruction 0xD003F3D3
+Error: no match for instruction 0xD0157253
+Error: no match for instruction 0xC200FE53
+Error: no match for instruction 0xC0007ED3
+Error: no match for instruction 0xC2117653
+Error: no match for instruction 0xC01276D3
+Error: no match for instruction 0x1A10FED3
+Error: no match for instruction 0x18007E53
 Matched FENCE instruction 0x0FF0000F
 Matched FENCE.I instruction 0x0000100F
+Error: no match for instruction 0xA210A353
+Error: no match for instruction 0xA00022D3
+Error: no match for instruction 0xFE843787
+Error: no match for instruction 0xA2108E53
+Error: no match for instruction 0xA00003D3
+Error: no match for instruction 0xA2109F53
+Error: no match for instruction 0xA0001ED3
+Error: no match for instruction 0xFEC42787
+Error: no match for instruction 0x0A10FFC3
+Error: no match for instruction 0x00007F43
+Error: no match for instruction 0x2A1090D3
+Error: no match for instruction 0x28001053
+Error: no match for instruction 0x2A1081D3
+Error: no match for instruction 0x28000153
+Error: no match for instruction 0x0A10F2C7
+Error: no match for instruction 0x00007247
+Error: no match for instruction 0x12317353
+Error: no match for instruction 0x105273D3
+Error: no match for instruction 0xF2030053
+Error: no match for instruction 0xF00380D3
+Error: no match for instruction 0xE2000E53
+Error: no match for instruction 0xE0008ED3
+Error: no match for instruction 0x0A10F3CF
+Error: no match for instruction 0x0000734F
+Error: no match for instruction 0x0A10FECB
+Error: no match for instruction 0x00007E4B
+Error: no match for instruction 0x00F7B027
+Error: no match for instruction 0x22310E53
+Error: no match for instruction 0x20520ED3
+Error: no match for instruction 0x22311F53
+Error: no match for instruction 0x20521FD3
+Error: no match for instruction 0x22E7A7D3
+Error: no match for instruction 0x20E7A7D3
+Error: no match for instruction 0x5A00FFD3
+Error: no match for instruction 0x58007F53
+Error: no match for instruction 0x0A10F0D3
+Error: no match for instruction 0x08007053
 Matched FSW instruction 0x00F7A027
 Matched JAL instruction 0x0080006F
 Matched JAL instruction 0x00C0006F
