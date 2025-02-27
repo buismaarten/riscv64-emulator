@@ -463,7 +463,7 @@
 
 #define OP_FSUB_D(inst) \
     (OP_MASK(inst, 0, 7) == 0b1010011 && \
-     OP_MASK(inst, 25, 7) == 0b0000001)
+     OP_MASK(inst, 25, 7) == 0b0000101)
 
 #define OP_FSUB_S(inst) \
     (OP_MASK(inst, 0, 7) == 0b1010011 && \

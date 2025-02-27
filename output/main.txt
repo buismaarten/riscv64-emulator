@@ -750,8 +750,6 @@ Matched DIVW instruction 0x02F747BB
 Matched EBREAK instruction 0x00100073
 Matched ECALL instruction 0x00000073
 Matched FADD.D instruction 0x0210F1D3
-Matched FSUB.D instruction 0x0210F1D3
-Error: multiple matches for instruction 0x0210F1D3
 Matched FADD.S instruction 0x00007153
 Matched FCLASS.D instruction 0xE20093D3
 Matched FCLASS.S instruction 0xE0001353
@@ -812,7 +810,7 @@ Matched FSGNJX.D instruction 0x22E7A7D3
 Matched FSGNJX.S instruction 0x20E7A7D3
 Matched FSQRT.D instruction 0x5A00FFD3
 Matched FSQRT.S instruction 0x58007F53
-Error: no match for instruction 0x0A10F0D3
+Matched FSUB.D instruction 0x0A10F0D3
 Matched FSUB.S instruction 0x08007053
 Matched FSW instruction 0x00F7A027
 Matched JAL instruction 0x0080006F
