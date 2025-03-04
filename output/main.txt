@@ -1047,12 +1047,12 @@ Matched SLT instruction 0x00F727B3
 Matched SLTI instruction 0x00A7A793
 Matched SLTIU instruction 0x00A7B793
 Matched SLTU instruction 0x00F737B3
-Matched SRA instruction 0x40F757B3
+Matched SRA instruction 0x40F757B3: rs2=15, rs1=14, rd=15
 Matched SRAI instruction 0x4037D793
 Matched SRAIW instruction 0x4057D79B
 Matched SRAW instruction 0x40F757BB
 Matched SRET instruction 0x10200073
-Matched SRL instruction 0x00E6D633
+Matched SRL instruction 0x00E6D633: rs2=14, rs1=13, rd=12
 Matched SRLI instruction 0x0056D793
 Matched SRLIW instruction 0x0056D79B
 Matched SRLW instruction 0x00E6D73B
