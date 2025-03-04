@@ -766,7 +766,7 @@ void test_inst32() {
         if (OP_ADD(inst)) {
             uint32_t rs2 = (inst & 0b1111100000000000000000000) >> 20;
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             printf("Matched ADD instruction 0x%08X, rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -775,7 +775,7 @@ void test_inst32() {
         if (OP_ADDI(inst)) {
             uint32_t imm = (inst & 0b11111111111100000000000000000000) >> 20;
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             if (imm & (1U << 11)) {
                 imm |= 0xFFFFF000;
@@ -788,7 +788,7 @@ void test_inst32() {
         if (OP_ADDIW(inst)) {
             uint32_t imm = (inst & 0b11111111111100000000000000000000) >> 20;
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             if (imm & (1U << 11)) {
                 imm |= 0xFFFFF000;
@@ -801,7 +801,7 @@ void test_inst32() {
         if (OP_ADDW(inst)) {
             uint32_t rs2 = (inst & 0b1111100000000000000000000) >> 20;
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             printf("Matched ADDW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -900,7 +900,7 @@ void test_inst32() {
         if (OP_AND(inst)) {
             uint32_t rs2 = (inst & 0b1111100000000000000000000) >> 20;
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             printf("Matched AND instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -909,7 +909,7 @@ void test_inst32() {
         if (OP_ANDI(inst)) {
             uint32_t imm = (inst & 0b11111111111100000000000000000000) >> 20;
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             if (imm & (1U << 11)) {
                 imm |= 0xFFFFF000;
@@ -921,7 +921,7 @@ void test_inst32() {
 
         if (OP_AUIPC(inst)) {
             uint32_t imm = (inst & 0b11111111111111111111000000000000) >> 12;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             printf("Matched AUIPC instruction 0x%08X: imm=%d, rd=%d\n", inst, imm, rd);
             count++;
@@ -1575,7 +1575,7 @@ void test_inst32() {
         if (OP_SUB(inst)) {
             uint32_t rs2 = (inst & 0b1111100000000000000000000) >> 20;
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
-            uint32_t rd =  (inst & 0b111110000000) >> 7;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             printf("Matched SUB instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
