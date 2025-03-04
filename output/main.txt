@@ -1057,25 +1057,25 @@ Matched SRLI instruction 0x0056D793
 Matched SRLIW instruction 0x0056D79B
 Matched SRLW instruction 0x00E6D73B
 Matched SUB instruction 0x40B50533: rs2=11, rs1=10, rd=10
-Matched SUBW instruction 0x4086843B
-Matched SUBW instruction 0x4087843B
-Matched SUBW instruction 0x40A3053B
-Matched SUBW instruction 0x40A4043B
-Matched SUBW instruction 0x40A5853B
-Matched SUBW instruction 0x40AF053B
-Matched SUBW instruction 0x40D503BB
-Matched SUBW instruction 0x40D50CBB
-Matched SUBW instruction 0x40D50D3B
-Matched SUBW instruction 0x40E7873B
-Matched SUBW instruction 0x40F583BB
-Matched SUBW instruction 0x40F70B3B
-Matched SUBW instruction 0x40FA0DBB
-Matched SUBW instruction 0x40FA84BB
-Matched SUBW instruction 0x40FA89BB
-Matched SUBW instruction 0x40FB0A3B
-Matched SUBW instruction 0x41850C3B
-Matched SUBW instruction 0x41958CBB
-Matched SUBW instruction 0x41DF0EBB
+Matched SUBW instruction 0x4086843B: rs2=8, rs1=13, rd=8
+Matched SUBW instruction 0x4087843B: rs2=8, rs1=15, rd=8
+Matched SUBW instruction 0x40A3053B: rs2=10, rs1=6, rd=10
+Matched SUBW instruction 0x40A4043B: rs2=10, rs1=8, rd=8
+Matched SUBW instruction 0x40A5853B: rs2=10, rs1=11, rd=10
+Matched SUBW instruction 0x40AF053B: rs2=10, rs1=30, rd=10
+Matched SUBW instruction 0x40D503BB: rs2=13, rs1=10, rd=7
+Matched SUBW instruction 0x40D50CBB: rs2=13, rs1=10, rd=25
+Matched SUBW instruction 0x40D50D3B: rs2=13, rs1=10, rd=26
+Matched SUBW instruction 0x40E7873B: rs2=14, rs1=15, rd=14
+Matched SUBW instruction 0x40F583BB: rs2=15, rs1=11, rd=7
+Matched SUBW instruction 0x40F70B3B: rs2=15, rs1=14, rd=22
+Matched SUBW instruction 0x40FA0DBB: rs2=15, rs1=20, rd=27
+Matched SUBW instruction 0x40FA84BB: rs2=15, rs1=21, rd=9
+Matched SUBW instruction 0x40FA89BB: rs2=15, rs1=21, rd=19
+Matched SUBW instruction 0x40FB0A3B: rs2=15, rs1=22, rd=20
+Matched SUBW instruction 0x41850C3B: rs2=24, rs1=10, rd=24
+Matched SUBW instruction 0x41958CBB: rs2=25, rs1=11, rd=25
+Matched SUBW instruction 0x41DF0EBB: rs2=29, rs1=30, rd=29
 Matched SW instruction 0x00A7A023
 Matched SW instruction 0x00E7A023
 Matched SW instruction 0x00F6A023
