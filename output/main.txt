@@ -639,7 +639,7 @@ Matched ANDI instruction 0xFFEDFE93: imm=-2, rs1=27, rd=29
 Matched ANDI instruction 0xFFEE7513: imm=-2, rs1=28, rd=10
 Matched AUIPC instruction 0x00000517: imm=0, rd=10
 Matched AUIPC instruction 0x00000717: imm=0, rd=14
-Matched AUIPC instruction 0x00010117: imm=16, rd=2
+Matched AUIPC instruction 0x00010117: imm=65536, rd=2
 Matched BEQ instruction 0x00078863
 Matched BEQ instruction 0x00078A63
 Matched BEQ instruction 0x00078E63
