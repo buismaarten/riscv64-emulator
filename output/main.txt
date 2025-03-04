@@ -619,7 +619,7 @@ Matched AMOSWAP.D instruction 0x08A5B62F
 Matched AMOSWAP.W instruction 0x08A5A6AF
 Matched AMOXOR.D instruction 0x20A5B62F
 Matched AMOXOR.W instruction 0x20A5A6AF
-Matched AND instruction 0x00F777B3
+Matched AND instruction 0x00F777B3: rs2=15, rs1=14, rd=15
 Matched ANDI instruction 0xFFE37513
 Matched ANDI instruction 0xFFE47513
 Matched ANDI instruction 0xFFE47793
