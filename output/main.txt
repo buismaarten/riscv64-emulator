@@ -1056,7 +1056,7 @@ Matched SRL instruction 0x00E6D633
 Matched SRLI instruction 0x0056D793
 Matched SRLIW instruction 0x0056D79B
 Matched SRLW instruction 0x00E6D73B
-Matched SUB instruction 0x40B50533
+Matched SUB instruction 0x40B50533: rs2=11, rs1=10, rd=10
 Matched SUBW instruction 0x4086843B
 Matched SUBW instruction 0x4087843B
 Matched SUBW instruction 0x40A3053B
