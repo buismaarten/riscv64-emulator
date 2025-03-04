@@ -764,17 +764,37 @@ void test_inst32() {
         uint32_t count = 0;
 
         if (OP_ADD(inst)) {
-            printf("Matched ADD instruction 0x%08X\n", inst);
+            uint32_t rs2 = (inst & 0b1111100000000000000000000) >> 20;
+            uint32_t rs1 = (inst & 0b111110000000000000) >> 15;
+            uint32_t rd =  (inst & 0b11111000000) >> 7;
+
+            printf("Matched ADD instruction 0x%08X, rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_ADDI(inst)) {
-            printf("Matched ADDI instruction 0x%08X\n", inst);
+            uint32_t imm = (inst & 0b11111111111100000000000000000000) >> 20;
+            uint32_t rs1 = (inst & 0b1111000000000000000) >> 15;
+            uint32_t rd =  (inst & 0b11110000000) >> 7;
+
+            if (imm & (1U << 11)) {
+                imm |= 0xFFFFF000;
+            }
+
+            printf("Matched ADDI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
         }
 
         if (OP_ADDIW(inst)) {
-            printf("Matched ADDIW instruction 0x%08X\n", inst);
+            uint32_t imm = (inst & 0b11111111111100000000000000000000) >> 20;
+            uint32_t rs1 = (inst & 0b1111000000000000000) >> 15;
+            uint32_t rd =  (inst & 0b11110000000) >> 7;
+
+            if (imm & (1U << 11)) {
+                imm |= 0xFFFFF000;
+            }
+
+            printf("Matched ADDIW instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
         }
 
