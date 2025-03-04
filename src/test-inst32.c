@@ -1444,6 +1444,10 @@ void test_inst32() {
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
+            if (imm & (1U << 11)) {
+                imm |= 0b11111111111111111111000000000000;
+            }
+
             printf("Matched ORI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
         }
