@@ -923,7 +923,6 @@ void test_inst32() {
             uint32_t imm = (inst & 0b11111111111111111111000000000000) >> 12;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
-            // TODO
             imm <<= 12;
             if (imm & (1U << 19)) {
                 imm |= 0b11111111111111111111100000000000;
@@ -1391,6 +1390,11 @@ void test_inst32() {
         if (OP_LUI(inst)) {
             uint32_t imm = (inst & 0b11111111111111111111000000000000) >> 12;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
+
+            imm <<= 12;
+            if (imm & (1U << 19)) {
+                imm |= 0b11111111111111111111100000000000;
+            }
 
             printf("Matched LUI instruction 0x%08X: imm=%d, rd=%d\n", inst, imm, rd);
             count++;
