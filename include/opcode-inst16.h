@@ -3,10 +3,10 @@
 #define OP_C_OPCODE(inst)   (((inst) & 0b11))
 #define OP_C_FUNCT3(inst)   (((inst) & 0b1110000000000000) >> 13)
 #define OP_C_FUNCT4(inst)   (((inst) & 0b1111000000000000) >> 12)
-#define OP_C_RS1(inst)      (((inst) & 0b0000111110000000) >> 7)
-#define OP_C_RS1_TWO(inst)  (((inst) & 0b0000110000000000) >> 10)
-#define OP_C_RS2(inst)      (((inst) & 0b0000000001111100) >> 2)
-#define OP_C_RS2_TWO(inst)  (((inst) & 0b0000000001100000) >> 5)
+#define OP_C_RS1(inst)      (((inst) & 0b111110000000) >> 7)
+#define OP_C_RS1_TWO(inst)  (((inst) & 0b110000000000) >> 10)
+#define OP_C_RS2(inst)      (((inst) & 0b1111100) >> 2)
+#define OP_C_RS2_TWO(inst)  (((inst) & 0b1100000) >> 5)
 
 #define OP_C_ADD(inst) \
     (OP_C_OPCODE(inst) == 0b10 && \
