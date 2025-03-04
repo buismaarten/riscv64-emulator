@@ -973,7 +973,7 @@ Matched MULW instruction 0x02A7053B
 Matched MULW instruction 0x02A7853B
 Matched MULW instruction 0x02F707BB
 Matched OR instruction 0x00F767B3: rs2=15, rs1=14, rd=15
-Matched ORI instruction 0x00F56613
+Matched ORI instruction 0x00F56613: imm=15, rs1=10, rd=12
 Matched REM instruction 0x02E7E7B3
 Matched REMU instruction 0x02E7F7B3
 Matched REMUW instruction 0x02F777BB
