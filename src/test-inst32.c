@@ -778,7 +778,7 @@ void test_inst32() {
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             if (imm & (1U << 11)) {
-                imm |= 0xFFFFF000;
+                imm |= 0b11111111111111111111000000000000;
             }
 
             printf("Matched ADDI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
@@ -791,7 +791,7 @@ void test_inst32() {
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             if (imm & (1U << 11)) {
-                imm |= 0xFFFFF000;
+                imm |= 0b11111111111111111111000000000000;
             }
 
             printf("Matched ADDIW instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
@@ -912,7 +912,7 @@ void test_inst32() {
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             if (imm & (1U << 11)) {
-                imm |= 0xFFFFF000;
+                imm |= 0b11111111111111111111000000000000;
             }
 
             printf("Matched ANDI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
