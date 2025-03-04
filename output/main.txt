@@ -564,43 +564,43 @@ Matched ADDIW instruction 0xFFFA879B: imm=-1, rs1=5, rd=15
 Matched ADDIW instruction 0xFFFC079B: imm=-1, rs1=8, rd=15
 Matched ADDIW instruction 0xFFFC879B: imm=-1, rs1=9, rd=15
 Matched ADDIW instruction 0xFFFD879B: imm=-1, rs1=11, rd=15
-Matched ADDW instruction 0x0054043B
-Matched ADDW instruction 0x005502BB
-Matched ADDW instruction 0x0059093B
-Matched ADDW instruction 0x005F02BB
-Matched ADDW instruction 0x008686BB
-Matched ADDW instruction 0x0094053B
-Matched ADDW instruction 0x009504BB
-Matched ADDW instruction 0x009787BB
-Matched ADDW instruction 0x00A282BB
-Matched ADDW instruction 0x00A4843B
-Matched ADDW instruction 0x00A9093B
-Matched ADDW instruction 0x00B282BB
-Matched ADDW instruction 0x00B484BB
-Matched ADDW instruction 0x00B5053B
-Matched ADDW instruction 0x00DB0B3B
-Matched ADDW instruction 0x00DC0C3B
-Matched ADDW instruction 0x00E5073B
-Matched ADDW instruction 0x00F487BB
-Matched ADDW instruction 0x00F507BB
-Matched ADDW instruction 0x00F707BB
-Matched ADDW instruction 0x00FC0C3B
-Matched ADDW instruction 0x0125053B
-Matched ADDW instruction 0x0125093B
-Matched ADDW instruction 0x012686BB
-Matched ADDW instruction 0x0127853B
-Matched ADDW instruction 0x012787BB
-Matched ADDW instruction 0x0137853B
-Matched ADDW instruction 0x0159093B
-Matched ADDW instruction 0x015D0D3B
-Matched ADDW instruction 0x0165053B
-Matched ADDW instruction 0x016989BB
-Matched ADDW instruction 0x016D0D3B
-Matched ADDW instruction 0x018585BB
-Matched ADDW instruction 0x01870B3B
-Matched ADDW instruction 0x01878ABB
-Matched ADDW instruction 0x01AA8ABB
-Matched ADDW instruction 0x01AB0B3B
+Matched ADDW instruction 0x0054043B: rs2=5, rs1=0, rd=8
+Matched ADDW instruction 0x005502BB: rs2=5, rs1=2, rd=5
+Matched ADDW instruction 0x0059093B: rs2=5, rs1=2, rd=2
+Matched ADDW instruction 0x005F02BB: rs2=5, rs1=6, rd=5
+Matched ADDW instruction 0x008686BB: rs2=8, rs1=5, rd=13
+Matched ADDW instruction 0x0094053B: rs2=9, rs1=0, rd=10
+Matched ADDW instruction 0x009504BB: rs2=9, rs1=2, rd=9
+Matched ADDW instruction 0x009787BB: rs2=9, rs1=7, rd=15
+Matched ADDW instruction 0x00A282BB: rs2=10, rs1=5, rd=5
+Matched ADDW instruction 0x00A4843B: rs2=10, rs1=1, rd=8
+Matched ADDW instruction 0x00A9093B: rs2=10, rs1=2, rd=2
+Matched ADDW instruction 0x00B282BB: rs2=11, rs1=5, rd=5
+Matched ADDW instruction 0x00B484BB: rs2=11, rs1=1, rd=9
+Matched ADDW instruction 0x00B5053B: rs2=11, rs1=2, rd=10
+Matched ADDW instruction 0x00DB0B3B: rs2=13, rs1=6, rd=6
+Matched ADDW instruction 0x00DC0C3B: rs2=13, rs1=0, rd=8
+Matched ADDW instruction 0x00E5073B: rs2=14, rs1=2, rd=14
+Matched ADDW instruction 0x00F487BB: rs2=15, rs1=1, rd=15
+Matched ADDW instruction 0x00F507BB: rs2=15, rs1=2, rd=15
+Matched ADDW instruction 0x00F707BB: rs2=15, rs1=6, rd=15
+Matched ADDW instruction 0x00FC0C3B: rs2=15, rs1=0, rd=8
+Matched ADDW instruction 0x0125053B: rs2=18, rs1=2, rd=10
+Matched ADDW instruction 0x0125093B: rs2=18, rs1=2, rd=2
+Matched ADDW instruction 0x012686BB: rs2=18, rs1=5, rd=13
+Matched ADDW instruction 0x0127853B: rs2=18, rs1=7, rd=10
+Matched ADDW instruction 0x012787BB: rs2=18, rs1=7, rd=15
+Matched ADDW instruction 0x0137853B: rs2=19, rs1=7, rd=10
+Matched ADDW instruction 0x0159093B: rs2=21, rs1=2, rd=2
+Matched ADDW instruction 0x015D0D3B: rs2=21, rs1=2, rd=10
+Matched ADDW instruction 0x0165053B: rs2=22, rs1=2, rd=10
+Matched ADDW instruction 0x016989BB: rs2=22, rs1=3, rd=3
+Matched ADDW instruction 0x016D0D3B: rs2=22, rs1=2, rd=10
+Matched ADDW instruction 0x018585BB: rs2=24, rs1=3, rd=11
+Matched ADDW instruction 0x01870B3B: rs2=24, rs1=6, rd=6
+Matched ADDW instruction 0x01878ABB: rs2=24, rs1=7, rd=5
+Matched ADDW instruction 0x01AA8ABB: rs2=26, rs1=5, rd=5
+Matched ADDW instruction 0x01AB0B3B: rs2=26, rs1=6, rd=6
 Matched AMOADD.D instruction 0x00A5B62F
 Matched AMOADD.W instruction 0x00A5A6AF
 Matched AMOAND.D instruction 0x60A5B62F
