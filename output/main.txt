@@ -954,9 +954,9 @@ Matched LR.D instruction 0x1005B32F
 Matched LR.D instruction 0x1005B6AF
 Matched LR.W instruction 0x100522AF
 Matched LR.W instruction 0x1005262F
-Matched LUI instruction 0x100006B7
-Matched LUI instruction 0x10000737
-Matched LUI instruction 0x100007B7
+Matched LUI instruction 0x100006B7: imm=65536, rd=13
+Matched LUI instruction 0x10000737: imm=65536, rd=14
+Matched LUI instruction 0x100007B7: imm=65536, rd=15
 Matched LW instruction 0xFDC42783
 Matched LW instruction 0xFE842703
 Matched LW instruction 0xFE842783
