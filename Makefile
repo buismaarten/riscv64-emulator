@@ -3,7 +3,7 @@ TOOLCHAIN_FLAGS = -I./include -fsanitize=address
 
 .PHONY: default
 default:
-	$(TOOLCHAIN) $(TOOLCHAIN_FLAGS) -c ./src/main.c -o ./output/main.o
+	$(TOOLCHAIN) $(TOOLCHAIN_FLAGS) -o ./output/main.o -c ./src/main.c
 	$(TOOLCHAIN) $(TOOLCHAIN_FLAGS) -o ./output/main ./output/main.o
 
 .PHONY: run
