@@ -1087,4 +1087,4 @@ Matched SW instruction 0xFEF42623
 Matched URET instruction 0x00200073
 Matched WFI instruction 0x10500073
 Matched XOR instruction 0x00F747B3: rs2=15, rs1=14, rd=15
-Matched XORI instruction 0x0F05C693
+Matched XORI instruction 0x0F05C693: imm=240, rs1=11, rd=13
