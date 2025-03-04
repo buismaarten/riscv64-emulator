@@ -1,4 +1,5 @@
 #include "opcode-inst16.h"
+#include "utils-inst16.h"
 #include <stdint.h>
 #include <stdio.h>
 

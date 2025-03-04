@@ -1,4 +1,5 @@
 #include "opcode-inst32.h"
+#include "utils-inst32.h"
 #include <stdint.h>
 #include <stdio.h>
 
@@ -777,9 +778,7 @@ void test_inst32() {
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
-            if (imm & (1U << 11)) {
-                imm |= 0b11111111111111111111000000000000;
-            }
+            imm = sign_extend_32(imm, 12);
 
             printf("Matched ADDI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
@@ -790,9 +789,7 @@ void test_inst32() {
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
-            if (imm & (1U << 11)) {
-                imm |= 0b11111111111111111111000000000000;
-            }
+            imm = sign_extend_32(imm, 12);
 
             printf("Matched ADDIW instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
@@ -911,9 +908,7 @@ void test_inst32() {
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
-            if (imm & (1U << 11)) {
-                imm |= 0b11111111111111111111000000000000;
-            }
+            imm = sign_extend_32(imm, 12);
 
             printf("Matched ANDI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
@@ -924,9 +919,7 @@ void test_inst32() {
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             imm <<= 12;
-            if (imm & (1U << 19)) {
-                imm |= 0b11111111111111111111100000000000;
-            }
+            imm = sign_extend_32(imm, 20);
 
             printf("Matched AUIPC instruction 0x%08X: imm=%d, rd=%d\n", inst, imm, rd);
             count++;
@@ -1392,9 +1385,7 @@ void test_inst32() {
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
             imm <<= 12;
-            if (imm & (1U << 19)) {
-                imm |= 0b11111111111111111111100000000000;
-            }
+            imm = sign_extend_32(imm, 20);
 
             printf("Matched LUI instruction 0x%08X: imm=%d, rd=%d\n", inst, imm, rd);
             count++;
@@ -1454,9 +1445,7 @@ void test_inst32() {
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
-            if (imm & (1U << 11)) {
-                imm |= 0b11111111111111111111000000000000;
-            }
+            imm = sign_extend_32(imm, 12);
 
             printf("Matched ORI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
@@ -1652,9 +1641,7 @@ void test_inst32() {
             uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
             uint32_t rd  = (inst & 0b111110000000) >> 7;
 
-            if (imm & (1U << 11)) {
-                imm |= 0b11111111111111111111000000000000;
-            }
+            imm = sign_extend_32(imm, 12);
 
             printf("Matched XORI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
