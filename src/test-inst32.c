@@ -805,91 +805,127 @@ void test_inst32() {
         }
 
         if (OP_AMOADD_D(inst)) {
+            // TODO
+
             printf("Matched AMOADD.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOADD_W(inst)) {
+            // TODO
+
             printf("Matched AMOADD.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOAND_D(inst)) {
+            // TODO
+
             printf("Matched AMOAND.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOAND_W(inst)) {
+            // TODO
+
             printf("Matched AMOAND.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMAX_D(inst)) {
+            // TODO
+
             printf("Matched AMOMAX.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMAX_W(inst)) {
+            // TODO
+
             printf("Matched AMOMAX.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMAXU_D(inst)) {
+            // TODO
+
             printf("Matched AMOMAXU.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMAXU_W(inst)) {
+            // TODO
+
             printf("Matched AMOMAXU.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMIN_D(inst)) {
+            // TODO
+
             printf("Matched AMOMIN.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMIN_W(inst)) {
+            // TODO
+
             printf("Matched AMOMIN.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMINU_D(inst)) {
+            // TODO
+
             printf("Matched AMOMINU.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOMINU_W(inst)) {
+            // TODO
+
             printf("Matched AMOMINU.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOOR_D(inst)) {
+            // TODO
+
             printf("Matched AMOOR.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOOR_W(inst)) {
+            // TODO
+
             printf("Matched AMOOR.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOSWAP_D(inst)) {
+            // TODO
+
             printf("Matched AMOSWAP.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOSWAP_W(inst)) {
+            // TODO
+
             printf("Matched AMOSWAP.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOXOR_D(inst)) {
+            // TODO
+
             printf("Matched AMOXOR.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_AMOXOR_W(inst)) {
+            // TODO
+
             printf("Matched AMOXOR.W instruction 0x%08X\n", inst);
             count++;
         }
@@ -926,31 +962,43 @@ void test_inst32() {
         }
 
         if (OP_BEQ(inst)) {
+            // TODO
+
             printf("Matched BEQ instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_BGE(inst)) {
+            // TODO
+
             printf("Matched BGE instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_BGEU(inst)) {
+            // TODO
+
             printf("Matched BGEU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_BLT(inst)) {
+            // TODO
+
             printf("Matched BLT instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_BLTU(inst)) {
+            // TODO
+
             printf("Matched BLTU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_BNE(inst)) {
+            // TODO
+
             printf("Matched BNE instruction 0x%08X\n", inst);
             count++;
         }
@@ -1010,21 +1058,29 @@ void test_inst32() {
         }
 
         if (OP_DIV(inst)) {
+            // TODO
+
             printf("Matched DIV instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_DIVU(inst)) {
+            // TODO
+
             printf("Matched DIVU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_DIVUW(inst)) {
+            // TODO
+
             printf("Matched DIVUW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_DIVW(inst)) {
+            // TODO
+
             printf("Matched DIVW instruction 0x%08X\n", inst);
             count++;
         }
@@ -1040,126 +1096,176 @@ void test_inst32() {
         }
 
         if (OP_FADD_D(inst)) {
+            // TODO
+
             printf("Matched FADD.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FADD_S(inst)) {
+            // TODO
+
             printf("Matched FADD.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCLASS_D(inst)) {
+            // TODO
+
             printf("Matched FCLASS.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCLASS_S(inst)) {
+            // TODO
+
             printf("Matched FCLASS.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_D_L(inst)) {
+            // TODO
+
             printf("Matched FCVT.D.L instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_D_LU(inst)) {
+            // TODO
+
             printf("Matched FCVT.D.LU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_D_S(inst)) {
+            // TODO
+
             printf("Matched FCVT.D.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_D_W(inst)) {
+            // TODO
+
             printf("Matched FCVT.D.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_D_WU(inst)) {
+            // TODO
+
             printf("Matched FCVT.D.WU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_L_D(inst)) {
+            // TODO
+
             printf("Matched FCVT.L.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_L_S(inst)) {
+            // TODO
+
             printf("Matched FCVT.L.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_LU_D(inst)) {
+            // TODO
+
             printf("Matched FCVT.LU.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_LU_S(inst)) {
+            // TODO
+
             printf("Matched FCVT.LU.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_S_D(inst)) {
+            // TODO
+
             printf("Matched FCVT.S.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_S_L(inst)) {
+            // TODO
+
             printf("Matched FCVT.S.L instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_S_LU(inst)) {
+            // TODO
+
             printf("Matched FCVT.S.LU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_S_W(inst)) {
+            // TODO
+
             printf("Matched FCVT.S.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_S_WU(inst)) {
+            // TODO
+
             printf("Matched FCVT.S.WU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_W_D(inst)) {
+            // TODO
+
             printf("Matched FCVT.W.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_W_S(inst)) {
+            // TODO
+
             printf("Matched FCVT.W.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_WU_D(inst)) {
+            // TODO
+
             printf("Matched FCVT.WU.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FCVT_WU_S(inst)) {
+            // TODO
+
             printf("Matched FCVT.WU.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FDIV_D(inst)) {
+            // TODO
+
             printf("Matched FDIV.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FDIV_S(inst)) {
+            // TODO
+
             printf("Matched FDIV.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FENCE(inst)) {
+            // TODO
+
             printf("Matched FENCE instruction 0x%08X\n", inst);
             count++;
         }
@@ -1170,116 +1276,162 @@ void test_inst32() {
         }
 
         if (OP_FEQ_D(inst)) {
+            // TODO
+
             printf("Matched FEQ.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FEQ_S(inst)) {
+            // TODO
+
             printf("Matched FEQ.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FLD(inst)) {
+            // TODO
+
             printf("Matched FLD instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FLE_D(inst)) {
+            // TODO
+
             printf("Matched FLE.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FLE_S(inst)) {
+            // TODO
+
             printf("Matched FLE.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FLT_D(inst)) {
+            // TODO
+
             printf("Matched FLT.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FLT_S(inst)) {
+            // TODO
+
             printf("Matched FLT.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FLW(inst)) {
+            // TODO
+
             printf("Matched FLW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMADD_D(inst)) {
+            // TODO
+
             printf("Matched FMADD.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMADD_S(inst)) {
+            // TODO
+
             printf("Matched FMADD.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMAX_D(inst)) {
+            // TODO
+
             printf("Matched FMAX.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMAX_S(inst)) {
+            // TODO
+
             printf("Matched FMAX.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMIN_D(inst)) {
+            // TODO
+
             printf("Matched FMIN.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMIN_S(inst)) {
+            // TODO
+
             printf("Matched FMIN.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMSUB_D(inst)) {
+            // TODO
+
             printf("Matched FMSUB.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMSUB_S(inst)) {
+            // TODO
+
             printf("Matched FMSUB.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMUL_D(inst)) {
+            // TODO
+
             printf("Matched FMUL.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMUL_S(inst)) {
+            // TODO
+
             printf("Matched FMUL.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMV_D_X(inst)) {
+            // TODO
+
             printf("Matched FMV.D.X instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMV_W_X(inst)) {
+            // TODO
+
             printf("Matched FMV.W.X instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMV_X_D(inst)) {
+            // TODO
+
             printf("Matched FMV.X.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FMV_X_W(inst)) {
+            // TODO
+
             printf("Matched FMV.X.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FNMADD_D(inst)) {
+            // TODO
+
             printf("Matched FNMADD.D instruction 0x%08X\n", inst);
             count++;
         }
@@ -1290,116 +1442,162 @@ void test_inst32() {
         }
 
         if (OP_FNMSUB_D(inst)) {
+            // TODO
+
             printf("Matched FNMSUB.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FNMSUB_S(inst)) {
+            // TODO
+
             printf("Matched FNMSUB.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSD(inst)) {
+            // TODO
+
             printf("Matched FSD instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSGNJ_D(inst)) {
+            // TODO
+
             printf("Matched FSGNJ.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSGNJ_S(inst)) {
+            // TODO
+
             printf("Matched FSGNJ.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSGNJN_D(inst)) {
+            // TODO
+
             printf("Matched FSGNJN.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSGNJN_S(inst)) {
+            // TODO
+
             printf("Matched FSGNJN.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSGNJX_D(inst)) {
+            // TODO
+
             printf("Matched FSGNJX.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSGNJX_S(inst)) {
+            // TODO
+
             printf("Matched FSGNJX.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSQRT_D(inst)) {
+            // TODO
+
             printf("Matched FSQRT.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSQRT_S(inst)) {
+            // TODO
+
             printf("Matched FSQRT.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSUB_D(inst)) {
+            // TODO
+
             printf("Matched FSUB.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSUB_S(inst)) {
+            // TODO
+
             printf("Matched FSUB.S instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_FSW(inst)) {
+            // TODO
+
             printf("Matched FSW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_JAL(inst)) {
+            // TODO
+
             printf("Matched JAL instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_JALR(inst)) {
+            // TODO
+
             printf("Matched JALR instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LB(inst)) {
+            // TODO
+
             printf("Matched LB instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LBU(inst)) {
+            // TODO
+
             printf("Matched LBU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LD(inst)) {
+            // TODO
+
             printf("Matched LD instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LH(inst)) {
+            // TODO
+
             printf("Matched LH instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LHU(inst)) {
+            // TODO
+
             printf("Matched LHU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LR_D(inst)) {
+            // TODO
+
             printf("Matched LR.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LR_W(inst)) {
+            // TODO
+
             printf("Matched LR.W instruction 0x%08X\n", inst);
             count++;
         }
@@ -1416,11 +1614,15 @@ void test_inst32() {
         }
 
         if (OP_LW(inst)) {
+            // TODO
+
             printf("Matched LW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_LWU(inst)) {
+            // TODO
+
             printf("Matched LWU instruction 0x%08X\n", inst);
             count++;
         }
@@ -1544,21 +1746,29 @@ void test_inst32() {
         }
 
         if (OP_SC_D(inst)) {
+            // TODO
+
             printf("Matched SC.D instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SC_W(inst)) {
+            // TODO
+
             printf("Matched SC.W instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SD(inst)) {
+            // TODO
+
             printf("Matched SD instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SFENCE_VMA(inst)) {
+            // TODO
+
             printf("Matched SFENCE.VMA instruction 0x%08X\n", inst);
             count++;
         }
@@ -1576,41 +1786,57 @@ void test_inst32() {
         }
 
         if (OP_SLL(inst)) {
+            // TODO
+
             printf("Matched SLL instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SLLI(inst)) {
+            // TODO
+
             printf("Matched SLLI instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SLLIW(inst)) {
+            // TODO
+
             printf("Matched SLLIW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SLLW(inst)) {
+            // TODO
+
             printf("Matched SLLW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SLT(inst)) {
+            // TODO
+
             printf("Matched SLT instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SLTI(inst)) {
+            // TODO
+
             printf("Matched SLTI instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SLTIU(inst)) {
+            // TODO
+
             printf("Matched SLTIU instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SLTU(inst)) {
+            // TODO
+
             printf("Matched SLTU instruction 0x%08X\n", inst);
             count++;
         }
@@ -1625,16 +1851,22 @@ void test_inst32() {
         }
 
         if (OP_SRAI(inst)) {
+            // TODO
+
             printf("Matched SRAI instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SRAIW(inst)) {
+            // TODO
+
             printf("Matched SRAIW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SRAW(inst)) {
+            // TODO
+
             printf("Matched SRAW instruction 0x%08X\n", inst);
             count++;
         }
@@ -1654,16 +1886,22 @@ void test_inst32() {
         }
 
         if (OP_SRLI(inst)) {
+            // TODO
+
             printf("Matched SRLI instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SRLIW(inst)) {
+            // TODO
+
             printf("Matched SRLIW instruction 0x%08X\n", inst);
             count++;
         }
 
         if (OP_SRLW(inst)) {
+            // TODO
+
             printf("Matched SRLW instruction 0x%08X\n", inst);
             count++;
         }
