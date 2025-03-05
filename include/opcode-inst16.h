@@ -1,13 +1,13 @@
 #pragma once
 
 #define OP_C_MASK(inst, s, w)  (((inst) >> (s)) & ((1U << (w)) - 1))
-#define OP_C_OPCODE(inst)      (((inst) & 0b11))
-#define OP_C_FUNCT3(inst)      (((inst) & 0b1110000000000000) >> 13)
-#define OP_C_FUNCT4(inst)      (((inst) & 0b1111000000000000) >> 12)
-#define OP_C_RS1(inst)         (((inst) & 0b111110000000) >> 7)
-#define OP_C_RS1_TWO(inst)     (((inst) & 0b110000000000) >> 10)
-#define OP_C_RS2(inst)         (((inst) & 0b1111100) >> 2)
-#define OP_C_RS2_TWO(inst)     (((inst) & 0b1100000) >> 5)
+#define OP_C_OPCODE(inst)      (OP_C_MASK(inst, 0, 2))
+#define OP_C_FUNCT3(inst)      (OP_C_MASK(inst, 13, 3))
+#define OP_C_FUNCT4(inst)      (OP_C_MASK(inst, 12, 4))
+#define OP_C_RS1(inst)         (OP_C_MASK(inst, 7, 5))
+#define OP_C_RS1_TWO(inst)     (OP_C_MASK(inst, 10, 2))
+#define OP_C_RS2(inst)         (OP_C_MASK(inst, 2, 5))
+#define OP_C_RS2_TWO(inst)     (OP_C_MASK(inst, 5, 2))
 
 #define OP_C_ADD(inst) \
     (OP_C_OPCODE(inst) == 0b10 && \
