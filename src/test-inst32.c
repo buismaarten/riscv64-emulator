@@ -1557,7 +1557,14 @@ void test_inst32() {
         }
 
         if (OP_SH(inst)) {
-            printf("Matched SH instruction 0x%08X\n", inst);
+            uint32_t rs2 = (inst >> 20) & 0b11111;
+            uint32_t rs1 = (inst >> 15) & 0b11111;
+            uint32_t offset = 0;
+
+            offset += ((inst >> 25) & 0b1111111) << 5;
+            offset |= ((inst >> 7) & 0b11111);
+
+            printf("Matched SH instruction 0x%08X: offset=%d, rs2=%d, rs1=%d\n", inst, offset, rs2, rs1);
             count++;
         }
 
