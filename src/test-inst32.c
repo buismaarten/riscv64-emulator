@@ -1478,12 +1478,20 @@ void test_inst32() {
         }
 
         if (OP_REMUW(inst)) {
-            printf("Matched REMUW instruction 0x%08X\n", inst);
+            uint32_t rs2 = (inst & 0b1111100000000000000000000) >> 20;
+            uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
+
+            printf("Matched REMUW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_REMW(inst)) {
-            printf("Matched REMW instruction 0x%08X\n", inst);
+            uint32_t rs2 = (inst & 0b1111100000000000000000000) >> 20;
+            uint32_t rs1 = (inst & 0b11111000000000000000) >> 15;
+            uint32_t rd  = (inst & 0b111110000000) >> 7;
+
+            printf("Matched REMW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
