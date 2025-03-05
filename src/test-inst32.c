@@ -767,7 +767,7 @@ void test_inst32() {
         if (OP_ADD(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched ADD instruction 0x%08X, rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -776,7 +776,7 @@ void test_inst32() {
         if (OP_ADDI(inst)) {
             uint32_t imm = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             imm = sign_extend_32(imm, 12);
 
@@ -787,7 +787,7 @@ void test_inst32() {
         if (OP_ADDIW(inst)) {
             uint32_t imm = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             imm = sign_extend_32(imm, 12);
 
@@ -798,7 +798,7 @@ void test_inst32() {
         if (OP_ADDW(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched ADDW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -897,7 +897,7 @@ void test_inst32() {
         if (OP_AND(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched AND instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -906,7 +906,7 @@ void test_inst32() {
         if (OP_ANDI(inst)) {
             uint32_t imm = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             imm = sign_extend_32(imm, 12);
 
@@ -916,7 +916,7 @@ void test_inst32() {
 
         if (OP_AUIPC(inst)) {
             uint32_t imm = (inst >> 12) & 0b11111111111111111111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             imm <<= 12;
             imm = sign_extend_32(imm, 20);
@@ -958,7 +958,7 @@ void test_inst32() {
         if (OP_CSRRC(inst)) {
             uint32_t csr = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched CSRRC instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
@@ -967,7 +967,7 @@ void test_inst32() {
         if (OP_CSRRCI(inst)) {
             uint32_t csr = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched CSRRCI instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
@@ -976,16 +976,16 @@ void test_inst32() {
         if (OP_CSRRS(inst)) {
             uint32_t csr = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched CSRRS instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
         }
 
         if (OP_CSRRSI(inst)) {
-            uint32_t csr  = (inst >> 20) & 0b111111111111;
+            uint32_t csr = (inst >> 20) & 0b111111111111;
             uint32_t uimm = (inst >> 15) & 0b11111;
-            uint32_t rd   = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched CSRRSI instruction 0x%08X: csr=%d, uimm=%d, rd=%d\n", inst, csr, uimm, rd);
             count++;
@@ -994,16 +994,16 @@ void test_inst32() {
         if (OP_CSRRW(inst)) {
             uint32_t csr = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched CSRRW instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
         }
 
         if (OP_CSRRWI(inst)) {
-            uint32_t csr  = (inst >> 20) & 0b111111111111;
+            uint32_t csr = (inst >> 20) & 0b111111111111;
             uint32_t uimm = (inst >> 15) & 0b11111;
-            uint32_t rd   = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched CSRRWI instruction 0x%08X: csr=%d, uimm=%d, rd=%d\n", inst, csr, uimm, rd);
             count++;
@@ -1406,7 +1406,7 @@ void test_inst32() {
 
         if (OP_LUI(inst)) {
             uint32_t imm = (inst >> 12) & 0b11111111111111111111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             imm <<= 12;
             imm = sign_extend_32(imm, 20);
@@ -1433,7 +1433,7 @@ void test_inst32() {
         if (OP_MUL(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched MUL instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1442,7 +1442,7 @@ void test_inst32() {
         if (OP_MULH(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched MULH instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1451,7 +1451,7 @@ void test_inst32() {
         if (OP_MULHSU(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched MULHSU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1460,7 +1460,7 @@ void test_inst32() {
         if (OP_MULHU(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched MULHU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1469,7 +1469,7 @@ void test_inst32() {
         if (OP_MULW(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched MULW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1478,7 +1478,7 @@ void test_inst32() {
         if (OP_OR(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched OR instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1487,7 +1487,7 @@ void test_inst32() {
         if (OP_ORI(inst)) {
             uint32_t imm = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             imm = sign_extend_32(imm, 12);
 
@@ -1498,7 +1498,7 @@ void test_inst32() {
         if (OP_REM(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched REM instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1507,7 +1507,7 @@ void test_inst32() {
         if (OP_REMU(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched REMU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1516,7 +1516,7 @@ void test_inst32() {
         if (OP_REMUW(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched REMUW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1525,7 +1525,7 @@ void test_inst32() {
         if (OP_REMW(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched REMW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1604,7 +1604,7 @@ void test_inst32() {
         if (OP_SRA(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched SRA instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1633,7 +1633,7 @@ void test_inst32() {
         if (OP_SRL(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched SRL instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1657,7 +1657,7 @@ void test_inst32() {
         if (OP_SUB(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched SUB instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1666,7 +1666,7 @@ void test_inst32() {
         if (OP_SUBW(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched SUBW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1690,7 +1690,7 @@ void test_inst32() {
         if (OP_XOR(inst)) {
             uint32_t rs2 = (inst >> 20) & 0b11111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             printf("Matched XOR instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
@@ -1699,7 +1699,7 @@ void test_inst32() {
         if (OP_XORI(inst)) {
             uint32_t imm = (inst >> 20) & 0b111111111111;
             uint32_t rs1 = (inst >> 15) & 0b11111;
-            uint32_t rd  = (inst >> 7) & 0b11111;
+            uint32_t rd = (inst >> 7) & 0b11111;
 
             imm = sign_extend_32(imm, 12);
 
