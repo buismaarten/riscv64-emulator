@@ -978,7 +978,7 @@ Matched REM instruction 0x02E7E7B3: rs2=14, rs1=15, rd=15
 Matched REMU instruction 0x02E7F7B3: rs2=14, rs1=15, rd=15
 Matched REMUW instruction 0x02F777BB: rs2=15, rs1=14, rd=15
 Matched REMW instruction 0x02F767BB: rs2=15, rs1=14, rd=15
-Matched SB instruction 0xFCF40FA3
+Matched SB instruction 0xFCF40FA3: offset=4063, rs2=15, rs1=8
 Matched SC.D instruction 0x1865B6AF
 Matched SC.W instruction 0x1855262F
 Matched SD instruction 0x00113423
