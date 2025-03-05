@@ -1076,14 +1076,14 @@ Matched SUBW instruction 0x40FB0A3B: rs2=15, rs1=22, rd=20
 Matched SUBW instruction 0x41850C3B: rs2=24, rs1=10, rd=24
 Matched SUBW instruction 0x41958CBB: rs2=25, rs1=11, rd=25
 Matched SUBW instruction 0x41DF0EBB: rs2=29, rs1=30, rd=29
-Matched SW instruction 0x00A7A023
-Matched SW instruction 0x00E7A023
-Matched SW instruction 0x00F6A023
-Matched SW instruction 0x00F72023
-Matched SW instruction 0xFCF42E23
-Matched SW instruction 0xFEF42223
-Matched SW instruction 0xFEF42423
-Matched SW instruction 0xFEF42623
+Matched SW instruction 0x00A7A023: offset=0, rs2=10, rs1=15
+Matched SW instruction 0x00E7A023: offset=0, rs2=14, rs1=15
+Matched SW instruction 0x00F6A023: offset=0, rs2=15, rs1=13
+Matched SW instruction 0x00F72023: offset=0, rs2=15, rs1=14
+Matched SW instruction 0xFCF42E23: offset=4060, rs2=15, rs1=8
+Matched SW instruction 0xFEF42223: offset=4068, rs2=15, rs1=8
+Matched SW instruction 0xFEF42423: offset=4072, rs2=15, rs1=8
+Matched SW instruction 0xFEF42623: offset=4076, rs2=15, rs1=8
 Matched URET instruction 0x00200073
 Matched WFI instruction 0x10500073
 Matched XOR instruction 0x00F747B3: rs2=15, rs1=14, rd=15
