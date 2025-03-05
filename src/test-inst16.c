@@ -522,7 +522,10 @@ void test_inst16() {
         }
 
         if (OP_C_SUBW(inst)) {
-            printf("Matched C.SUBW instruction 0x%04X\n", inst);
+            uint16_t rd  = 8 + ((inst & 0b1110000000) >> 7);
+            uint16_t rs2 = 8 + ((inst & 0b11100) >> 2);
+
+            printf("Matched C.SUBW instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 

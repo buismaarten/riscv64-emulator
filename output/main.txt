@@ -326,8 +326,8 @@ Matched C.SLLI instruction 0x078E
 Matched C.SRAI instruction 0x878D
 Matched C.SRLI instruction 0x8389
 Matched C.SUB instruction 0x8F99: rd=15, rs2=14
-Matched C.SUBW instruction 0x9C09
-Matched C.SUBW instruction 0x9F99
+Matched C.SUBW instruction 0x9C09: rd=8, rs2=10
+Matched C.SUBW instruction 0x9F99: rd=15, rs2=14
 Matched C.SW instruction 0xC000
 Matched C.SW instruction 0xC29C
 Matched C.SW instruction 0xC31C
