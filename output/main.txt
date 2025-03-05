@@ -1,5 +1,5 @@
-Matched C.ADD instruction 0x97BA
-Matched C.ADD instruction 0x9852
+Matched C.ADD instruction 0x97BA: rd=15, rs2=14
+Matched C.ADD instruction 0x9852: rd=16, rs2=20
 Matched C.ADDI instruction 0x0141
 Matched C.ADDI instruction 0x0505
 Matched C.ADDI instruction 0x0705

@@ -349,7 +349,10 @@ void test_inst16() {
         uint16_t count = 0;
 
         if (OP_C_ADD(inst)) {
-            printf("Matched C.ADD instruction 0x%04X\n", inst);
+            uint16_t rd  = (inst & 0b111110000000) >> 7;
+            uint16_t rs2 = (inst & 0b1111100) >> 2;
+
+            printf("Matched C.ADD instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
