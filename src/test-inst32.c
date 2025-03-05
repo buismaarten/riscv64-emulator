@@ -956,32 +956,56 @@ void test_inst32() {
         }
 
         if (OP_CSRRC(inst)) {
-            printf("Matched CSRRC instruction 0x%08X\n", inst);
+            uint32_t csr = (inst >> 20) & 0b111111111111;
+            uint32_t rs1 = (inst >> 15) & 0b11111;
+            uint32_t rd  = (inst >> 7) & 0b11111;
+
+            printf("Matched CSRRC instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
         }
 
         if (OP_CSRRCI(inst)) {
-            printf("Matched CSRRCI instruction 0x%08X\n", inst);
+            uint32_t csr = (inst >> 20) & 0b111111111111;
+            uint32_t rs1 = (inst >> 15) & 0b11111;
+            uint32_t rd  = (inst >> 7) & 0b11111;
+
+            printf("Matched CSRRCI instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
         }
 
         if (OP_CSRRS(inst)) {
-            printf("Matched CSRRS instruction 0x%08X\n", inst);
+            uint32_t csr = (inst >> 20) & 0b111111111111;
+            uint32_t rs1 = (inst >> 15) & 0b11111;
+            uint32_t rd  = (inst >> 7) & 0b11111;
+
+            printf("Matched CSRRS instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
         }
 
         if (OP_CSRRSI(inst)) {
-            printf("Matched CSRRSI instruction 0x%08X\n", inst);
+            uint32_t csr  = (inst >> 20) & 0b111111111111;
+            uint32_t uimm = (inst >> 15) & 0b11111;
+            uint32_t rd   = (inst >> 7) & 0b11111;
+
+            printf("Matched CSRRSI instruction 0x%08X: csr=%d, uimm=%d, rd=%d\n", inst, csr, uimm, rd);
             count++;
         }
 
         if (OP_CSRRW(inst)) {
-            printf("Matched CSRRW instruction 0x%08X\n", inst);
+            uint32_t csr = (inst >> 20) & 0b111111111111;
+            uint32_t rs1 = (inst >> 15) & 0b11111;
+            uint32_t rd  = (inst >> 7) & 0b11111;
+
+            printf("Matched CSRRW instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
             count++;
         }
 
         if (OP_CSRRWI(inst)) {
-            printf("Matched CSRRWI instruction 0x%08X\n", inst);
+            uint32_t csr  = (inst >> 20) & 0b111111111111;
+            uint32_t uimm = (inst >> 15) & 0b11111;
+            uint32_t rd   = (inst >> 7) & 0b11111;
+
+            printf("Matched CSRRWI instruction 0x%08X: csr=%d, uimm=%d, rd=%d\n", inst, csr, uimm, rd);
             count++;
         }
 
