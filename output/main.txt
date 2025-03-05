@@ -966,8 +966,8 @@ Matched LWU instruction 0x00056603
 Matched MRET instruction 0x30200073
 Matched MUL instruction 0x02B502B3: rs2=11, rs1=10, rd=5
 Matched MULH instruction 0x02B51333
-Matched MULHSU instruction 0x02B523B3
-Matched MULHU instruction 0x02B53E33
+Matched MULHSU instruction 0x02B523B3: rs2=11, rs1=10, rd=7
+Matched MULHU instruction 0x02B53E33: rs2=11, rs1=10, rd=28
 Matched MULW instruction 0x0285053B: rs2=8, rs1=10, rd=10
 Matched MULW instruction 0x02A7053B: rs2=10, rs1=14, rd=10
 Matched MULW instruction 0x02A7853B: rs2=10, rs1=15, rd=10
