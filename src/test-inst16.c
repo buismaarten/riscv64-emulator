@@ -349,8 +349,8 @@ void test_inst16() {
         uint16_t count = 0;
 
         if (OP_C_ADD(inst)) {
-            uint16_t rd  = (inst & 0b111110000000) >> 7;
-            uint16_t rs2 = (inst & 0b1111100) >> 2;
+            uint16_t rd  = (inst >> 7) & 0b11111;
+            uint16_t rs2 = (inst >> 2) & 0b11111;
 
             printf("Matched C.ADD instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -517,16 +517,16 @@ void test_inst16() {
         }
 
         if (OP_C_SUB(inst)) {
-            uint16_t rd  = 8 + ((inst & 0b1110000000) >> 7);
-            uint16_t rs2 = 8 + ((inst & 0b11100) >> 2);
+            uint16_t rd  = 8 + ((inst >> 7) & 0b111);
+            uint16_t rs2 = 8 + ((inst >> 2) & 0b111);
 
             printf("Matched C.SUB instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
         if (OP_C_SUBW(inst)) {
-            uint16_t rd  = 8 + ((inst & 0b1110000000) >> 7);
-            uint16_t rs2 = 8 + ((inst & 0b11100) >> 2);
+            uint16_t rd  = 8 + ((inst >> 7) & 0b111);
+            uint16_t rs2 = 8 + ((inst >> 2) & 0b111);
 
             printf("Matched C.SUBW instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
