@@ -1822,16 +1822,20 @@ void test_inst32() {
         }
 
         if (OP_SLL(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLL instruction 0x%08X\n", inst);
+            printf("Matched SLL instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_SLLI(inst)) {
-            // TODO
+            uint32_t shamt = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLLI instruction 0x%08X\n", inst);
+            printf("Matched SLLI instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
             count++;
         }
 
@@ -1845,16 +1849,20 @@ void test_inst32() {
         }
 
         if (OP_SLLW(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLLW instruction 0x%08X\n", inst);
+            printf("Matched SLLW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_SLT(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLT instruction 0x%08X\n", inst);
+            printf("Matched SLT instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1873,9 +1881,11 @@ void test_inst32() {
         }
 
         if (OP_SLTU(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLTU instruction 0x%08X\n", inst);
+            printf("Matched SLTU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1928,9 +1938,11 @@ void test_inst32() {
         }
 
         if (OP_SRLI(inst)) {
-            // TODO
+            uint32_t shamt = OP_MASK(inst, 20, 6);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SRLI instruction 0x%08X\n", inst);
+            printf("Matched SRLI instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
             count++;
         }
 
