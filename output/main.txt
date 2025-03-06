@@ -758,7 +758,7 @@ Matched FCVT.D.LU instruction 0xD235F1D3
 Matched FCVT.D.S instruction 0x42000253
 Matched FCVT.D.W instruction 0xD2030353
 Matched FCVT.D.WU instruction 0xD2150153
-Matched FCVT.L.D instruction 0xC220FF53
+Matched FCVT.L.D instruction 0xC220FF53: rs1=1, rm=7, rd=30
 Matched FCVT.L.S instruction 0xC0207FD3
 Matched FCVT.LU.D instruction 0xC231F753
 Matched FCVT.LU.S instruction 0xC032F7D3
