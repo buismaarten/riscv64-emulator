@@ -767,7 +767,7 @@ Matched FCVT.S.L instruction 0xD02FF3D3: rs1=31, rm=7, rd=7
 Matched FCVT.S.LU instruction 0xD035F2D3: rs1=11, rm=7, rd=5
 Matched FCVT.S.W instruction 0xD003F3D3: rs1=7, rm=7, rd=7
 Matched FCVT.S.WU instruction 0xD0157253: rs1=10, rm=7, rd=4
-Matched FCVT.W.D instruction 0xC200FE53
+Matched FCVT.W.D instruction 0xC200FE53: rs1=1, rm=7, rd=28
 Matched FCVT.W.S instruction 0xC0007ED3
 Matched FCVT.WU.D instruction 0xC2117653
 Matched FCVT.WU.S instruction 0xC01276D3
