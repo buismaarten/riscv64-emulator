@@ -524,9 +524,10 @@ void test_inst16() {
         }
 
         if (OP_C_MV(inst)) {
-            // TODO
+            uint16_t rd = OP_C_MASK(inst, 7, 5);
+            uint16_t rs2 = OP_C_MASK(inst, 2, 5);
 
-            printf("Matched C.MV instruction 0x%04X\n", inst);
+            printf("Matched C.MV instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
