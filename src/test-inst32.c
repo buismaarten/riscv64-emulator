@@ -816,9 +816,13 @@ void test_inst32() {
         }
 
         if (OP_AMOADD_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOADD.W instruction 0x%08X\n", inst);
+            printf("Matched AMOADD.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -834,9 +838,13 @@ void test_inst32() {
         }
 
         if (OP_AMOAND_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOAND.W instruction 0x%08X\n", inst);
+            printf("Matched AMOAND.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -852,9 +860,13 @@ void test_inst32() {
         }
 
         if (OP_AMOMAX_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOMAX.W instruction 0x%08X\n", inst);
+            printf("Matched AMOMAX.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -870,9 +882,13 @@ void test_inst32() {
         }
 
         if (OP_AMOMAXU_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOMAXU.W instruction 0x%08X\n", inst);
+            printf("Matched AMOMAXU.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -888,9 +904,13 @@ void test_inst32() {
         }
 
         if (OP_AMOMIN_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOMIN.W instruction 0x%08X\n", inst);
+            printf("Matched AMOMIN.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -906,9 +926,13 @@ void test_inst32() {
         }
 
         if (OP_AMOMINU_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOMINU.W instruction 0x%08X\n", inst);
+            printf("Matched AMOMINU.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -924,9 +948,13 @@ void test_inst32() {
         }
 
         if (OP_AMOOR_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOOR.W instruction 0x%08X\n", inst);
+            printf("Matched AMOOR.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -942,9 +970,13 @@ void test_inst32() {
         }
 
         if (OP_AMOSWAP_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOSWAP.W instruction 0x%08X\n", inst);
+            printf("Matched AMOSWAP.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -960,9 +992,13 @@ void test_inst32() {
         }
 
         if (OP_AMOXOR_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched AMOXOR.W instruction 0x%08X\n", inst);
+            printf("Matched AMOXOR.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -1833,9 +1869,13 @@ void test_inst32() {
         }
 
         if (OP_SC_W(inst)) {
-            // TODO
+            uint32_t aq = OP_MASK(inst, 26, 1);
+            uint32_t rl = OP_MASK(inst, 25, 1);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SC.W instruction 0x%08X\n", inst);
+            printf("Matched SC.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 

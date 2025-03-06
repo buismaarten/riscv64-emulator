@@ -602,23 +602,23 @@ Matched ADDW instruction 0x01878ABB: rs2=24, rs1=15, rd=21
 Matched ADDW instruction 0x01AA8ABB: rs2=26, rs1=21, rd=21
 Matched ADDW instruction 0x01AB0B3B: rs2=26, rs1=22, rd=22
 Matched AMOADD.D instruction 0x00A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOADD.W instruction 0x00A5A6AF
+Matched AMOADD.W instruction 0x00A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOAND.D instruction 0x60a5b62f: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOAND.W instruction 0x60A5A6AF
+Matched AMOAND.W instruction 0x60A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOMAX.D instruction 0xA0A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOMAX.W instruction 0xA0A5A6AF
+Matched AMOMAX.W instruction 0xA0A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOMAXU.D instruction 0xE0A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOMAXU.W instruction 0xE0A5A6AF
+Matched AMOMAXU.W instruction 0xE0A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOMIN.D instruction 0x80A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOMIN.W instruction 0x80A5A6AF
+Matched AMOMIN.W instruction 0x80A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOMINU.D instruction 0xC0A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOMINU.W instruction 0xC0A5A6AF
+Matched AMOMINU.W instruction 0xC0A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOOR.D instruction 0x40A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOOR.W instruction 0x40A5A6AF
+Matched AMOOR.W instruction 0x40A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOSWAP.D instruction 0x08A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOSWAP.W instruction 0x08A5A6AF
+Matched AMOSWAP.W instruction 0x08A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AMOXOR.D instruction 0x20A5B62F: aq=0, rl=0, rs2=10, rs1=11, rd=12
-Matched AMOXOR.W instruction 0x20A5A6AF
+Matched AMOXOR.W instruction 0x20A5A6AF: aq=0, rl=0, rs2=10, rs1=11, rd=13
 Matched AND instruction 0x00F777B3: rs2=15, rs1=14, rd=15
 Matched ANDI instruction 0xFFE37513: imm=-2, rs1=6, rd=10
 Matched ANDI instruction 0xFFE47513: imm=-2, rs1=8, rd=10
@@ -980,7 +980,7 @@ Matched REMUW instruction 0x02F777BB: rs2=15, rs1=14, rd=15
 Matched REMW instruction 0x02F767BB: rs2=15, rs1=14, rd=15
 Matched SB instruction 0xFCF40FA3: offset=4063, rs2=15, rs1=8
 Matched SC.D instruction 0x1865B6AF: aq=0, rl=0, rs2=6, rs1=11, rd=13
-Matched SC.W instruction 0x1855262F
+Matched SC.W instruction 0x1855262F: aq=0, rl=0, rs2=5, rs1=10, rd=12
 Matched SD instruction 0x00113423
 Matched SD instruction 0x00113C23
 Matched SD instruction 0x00713C23
