@@ -760,11 +760,11 @@ Matched FCVT.D.W instruction 0xD2030353
 Matched FCVT.D.WU instruction 0xD2150153
 Matched FCVT.L.D instruction 0xC220FF53: rs1=1, rm=7, rd=30
 Matched FCVT.L.S instruction 0xC0207FD3: rs1=0, rm=7, rd=31
-Matched FCVT.LU.D instruction 0xC231F753
-Matched FCVT.LU.S instruction 0xC032F7D3
-Matched FCVT.S.D instruction 0x4010F2D3
-Matched FCVT.S.L instruction 0xD02FF3D3
-Matched FCVT.S.LU instruction 0xD035F2D3
+Matched FCVT.LU.D instruction 0xC231F753: rs1=3, rm=7, rd=14
+Matched FCVT.LU.S instruction 0xC032F7D3: rs1=5, rm=7, rd=15
+Matched FCVT.S.D instruction 0x4010F2D3: rs1=1, rm=7, rd=5
+Matched FCVT.S.L instruction 0xD02FF3D3: rs1=31, rm=7, rd=7
+Matched FCVT.S.LU instruction 0xD035F2D3: rs1=11, rm=7, rd=5
 Matched FCVT.S.W instruction 0xD003F3D3
 Matched FCVT.S.WU instruction 0xD0157253
 Matched FCVT.W.D instruction 0xC200FE53
