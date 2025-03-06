@@ -1258,16 +1258,20 @@ void test_inst32() {
         }
 
         if (OP_FCVT_WU_D(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCVT.WU.D instruction 0x%08X\n", inst);
+            printf("Matched FCVT.WU.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
         if (OP_FCVT_WU_S(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCVT.WU.S instruction 0x%08X\n", inst);
+            printf("Matched FCVT.WU.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
