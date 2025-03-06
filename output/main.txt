@@ -36,7 +36,7 @@ Matched C.ADDW instruction 0x9F29
 Matched C.ADDW instruction 0x9FA5
 Matched C.ADDW instruction 0x9FA9
 Matched C.ADDW instruction 0x9FB9
-Matched C.AND instruction 0x8FF9
+Matched C.AND instruction 0x8FF9: rd=15, rs2=14
 Matched C.ANDI instruction 0x8A25
 Matched C.BEQZ instruction 0xC001
 Matched C.BEQZ instruction 0xC791
@@ -64,9 +64,9 @@ Matched C.J instruction 0xBFC9
 Matched C.J instruction 0xBFF1
 Matched C.J instruction 0xBFF9
 Matched C.JAL instruction 0x3001
-Matched C.JALR instruction 0x9082
-Matched C.JR instruction 0x8082
-Matched C.JR instruction 0x8782
+Matched C.JALR instruction 0x9082: rs1=1
+Matched C.JR instruction 0x8082: rs1=1
+Matched C.JR instruction 0x8782: rs1=15
 Matched C.LDSP instruction 0x60B2
 Matched C.LDSP instruction 0x6346
 Matched C.LDSP instruction 0x6366
@@ -268,7 +268,7 @@ Matched C.MV instruction 0x8F26
 Matched C.MV instruction 0x8F5E
 Matched C.MV instruction 0x8F7E
 Matched C.NOP instruction 0x0001
-Matched C.OR instruction 0x8FD9
+Matched C.OR instruction 0x8FD9: rd=15, rs2=14
 Matched C.SD instruction 0xF550
 Matched C.SDSP instruction 0xE022
 Matched C.SDSP instruction 0xE0BA
@@ -334,7 +334,7 @@ Matched C.SW instruction 0xC31C
 Matched C.SW instruction 0xC388
 Matched C.SW instruction 0xC398
 Matched C.SWSP instruction 0xC286
-Matched C.XOR instruction 0x8FB9
+Matched C.XOR instruction 0x8FB9: rd=15, rs2=14
 Matched ADD instruction 0x00E787B3, rs2=14, rs1=15, rd=15
 Matched ADDI instruction 0x00000013: imm=0, rs1=0, rd=0
 Matched ADDI instruction 0x00000293: imm=0, rs1=0, rd=5

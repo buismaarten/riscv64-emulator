@@ -392,9 +392,10 @@ void test_inst16() {
         }
 
         if (OP_C_AND(inst)) {
-            // TODO
+            uint16_t rd = 8 + OP_C_MASK(inst, 7, 3);
+            uint16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
 
-            printf("Matched C.AND instruction 0x%04X\n", inst);
+            printf("Matched C.AND instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
@@ -467,16 +468,16 @@ void test_inst16() {
         }
 
         if (OP_C_JALR(inst)) {
-            // TODO
+            uint16_t rs1 = OP_C_MASK(inst, 7, 5);
 
-            printf("Matched C.JALR instruction 0x%04X\n", inst);
+            printf("Matched C.JALR instruction 0x%04X: rs1=%d\n", inst, rs1);
             count++;
         }
 
         if (OP_C_JR(inst)) {
-            // TODO
+            uint16_t rs1 = OP_C_MASK(inst, 7, 5);
 
-            printf("Matched C.JR instruction 0x%04X\n", inst);
+            printf("Matched C.JR instruction 0x%04X: rs1=%d\n", inst, rs1);
             count++;
         }
 
@@ -535,9 +536,10 @@ void test_inst16() {
         }
 
         if (OP_C_OR(inst)) {
-            // TODO
+            uint16_t rd = 8 + OP_C_MASK(inst, 7, 3);
+            uint16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
 
-            printf("Matched C.OR instruction 0x%04X\n", inst);
+            printf("Matched C.OR instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
@@ -607,9 +609,10 @@ void test_inst16() {
         }
 
         if (OP_C_XOR(inst)) {
-            // TODO
+            uint16_t rd = 8 + OP_C_MASK(inst, 7, 3);
+            uint16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
 
-            printf("Matched C.XOR instruction 0x%04X\n", inst);
+            printf("Matched C.XOR instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
