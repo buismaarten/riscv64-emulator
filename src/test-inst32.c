@@ -1124,37 +1124,47 @@ void test_inst32() {
         }
 
         if (OP_FCVT_D_L(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCVT.D.L instruction 0x%08X\n", inst);
+            printf("Matched FCVT.D.L instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
         if (OP_FCVT_D_LU(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCVT.D.LU instruction 0x%08X\n", inst);
+            printf("Matched FCVT.D.LU instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
         if (OP_FCVT_D_S(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCVT.D.S instruction 0x%08X\n", inst);
+            printf("Matched FCVT.D.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
         if (OP_FCVT_D_W(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCVT.D.W instruction 0x%08X\n", inst);
+            printf("Matched FCVT.D.W instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
         if (OP_FCVT_D_WU(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCVT.D.WU instruction 0x%08X\n", inst);
+            printf("Matched FCVT.D.WU instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 

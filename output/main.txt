@@ -753,11 +753,11 @@ Matched FADD.D instruction 0x0210F1D3
 Matched FADD.S instruction 0x00007153
 Matched FCLASS.D instruction 0xE20093D3
 Matched FCLASS.S instruction 0xE0001353
-Matched FCVT.D.L instruction 0xD22F7353
-Matched FCVT.D.LU instruction 0xD235F1D3
-Matched FCVT.D.S instruction 0x42000253
-Matched FCVT.D.W instruction 0xD2030353
-Matched FCVT.D.WU instruction 0xD2150153
+Matched FCVT.D.L instruction 0xD22F7353: rs1=30, rm=7, rd=6
+Matched FCVT.D.LU instruction 0xD235F1D3: rs1=11, rm=7, rd=3
+Matched FCVT.D.S instruction 0x42000253: rs1=0, rm=0, rd=4
+Matched FCVT.D.W instruction 0xD2030353: rs1=6, rm=0, rd=6
+Matched FCVT.D.WU instruction 0xD2150153: rs1=10, rm=0, rd=2
 Matched FCVT.L.D instruction 0xC220FF53: rs1=1, rm=7, rd=30
 Matched FCVT.L.S instruction 0xC0207FD3: rs1=0, rm=7, rd=31
 Matched FCVT.LU.D instruction 0xC231F753: rs1=3, rm=7, rd=14
