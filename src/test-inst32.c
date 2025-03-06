@@ -1836,9 +1836,11 @@ void test_inst32() {
         }
 
         if (OP_SLLIW(inst)) {
-            // TODO
+            uint32_t shamt = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLLIW instruction 0x%08X\n", inst);
+            printf("Matched SLLIW instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
             count++;
         }
 
@@ -1894,16 +1896,20 @@ void test_inst32() {
         }
 
         if (OP_SRAIW(inst)) {
-            // TODO
+            uint32_t shamt = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SRAIW instruction 0x%08X\n", inst);
+            printf("Matched SRAIW instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
             count++;
         }
 
         if (OP_SRAW(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SRAW instruction 0x%08X\n", inst);
+            printf("Matched SRAW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1929,16 +1935,20 @@ void test_inst32() {
         }
 
         if (OP_SRLIW(inst)) {
-            // TODO
+            uint32_t shamt = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SRLIW instruction 0x%08X\n", inst);
+            printf("Matched SRLIW instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
             count++;
         }
 
         if (OP_SRLW(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SRLW instruction 0x%08X\n", inst);
+            printf("Matched SRLW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
