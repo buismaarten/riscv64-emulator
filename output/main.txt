@@ -749,10 +749,10 @@ Matched DIVUW instruction 0x02F757BB
 Matched DIVW instruction 0x02F747BB
 Matched EBREAK instruction 0x00100073
 Matched ECALL instruction 0x00000073
-Matched FADD.D instruction 0x0210F1D3
-Matched FADD.S instruction 0x00007153
-Matched FCLASS.D instruction 0xE20093D3
-Matched FCLASS.S instruction 0xE0001353
+Matched FADD.D instruction 0x0210F1D3: rs2=1, rs1=1, rm=7, rd=3
+Matched FADD.S instruction 0x00007153: rs2=0, rs1=0, rm=7, rd=2
+Matched FCLASS.D instruction 0xE20093D3: rs1=1, rd=7
+Matched FCLASS.S instruction 0xE0001353: rs1=0, rd=6
 Matched FCVT.D.L instruction 0xD22F7353: rs1=30, rm=7, rd=6
 Matched FCVT.D.LU instruction 0xD235F1D3: rs1=11, rm=7, rd=3
 Matched FCVT.D.S instruction 0x42000253: rs1=0, rm=0, rd=4

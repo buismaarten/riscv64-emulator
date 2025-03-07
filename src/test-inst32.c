@@ -1168,30 +1168,38 @@ void test_inst32() {
         }
 
         if (OP_FADD_D(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FADD.D instruction 0x%08X\n", inst);
+            printf("Matched FADD.D instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
         if (OP_FADD_S(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FADD.S instruction 0x%08X\n", inst);
+            printf("Matched FADD.S instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
         if (OP_FCLASS_D(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCLASS.D instruction 0x%08X\n", inst);
+            printf("Matched FCLASS.D instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
             count++;
         }
 
         if (OP_FCLASS_S(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FCLASS.S instruction 0x%08X\n", inst);
+            printf("Matched FCLASS.S instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
             count++;
         }
 
