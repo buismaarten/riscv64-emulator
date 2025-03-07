@@ -799,19 +799,19 @@ Matched FMV.X.D instruction 0xE2000E53
 Matched FMV.X.W instruction 0xE0008ED3
 Matched FNMADD.D instruction 0x0A10F3CF
 Matched FNMADD.S instruction 0x0000734F
-Matched FNMSUB.D instruction 0x0A10FECB
-Matched FNMSUB.S instruction 0x00007E4B
+Matched FNMSUB.D instruction 0x0A10FECB: rs3=1, rs2=1, rs1=1, rm=7, rd=29
+Matched FNMSUB.S instruction 0x00007E4B: rs3=0, rs2=0, rs1=0, rm=7, rd=28
 Matched FSD instruction 0x00F7B027
-Matched FSGNJ.D instruction 0x22310E53
-Matched FSGNJ.S instruction 0x20520ED3
-Matched FSGNJN.D instruction 0x22311F53
-Matched FSGNJN.S instruction 0x20521FD3
-Matched FSGNJX.D instruction 0x22E7A7D3
-Matched FSGNJX.S instruction 0x20E7A7D3
-Matched FSQRT.D instruction 0x5A00FFD3
-Matched FSQRT.S instruction 0x58007F53
-Matched FSUB.D instruction 0x0A10F0D3
-Matched FSUB.S instruction 0x08007053
+Matched FSGNJ.D instruction 0x22310E53: rs2=3, rs1=2, rd=28
+Matched FSGNJ.S instruction 0x20520ED3: rs2=5, rs1=4, rd=29
+Matched FSGNJN.D instruction 0x22311F53: rs2=3, rs1=2, rd=30
+Matched FSGNJN.S instruction 0x20521FD3: rs2=5, rs1=4, rd=31
+Matched FSGNJX.D instruction 0x22E7A7D3: rs2=14, rs1=15, rd=15
+Matched FSGNJX.S instruction 0x20E7A7D3: rs2=14, rs1=15, rd=15
+Matched FSQRT.D instruction 0x5A00FFD3: rs1=1, rm=7, rd=31
+Matched FSQRT.S instruction 0x58007F53: rs1=0, rm=7, rd=30
+Matched FSUB.D instruction 0x0A10F0D3: rs2=1, rs1=1, rm=7, rd=1
+Matched FSUB.S instruction 0x08007053: rs2=0, rs1=0, rm=7, rd=0
 Matched FSW instruction 0x00F7A027
 Matched JAL instruction 0x0080006F
 Matched JAL instruction 0x00C0006F

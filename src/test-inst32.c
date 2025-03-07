@@ -1550,16 +1550,24 @@ void test_inst32() {
         }
 
         if (OP_FNMSUB_D(inst)) {
-            // TODO
+            uint32_t rs3 = OP_MASK(inst, 27, 5);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FNMSUB.D instruction 0x%08X\n", inst);
+            printf("Matched FNMSUB.D instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
         if (OP_FNMSUB_S(inst)) {
-            // TODO
+            uint32_t rs3 = OP_MASK(inst, 27, 5);
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FNMSUB.S instruction 0x%08X\n", inst);
+            printf("Matched FNMSUB.S instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1571,72 +1579,94 @@ void test_inst32() {
         }
 
         if (OP_FSGNJ_D(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSGNJ.D instruction 0x%08X\n", inst);
+            printf("Matched FSGNJ.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_FSGNJ_S(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSGNJ.S instruction 0x%08X\n", inst);
+            printf("Matched FSGNJ.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_FSGNJN_D(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSGNJN.D instruction 0x%08X\n", inst);
+            printf("Matched FSGNJN.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_FSGNJN_S(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSGNJN.S instruction 0x%08X\n", inst);
+            printf("Matched FSGNJN.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_FSGNJX_D(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSGNJX.D instruction 0x%08X\n", inst);
+            printf("Matched FSGNJX.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_FSGNJX_S(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSGNJX.S instruction 0x%08X\n", inst);
+            printf("Matched FSGNJX.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_FSQRT_D(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSQRT.D instruction 0x%08X\n", inst);
+            printf("Matched FSQRT.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
         if (OP_FSQRT_S(inst)) {
-            // TODO
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSQRT.S instruction 0x%08X\n", inst);
+            printf("Matched FSQRT.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
             count++;
         }
 
         if (OP_FSUB_D(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSUB.D instruction 0x%08X\n", inst);
+            printf("Matched FSUB.D instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
         if (OP_FSUB_S(inst)) {
-            // TODO
+            uint32_t rs2 = OP_MASK(inst, 20, 5);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rm = OP_MASK(inst, 12, 3);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched FSUB.S instruction 0x%08X\n", inst);
+            printf("Matched FSUB.S instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
