@@ -1545,6 +1545,8 @@ void test_inst32() {
         }
 
         if (OP_FNMADD_S(inst)) {
+            // TODO
+
             printf("Matched FNMADD.S instruction 0x%08X\n", inst);
             count++;
         }
