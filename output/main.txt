@@ -771,34 +771,34 @@ Matched FCVT.W.D instruction 0xC200FE53: rs1=1, rm=7, rd=28
 Matched FCVT.W.S instruction 0xC0007ED3: rs1=0, rm=7, rd=29
 Matched FCVT.WU.D instruction 0xC2117653: rs1=2, rm=7, rd=12
 Matched FCVT.WU.S instruction 0xC01276D3: rs1=4, rm=7, rd=13
-Matched FDIV.D instruction 0x1A10FED3
-Matched FDIV.S instruction 0x18007E53
+Matched FDIV.D instruction 0x1A10FED3: rs2=1, rs1=1, rm=7, rd=29
+Matched FDIV.S instruction 0x18007E53: rs2=0, rs1=0, rm=7, rd=28
 Matched FENCE instruction 0x0FF0000F
 Matched FENCE.I instruction 0x0000100F
-Matched FEQ.D instruction 0xA210A353
-Matched FEQ.S instruction 0xA00022D3
+Matched FEQ.D instruction 0xA210A353: rs2=1, rs1=1, rd=6
+Matched FEQ.S instruction 0xA00022D3: rs2=0, rs1=0, rd=5
 Matched FLD instruction 0xFE843787
-Matched FLE.D instruction 0xA2108E53
-Matched FLE.S instruction 0xA00003D3
-Matched FLT.D instruction 0xA2109F53
-Matched FLT.S instruction 0xA0001ED3
+Matched FLE.D instruction 0xA2108E53: rs2=1, rs1=1, rd=28
+Matched FLE.S instruction 0xA00003D3: rs2=0, rs1=0, rd=7
+Matched FLT.D instruction 0xA2109F53: rs2=1, rs1=1, rd=30
+Matched FLT.S instruction 0xA0001ED3: rs2=0, rs1=0, rd=29
 Matched FLW instruction 0xFEC42787
-Matched FMADD.D instruction 0x0A10FFC3
-Matched FMADD.S instruction 0x00007F43
-Matched FMAX.D instruction 0x2A1090D3
-Matched FMAX.S instruction 0x28001053
-Matched FMIN.D instruction 0x2A1081D3
-Matched FMIN.S instruction 0x28000153
-Matched FMSUB.D instruction 0x0A10F2C7
-Matched FMSUB.S instruction 0x00007247
-Matched FMUL.D instruction 0x12317353
-Matched FMUL.S instruction 0x105273D3
-Matched FMV.D.X instruction 0xF2030053
-Matched FMV.W.X instruction 0xF00380D3
-Matched FMV.X.D instruction 0xE2000E53
-Matched FMV.X.W instruction 0xE0008ED3
-Matched FNMADD.D instruction 0x0A10F3CF
-Matched FNMADD.S instruction 0x0000734F
+Matched FMADD.D instruction 0x0A10FFC3: rs3=1, rs2=1, rs1=1, rm=7, rd=31
+Matched FMADD.S instruction 0x00007F43: rs3=0, rs2=0, rs1=0, rm=7, rd=30
+Matched FMAX.D instruction 0x2A1090D3: rs2=1, rs1=1, rd=1
+Matched FMAX.S instruction 0x28001053: rs2=0, rs1=0, rd=0
+Matched FMIN.D instruction 0x2A1081D3: rs2=1, rs1=1, rd=3
+Matched FMIN.S instruction 0x28000153: rs2=0, rs1=0, rd=2
+Matched FMSUB.D instruction 0x0A10F2C7: rs3=1, rs2=1, rs1=1, rm=7, rd=5
+Matched FMSUB.S instruction 0x00007247: rs3=0, rs2=0, rs1=0, rm=7, rd=4
+Matched FMUL.D instruction 0x12317353: rs2=3, rs1=2, rm=7, rd=6
+Matched FMUL.S instruction 0x105273D3: rs2=5, rs1=4, rm=7, rd=7
+Matched FMV.D.X instruction 0xF2030053: rs1=6, rd=0
+Matched FMV.W.X instruction 0xF00380D3: rs1=7, rd=1
+Matched FMV.X.D instruction 0xE2000E53: rs1=0, rd=28
+Matched FMV.X.W instruction 0xE0008ED3: rs1=1, rd=29
+Matched FNMADD.D instruction 0x0A10F3CF: rs3=1, rs2=1, rs1=1, rm=7, rd=7
+Matched FNMADD.S instruction 0x0000734F: rs3=0, rs2=0, rs1=0, rm=7, rd=6
 Matched FNMSUB.D instruction 0x0A10FECB: rs3=1, rs2=1, rs1=1, rm=7, rd=29
 Matched FNMSUB.S instruction 0x00007E4B: rs3=0, rs2=0, rs1=0, rm=7, rd=28
 Matched FSD instruction 0x00F7B027
