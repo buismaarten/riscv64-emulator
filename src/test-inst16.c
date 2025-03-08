@@ -1,5 +1,5 @@
 #include "opcode-inst16.h"
-#include "utils-inst16.h"
+#include "utils.h"
 #include <stdint.h>
 #include <stdio.h>
 
@@ -349,8 +349,8 @@ void test_inst16() {
         uint16_t count = 0;
 
         if (OP_C_ADD(inst)) {
-            int16_t rd = OP_C_MASK(inst, 7, 5);
-            int16_t rs2 = OP_C_MASK(inst, 2, 5);
+            int16_t rd = EXTRACT_BITS(inst, 7, 5);
+            int16_t rs2 = EXTRACT_BITS(inst, 2, 5);
 
             printf("Matched C.ADD instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -370,7 +370,7 @@ void test_inst16() {
                             | ((inst >> 11) & 0b0011) << 4;
 
             if (nzuimm > 0) {
-                int16_t rd = 8 + OP_C_MASK(inst, 2, 3);
+                int16_t rd = 8 + EXTRACT_BITS(inst, 2, 3);
 
                 printf("Matched C.ADDI4SPN instruction 0x%04X: nzuimm=%d, rd=%d\n", inst, nzuimm, rd);
                 count++;
@@ -399,8 +399,8 @@ void test_inst16() {
         }
 
         if (OP_C_AND(inst)) {
-            int16_t rd = 8 + OP_C_MASK(inst, 7, 3);
-            int16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
+            int16_t rd = 8 + EXTRACT_BITS(inst, 7, 3);
+            int16_t rs2 = 8 + EXTRACT_BITS(inst, 2, 3);
 
             printf("Matched C.AND instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -475,14 +475,14 @@ void test_inst16() {
         }
 
         if (OP_C_JALR(inst)) {
-            int16_t rs1 = OP_C_MASK(inst, 7, 5);
+            int16_t rs1 = EXTRACT_BITS(inst, 7, 5);
 
             printf("Matched C.JALR instruction 0x%04X: rs1=%d\n", inst, rs1);
             count++;
         }
 
         if (OP_C_JR(inst)) {
-            int16_t rs1 = OP_C_MASK(inst, 7, 5);
+            int16_t rs1 = EXTRACT_BITS(inst, 7, 5);
 
             printf("Matched C.JR instruction 0x%04X: rs1=%d\n", inst, rs1);
             count++;
@@ -531,8 +531,8 @@ void test_inst16() {
         }
 
         if (OP_C_MV(inst)) {
-            int16_t rd = OP_C_MASK(inst, 7, 5);
-            int16_t rs2 = OP_C_MASK(inst, 2, 5);
+            int16_t rd = EXTRACT_BITS(inst, 7, 5);
+            int16_t rs2 = EXTRACT_BITS(inst, 2, 5);
 
             printf("Matched C.MV instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -544,8 +544,8 @@ void test_inst16() {
         }
 
         if (OP_C_OR(inst)) {
-            int16_t rd = 8 + OP_C_MASK(inst, 7, 3);
-            int16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
+            int16_t rd = 8 + EXTRACT_BITS(inst, 7, 3);
+            int16_t rs2 = 8 + EXTRACT_BITS(inst, 2, 3);
 
             printf("Matched C.OR instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -587,16 +587,16 @@ void test_inst16() {
         }
 
         if (OP_C_SUB(inst)) {
-            int16_t rd = 8 + OP_C_MASK(inst, 7, 3);
-            int16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
+            int16_t rd = 8 + EXTRACT_BITS(inst, 7, 3);
+            int16_t rs2 = 8 + EXTRACT_BITS(inst, 2, 3);
 
             printf("Matched C.SUB instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
         if (OP_C_SUBW(inst)) {
-            int16_t rd = 8 + OP_C_MASK(inst, 7, 3);
-            int16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
+            int16_t rd = 8 + EXTRACT_BITS(inst, 7, 3);
+            int16_t rs2 = 8 + EXTRACT_BITS(inst, 2, 3);
 
             printf("Matched C.SUBW instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -617,8 +617,8 @@ void test_inst16() {
         }
 
         if (OP_C_XOR(inst)) {
-            int16_t rd = 8 + OP_C_MASK(inst, 7, 3);
-            int16_t rs2 = 8 + OP_C_MASK(inst, 2, 3);
+            int16_t rd = 8 + EXTRACT_BITS(inst, 7, 3);
+            int16_t rs2 = 8 + EXTRACT_BITS(inst, 2, 3);
 
             printf("Matched C.XOR instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
