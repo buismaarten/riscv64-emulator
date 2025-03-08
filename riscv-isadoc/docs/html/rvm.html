@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RV32M, RV64M Instructions &mdash; riscv-isa-pages  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="RV64M Instructions" href="rv64m.html" />
+    <link rel="prev" title="RV64I Instructions" href="rv64i.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            riscv-isa-pages
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="rvi.html">RV32I, RV64I Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv64i.html">RV64I Instructions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">RV32M, RV64M Instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mul">mul</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mulh">mulh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mulhsu">mulhsu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mulhu">mulhu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#div">div</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#divu">divu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rem">rem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remu">remu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rv64m.html">RV64M Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rva.html">RV32A, RV64A Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv64a.html">RV64A Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvfd.html">RV32F, RV64D Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv64f.html">RV64F Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rv64d.html">RV64D Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rvc.html">RV32C, RV64C Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="regs.html">Register Definitions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">riscv-isa-pages</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">RV32M, RV64M Instructions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/rvm.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="rv32m-rv64m-instructions">
+<h1>RV32M, RV64M Instructions<a class="headerlink" href="#rv32m-rv64m-instructions" title="Permalink to this headline"></a></h1>
+<section id="mul">
+<h2>mul<a class="headerlink" href="#mul" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>000</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">mul        rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">performs an XLEN-bit <span class="math notranslate nohighlight">\(\times\)</span> XLEN-bit multiplication of signed rs1 by signed rs2 and places the lower XLEN bits in the destination register.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = x[rs1] × x[rs2]</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="mulh">
+<h2>mulh<a class="headerlink" href="#mulh" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>001</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">mulh       rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">performs an XLEN-bit <span class="math notranslate nohighlight">\(\times\)</span> XLEN-bit multiplication of signed rs1 by signed rs2 and places the upper XLEN bits in the destination register.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = (x[rs1] s×s x[rs2]) &gt;&gt;s XLEN</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="mulhsu">
+<h2>mulhsu<a class="headerlink" href="#mulhsu" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>010</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">mulhsu     rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">performs an XLEN-bit <span class="math notranslate nohighlight">\(\times\)</span> XLEN-bit multiplication of signed rs1 by unsigned rs2 and places the upper XLEN bits in the destination register.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = (x[rs1] s <span class="math notranslate nohighlight">\(\times\)</span> x[rs2]) &gt;&gt;s XLEN</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="mulhu">
+<h2>mulhu<a class="headerlink" href="#mulhu" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>011</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">mulhu      rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">performs an XLEN-bit <span class="math notranslate nohighlight">\(\times\)</span> XLEN-bit multiplication of unsigned rs1 by unsigned rs2 and places the upper XLEN bits in the destination register.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = (x[rs1] u <span class="math notranslate nohighlight">\(\times\)</span> x[rs2]) &gt;&gt;u XLEN</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="div">
+<h2>div<a class="headerlink" href="#div" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>100</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">div        rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">perform an XLEN bits by XLEN bits signed integer division of rs1 by rs2, rounding towards zero.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = x[rs1] /s x[rs2]</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="divu">
+<h2>divu<a class="headerlink" href="#divu" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>101</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">divu       rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">perform an XLEN bits by XLEN bits unsigned integer division of rs1 by rs2, rounding towards zero.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = x[rs1] /u x[rs2]</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="rem">
+<h2>rem<a class="headerlink" href="#rem" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>110</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">rem        rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">perform an XLEN bits by XLEN bits signed integer reminder of rs1 by rs2.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = x[rs1] %s x[rs2]</div>
+</div>
+</dd>
+</dl>
+</section>
+<section id="remu">
+<h2>remu<a class="headerlink" href="#remu" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>31-27</p></td>
+<td><p>26-25</p></td>
+<td><p>24-20</p></td>
+<td><p>19-15</p></td>
+<td><p>14-12</p></td>
+<td><p>11-7</p></td>
+<td><p>6-2</p></td>
+<td><p>1-0</p></td>
+</tr>
+<tr class="row-even"><td><p>00000</p></td>
+<td><p>01</p></td>
+<td><p>rs2</p></td>
+<td><p>rs1</p></td>
+<td><p>111</p></td>
+<td><p>rd</p></td>
+<td><p>01100</p></td>
+<td><p>11</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list">
+<dt class="field-odd">Format</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">remu       rd,rs1,rs2</div>
+</div>
+</dd>
+<dt class="field-even">Description</dt>
+<dd class="field-even"><div class="line-block">
+<div class="line">perform an XLEN bits by XLEN bits unsigned integer reminder of rs1 by rs2.</div>
+</div>
+</dd>
+<dt class="field-odd">Implementation</dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">x[rd] = x[rs1] %u x[rs2]</div>
+</div>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rv64i.html" class="btn btn-neutral float-left" title="RV64I Instructions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rv64m.html" class="btn btn-neutral float-right" title="RV64M Instructions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, msyksphinz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
