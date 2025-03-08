@@ -1130,30 +1130,38 @@ void test_inst32() {
         }
 
         if (OP_DIV(inst)) {
-            // TODO
+            int32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIV instruction 0x%08X\n", inst);
+            printf("Matched DIV instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_DIVU(inst)) {
-            // TODO
+            int32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIVU instruction 0x%08X\n", inst);
+            printf("Matched DIVU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_DIVUW(inst)) {
-            // TODO
+            int32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIVUW instruction 0x%08X\n", inst);
+            printf("Matched DIVUW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
         if (OP_DIVW(inst)) {
-            // TODO
+            int32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIVW instruction 0x%08X\n", inst);
+            printf("Matched DIVW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 

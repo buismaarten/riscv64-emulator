@@ -743,10 +743,10 @@ Matched CSRRS instruction 0x3002A373: csr=768, rs1=5, rd=6
 Matched CSRRSI instruction 0x30046373: csr=768, uimm=8, rd=6
 Matched CSRRW instruction 0x30029373: csr=768, rs1=5, rd=6
 Matched CSRRWI instruction 0x30045373: csr=768, uimm=8, rd=6
-Matched DIV instruction 0x02F747B3
-Matched DIVU instruction 0x02F757B3
-Matched DIVUW instruction 0x02F757BB
-Matched DIVW instruction 0x02F747BB
+Matched DIV instruction 0x02F747B3: rs2=15, rs1=14, rd=15
+Matched DIVU instruction 0x02F757B3: rs2=15, rs1=14, rd=15
+Matched DIVUW instruction 0x02F757BB: rs2=15, rs1=14, rd=15
+Matched DIVW instruction 0x02F747BB: rs2=15, rs1=14, rd=15
 Matched EBREAK instruction 0x00100073
 Matched ECALL instruction 0x00000073
 Matched FADD.D instruction 0x0210F1D3: rs2=1, rs1=1, rm=7, rd=3
