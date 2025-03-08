@@ -1,13 +1,13 @@
 #pragma once
 #include "utils.h"
 
-#define OP_C_OPCODE(inst)      EXTRACT_BITS3(inst, 1, 0)
-#define OP_C_FUNCT3(inst)      EXTRACT_BITS3(inst, 15, 13)
-#define OP_C_FUNCT4(inst)      EXTRACT_BITS3(inst, 15, 12)
-#define OP_C_RS1(inst)         EXTRACT_BITS3(inst, 11, 7)
-#define OP_C_RS1_TWO(inst)     EXTRACT_BITS3(inst, 11, 10)
-#define OP_C_RS2(inst)         EXTRACT_BITS3(inst, 6, 2)
-#define OP_C_RS2_TWO(inst)     EXTRACT_BITS3(inst, 6, 5)
+#define OP_C_OPCODE(inst)      EXTRACT_BITS(inst, 1, 0)
+#define OP_C_FUNCT3(inst)      EXTRACT_BITS(inst, 15, 13)
+#define OP_C_FUNCT4(inst)      EXTRACT_BITS(inst, 15, 12)
+#define OP_C_RS1(inst)         EXTRACT_BITS(inst, 11, 7)
+#define OP_C_RS1_TWO(inst)     EXTRACT_BITS(inst, 11, 10)
+#define OP_C_RS2(inst)         EXTRACT_BITS(inst, 6, 2)
+#define OP_C_RS2_TWO(inst)     EXTRACT_BITS(inst, 6, 5)
 
 #define OP_C_ADD(inst) \
     (OP_C_OPCODE(inst) == 0b10 && \
