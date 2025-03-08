@@ -370,9 +370,9 @@ void test_inst16() {
                             | ((inst >> 7)  & 0b1111) << 6  // Bits 9:6
                             | ((inst >> 11) & 0b0011) << 4; // Bits 5:4
 
-            int16_t rd = 8 + OP_C_MASK(inst, 2, 3);
-
             if (nzuimm > 0) {
+                int16_t rd = 8 + OP_C_MASK(inst, 2, 3);
+
                 printf("Matched C.ADDI4SPN instruction 0x%04X: nzuimm=%d, rd=%d\n", inst, nzuimm, rd);
                 count++;
             }
