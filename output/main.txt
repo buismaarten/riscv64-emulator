@@ -1037,7 +1037,7 @@ Matched SD instruction 0x10813023
 Matched SD instruction 0xFEA43423
 Matched SD instruction 0xFEE43423
 Matched SD instruction 0xFEF43423
-Matched SFENCE.VMA instruction 0x12000073
+Matched SFENCE.VMA instruction 0x12000073: rs2=0, rs1=0, rd=0
 Matched SH instruction 0x00C51223: offset=4, rs2=12, rs1=10
 Matched SLL instruction 0x00E797B3: rs2=14, rs1=15, rd=15
 Matched SLLI instruction 0x00579793: shamt=5, rs1=15, rd=15

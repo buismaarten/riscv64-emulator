@@ -1998,9 +1998,11 @@ void test_inst32() {
         }
 
         if (OP_SFENCE_VMA(inst)) {
-            // TODO
+            int32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SFENCE.VMA instruction 0x%08X\n", inst);
+            printf("Matched SFENCE.VMA instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
             count++;
         }
 
