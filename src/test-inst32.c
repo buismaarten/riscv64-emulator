@@ -760,9 +760,9 @@ static uint32_t program32[] = {
 };
 
 void test_inst32() {
-    for (int32_t i = 0; i < sizeof(program32) / sizeof(program32[0]); i++) {
-        int32_t inst = program32[i];
-        int32_t count = 0;
+    for (uint32_t i = 0; i < sizeof(program32) / sizeof(program32[0]); i++) {
+        uint32_t inst = program32[i];
+        uint32_t count = 0;
 
         if (OP_ADD(inst)) {
             int32_t rs2 = OP_MASK(inst, 20, 5);
