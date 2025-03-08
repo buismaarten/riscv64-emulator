@@ -10,9 +10,9 @@ Matched C.ADDI16SP instruction 0x716D
 Matched C.ADDI16SP instruction 0x6105
 Matched C.ADDI16SP instruction 0x6145
 Matched C.ADDI16SP instruction 0x7179
-Matched C.ADDI4SPN instruction 0x0800: nzuimm=32, rd=8
-Matched C.ADDI4SPN instruction 0x1000: nzuimm=0, rd=8
-Matched C.ADDI4SPN instruction 0x1800: nzuimm=32, rd=8
+Matched C.ADDI4SPN instruction 0x0800: nzuimm=16, rd=8
+Matched C.ADDI4SPN instruction 0x1000: nzuimm=32, rd=8
+Matched C.ADDI4SPN instruction 0x1800: nzuimm=48, rd=8
 Matched C.ADDIW instruction 0x2781
 Matched C.ADDIW instruction 0x3379
 Matched C.ADDIW instruction 0x3479
