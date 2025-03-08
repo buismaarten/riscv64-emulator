@@ -1816,9 +1816,12 @@ void test_inst32() {
         }
 
         if (OP_LR_W(inst)) {
-            // TODO
+            int32_t aq = EXTRACT_BITS(inst, 26, 26);
+            int32_t rl = EXTRACT_BITS(inst, 25, 25);
+            int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LR.W instruction 0x%08X\n", inst);
+            printf("Matched LR.W instruction 0x%08X: aq=%d, rl=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs1, rd);
             count++;
         }
 

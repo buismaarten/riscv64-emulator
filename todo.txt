@@ -42,7 +42,6 @@ LBU
 LD
 LH
 LHU
-LR.W
 LW
 LWU
 SD
