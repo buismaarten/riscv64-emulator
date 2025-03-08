@@ -363,12 +363,16 @@ void test_inst16() {
             count++;
         }
 
+        // p: Position
+        // s: Shift
+        // w: Width
+        #define ABC(inst, p, s, w) (((inst >> (p)) & ((1U << (w)) - 1)) << (s))
+
         if (OP_C_ADDI4SPN(inst)) {
-            // TODO
-            uint16_t nzuimm = ((inst >> 5)  & 0b0001) << 3  // Bit 3
-                            | ((inst >> 6)  & 0b0001) << 2  // Bit 2
-                            | ((inst >> 7)  & 0b1111) << 6  // Bits 9:6
-                            | ((inst >> 11) & 0b0011) << 4; // Bits 5:4
+            uint16_t nzuimm = ABC(inst, 11, 4, 2)
+                            | ABC(inst, 7,  6, 4)
+                            | ABC(inst, 6,  2, 1)
+                            | ABC(inst, 5,  3, 1);
 
             if (nzuimm > 0) {
                 int16_t rd = 8 + OP_C_MASK(inst, 2, 3);
