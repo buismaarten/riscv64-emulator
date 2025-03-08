@@ -1044,8 +1044,8 @@ Matched SLLI instruction 0x00579793: shamt=5, rs1=15, rd=15
 Matched SLLIW instruction 0x0057979B: shamt=5, rs1=15, rd=15
 Matched SLLW instruction 0x00F717BB: rs2=15, rs1=14, rd=15
 Matched SLT instruction 0x00F727B3: rs2=15, rs1=14, rd=15
-Matched SLTI instruction 0x00A7A793
-Matched SLTIU instruction 0x00A7B793
+Matched SLTI instruction 0x00A7A793: imm=10, rs1=15, rd=15
+Matched SLTIU instruction 0x00A7B793: imm=10, rs1=15, rd=15
 Matched SLTU instruction 0x00F737B3: rs2=15, rs1=14, rd=15
 Matched SRA instruction 0x40F757B3: rs2=15, rs1=14, rd=15
 Matched SRAI instruction 0x4037D793

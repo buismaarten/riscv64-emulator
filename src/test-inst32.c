@@ -2051,16 +2051,24 @@ void test_inst32() {
         }
 
         if (OP_SLTI(inst)) {
-            // TODO
+            uint32_t imm = OP_MASK(inst, 20, 12);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLTI instruction 0x%08X\n", inst);
+            imm = sign_extend_32(imm, 12);
+
+            printf("Matched SLTI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
         }
 
         if (OP_SLTIU(inst)) {
-            // TODO
+            uint32_t imm = OP_MASK(inst, 20, 12);
+            uint32_t rs1 = OP_MASK(inst, 15, 5);
+            uint32_t rd = OP_MASK(inst, 7, 5);
 
-            printf("Matched SLTIU instruction 0x%08X\n", inst);
+            imm = sign_extend_32(imm, 12);
+
+            printf("Matched SLTIU instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
             count++;
         }
 
