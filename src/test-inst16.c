@@ -365,8 +365,14 @@ void test_inst16() {
 
         if (OP_C_ADDI4SPN(inst)) {
             // TODO
+            uint16_t nzuimm = ((inst >> 6) & 0b111100)    // Bits 9-6
+                            | ((inst >> 1) & 0b100000000) // Bit 5
+                            | ((inst >> 3) & 0b1000)      // Bit 3
+                            | ((inst >> 2) & 0b100);      // Bit 2
 
-            printf("Matched C.ADDI4SPN instruction 0x%04X\n", inst);
+            int16_t rd = 8 + OP_C_MASK(inst, 2, 3);
+
+            printf("Matched C.ADDI4SPN instruction 0x%04X: nzuimm=%d, rd=%d\n", inst, nzuimm, rd);
             count++;
         }
 
