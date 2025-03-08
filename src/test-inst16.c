@@ -364,10 +364,10 @@ void test_inst16() {
         }
 
         if (OP_C_ADDI4SPN(inst)) {
-            uint16_t nzuimm = ((inst >> 5)  & 0b0001) << 3  // Bit 3
-                            | ((inst >> 6)  & 0b0001) << 2  // Bit 2
-                            | ((inst >> 7)  & 0b1111) << 6  // Bits 9:6
-                            | ((inst >> 11) & 0b0011) << 4; // Bits 5:4
+            uint16_t nzuimm = ((inst >> 5)  & 0b0001) << 3
+                            | ((inst >> 6)  & 0b0001) << 2
+                            | ((inst >> 7)  & 0b1111) << 6
+                            | ((inst >> 11) & 0b0011) << 4;
 
             if (nzuimm > 0) {
                 int16_t rd = 8 + OP_C_MASK(inst, 2, 3);
