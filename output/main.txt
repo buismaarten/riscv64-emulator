@@ -270,58 +270,58 @@ Matched C.MV instruction 0x8F7E: rd=30, rs2=31
 Matched C.NOP instruction 0x0001
 Matched C.OR instruction 0x8FD9: rd=15, rs2=14
 Matched C.SD instruction 0xF550
-Matched C.SDSP instruction 0xE022
-Matched C.SDSP instruction 0xE0BA
-Matched C.SDSP instruction 0xE0BE
-Matched C.SDSP instruction 0xE142
-Matched C.SDSP instruction 0xE146
-Matched C.SDSP instruction 0xE1E2
-Matched C.SDSP instruction 0xE222
-Matched C.SDSP instruction 0xE406
-Matched C.SDSP instruction 0xE426
-Matched C.SDSP instruction 0xE43A
-Matched C.SDSP instruction 0xE43E
-Matched C.SDSP instruction 0xE4FA
-Matched C.SDSP instruction 0xE546
-Matched C.SDSP instruction 0xE572
-Matched C.SDSP instruction 0xE5DE
-Matched C.SDSP instruction 0xE606
-Matched C.SDSP instruction 0xE822
-Matched C.SDSP instruction 0xE82A
-Matched C.SDSP instruction 0xE876
-Matched C.SDSP instruction 0xE89A
-Matched C.SDSP instruction 0xE8F2
-Matched C.SDSP instruction 0xE976
-Matched C.SDSP instruction 0xE9DA
-Matched C.SDSP instruction 0xEC06
-Matched C.SDSP instruction 0xEC1E
-Matched C.SDSP instruction 0xEC26
-Matched C.SDSP instruction 0xEC9A
-Matched C.SDSP instruction 0xECAE
-Matched C.SDSP instruction 0xED1E
-Matched C.SDSP instruction 0xEDD6
-Matched C.SDSP instruction 0xF022
-Matched C.SDSP instruction 0xF076
-Matched C.SDSP instruction 0xF0B6
-Matched C.SDSP instruction 0xF0BA
-Matched C.SDSP instruction 0xF1D2
-Matched C.SDSP instruction 0xF406
-Matched C.SDSP instruction 0xF442
-Matched C.SDSP instruction 0xF446
-Matched C.SDSP instruction 0xF4B6
-Matched C.SDSP instruction 0xF4BE
-Matched C.SDSP instruction 0xF56E
-Matched C.SDSP instruction 0xF5CE
-Matched C.SDSP instruction 0xF82E
-Matched C.SDSP instruction 0xF842
-Matched C.SDSP instruction 0xF8FE
-Matched C.SDSP instruction 0xF96A
-Matched C.SDSP instruction 0xF9CA
-Matched C.SDSP instruction 0xFC16
-Matched C.SDSP instruction 0xFCAE
-Matched C.SDSP instruction 0xFCC2
-Matched C.SDSP instruction 0xFD66
-Matched C.SDSP instruction 0xFDA6
+Matched C.SDSP instruction 0xE022: rs2=8, uimm=0
+Matched C.SDSP instruction 0xE0BA: rs2=14, uimm=64
+Matched C.SDSP instruction 0xE0BE: rs2=15, uimm=64
+Matched C.SDSP instruction 0xE142: rs2=16, uimm=128
+Matched C.SDSP instruction 0xE146: rs2=17, uimm=128
+Matched C.SDSP instruction 0xE1E2: rs2=24, uimm=192
+Matched C.SDSP instruction 0xE222: rs2=8, uimm=256
+Matched C.SDSP instruction 0xE406: rs2=1, uimm=8
+Matched C.SDSP instruction 0xE426: rs2=9, uimm=8
+Matched C.SDSP instruction 0xE43A: rs2=14, uimm=8
+Matched C.SDSP instruction 0xE43E: rs2=15, uimm=8
+Matched C.SDSP instruction 0xE4FA: rs2=30, uimm=72
+Matched C.SDSP instruction 0xE546: rs2=17, uimm=136
+Matched C.SDSP instruction 0xE572: rs2=28, uimm=136
+Matched C.SDSP instruction 0xE5DE: rs2=23, uimm=200
+Matched C.SDSP instruction 0xE606: rs2=1, uimm=264
+Matched C.SDSP instruction 0xE822: rs2=8, uimm=16
+Matched C.SDSP instruction 0xE82A: rs2=10, uimm=16
+Matched C.SDSP instruction 0xE876: rs2=29, uimm=16
+Matched C.SDSP instruction 0xE89A: rs2=6, uimm=80
+Matched C.SDSP instruction 0xE8F2: rs2=28, uimm=80
+Matched C.SDSP instruction 0xE976: rs2=29, uimm=144
+Matched C.SDSP instruction 0xE9DA: rs2=22, uimm=208
+Matched C.SDSP instruction 0xEC06: rs2=1, uimm=24
+Matched C.SDSP instruction 0xEC1E: rs2=7, uimm=24
+Matched C.SDSP instruction 0xEC26: rs2=9, uimm=24
+Matched C.SDSP instruction 0xEC9A: rs2=6, uimm=88
+Matched C.SDSP instruction 0xECAE: rs2=11, uimm=88
+Matched C.SDSP instruction 0xED1E: rs2=7, uimm=152
+Matched C.SDSP instruction 0xEDD6: rs2=21, uimm=216
+Matched C.SDSP instruction 0xF022: rs2=8, uimm=32
+Matched C.SDSP instruction 0xF076: rs2=29, uimm=32
+Matched C.SDSP instruction 0xF0B6: rs2=13, uimm=96
+Matched C.SDSP instruction 0xF0BA: rs2=14, uimm=96
+Matched C.SDSP instruction 0xF1D2: rs2=20, uimm=224
+Matched C.SDSP instruction 0xF406: rs2=1, uimm=40
+Matched C.SDSP instruction 0xF442: rs2=16, uimm=40
+Matched C.SDSP instruction 0xF446: rs2=17, uimm=40
+Matched C.SDSP instruction 0xF4B6: rs2=13, uimm=104
+Matched C.SDSP instruction 0xF4BE: rs2=15, uimm=104
+Matched C.SDSP instruction 0xF56E: rs2=27, uimm=168
+Matched C.SDSP instruction 0xF5CE: rs2=19, uimm=232
+Matched C.SDSP instruction 0xF82E: rs2=11, uimm=48
+Matched C.SDSP instruction 0xF842: rs2=16, uimm=48
+Matched C.SDSP instruction 0xF8FE: rs2=31, uimm=112
+Matched C.SDSP instruction 0xF96A: rs2=26, uimm=176
+Matched C.SDSP instruction 0xF9CA: rs2=18, uimm=240
+Matched C.SDSP instruction 0xFC16: rs2=5, uimm=56
+Matched C.SDSP instruction 0xFCAE: rs2=11, uimm=120
+Matched C.SDSP instruction 0xFCC2: rs2=16, uimm=120
+Matched C.SDSP instruction 0xFD66: rs2=25, uimm=184
+Matched C.SDSP instruction 0xFDA6: rs2=9, uimm=248
 Matched C.SLLI instruction 0x078E
 Matched C.SRAI instruction 0x878D
 Matched C.SRLI instruction 0x8389

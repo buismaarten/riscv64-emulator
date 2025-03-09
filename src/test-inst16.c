@@ -574,9 +574,13 @@ void test_inst16() {
         }
 
         if (OP_C_SDSP(inst)) {
-            // TODO
+            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
+            uint16_t uimm = 0;
 
-            printf("Matched C.SDSP instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
+            uimm |= EXTRACT_BITS(inst, 9,   7) << 6; // Bit 8-6
+
+            printf("Matched C.SDSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
             count++;
         }
 
