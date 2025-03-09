@@ -769,7 +769,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched ADD instruction 0x%08X, rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched ADD instruction 0x%08X, rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -780,7 +780,7 @@ void test_inst32() {
 
             imm = sign_extend_32(imm, 12);
 
-            printf("Matched ADDI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
+            printf("Matched ADDI instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
@@ -791,7 +791,7 @@ void test_inst32() {
 
             imm = sign_extend_32(imm, 12);
 
-            printf("Matched ADDIW instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
+            printf("Matched ADDIW instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
@@ -800,7 +800,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched ADDW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched ADDW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -811,7 +811,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOADD.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOADD.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -822,7 +822,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOADD.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOADD.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -833,7 +833,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOAND.D instruction 0x%08x: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOAND.D instruction 0x%08x: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -844,7 +844,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOAND.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOAND.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -855,7 +855,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMAX.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMAX.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -866,7 +866,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMAX.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMAX.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -877,7 +877,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMAXU.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMAXU.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -888,7 +888,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMAXU.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMAXU.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -899,7 +899,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMIN.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMIN.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -910,7 +910,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMIN.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMIN.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -921,7 +921,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMINU.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMINU.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -932,7 +932,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOMINU.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOMINU.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -943,7 +943,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOOR.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOOR.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -954,7 +954,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOOR.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOOR.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -965,7 +965,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOSWAP.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOSWAP.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -976,7 +976,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOSWAP.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOSWAP.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -987,7 +987,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOXOR.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOXOR.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -998,7 +998,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AMOXOR.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched AMOXOR.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -1007,7 +1007,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched AND instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched AND instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1018,7 +1018,7 @@ void test_inst32() {
 
             imm = sign_extend_32(imm, 12);
 
-            printf("Matched ANDI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
+            printf("Matched ANDI instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
@@ -1029,7 +1029,7 @@ void test_inst32() {
             imm <<= 12;
             imm = sign_extend_32(imm, 20);
 
-            printf("Matched AUIPC instruction 0x%08X: imm=%d, rd=%d\n", inst, imm, rd);
+            printf("Matched AUIPC instruction 0x%08X: imm=%d, rd=%u\n", inst, imm, rd);
             count++;
         }
 
@@ -1078,7 +1078,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched CSRRC instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
+            printf("Matched CSRRC instruction 0x%08X: csr=%u, rs1=%u, rd=%u\n", inst, csr, rs1, rd);
             count++;
         }
 
@@ -1087,7 +1087,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched CSRRCI instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
+            printf("Matched CSRRCI instruction 0x%08X: csr=%u, rs1=%u, rd=%u\n", inst, csr, rs1, rd);
             count++;
         }
 
@@ -1096,7 +1096,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched CSRRS instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
+            printf("Matched CSRRS instruction 0x%08X: csr=%u, rs1=%u, rd=%u\n", inst, csr, rs1, rd);
             count++;
         }
 
@@ -1105,7 +1105,7 @@ void test_inst32() {
             uint32_t uimm = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched CSRRSI instruction 0x%08X: csr=%d, uimm=%d, rd=%d\n", inst, csr, uimm, rd);
+            printf("Matched CSRRSI instruction 0x%08X: csr=%u, uimm=%u, rd=%u\n", inst, csr, uimm, rd);
             count++;
         }
 
@@ -1114,7 +1114,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched CSRRW instruction 0x%08X: csr=%d, rs1=%d, rd=%d\n", inst, csr, rs1, rd);
+            printf("Matched CSRRW instruction 0x%08X: csr=%u, rs1=%u, rd=%u\n", inst, csr, rs1, rd);
             count++;
         }
 
@@ -1123,7 +1123,7 @@ void test_inst32() {
             uint32_t uimm = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched CSRRWI instruction 0x%08X: csr=%d, uimm=%d, rd=%d\n", inst, csr, uimm, rd);
+            printf("Matched CSRRWI instruction 0x%08X: csr=%u, uimm=%u, rd=%u\n", inst, csr, uimm, rd);
             count++;
         }
 
@@ -1132,7 +1132,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIV instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched DIV instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1141,7 +1141,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIVU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched DIVU instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1150,7 +1150,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIVUW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched DIVUW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1159,7 +1159,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched DIVW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched DIVW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1179,7 +1179,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FADD.D instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FADD.D instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1189,7 +1189,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FADD.S instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FADD.S instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1197,7 +1197,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCLASS.D instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
+            printf("Matched FCLASS.D instruction 0x%08X: rs1=%u, rd=%u\n", inst, rs1, rd);
             count++;
         }
 
@@ -1205,7 +1205,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCLASS.S instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
+            printf("Matched FCLASS.S instruction 0x%08X: rs1=%u, rd=%u\n", inst, rs1, rd);
             count++;
         }
 
@@ -1214,7 +1214,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.D.L instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.D.L instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1223,7 +1223,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.D.LU instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.D.LU instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1232,7 +1232,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.D.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.D.S instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1241,7 +1241,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.D.W instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.D.W instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1250,7 +1250,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.D.WU instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.D.WU instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1259,7 +1259,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.L.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.L.D instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1268,7 +1268,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.L.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.L.S instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1277,7 +1277,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.LU.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.LU.D instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1286,7 +1286,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.LU.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.LU.S instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1295,7 +1295,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.S.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.S.D instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1304,7 +1304,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.S.L instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.S.L instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1313,7 +1313,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.S.LU instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.S.LU instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1322,7 +1322,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.S.W instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.S.W instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1331,7 +1331,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.S.WU instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.S.WU instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1340,7 +1340,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.W.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.W.D instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1349,7 +1349,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.W.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.W.S instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1358,7 +1358,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.WU.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.WU.D instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1367,7 +1367,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FCVT.WU.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FCVT.WU.S instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1377,7 +1377,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FDIV.D instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FDIV.D instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1387,7 +1387,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FDIV.S instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FDIV.S instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1408,7 +1408,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FEQ.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FEQ.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1417,7 +1417,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FEQ.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FEQ.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1433,7 +1433,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FLE.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FLE.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1442,7 +1442,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FLE.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FLE.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1451,7 +1451,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FLT.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FLT.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1460,7 +1460,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FLT.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FLT.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1478,7 +1478,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMADD.D instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FMADD.D instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1489,7 +1489,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMADD.S instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FMADD.S instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1498,7 +1498,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMAX.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FMAX.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1507,7 +1507,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMAX.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FMAX.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1516,7 +1516,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMIN.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FMIN.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1525,7 +1525,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMIN.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FMIN.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1536,7 +1536,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMSUB.D instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FMSUB.D instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1547,7 +1547,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMSUB.S instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FMSUB.S instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1557,7 +1557,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMUL.D instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FMUL.D instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1567,7 +1567,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMUL.S instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FMUL.S instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1575,7 +1575,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMV.D.X instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
+            printf("Matched FMV.D.X instruction 0x%08X: rs1=%u, rd=%u\n", inst, rs1, rd);
             count++;
         }
 
@@ -1583,7 +1583,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMV.W.X instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
+            printf("Matched FMV.W.X instruction 0x%08X: rs1=%u, rd=%u\n", inst, rs1, rd);
             count++;
         }
 
@@ -1591,7 +1591,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMV.X.D instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
+            printf("Matched FMV.X.D instruction 0x%08X: rs1=%u, rd=%u\n", inst, rs1, rd);
             count++;
         }
 
@@ -1599,7 +1599,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FMV.X.W instruction 0x%08X: rs1=%d, rd=%d\n", inst, rs1, rd);
+            printf("Matched FMV.X.W instruction 0x%08X: rs1=%u, rd=%u\n", inst, rs1, rd);
             count++;
         }
 
@@ -1610,7 +1610,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FNMADD.D instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FNMADD.D instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1621,7 +1621,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FNMADD.S instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FNMADD.S instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1632,7 +1632,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FNMSUB.D instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FNMSUB.D instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1643,7 +1643,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FNMSUB.S instruction 0x%08X: rs3=%d, rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs3, rs2, rs1, rm, rd);
+            printf("Matched FNMSUB.S instruction 0x%08X: rs3=%u, rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs3, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1659,7 +1659,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSGNJ.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FSGNJ.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1668,7 +1668,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSGNJ.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FSGNJ.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1677,7 +1677,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSGNJN.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FSGNJN.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1686,7 +1686,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSGNJN.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FSGNJN.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1695,7 +1695,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSGNJX.D instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FSGNJX.D instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1704,7 +1704,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSGNJX.S instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched FSGNJX.S instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1713,7 +1713,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSQRT.D instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FSQRT.D instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1722,7 +1722,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSQRT.S instruction 0x%08X: rs1=%d, rm=%d, rd=%d\n", inst, rs1, rm, rd);
+            printf("Matched FSQRT.S instruction 0x%08X: rs1=%u, rm=%u, rd=%u\n", inst, rs1, rm, rd);
             count++;
         }
 
@@ -1732,7 +1732,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSUB.D instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FSUB.D instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1742,7 +1742,7 @@ void test_inst32() {
             uint32_t rm = EXTRACT_BITS(inst, 14, 12);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FSUB.S instruction 0x%08X: rs2=%d, rs1=%d, rm=%d, rd=%d\n", inst, rs2, rs1, rm, rd);
+            printf("Matched FSUB.S instruction 0x%08X: rs2=%u, rs1=%u, rm=%u, rd=%u\n", inst, rs2, rs1, rm, rd);
             count++;
         }
 
@@ -1809,7 +1809,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LR.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched LR.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -1819,7 +1819,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LR.W instruction 0x%08X: aq=%d, rl=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs1, rd);
+            printf("Matched LR.W instruction 0x%08X: aq=%u, rl=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs1, rd);
             count++;
         }
 
@@ -1830,7 +1830,7 @@ void test_inst32() {
             imm <<= 12;
             imm = sign_extend_32(imm, 20);
 
-            printf("Matched LUI instruction 0x%08X: imm=%d, rd=%d\n", inst, imm, rd);
+            printf("Matched LUI instruction 0x%08X: imm=%d, rd=%u\n", inst, imm, rd);
             count++;
         }
 
@@ -1858,7 +1858,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched MUL instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched MUL instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1867,7 +1867,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched MULH instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched MULH instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1876,7 +1876,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched MULHSU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched MULHSU instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1885,7 +1885,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched MULHU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched MULHU instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1894,7 +1894,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched MULW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched MULW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1903,7 +1903,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched OR instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched OR instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1914,7 +1914,7 @@ void test_inst32() {
 
             imm = sign_extend_32(imm, 12);
 
-            printf("Matched ORI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
+            printf("Matched ORI instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
@@ -1923,7 +1923,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched REM instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched REM instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1932,7 +1932,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched REMU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched REMU instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1941,7 +1941,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched REMUW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched REMUW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1950,7 +1950,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched REMW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched REMW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -1962,7 +1962,7 @@ void test_inst32() {
             offset |= EXTRACT_BITS(inst, 31, 25) << 5;
             offset |= EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SB instruction 0x%08X: offset=%d, rs2=%d, rs1=%d\n", inst, offset, rs2, rs1);
+            printf("Matched SB instruction 0x%08X: offset=%d, rs2=%u, rs1=%u\n", inst, offset, rs2, rs1);
             count++;
         }
 
@@ -1973,7 +1973,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SC.D instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched SC.D instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -1984,7 +1984,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SC.W instruction 0x%08X: aq=%d, rl=%d, rs2=%d, rs1=%d, rd=%d\n", inst, aq, rl, rs2, rs1, rd);
+            printf("Matched SC.W instruction 0x%08X: aq=%u, rl=%u, rs2=%u, rs1=%u, rd=%u\n", inst, aq, rl, rs2, rs1, rd);
             count++;
         }
 
@@ -2000,7 +2000,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SFENCE.VMA instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SFENCE.VMA instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2012,7 +2012,7 @@ void test_inst32() {
             offset |= EXTRACT_BITS(inst, 31, 25) << 5;
             offset |= EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SH instruction 0x%08X: offset=%d, rs2=%d, rs1=%d\n", inst, offset, rs2, rs1);
+            printf("Matched SH instruction 0x%08X: offset=%d, rs2=%u, rs1=%u\n", inst, offset, rs2, rs1);
             count++;
         }
 
@@ -2021,7 +2021,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SLL instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SLL instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2030,7 +2030,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SLLI instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
+            printf("Matched SLLI instruction 0x%08X: shamt=%u, rs1=%u, rd=%u\n", inst, shamt, rs1, rd);
             count++;
         }
 
@@ -2039,7 +2039,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SLLIW instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
+            printf("Matched SLLIW instruction 0x%08X: shamt=%u, rs1=%u, rd=%u\n", inst, shamt, rs1, rd);
             count++;
         }
 
@@ -2048,7 +2048,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SLLW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SLLW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2057,7 +2057,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SLT instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SLT instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2068,7 +2068,7 @@ void test_inst32() {
 
             imm = sign_extend_32(imm, 12);
 
-            printf("Matched SLTI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
+            printf("Matched SLTI instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
@@ -2079,7 +2079,7 @@ void test_inst32() {
 
             imm = sign_extend_32(imm, 12);
 
-            printf("Matched SLTIU instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
+            printf("Matched SLTIU instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
@@ -2088,7 +2088,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SLTU instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SLTU instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2097,7 +2097,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRA instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SRA instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2113,7 +2113,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRAIW instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
+            printf("Matched SRAIW instruction 0x%08X: shamt=%u, rs1=%u, rd=%u\n", inst, shamt, rs1, rd);
             count++;
         }
 
@@ -2122,7 +2122,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRAW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SRAW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2136,7 +2136,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRL instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SRL instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2145,7 +2145,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRLI instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
+            printf("Matched SRLI instruction 0x%08X: shamt=%u, rs1=%u, rd=%u\n", inst, shamt, rs1, rd);
             count++;
         }
 
@@ -2154,7 +2154,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRLIW instruction 0x%08X: shamt=%d, rs1=%d, rd=%d\n", inst, shamt, rs1, rd);
+            printf("Matched SRLIW instruction 0x%08X: shamt=%u, rs1=%u, rd=%u\n", inst, shamt, rs1, rd);
             count++;
         }
 
@@ -2163,7 +2163,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRLW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SRLW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2172,7 +2172,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SUB instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SUB instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2181,7 +2181,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SUBW instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched SUBW instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2193,7 +2193,7 @@ void test_inst32() {
             offset |= EXTRACT_BITS(inst, 31, 25) << 5;
             offset |= EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SW instruction 0x%08X: offset=%d, rs2=%d, rs1=%d\n", inst, offset, rs2, rs1);
+            printf("Matched SW instruction 0x%08X: offset=%d, rs2=%u, rs1=%u\n", inst, offset, rs2, rs1);
             count++;
         }
 
@@ -2212,7 +2212,7 @@ void test_inst32() {
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched XOR instruction 0x%08X: rs2=%d, rs1=%d, rd=%d\n", inst, rs2, rs1, rd);
+            printf("Matched XOR instruction 0x%08X: rs2=%u, rs1=%u, rd=%u\n", inst, rs2, rs1, rd);
             count++;
         }
 
@@ -2223,7 +2223,7 @@ void test_inst32() {
 
             imm = sign_extend_32(imm, 12);
 
-            printf("Matched XORI instruction 0x%08X: imm=%d, rs1=%d, rd=%d\n", inst, imm, rs1, rd);
+            printf("Matched XORI instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
