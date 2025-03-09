@@ -1961,7 +1961,7 @@ void test_inst32() {
             int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             int32_t offset = 0;
 
-            offset += EXTRACT_BITS(inst, 31, 25) << 5;
+            offset |= EXTRACT_BITS(inst, 31, 25) << 5;
             offset |= EXTRACT_BITS(inst, 11, 7);
 
             printf("Matched SB instruction 0x%08X: offset=%d, rs2=%d, rs1=%d\n", inst, offset, rs2, rs1);
@@ -2011,7 +2011,7 @@ void test_inst32() {
             int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             int32_t offset = 0;
 
-            offset += EXTRACT_BITS(inst, 31, 25) << 5;
+            offset |= EXTRACT_BITS(inst, 31, 25) << 5;
             offset |= EXTRACT_BITS(inst, 11, 7);
 
             printf("Matched SH instruction 0x%08X: offset=%d, rs2=%d, rs1=%d\n", inst, offset, rs2, rs1);
@@ -2192,7 +2192,7 @@ void test_inst32() {
             int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             int32_t offset = 0;
 
-            offset += EXTRACT_BITS(inst, 31, 25) << 5;
+            offset |= EXTRACT_BITS(inst, 31, 25) << 5;
             offset |= EXTRACT_BITS(inst, 11, 7);
 
             printf("Matched SW instruction 0x%08X: offset=%d, rs2=%d, rs1=%d\n", inst, offset, rs2, rs1);
