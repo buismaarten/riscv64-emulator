@@ -67,59 +67,59 @@ Matched C.JAL instruction 0x3001
 Matched C.JALR instruction 0x9082: rs1=1
 Matched C.JR instruction 0x8082: rs1=1
 Matched C.JR instruction 0x8782: rs1=15
-Matched C.LDSP instruction 0x60B2
-Matched C.LDSP instruction 0x6346
-Matched C.LDSP instruction 0x6366
-Matched C.LDSP instruction 0x63E2
-Matched C.LDSP instruction 0x63EA
-Matched C.LDSP instruction 0x6412
-Matched C.LDSP instruction 0x64A2
-Matched C.LDSP instruction 0x65E6
-Matched C.LDSP instruction 0x6706
-Matched C.LDSP instruction 0x6722
-Matched C.LDSP instruction 0x6742
-Matched C.LDSP instruction 0x6786
+Matched C.LDSP instruction 0x60B2: rd=1, uimm=264
+Matched C.LDSP instruction 0x6346: rd=6, uimm=80
+Matched C.LDSP instruction 0x6366: rd=6, uimm=88
+Matched C.LDSP instruction 0x63E2: rd=7, uimm=24
+Matched C.LDSP instruction 0x63EA: rd=7, uimm=152
+Matched C.LDSP instruction 0x6412: rd=8, uimm=256
+Matched C.LDSP instruction 0x64A2: rd=9, uimm=8
+Matched C.LDSP instruction 0x65E6: rd=11, uimm=88
+Matched C.LDSP instruction 0x6706: rd=14, uimm=64
+Matched C.LDSP instruction 0x6722: rd=14, uimm=8
+Matched C.LDSP instruction 0x6742: rd=14, uimm=16
+Matched C.LDSP instruction 0x6786: rd=15, uimm=64
 Matched C.LD instruction 0x679C
-Matched C.LDSP instruction 0x67A2
-Matched C.LDSP instruction 0x67C2
-Matched C.LDSP instruction 0x680A
-Matched C.LDSP instruction 0x688A
-Matched C.LDSP instruction 0x68AA
-Matched C.LDSP instruction 0x6AEE
-Matched C.LDSP instruction 0x6B4E
-Matched C.LDSP instruction 0x6BAE
-Matched C.LDSP instruction 0x6C0E
-Matched C.LDSP instruction 0x6E2A
-Matched C.LDSP instruction 0x6E46
-Matched C.LDSP instruction 0x6ECA
-Matched C.LDSP instruction 0x6F26
-Matched C.LDSP instruction 0x72E2
-Matched C.LDSP instruction 0x74EE
-Matched C.LDSP instruction 0x75C2
-Matched C.LDSP instruction 0x75E6
-Matched C.LDSP instruction 0x7686
-Matched C.LDSP instruction 0x76A6
-Matched C.LDSP instruction 0x7706
-Matched C.LDSP instruction 0x77A6
-Matched C.LDSP instruction 0x7822
-Matched C.LDSP instruction 0x7842
-Matched C.LDSP instruction 0x7866
-Matched C.LDSP instruction 0x78A2
-Matched C.LDSP instruction 0x794E
-Matched C.LDSP instruction 0x79AE
-Matched C.LDSP instruction 0x7A0E
-Matched C.LDSP instruction 0x7CEA
-Matched C.LDSP instruction 0x7D4A
-Matched C.LDSP instruction 0x7DAA
-Matched C.LDSP instruction 0x7E82
-Matched C.LDSP instruction 0x7FC6
-Matched C.LDSP instruction 0x60A2
-Matched C.LDSP instruction 0x60E2
-Matched C.LDSP instruction 0x6402
-Matched C.LDSP instruction 0x6442
-Matched C.LDSP instruction 0x64E2
-Matched C.LDSP instruction 0x70A2
-Matched C.LDSP instruction 0x7402
+Matched C.LDSP instruction 0x67A2: rd=15, uimm=8
+Matched C.LDSP instruction 0x67C2: rd=15, uimm=16
+Matched C.LDSP instruction 0x680A: rd=16, uimm=128
+Matched C.LDSP instruction 0x688A: rd=17, uimm=128
+Matched C.LDSP instruction 0x68AA: rd=17, uimm=136
+Matched C.LDSP instruction 0x6AEE: rd=21, uimm=216
+Matched C.LDSP instruction 0x6B4E: rd=22, uimm=208
+Matched C.LDSP instruction 0x6BAE: rd=23, uimm=200
+Matched C.LDSP instruction 0x6C0E: rd=24, uimm=192
+Matched C.LDSP instruction 0x6E2A: rd=28, uimm=136
+Matched C.LDSP instruction 0x6E46: rd=28, uimm=80
+Matched C.LDSP instruction 0x6ECA: rd=29, uimm=144
+Matched C.LDSP instruction 0x6F26: rd=30, uimm=72
+Matched C.LDSP instruction 0x72E2: rd=5, uimm=56
+Matched C.LDSP instruction 0x74EE: rd=9, uimm=248
+Matched C.LDSP instruction 0x75C2: rd=11, uimm=48
+Matched C.LDSP instruction 0x75E6: rd=11, uimm=120
+Matched C.LDSP instruction 0x7686: rd=13, uimm=96
+Matched C.LDSP instruction 0x76A6: rd=13, uimm=104
+Matched C.LDSP instruction 0x7706: rd=14, uimm=96
+Matched C.LDSP instruction 0x77A6: rd=15, uimm=104
+Matched C.LDSP instruction 0x7822: rd=16, uimm=40
+Matched C.LDSP instruction 0x7842: rd=16, uimm=48
+Matched C.LDSP instruction 0x7866: rd=16, uimm=120
+Matched C.LDSP instruction 0x78A2: rd=17, uimm=40
+Matched C.LDSP instruction 0x794E: rd=18, uimm=240
+Matched C.LDSP instruction 0x79AE: rd=19, uimm=232
+Matched C.LDSP instruction 0x7A0E: rd=20, uimm=224
+Matched C.LDSP instruction 0x7CEA: rd=25, uimm=184
+Matched C.LDSP instruction 0x7D4A: rd=26, uimm=176
+Matched C.LDSP instruction 0x7DAA: rd=27, uimm=168
+Matched C.LDSP instruction 0x7E82: rd=29, uimm=32
+Matched C.LDSP instruction 0x7FC6: rd=31, uimm=112
+Matched C.LDSP instruction 0x60A2: rd=1, uimm=8
+Matched C.LDSP instruction 0x60E2: rd=1, uimm=24
+Matched C.LDSP instruction 0x6402: rd=8, uimm=0
+Matched C.LDSP instruction 0x6442: rd=8, uimm=16
+Matched C.LDSP instruction 0x64E2: rd=9, uimm=24
+Matched C.LDSP instruction 0x70A2: rd=1, uimm=40
+Matched C.LDSP instruction 0x7402: rd=8, uimm=32
 Matched C.LI instruction 0x4281
 Matched C.LI instruction 0x4401
 Matched C.LI instruction 0x4501

@@ -366,10 +366,10 @@ void test_inst16() {
         if (OP_C_ADDI4SPN(inst)) {
             uint16_t nzuimm = 0;
 
-            nzuimm |= ((inst >> 11) & 0b0011) << 4; // Bit 5-4
-            nzuimm |= ((inst >> 7)  & 0b1111) << 6; // Bit 9-6
-            nzuimm |= ((inst >> 6)  & 0b0001) << 2; // Bit 2
-            nzuimm |= ((inst >> 5)  & 0b0001) << 3; // Bit 3
+            nzuimm |= EXTRACT_BITS(inst, 12, 11) << 4; // Bit 5-4
+            nzuimm |= EXTRACT_BITS(inst, 8,   7) << 6; // Bit 9-6
+            nzuimm |= EXTRACT_BITS(inst, 6,   6) << 2; // Bit 2
+            nzuimm |= EXTRACT_BITS(inst, 5,   5) << 3; // Bit 3
 
             if (nzuimm > 0) {
                 int16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
@@ -498,9 +498,14 @@ void test_inst16() {
         }
 
         if (OP_C_LDSP(inst)) {
-            // TODO
+            int16_t rd = EXTRACT_BITS(inst, 11, 7);
+            uint16_t uimm = 0;
 
-            printf("Matched C.LDSP instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            uimm |= EXTRACT_BITS(inst, 6,   5) << 3; // Bit 4-3
+            uimm |= EXTRACT_BITS(inst, 4,   2) << 6; // Bit 8-6
+
+            printf("Matched C.LDSP instruction 0x%04X: rd=%d, uimm=%u\n", inst, rd, uimm);
             count++;
         }
 
