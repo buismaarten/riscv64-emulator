@@ -367,6 +367,7 @@ static uint32_t program32[] = {
     /* BNE */        0x00051663,
     /* BNE */        0x00079463,
     /* BNE */        0x00079663,
+    /* BNE */        0x00F71663,
     /* BNE */        0x02CC1C63,
     /* BNE */        0x02CD9B63,
     /* BNE */        0x04CC1E63,
@@ -1069,9 +1070,17 @@ void test_inst32() {
         }
 
         if (OP_BNE(inst)) {
-            // TODO
+            int32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            int32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t offset = 0;
 
-            printf("Matched BNE instruction 0x%08X\n", inst);
+            offset |= ((inst >> 31) & 0b00000001) << 12; // Bit 12
+            offset |= ((inst >> 25) & 0b00111111) << 5;  // Bit 10-5
+            offset |= ((inst >> 8)  & 0b00001111) << 1;  // Bit 4-1
+            offset |= ((inst >> 7)  & 0b00000001) << 11; // Bit 11
+            offset = sign_extend_32(offset, 13);
+
+            printf("Matched BNE instruction 0x%08X: rs2=%d, rs1=%d, offset=%d\n", inst, rs2, rs1, offset);
             count++;
         }
 
