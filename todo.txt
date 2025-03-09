@@ -1,7 +1,3 @@
-C.FLW
-C.FSW
-C.FSWSP
-
 BEQ
 BGE
 BGEU
