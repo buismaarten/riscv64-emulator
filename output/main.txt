@@ -695,49 +695,48 @@ Matched BLT instruction 0x00A7CC63
 Matched BLT instruction 0x00E7C563
 Matched BLT instruction 0x00E7C663
 Matched BLTU instruction 0x00B56463
-Matched BNE instruction 0x00051663: rs2=0, rs1=10, offset=12
-Matched BNE instruction 0x00079463: rs2=0, rs1=15, offset=8
-Matched BNE instruction 0x00079663: rs2=0, rs1=15, offset=12
-Matched BNE instruction 0x00F71663: rs2=15, rs1=14, offset=12
-Matched BNE instruction 0x02CC1C63: rs2=12, rs1=24, offset=56
-Matched BNE instruction 0x02CD9B63: rs2=12, rs1=27, offset=54
-Matched BNE instruction 0x04CC1E63: rs2=12, rs1=24, offset=92
-Matched BNE instruction 0x04CD9C63: rs2=12, rs1=27, offset=88
-Matched BNE instruction 0xBE9518E3: rs2=9, rs1=10, offset=-1040
-Matched BNE instruction 0xC2851AE3: rs2=8, rs1=10, offset=-972
-Matched BNE instruction 0xCCC414E3: rs2=12, rs1=8, offset=-824
-Matched BNE instruction 0xD0C910E3: rs2=12, rs1=18, offset=-768
-Matched BNE instruction 0xD0CA96E3: rs2=12, rs1=21, offset=-756
-Matched BNE instruction 0xD2CA9EE3: rs2=12, rs1=21, offset=-708
-Matched BNE instruction 0xD69512E3: rs2=9, rs1=10, offset=-668
-Matched BNE instruction 0xD88514E3: rs2=8, rs1=10, offset=-632
-Matched BNE instruction 0xDAC716E3: rs2=12, rs1=14, offset=-596
-Matched BNE instruction 0xDAC792E3: rs2=12, rs1=15, offset=-604
-Matched BNE instruction 0xDEC414E3: rs2=12, rs1=8, offset=-536
-Matched BNE instruction 0xE0C913E3: rs2=12, rs1=18, offset=-506
-Matched BNE instruction 0xE0C91AE3: rs2=12, rs1=18, offset=-492
-Matched BNE instruction 0xE0C99AE3: rs2=12, rs1=19, offset=-492
-Matched BNE instruction 0xE0CA9DE3: rs2=12, rs1=21, offset=-486
-Matched BNE instruction 0xE2CA9AE3: rs2=12, rs1=21, offset=-460
-Matched BNE instruction 0xE4C416E3: rs2=12, rs1=8, offset=-436
-Matched BNE instruction 0xE4CD96E3: rs2=12, rs1=27, offset=-436
-Matched BNE instruction 0xE6C71EE3: rs2=12, rs1=14, offset=-388
-Matched BNE instruction 0xE6C79CE3: rs2=12, rs1=15, offset=-392
-Matched BNE instruction 0xEAC91FE3: rs2=12, rs1=18, offset=-322
-Matched BNE instruction 0xEAC99EE3: rs2=12, rs1=19, offset=-324
-Matched BNE instruction 0xEBE71AE3: rs2=30, rs1=14, offset=-332
-Matched BNE instruction 0xEBE79AE3: rs2=30, rs1=15, offset=-332
-Matched BNE instruction 0xEEC417E3: rs2=12, rs1=8, offset=-274
-Matched BNE instruction 0xEECD97E3: rs2=12, rs1=27, offset=-274
-Matched BNE instruction 0xF3E71DE3: rs2=30, rs1=14, offset=-198
-Matched BNE instruction 0xF3E79DE3: rs2=30, rs1=15, offset=-198
-Matched BNE instruction 0xF4C494E3: rs2=12, rs1=9, offset=-184
-Matched BNE instruction 0xF8C498E3: rs2=12, rs1=9, offset=-112
-Matched BNE instruction 0xF93412E3: rs2=19, rs1=8, offset=-124
-Matched BNE instruction 0xFB341FE3: rs2=19, rs1=8, offset=-66
-Matched BNE instruction 0xFE0790E3: rs2=0, rs1=15, offset=-32
-Matched BNE instruction 0xFE0798E3: rs2=0, rs1=15, offset=-16
-Matched BNE instruction 0xFE079AE3: rs2=0, rs1=15, offset=-12
+Matched BNE instruction 0x00051663
+Matched BNE instruction 0x00079463
+Matched BNE instruction 0x00079663
+Matched BNE instruction 0x02CC1C63
+Matched BNE instruction 0x02CD9B63
+Matched BNE instruction 0x04CC1E63
+Matched BNE instruction 0x04CD9C63
+Matched BNE instruction 0xBE9518E3
+Matched BNE instruction 0xC2851AE3
+Matched BNE instruction 0xCCC414E3
+Matched BNE instruction 0xD0C910E3
+Matched BNE instruction 0xD0CA96E3
+Matched BNE instruction 0xD2CA9EE3
+Matched BNE instruction 0xD69512E3
+Matched BNE instruction 0xD88514E3
+Matched BNE instruction 0xDAC716E3
+Matched BNE instruction 0xDAC792E3
+Matched BNE instruction 0xDEC414E3
+Matched BNE instruction 0xE0C913E3
+Matched BNE instruction 0xE0C91AE3
+Matched BNE instruction 0xE0C99AE3
+Matched BNE instruction 0xE0CA9DE3
+Matched BNE instruction 0xE2CA9AE3
+Matched BNE instruction 0xE4C416E3
+Matched BNE instruction 0xE4CD96E3
+Matched BNE instruction 0xE6C71EE3
+Matched BNE instruction 0xE6C79CE3
+Matched BNE instruction 0xEAC91FE3
+Matched BNE instruction 0xEAC99EE3
+Matched BNE instruction 0xEBE71AE3
+Matched BNE instruction 0xEBE79AE3
+Matched BNE instruction 0xEEC417E3
+Matched BNE instruction 0xEECD97E3
+Matched BNE instruction 0xF3E71DE3
+Matched BNE instruction 0xF3E79DE3
+Matched BNE instruction 0xF4C494E3
+Matched BNE instruction 0xF8C498E3
+Matched BNE instruction 0xF93412E3
+Matched BNE instruction 0xFB341FE3
+Matched BNE instruction 0xFE0790E3
+Matched BNE instruction 0xFE0798E3
+Matched BNE instruction 0xFE079AE3
 Matched CSRRC instruction 0x3002B373: csr=768, rs1=5, rd=6
 Matched CSRRCI instruction 0x30047373: csr=768, rs1=8, rd=6
 Matched CSRRS instruction 0x3002A373: csr=768, rs1=5, rd=6
