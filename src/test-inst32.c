@@ -1763,23 +1763,35 @@ void test_inst32() {
         }
 
         if (OP_JALR(inst)) {
-            // TODO
+            int32_t offset = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched JALR instruction 0x%08X\n", inst);
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched JALR instruction 0x%08X: offset=%d, rs1=%u, rd=%u\n", inst, offset, rs1, rd);
             count++;
         }
 
         if (OP_LB(inst)) {
-            // TODO
+            int32_t offset = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LB instruction 0x%08X\n", inst);
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched LB instruction 0x%08X: offset=%d, rs1=%u, rd=%u\n", inst, offset, rs1, rd);
             count++;
         }
 
         if (OP_LBU(inst)) {
-            // TODO
+            int32_t offset = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LBU instruction 0x%08X\n", inst);
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched LBU instruction 0x%08X: offset=%d, rs1=%u, rd=%u\n", inst, offset, rs1, rd);
             count++;
         }
 
@@ -1791,16 +1803,24 @@ void test_inst32() {
         }
 
         if (OP_LH(inst)) {
-            // TODO
+            int32_t offset = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LH instruction 0x%08X\n", inst);
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched LH instruction 0x%08X: offset=%d, rs1=%u, rd=%u\n", inst, offset, rs1, rd);
             count++;
         }
 
         if (OP_LHU(inst)) {
-            // TODO
+            int32_t offset = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LHU instruction 0x%08X\n", inst);
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched LHU instruction 0x%08X: offset=%d, rs1=%u, rd=%u\n", inst, offset, rs1, rd);
             count++;
         }
 
@@ -1837,9 +1857,13 @@ void test_inst32() {
         }
 
         if (OP_LW(inst)) {
-            // TODO
+            int32_t offset = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LW instruction 0x%08X\n", inst);
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched LW instruction 0x%08X: offset=%d, rs1=%u, rd=%u\n", inst, offset, rs1, rd);
             count++;
         }
 
