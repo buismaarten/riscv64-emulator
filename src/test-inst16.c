@@ -349,8 +349,8 @@ void test_inst16() {
         uint16_t count = 0;
 
         if (OP_C_ADD(inst)) {
-            int16_t rd = EXTRACT_BITS(inst, 11, 7);
-            int16_t rs2 = EXTRACT_BITS(inst, 6, 2);
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
+            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
 
             printf("Matched C.ADD instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -372,7 +372,7 @@ void test_inst16() {
             nzuimm |= EXTRACT_BITS(inst, 5,   5) << 3; // Bit 3
 
             if (nzuimm > 0) {
-                int16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
+                uint16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
 
                 printf("Matched C.ADDI4SPN instruction 0x%04X: nzuimm=%u, rd=%d\n", inst, nzuimm, rd);
                 count++;
@@ -401,8 +401,8 @@ void test_inst16() {
         }
 
         if (OP_C_AND(inst)) {
-            int16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
-            int16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
             printf("Matched C.AND instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -477,14 +477,14 @@ void test_inst16() {
         }
 
         if (OP_C_JALR(inst)) {
-            int16_t rs1 = EXTRACT_BITS(inst, 11, 7);
+            uint16_t rs1 = EXTRACT_BITS(inst, 11, 7);
 
             printf("Matched C.JALR instruction 0x%04X: rs1=%d\n", inst, rs1);
             count++;
         }
 
         if (OP_C_JR(inst)) {
-            int16_t rs1 = EXTRACT_BITS(inst, 11, 7);
+            uint16_t rs1 = EXTRACT_BITS(inst, 11, 7);
 
             printf("Matched C.JR instruction 0x%04X: rs1=%d\n", inst, rs1);
             count++;
@@ -498,7 +498,7 @@ void test_inst16() {
         }
 
         if (OP_C_LDSP(inst)) {
-            int16_t rd = EXTRACT_BITS(inst, 11, 7);
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
             uint16_t uimm = 0;
 
             uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
@@ -538,8 +538,8 @@ void test_inst16() {
         }
 
         if (OP_C_MV(inst)) {
-            int16_t rd = EXTRACT_BITS(inst, 11, 7);
-            int16_t rs2 = EXTRACT_BITS(inst, 6, 2);
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
+            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
 
             printf("Matched C.MV instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -551,8 +551,8 @@ void test_inst16() {
         }
 
         if (OP_C_OR(inst)) {
-            int16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
-            int16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
             printf("Matched C.OR instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -594,16 +594,16 @@ void test_inst16() {
         }
 
         if (OP_C_SUB(inst)) {
-            int16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
-            int16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
             printf("Matched C.SUB instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
         }
 
         if (OP_C_SUBW(inst)) {
-            int16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
-            int16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
             printf("Matched C.SUBW instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
@@ -624,8 +624,8 @@ void test_inst16() {
         }
 
         if (OP_C_XOR(inst)) {
-            int16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
-            int16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
             printf("Matched C.XOR instruction 0x%04X: rd=%d, rs2=%d\n", inst, rd, rs2);
             count++;
