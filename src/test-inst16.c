@@ -374,7 +374,7 @@ void test_inst16() {
             if (nzuimm > 0) {
                 int16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
 
-                printf("Matched C.ADDI4SPN instruction 0x%04X: nzuimm=%d, rd=%d\n", inst, nzuimm, rd);
+                printf("Matched C.ADDI4SPN instruction 0x%04X: nzuimm=%u, rd=%d\n", inst, nzuimm, rd);
                 count++;
             }
         }
