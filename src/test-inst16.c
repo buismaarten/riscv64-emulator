@@ -398,9 +398,10 @@ void test_inst16() {
         }
 
         if (OP_C_ADDW(inst)) {
-            // TODO
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
-            printf("Matched C.ADDW instruction 0x%04X\n", inst);
+            printf("Matched C.ADDW instruction 0x%04X: rd=%u, rs2=%u\n", inst, rd, rs2);
             count++;
         }
 

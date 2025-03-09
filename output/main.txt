@@ -29,13 +29,13 @@ Matched C.ADDIW instruction 0x39F9
 Matched C.ADDIW instruction 0x3AF9
 Matched C.ADDIW instruction 0x3BF9
 Matched C.ADDIW instruction 0x3E79
-Matched C.ADDW instruction 0x9CAD
-Matched C.ADDW instruction 0x9D2D
-Matched C.ADDW instruction 0x9EA1
-Matched C.ADDW instruction 0x9F29
-Matched C.ADDW instruction 0x9FA5
-Matched C.ADDW instruction 0x9FA9
-Matched C.ADDW instruction 0x9FB9
+Matched C.ADDW instruction 0x9CAD: rd=9, rs2=11
+Matched C.ADDW instruction 0x9D2D: rd=10, rs2=11
+Matched C.ADDW instruction 0x9EA1: rd=13, rs2=8
+Matched C.ADDW instruction 0x9F29: rd=14, rs2=10
+Matched C.ADDW instruction 0x9FA5: rd=15, rs2=9
+Matched C.ADDW instruction 0x9FA9: rd=15, rs2=10
+Matched C.ADDW instruction 0x9FB9: rd=15, rs2=14
 Matched C.AND instruction 0x8FF9: rd=15, rs2=14
 Matched C.ANDI instruction 0x8A25
 Matched C.BEQZ instruction 0xC001
