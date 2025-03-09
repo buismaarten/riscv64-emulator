@@ -1069,6 +1069,8 @@ void test_inst32() {
         }
 
         if (OP_BNE(inst)) {
+            // TODO
+
             printf("Matched BNE instruction 0x%08X\n", inst);
             count++;
         }
