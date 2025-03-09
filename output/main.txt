@@ -51,7 +51,7 @@ Matched C.EBREAK instruction 0x9002
 Matched C.FLD instruction 0x239C
 Matched C.FLDSP instruction 0x2022
 Matched C.FSD instruction 0xA79C
-Matched C.FSDSP instruction 0xA43E
+Matched C.FSDSP instruction 0xA43E: rs2=15, uimm=8
 Matched C.J instruction 0xA021
 Matched C.J instruction 0xA025
 Matched C.J instruction 0xA029

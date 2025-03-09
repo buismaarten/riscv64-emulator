@@ -14,7 +14,7 @@ C.BNEZ
 C.FLD
 C.FLDSP
 C.FSD
-C.FSDSP
+C.FSDSP = 0xA43E  fsd fa5,8(sp)
 C.J
 C.JAL
 C.LD
