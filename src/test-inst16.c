@@ -371,9 +371,9 @@ void test_inst16() {
             uint16_t nzuimm = 0;
 
             nzuimm |= EXTRACT_BITS(inst, 12, 11) << 4; // Bit 5-4
-            nzuimm |= EXTRACT_BITS(inst, 8,   7) << 6; // Bit 9-6
-            nzuimm |= EXTRACT_BITS(inst, 6,   6) << 2; // Bit 2
-            nzuimm |= EXTRACT_BITS(inst, 5,   5) << 3; // Bit 3
+            nzuimm |= EXTRACT_BITS(inst, 8, 7) << 6;   // Bit 9-6
+            nzuimm |= EXTRACT_BITS(inst, 6, 6) << 2;   // Bit 2
+            nzuimm |= EXTRACT_BITS(inst, 5, 5) << 3;   // Bit 3
 
             if (nzuimm > 0) {
                 uint16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
@@ -464,7 +464,7 @@ void test_inst16() {
             uint16_t uimm = 0;
 
             uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
-            uimm |= EXTRACT_BITS(inst, 9,   7) << 6; // Bit 8-6
+            uimm |= EXTRACT_BITS(inst, 9, 7) << 6;   // Bit 8-6
 
             printf("Matched C.FSDSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
             count++;
@@ -510,8 +510,8 @@ void test_inst16() {
             uint16_t uimm = 0;
 
             uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
-            uimm |= EXTRACT_BITS(inst, 6,   5) << 3; // Bit 4-3
-            uimm |= EXTRACT_BITS(inst, 4,   2) << 6; // Bit 8-6
+            uimm |= EXTRACT_BITS(inst, 6, 5) << 3;   // Bit 4-3
+            uimm |= EXTRACT_BITS(inst, 4, 2) << 6;   // Bit 8-6
 
             printf("Matched C.LDSP instruction 0x%04X: rd=%u, uimm=%u\n", inst, rd, uimm);
             count++;
@@ -578,7 +578,7 @@ void test_inst16() {
             uint16_t uimm = 0;
 
             uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
-            uimm |= EXTRACT_BITS(inst, 9,   7) << 6; // Bit 8-6
+            uimm |= EXTRACT_BITS(inst, 9, 7) << 6;   // Bit 8-6
 
             printf("Matched C.SDSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
             count++;
@@ -633,7 +633,7 @@ void test_inst16() {
             uint16_t uimm = 0;
 
             uimm |= EXTRACT_BITS(inst, 12, 9) << 2; // Bit 5-2
-            uimm |= EXTRACT_BITS(inst, 8,  7) << 6; // Bit 7-6
+            uimm |= EXTRACT_BITS(inst, 8, 7) << 6;  // Bit 7-6
 
             printf("Matched C.SWSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
             count++;
