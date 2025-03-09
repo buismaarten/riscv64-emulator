@@ -339,7 +339,11 @@ static uint16_t program16[] = {
     /* C.SW */       0xC31C,
     /* C.SW */       0xC388,
     /* C.SW */       0xC398,
+    /* C.SWSP */     0xC23E,
     /* C.SWSP */     0xC286,
+    /* C.SWSP */     0xC2BE,
+    /* C.SWSP */     0xC43E,
+    /* C.SWSP */     0xD03E,
     /* C.XOR */      0x8FB9,
 };
 
@@ -617,9 +621,13 @@ void test_inst16() {
         }
 
         if (OP_C_SWSP(inst)) {
-            // TODO
+            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
+            uint16_t uimm = 0;
 
-            printf("Matched C.SWSP instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 9) << 2; // Bit 5-2
+            uimm |= EXTRACT_BITS(inst, 8,  7) << 6; // Bit 7-6
+
+            printf("Matched C.SWSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
             count++;
         }
 

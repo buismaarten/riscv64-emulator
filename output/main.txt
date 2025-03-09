@@ -333,7 +333,11 @@ Matched C.SW instruction 0xC29C
 Matched C.SW instruction 0xC31C
 Matched C.SW instruction 0xC388
 Matched C.SW instruction 0xC398
-Matched C.SWSP instruction 0xC286
+Matched C.SWSP instruction 0xC23E: rs2=15, uimm=4
+Matched C.SWSP instruction 0xC286: rs2=1, uimm=68
+Matched C.SWSP instruction 0xC2BE: rs2=15, uimm=68
+Matched C.SWSP instruction 0xC43E: rs2=15, uimm=8
+Matched C.SWSP instruction 0xD03E: rs2=15, uimm=32
 Matched C.XOR instruction 0x8FB9: rd=15, rs2=14
 Matched ADD instruction 0x00E787B3, rs2=14, rs1=15, rd=15
 Matched ADDI instruction 0x00000013: imm=0, rs1=0, rd=0
