@@ -361,10 +361,17 @@ void test_inst16() {
         }
 
         if (OP_C_ADDI(inst)) {
-            // TODO
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
+            int16_t nzimm = 0;
 
-            printf("Matched C.ADDI instruction 0x%04X\n", inst);
-            count++;
+            nzimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            nzimm |= EXTRACT_BITS(inst, 6, 2) << 0;   // Bit 4-0
+            nzimm = sign_extend_16(nzimm, 6);
+
+            if (nzimm != 0 && rd != 0) {
+                printf("Matched C.ADDI instruction 0x%04X: rd=%u, nzimm=%d\n", inst, rd, nzimm);
+                count++;
+            }
         }
 
         if (OP_C_ADDI4SPN(inst)) {
@@ -375,7 +382,7 @@ void test_inst16() {
             nzuimm |= EXTRACT_BITS(inst, 6, 6) << 2;   // Bit 2
             nzuimm |= EXTRACT_BITS(inst, 5, 5) << 3;   // Bit 3
 
-            if (nzuimm > 0) {
+            if (nzuimm != 0) {
                 uint16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
 
                 printf("Matched C.ADDI4SPN instruction 0x%04X: nzuimm=%u, rd=%u\n", inst, nzuimm, rd);

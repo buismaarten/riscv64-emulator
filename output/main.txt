@@ -1,10 +1,10 @@
 Matched C.ADD instruction 0x97BA: rd=15, rs2=14
 Matched C.ADD instruction 0x9852: rd=16, rs2=20
-Matched C.ADDI instruction 0x0141
-Matched C.ADDI instruction 0x0505
-Matched C.ADDI instruction 0x0705
-Matched C.ADDI instruction 0x1101
-Matched C.ADDI instruction 0x1141
+Matched C.ADDI instruction 0x0141: rd=2, nzimm=16
+Matched C.ADDI instruction 0x0505: rd=10, nzimm=1
+Matched C.ADDI instruction 0x0705: rd=14, nzimm=1
+Matched C.ADDI instruction 0x1101: rd=2, nzimm=-32
+Matched C.ADDI instruction 0x1141: rd=2, nzimm=-16
 Matched C.ADDI16SP instruction 0x6151
 Matched C.ADDI16SP instruction 0x716D
 Matched C.ADDI16SP instruction 0x6105
