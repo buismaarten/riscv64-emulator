@@ -966,7 +966,7 @@ Matched LW instruction 0xFE842703: offset=-24, rs1=8, rd=14
 Matched LW instruction 0xFE842783: offset=-24, rs1=8, rd=15
 Matched LW instruction 0xFEC42703: offset=-20, rs1=8, rd=14
 Matched LW instruction 0xFEC42783: offset=-20, rs1=8, rd=15
-Matched LWU instruction 0x00056603
+Matched LWU instruction 0x00056603: offset=0, rs1=10, rd=12
 Matched MRET instruction 0x30200073
 Matched MUL instruction 0x02B502B3: rs2=11, rs1=10, rd=5
 Matched MULH instruction 0x02B51333: rs2=11, rs1=10, rd=6

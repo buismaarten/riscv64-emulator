@@ -1868,9 +1868,13 @@ void test_inst32() {
         }
 
         if (OP_LWU(inst)) {
-            // TODO
+            int32_t offset = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched LWU instruction 0x%08X\n", inst);
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched LWU instruction 0x%08X: offset=%d, rs1=%u, rd=%u\n", inst, offset, rs1, rd);
             count++;
         }
 
