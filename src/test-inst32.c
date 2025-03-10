@@ -2060,7 +2060,7 @@ void test_inst32() {
         }
 
         if (OP_SLLI(inst)) {
-            uint32_t shamt = EXTRACT_BITS(inst, 24, 20);
+            uint32_t shamt = EXTRACT_BITS(inst, 25, 20);
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
@@ -2136,9 +2136,11 @@ void test_inst32() {
         }
 
         if (OP_SRAI(inst)) {
-            // TODO
+            uint32_t shamt = EXTRACT_BITS(inst, 25, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched SRAI instruction 0x%08X\n", inst);
+            printf("Matched SRAI instruction 0x%08X: shamt=%u, rs1=%u, rd=%u\n", inst, shamt, rs1, rd);
             count++;
         }
 

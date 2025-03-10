@@ -1052,7 +1052,7 @@ Matched SLTI instruction 0x00A7A793: imm=10, rs1=15, rd=15
 Matched SLTIU instruction 0x00A7B793: imm=10, rs1=15, rd=15
 Matched SLTU instruction 0x00F737B3: rs2=15, rs1=14, rd=15
 Matched SRA instruction 0x40F757B3: rs2=15, rs1=14, rd=15
-Matched SRAI instruction 0x4037D793
+Matched SRAI instruction 0x4037D793: shamt=3, rs1=15, rd=15
 Matched SRAIW instruction 0x4057D79B: shamt=5, rs1=15, rd=15
 Matched SRAW instruction 0x40F757BB: rs2=15, rs1=14, rd=15
 Matched SRET instruction 0x10200073
