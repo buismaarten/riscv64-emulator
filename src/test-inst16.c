@@ -365,7 +365,7 @@ void test_inst16() {
             int16_t nzimm = 0;
 
             nzimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
-            nzimm |= EXTRACT_BITS(inst, 6, 2) << 0;   // Bit 4-0
+            nzimm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
             nzimm = sign_extend_16(nzimm, 6);
 
             if (nzimm != 0 && rd != 0) {
@@ -402,7 +402,7 @@ void test_inst16() {
             int16_t imm = 0;
 
             imm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
-            imm |= EXTRACT_BITS(inst, 6, 2) << 0;   // Bit 4-0
+            imm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
             imm = sign_extend_16(imm, 6);
 
             if (rd != 0) {
@@ -428,9 +428,14 @@ void test_inst16() {
         }
 
         if (OP_C_ANDI(inst)) {
-            // TODO
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            int16_t imm = 0;
 
-            printf("Matched C.ANDI instruction 0x%04X\n", inst);
+            imm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            imm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
+            imm = sign_extend_16(imm, 6);
+
+            printf("Matched C.ANDI instruction 0x%04X: rd=%u, imm=%d\n", inst, rd, imm);
             count++;
         }
 
@@ -553,10 +558,17 @@ void test_inst16() {
         }
 
         if (OP_C_LI(inst)) {
-            // TODO
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
+            int16_t imm = 0;
 
-            printf("Matched C.LI instruction 0x%04X\n", inst);
-            count++;
+            imm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            imm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
+            imm = sign_extend_16(imm, 6);
+
+            if (rd != 0) {
+                printf("Matched C.LI instruction 0x%04X: rd=%u, imm=%d\n", inst, rd, imm);
+                count++;
+            }
         }
 
         if (OP_C_LUI(inst)) {
@@ -620,23 +632,37 @@ void test_inst16() {
         }
 
         if (OP_C_SLLI(inst)) {
-            // TODO
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
+            uint16_t shamt = 0;
 
-            printf("Matched C.SLLI instruction 0x%04X\n", inst);
-            count++;
+            shamt |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            shamt |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
+
+            if (rd != 0) {
+                printf("Matched C.SLLI instruction 0x%04X: rd=%u, shamt=%u\n", inst, rd, shamt);
+                count++;
+            }
         }
 
         if (OP_C_SRAI(inst)) {
-            // TODO
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t shamt = 0;
 
-            printf("Matched C.SRAI instruction 0x%04X\n", inst);
+            shamt |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            shamt |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
+
+            printf("Matched C.SRAI instruction 0x%04X: rd=%u, shamt=%u\n", inst, rd, shamt);
             count++;
         }
 
         if (OP_C_SRLI(inst)) {
-            // TODO
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t shamt = 0;
 
-            printf("Matched C.SRLI instruction 0x%04X\n", inst);
+            shamt |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            shamt |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
+
+            printf("Matched C.SRLI instruction 0x%04X: rd=%u, shamt=%u\n", inst, rd, shamt);
             count++;
         }
 

@@ -37,7 +37,7 @@ Matched C.ADDW instruction 0x9FA5: rd=15, rs2=9
 Matched C.ADDW instruction 0x9FA9: rd=15, rs2=10
 Matched C.ADDW instruction 0x9FB9: rd=15, rs2=14
 Matched C.AND instruction 0x8FF9: rd=15, rs2=14
-Matched C.ANDI instruction 0x8A25
+Matched C.ANDI instruction 0x8A25: rd=12, imm=9
 Matched C.BEQZ instruction 0xC001
 Matched C.BEQZ instruction 0xC791
 Matched C.BEQZ instruction 0xCB89
@@ -120,24 +120,24 @@ Matched C.LDSP instruction 0x6442: rd=8, uimm=16
 Matched C.LDSP instruction 0x64E2: rd=9, uimm=24
 Matched C.LDSP instruction 0x70A2: rd=1, uimm=40
 Matched C.LDSP instruction 0x7402: rd=8, uimm=32
-Matched C.LI instruction 0x4281
-Matched C.LI instruction 0x4401
-Matched C.LI instruction 0x4501
-Matched C.LI instruction 0x4505
-Matched C.LI instruction 0x450D
-Matched C.LI instruction 0x4515
-Matched C.LI instruction 0x4605
-Matched C.LI instruction 0x4701
-Matched C.LI instruction 0x4705
-Matched C.LI instruction 0x4781
-Matched C.LI instruction 0x4785
-Matched C.LI instruction 0x4795
-Matched C.LI instruction 0x479D
-Matched C.LI instruction 0x4901
-Matched C.LI instruction 0x4981
-Matched C.LI instruction 0x4B01
-Matched C.LI instruction 0x4C01
-Matched C.LI instruction 0x4D01
+Matched C.LI instruction 0x4281: rd=5, imm=0
+Matched C.LI instruction 0x4401: rd=8, imm=0
+Matched C.LI instruction 0x4501: rd=10, imm=0
+Matched C.LI instruction 0x4505: rd=10, imm=1
+Matched C.LI instruction 0x450D: rd=10, imm=3
+Matched C.LI instruction 0x4515: rd=10, imm=5
+Matched C.LI instruction 0x4605: rd=12, imm=1
+Matched C.LI instruction 0x4701: rd=14, imm=0
+Matched C.LI instruction 0x4705: rd=14, imm=1
+Matched C.LI instruction 0x4781: rd=15, imm=0
+Matched C.LI instruction 0x4785: rd=15, imm=1
+Matched C.LI instruction 0x4795: rd=15, imm=5
+Matched C.LI instruction 0x479D: rd=15, imm=7
+Matched C.LI instruction 0x4901: rd=18, imm=0
+Matched C.LI instruction 0x4981: rd=19, imm=0
+Matched C.LI instruction 0x4B01: rd=22, imm=0
+Matched C.LI instruction 0x4C01: rd=24, imm=0
+Matched C.LI instruction 0x4D01: rd=26, imm=0
 Matched C.LUI instruction 0x67C9
 Matched C.LW instruction 0x4000
 Matched C.LWSP instruction 0x4792
@@ -322,9 +322,9 @@ Matched C.SDSP instruction 0xFCAE: rs2=11, uimm=120
 Matched C.SDSP instruction 0xFCC2: rs2=16, uimm=120
 Matched C.SDSP instruction 0xFD66: rs2=25, uimm=184
 Matched C.SDSP instruction 0xFDA6: rs2=9, uimm=248
-Matched C.SLLI instruction 0x078E
-Matched C.SRAI instruction 0x878D
-Matched C.SRLI instruction 0x8389
+Matched C.SLLI instruction 0x078E: rd=15, shamt=3
+Matched C.SRAI instruction 0x878D: rd=15, shamt=3
+Matched C.SRLI instruction 0x8389: rd=15, shamt=2
 Matched C.SUB instruction 0x8F99: rd=15, rs2=14
 Matched C.SUBW instruction 0x9C09: rd=8, rs2=10
 Matched C.SUBW instruction 0x9F99: rd=15, rs2=14
