@@ -13,22 +13,22 @@ Matched C.ADDI16SP instruction 0x7179
 Matched C.ADDI4SPN instruction 0x0800: nzuimm=16, rd=8
 Matched C.ADDI4SPN instruction 0x1000: nzuimm=32, rd=8
 Matched C.ADDI4SPN instruction 0x1800: nzuimm=48, rd=8
-Matched C.ADDIW instruction 0x2781
-Matched C.ADDIW instruction 0x3379
-Matched C.ADDIW instruction 0x3479
-Matched C.ADDIW instruction 0x34F9
-Matched C.ADDIW instruction 0x356D
-Matched C.ADDIW instruction 0x357D
-Matched C.ADDIW instruction 0x35ED
-Matched C.ADDIW instruction 0x35F9
-Matched C.ADDIW instruction 0x3779
-Matched C.ADDIW instruction 0x37F9
-Matched C.ADDIW instruction 0x37FD
-Matched C.ADDIW instruction 0x3979
-Matched C.ADDIW instruction 0x39F9
-Matched C.ADDIW instruction 0x3AF9
-Matched C.ADDIW instruction 0x3BF9
-Matched C.ADDIW instruction 0x3E79
+Matched C.ADDIW instruction 0x2781: rd=15, imm=0
+Matched C.ADDIW instruction 0x3379: rd=6, imm=-2
+Matched C.ADDIW instruction 0x3479: rd=8, imm=-2
+Matched C.ADDIW instruction 0x34F9: rd=9, imm=-2
+Matched C.ADDIW instruction 0x356D: rd=10, imm=-5
+Matched C.ADDIW instruction 0x357D: rd=10, imm=-1
+Matched C.ADDIW instruction 0x35ED: rd=11, imm=-5
+Matched C.ADDIW instruction 0x35F9: rd=11, imm=-2
+Matched C.ADDIW instruction 0x3779: rd=14, imm=-2
+Matched C.ADDIW instruction 0x37F9: rd=15, imm=-2
+Matched C.ADDIW instruction 0x37FD: rd=15, imm=-1
+Matched C.ADDIW instruction 0x3979: rd=18, imm=-2
+Matched C.ADDIW instruction 0x39F9: rd=19, imm=-2
+Matched C.ADDIW instruction 0x3AF9: rd=21, imm=-2
+Matched C.ADDIW instruction 0x3BF9: rd=23, imm=-2
+Matched C.ADDIW instruction 0x3E79: rd=28, imm=-2
 Matched C.ADDW instruction 0x9CAD: rd=9, rs2=11
 Matched C.ADDW instruction 0x9D2D: rd=10, rs2=11
 Matched C.ADDW instruction 0x9EA1: rd=13, rs2=8

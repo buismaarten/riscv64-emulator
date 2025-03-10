@@ -398,10 +398,17 @@ void test_inst16() {
         }
 
         if (OP_C_ADDIW(inst)) {
-            // TODO
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
+            int16_t imm = 0;
 
-            printf("Matched C.ADDIW instruction 0x%04X\n", inst);
-            count++;
+            imm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            imm |= EXTRACT_BITS(inst, 6, 2) << 0;   // Bit 4-0
+            imm = sign_extend_16(imm, 6);
+
+            if (rd != 0) {
+                printf("Matched C.ADDIW instruction 0x%04X: rd=%u, imm=%d\n", inst, rd, imm);
+                count++;
+            }
         }
 
         if (OP_C_ADDW(inst)) {
