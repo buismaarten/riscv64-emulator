@@ -898,60 +898,60 @@ Matched LBU instruction 0x0007C783: offset=0, rs1=15, rd=15
 Matched LBU instruction 0x00154783: offset=1, rs1=10, rd=15
 Matched LBU instruction 0x00174783: offset=1, rs1=14, rd=15
 Matched LBU instruction 0xFDF44783: offset=-33, rs1=8, rd=15
-Matched LD instruction 0x00013403
-Matched LD instruction 0x00013903
-Matched LD instruction 0x00813083
-Matched LD instruction 0x00813483
-Matched LD instruction 0x00813703
-Matched LD instruction 0x00813783
-Matched LD instruction 0x01013403
-Matched LD instruction 0x01013703
-Matched LD instruction 0x01013783
-Matched LD instruction 0x01813083
-Matched LD instruction 0x01813383
-Matched LD instruction 0x01813483
-Matched LD instruction 0x02013403
-Matched LD instruction 0x02013E83
-Matched LD instruction 0x02813083
-Matched LD instruction 0x02813803
-Matched LD instruction 0x02813883
-Matched LD instruction 0x03013583
-Matched LD instruction 0x03013803
-Matched LD instruction 0x03813283
-Matched LD instruction 0x04013703
-Matched LD instruction 0x04013783
-Matched LD instruction 0x04813F03
-Matched LD instruction 0x05013303
-Matched LD instruction 0x05013E03
-Matched LD instruction 0x05813303
-Matched LD instruction 0x05813583
-Matched LD instruction 0x06013683
-Matched LD instruction 0x06013703
-Matched LD instruction 0x06813683
-Matched LD instruction 0x06813783
-Matched LD instruction 0x07013F83
-Matched LD instruction 0x07813583
-Matched LD instruction 0x07813803
-Matched LD instruction 0x08013803
-Matched LD instruction 0x08013883
-Matched LD instruction 0x08813883
-Matched LD instruction 0x08813E03
-Matched LD instruction 0x09013E83
-Matched LD instruction 0x09813383
-Matched LD instruction 0x0A813D83
-Matched LD instruction 0x0B013D03
-Matched LD instruction 0x0B813C83
-Matched LD instruction 0x0C013C03
-Matched LD instruction 0x0C813B83
-Matched LD instruction 0x0D013B03
-Matched LD instruction 0x0D813A83
-Matched LD instruction 0x0E013A03
-Matched LD instruction 0x0E813983
-Matched LD instruction 0x0F013903
-Matched LD instruction 0x0F813483
-Matched LD instruction 0x10013403
-Matched LD instruction 0x10813083
-Matched LD instruction 0xFE843783
+Matched LD instruction 0x00013403: offset=0, rs1=2, rd=8
+Matched LD instruction 0x00013903: offset=0, rs1=2, rd=18
+Matched LD instruction 0x00813083: offset=8, rs1=2, rd=1
+Matched LD instruction 0x00813483: offset=8, rs1=2, rd=9
+Matched LD instruction 0x00813703: offset=8, rs1=2, rd=14
+Matched LD instruction 0x00813783: offset=8, rs1=2, rd=15
+Matched LD instruction 0x01013403: offset=16, rs1=2, rd=8
+Matched LD instruction 0x01013703: offset=16, rs1=2, rd=14
+Matched LD instruction 0x01013783: offset=16, rs1=2, rd=15
+Matched LD instruction 0x01813083: offset=24, rs1=2, rd=1
+Matched LD instruction 0x01813383: offset=24, rs1=2, rd=7
+Matched LD instruction 0x01813483: offset=24, rs1=2, rd=9
+Matched LD instruction 0x02013403: offset=32, rs1=2, rd=8
+Matched LD instruction 0x02013E83: offset=32, rs1=2, rd=29
+Matched LD instruction 0x02813083: offset=40, rs1=2, rd=1
+Matched LD instruction 0x02813803: offset=40, rs1=2, rd=16
+Matched LD instruction 0x02813883: offset=40, rs1=2, rd=17
+Matched LD instruction 0x03013583: offset=48, rs1=2, rd=11
+Matched LD instruction 0x03013803: offset=48, rs1=2, rd=16
+Matched LD instruction 0x03813283: offset=56, rs1=2, rd=5
+Matched LD instruction 0x04013703: offset=64, rs1=2, rd=14
+Matched LD instruction 0x04013783: offset=64, rs1=2, rd=15
+Matched LD instruction 0x04813F03: offset=72, rs1=2, rd=30
+Matched LD instruction 0x05013303: offset=80, rs1=2, rd=6
+Matched LD instruction 0x05013E03: offset=80, rs1=2, rd=28
+Matched LD instruction 0x05813303: offset=88, rs1=2, rd=6
+Matched LD instruction 0x05813583: offset=88, rs1=2, rd=11
+Matched LD instruction 0x06013683: offset=96, rs1=2, rd=13
+Matched LD instruction 0x06013703: offset=96, rs1=2, rd=14
+Matched LD instruction 0x06813683: offset=104, rs1=2, rd=13
+Matched LD instruction 0x06813783: offset=104, rs1=2, rd=15
+Matched LD instruction 0x07013F83: offset=112, rs1=2, rd=31
+Matched LD instruction 0x07813583: offset=120, rs1=2, rd=11
+Matched LD instruction 0x07813803: offset=120, rs1=2, rd=16
+Matched LD instruction 0x08013803: offset=128, rs1=2, rd=16
+Matched LD instruction 0x08013883: offset=128, rs1=2, rd=17
+Matched LD instruction 0x08813883: offset=136, rs1=2, rd=17
+Matched LD instruction 0x08813E03: offset=136, rs1=2, rd=28
+Matched LD instruction 0x09013E83: offset=144, rs1=2, rd=29
+Matched LD instruction 0x09813383: offset=152, rs1=2, rd=7
+Matched LD instruction 0x0A813D83: offset=168, rs1=2, rd=27
+Matched LD instruction 0x0B013D03: offset=176, rs1=2, rd=26
+Matched LD instruction 0x0B813C83: offset=184, rs1=2, rd=25
+Matched LD instruction 0x0C013C03: offset=192, rs1=2, rd=24
+Matched LD instruction 0x0C813B83: offset=200, rs1=2, rd=23
+Matched LD instruction 0x0D013B03: offset=208, rs1=2, rd=22
+Matched LD instruction 0x0D813A83: offset=216, rs1=2, rd=21
+Matched LD instruction 0x0E013A03: offset=224, rs1=2, rd=20
+Matched LD instruction 0x0E813983: offset=232, rs1=2, rd=19
+Matched LD instruction 0x0F013903: offset=240, rs1=2, rd=18
+Matched LD instruction 0x0F813483: offset=248, rs1=2, rd=9
+Matched LD instruction 0x10013403: offset=256, rs1=2, rd=8
+Matched LD instruction 0x10813083: offset=264, rs1=2, rd=1
+Matched LD instruction 0xFE843783: offset=-24, rs1=8, rd=15
 Matched LH instruction 0x00451683: offset=4, rs1=10, rd=13
 Matched LHU instruction 0x00855703: offset=8, rs1=10, rd=14
 Matched LR.D instruction 0x1005B32F: aq=0, rl=0, rs2=0, rs1=11, rd=6
