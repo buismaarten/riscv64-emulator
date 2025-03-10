@@ -52,18 +52,18 @@ Matched C.FLD instruction 0x239C
 Matched C.FLDSP instruction 0x2022
 Matched C.FSD instruction 0xA79C
 Matched C.FSDSP instruction 0xA43E: rs2=15, uimm=8
-Matched C.J instruction 0xA021
-Matched C.J instruction 0xA025
-Matched C.J instruction 0xA029
-Matched C.J instruction 0xA821
-Matched C.J instruction 0xA831
-Matched C.J instruction 0xA839
-Matched C.J instruction 0xB5ED
-Matched C.J instruction 0xB711
-Matched C.J instruction 0xBFC9
-Matched C.J instruction 0xBFF1
-Matched C.J instruction 0xBFF9
-Matched C.JAL instruction 0x3001
+Matched C.J instruction 0xA021: imm=8
+Matched C.J instruction 0xA025: imm=40
+Matched C.J instruction 0xA029: imm=10
+Matched C.J instruction 0xA821: imm=24
+Matched C.J instruction 0xA831: imm=28
+Matched C.J instruction 0xA839: imm=30
+Matched C.J instruction 0xB5ED: imm=-278
+Matched C.J instruction 0xB711: imm=-252
+Matched C.J instruction 0xBFC9: imm=-46
+Matched C.J instruction 0xBFF1: imm=-36
+Matched C.J instruction 0xBFF9: imm=-34
+Matched C.JAL instruction 0x3001: imm=2048
 Matched C.JALR instruction 0x9082: rs1=1
 Matched C.JR instruction 0x8082: rs1=1
 Matched C.JR instruction 0x8782: rs1=15

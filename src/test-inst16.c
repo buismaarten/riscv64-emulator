@@ -472,16 +472,36 @@ void test_inst16() {
         }
 
         if (OP_C_J(inst)) {
-            // TODO
+            int16_t imm = 0;
 
-            printf("Matched C.J instruction 0x%04X\n", inst);
+            imm |= EXTRACT_BITS(inst, 12, 12) << 11; // Bit 11
+            imm |= EXTRACT_BITS(inst, 11, 11) << 4;  // Bit 4
+            imm |= EXTRACT_BITS(inst, 10, 9)  << 8;  // Bit 9-8
+            imm |= EXTRACT_BITS(inst, 8, 8) << 10;   // Bit 10
+            imm |= EXTRACT_BITS(inst, 7, 7) << 6;    // Bit 6
+            imm |= EXTRACT_BITS(inst, 6, 6) << 7;    // Bit 7
+            imm |= EXTRACT_BITS(inst, 5, 3) << 1;    // Bit 3-1
+            imm |= EXTRACT_BITS(inst, 2, 2) << 5;    // Bit 5
+            imm = sign_extend_16(imm, 11);
+
+            printf("Matched C.J instruction 0x%04X: imm=%d\n", inst, imm);
             count++;
         }
 
         if (OP_C_JAL(inst)) {
-            // TODO
+            int16_t imm = 0;
 
-            printf("Matched C.JAL instruction 0x%04X\n", inst);
+            imm |= EXTRACT_BITS(inst, 12, 12) << 11; // Bit 11
+            imm |= EXTRACT_BITS(inst, 11, 11) << 4;  // Bit 4
+            imm |= EXTRACT_BITS(inst, 10, 9)  << 8;  // Bit 9-8
+            imm |= EXTRACT_BITS(inst, 8, 8) << 10;   // Bit 10
+            imm |= EXTRACT_BITS(inst, 7, 7) << 6;    // Bit 6
+            imm |= EXTRACT_BITS(inst, 6, 6) << 7;    // Bit 7
+            imm |= EXTRACT_BITS(inst, 5, 3) << 1;    // Bit 3-1
+            imm |= EXTRACT_BITS(inst, 2, 2) << 5;    // Bit 5
+            imm = sign_extend_16(imm, 11);
+
+            printf("Matched C.JAL instruction 0x%04X: imm=%d\n", inst, imm);
             count++;
         }
 
