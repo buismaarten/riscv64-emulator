@@ -12,4 +12,3 @@ C.SD
 C.SW
 FSD
 FSW
-SD

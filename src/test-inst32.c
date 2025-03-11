@@ -2058,8 +2058,9 @@ void test_inst32() {
             uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
 
-            offset |= EXTRACT_BITS(inst, 31, 25) << 5;
-            offset |= EXTRACT_BITS(inst, 11, 7);
+            offset |= EXTRACT_BITS(inst, 31, 25) << 5; // Bits 11-5
+            offset |= EXTRACT_BITS(inst, 11, 7) << 0;  // Bits 4-0
+            offset = sign_extend_32(offset, 12);
 
             printf("Matched SB instruction 0x%08X: offset=%d, rs2=%u, rs1=%u\n", inst, offset, rs2, rs1);
             count++;
@@ -2088,9 +2089,15 @@ void test_inst32() {
         }
 
         if (OP_SD(inst)) {
-            // TODO
+            int32_t offset = 0;
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
 
-            printf("Matched SD instruction 0x%08X\n", inst);
+            offset |= EXTRACT_BITS(inst, 31, 25) << 5; // Bits 11-5
+            offset |= EXTRACT_BITS(inst, 11, 7) << 0;  // Bits 4-0
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched SD instruction 0x%08X: offset=%d, rs2=%u, rs1=%u\n", inst, offset, rs2, rs1);
             count++;
         }
 
@@ -2108,8 +2115,9 @@ void test_inst32() {
             uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
 
-            offset |= EXTRACT_BITS(inst, 31, 25) << 5;
-            offset |= EXTRACT_BITS(inst, 11, 7);
+            offset |= EXTRACT_BITS(inst, 31, 25) << 5; // Bits 11-5
+            offset |= EXTRACT_BITS(inst, 11, 7) << 0;  // Bits 4-0
+            offset = sign_extend_32(offset, 12);
 
             printf("Matched SH instruction 0x%08X: offset=%d, rs2=%u, rs1=%u\n", inst, offset, rs2, rs1);
             count++;
@@ -2291,8 +2299,9 @@ void test_inst32() {
             uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
             uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
 
-            offset |= EXTRACT_BITS(inst, 31, 25) << 5;
-            offset |= EXTRACT_BITS(inst, 11, 7);
+            offset |= EXTRACT_BITS(inst, 31, 25) << 5; // Bits 11-5
+            offset |= EXTRACT_BITS(inst, 11, 7) << 0;  // Bits 4-0
+            offset = sign_extend_32(offset, 12);
 
             printf("Matched SW instruction 0x%08X: offset=%d, rs2=%u, rs1=%u\n", inst, offset, rs2, rs1);
             count++;

@@ -983,65 +983,65 @@ Matched REM instruction 0x02E7E7B3: rs2=14, rs1=15, rd=15
 Matched REMU instruction 0x02E7F7B3: rs2=14, rs1=15, rd=15
 Matched REMUW instruction 0x02F777BB: rs2=15, rs1=14, rd=15
 Matched REMW instruction 0x02F767BB: rs2=15, rs1=14, rd=15
-Matched SB instruction 0xFCF40FA3: offset=4063, rs2=15, rs1=8
+Matched SB instruction 0xFCF40FA3: offset=-33, rs2=15, rs1=8
 Matched SC.D instruction 0x1865B6AF: aq=0, rl=0, rs2=6, rs1=11, rd=13
 Matched SC.W instruction 0x1855262F: aq=0, rl=0, rs2=5, rs1=10, rd=12
-Matched SD instruction 0x00113423
-Matched SD instruction 0x00113C23
-Matched SD instruction 0x00713C23
-Matched SD instruction 0x00813023
-Matched SD instruction 0x00813823
-Matched SD instruction 0x00913423
-Matched SD instruction 0x00913C23
-Matched SD instruction 0x00A13823
-Matched SD instruction 0x00E13423
-Matched SD instruction 0x00F13423
-Matched SD instruction 0x01213023
-Matched SD instruction 0x01D13823
-Matched SD instruction 0x02113423
-Matched SD instruction 0x02513C23
-Matched SD instruction 0x02813023
-Matched SD instruction 0x02B13823
-Matched SD instruction 0x03013423
-Matched SD instruction 0x03013823
-Matched SD instruction 0x03113423
-Matched SD instruction 0x03D13023
-Matched SD instruction 0x04613823
-Matched SD instruction 0x04613C23
-Matched SD instruction 0x04B13C23
-Matched SD instruction 0x04E13023
-Matched SD instruction 0x04F13023
-Matched SD instruction 0x05C13823
-Matched SD instruction 0x05E13423
-Matched SD instruction 0x06B13C23
-Matched SD instruction 0x06D13023
-Matched SD instruction 0x06D13423
-Matched SD instruction 0x06E13023
-Matched SD instruction 0x06F13423
-Matched SD instruction 0x07013C23
-Matched SD instruction 0x07F13823
-Matched SD instruction 0x08713C23
-Matched SD instruction 0x09013023
-Matched SD instruction 0x09113023
-Matched SD instruction 0x09113423
-Matched SD instruction 0x09C13423
-Matched SD instruction 0x09D13823
-Matched SD instruction 0x0B913C23
-Matched SD instruction 0x0BA13823
-Matched SD instruction 0x0BB13423
-Matched SD instruction 0x0D513C23
-Matched SD instruction 0x0D613823
-Matched SD instruction 0x0D713423
-Matched SD instruction 0x0D813023
-Matched SD instruction 0x0E913C23
-Matched SD instruction 0x0F213823
-Matched SD instruction 0x0F313423
-Matched SD instruction 0x0F413023
-Matched SD instruction 0x10113423
-Matched SD instruction 0x10813023
-Matched SD instruction 0xFEA43423
-Matched SD instruction 0xFEE43423
-Matched SD instruction 0xFEF43423
+Matched SD instruction 0x00113423: offset=8, rs2=1, rs1=2
+Matched SD instruction 0x00113C23: offset=24, rs2=1, rs1=2
+Matched SD instruction 0x00713C23: offset=24, rs2=7, rs1=2
+Matched SD instruction 0x00813023: offset=0, rs2=8, rs1=2
+Matched SD instruction 0x00813823: offset=16, rs2=8, rs1=2
+Matched SD instruction 0x00913423: offset=8, rs2=9, rs1=2
+Matched SD instruction 0x00913C23: offset=24, rs2=9, rs1=2
+Matched SD instruction 0x00A13823: offset=16, rs2=10, rs1=2
+Matched SD instruction 0x00E13423: offset=8, rs2=14, rs1=2
+Matched SD instruction 0x00F13423: offset=8, rs2=15, rs1=2
+Matched SD instruction 0x01213023: offset=0, rs2=18, rs1=2
+Matched SD instruction 0x01D13823: offset=16, rs2=29, rs1=2
+Matched SD instruction 0x02113423: offset=40, rs2=1, rs1=2
+Matched SD instruction 0x02513C23: offset=56, rs2=5, rs1=2
+Matched SD instruction 0x02813023: offset=32, rs2=8, rs1=2
+Matched SD instruction 0x02B13823: offset=48, rs2=11, rs1=2
+Matched SD instruction 0x03013423: offset=40, rs2=16, rs1=2
+Matched SD instruction 0x03013823: offset=48, rs2=16, rs1=2
+Matched SD instruction 0x03113423: offset=40, rs2=17, rs1=2
+Matched SD instruction 0x03D13023: offset=32, rs2=29, rs1=2
+Matched SD instruction 0x04613823: offset=80, rs2=6, rs1=2
+Matched SD instruction 0x04613C23: offset=88, rs2=6, rs1=2
+Matched SD instruction 0x04B13C23: offset=88, rs2=11, rs1=2
+Matched SD instruction 0x04E13023: offset=64, rs2=14, rs1=2
+Matched SD instruction 0x04F13023: offset=64, rs2=15, rs1=2
+Matched SD instruction 0x05C13823: offset=80, rs2=28, rs1=2
+Matched SD instruction 0x05E13423: offset=72, rs2=30, rs1=2
+Matched SD instruction 0x06B13C23: offset=120, rs2=11, rs1=2
+Matched SD instruction 0x06D13023: offset=96, rs2=13, rs1=2
+Matched SD instruction 0x06D13423: offset=104, rs2=13, rs1=2
+Matched SD instruction 0x06E13023: offset=96, rs2=14, rs1=2
+Matched SD instruction 0x06F13423: offset=104, rs2=15, rs1=2
+Matched SD instruction 0x07013C23: offset=120, rs2=16, rs1=2
+Matched SD instruction 0x07F13823: offset=112, rs2=31, rs1=2
+Matched SD instruction 0x08713C23: offset=152, rs2=7, rs1=2
+Matched SD instruction 0x09013023: offset=128, rs2=16, rs1=2
+Matched SD instruction 0x09113023: offset=128, rs2=17, rs1=2
+Matched SD instruction 0x09113423: offset=136, rs2=17, rs1=2
+Matched SD instruction 0x09C13423: offset=136, rs2=28, rs1=2
+Matched SD instruction 0x09D13823: offset=144, rs2=29, rs1=2
+Matched SD instruction 0x0B913C23: offset=184, rs2=25, rs1=2
+Matched SD instruction 0x0BA13823: offset=176, rs2=26, rs1=2
+Matched SD instruction 0x0BB13423: offset=168, rs2=27, rs1=2
+Matched SD instruction 0x0D513C23: offset=216, rs2=21, rs1=2
+Matched SD instruction 0x0D613823: offset=208, rs2=22, rs1=2
+Matched SD instruction 0x0D713423: offset=200, rs2=23, rs1=2
+Matched SD instruction 0x0D813023: offset=192, rs2=24, rs1=2
+Matched SD instruction 0x0E913C23: offset=248, rs2=9, rs1=2
+Matched SD instruction 0x0F213823: offset=240, rs2=18, rs1=2
+Matched SD instruction 0x0F313423: offset=232, rs2=19, rs1=2
+Matched SD instruction 0x0F413023: offset=224, rs2=20, rs1=2
+Matched SD instruction 0x10113423: offset=264, rs2=1, rs1=2
+Matched SD instruction 0x10813023: offset=256, rs2=8, rs1=2
+Matched SD instruction 0xFEA43423: offset=-24, rs2=10, rs1=8
+Matched SD instruction 0xFEE43423: offset=-24, rs2=14, rs1=8
+Matched SD instruction 0xFEF43423: offset=-24, rs2=15, rs1=8
 Matched SFENCE.VMA instruction 0x12000073: rs2=0, rs1=0, rd=0
 Matched SH instruction 0x00C51223: offset=4, rs2=12, rs1=10
 Matched SLL instruction 0x00E797B3: rs2=14, rs1=15, rd=15
@@ -1085,10 +1085,10 @@ Matched SW instruction 0x00A7A023: offset=0, rs2=10, rs1=15
 Matched SW instruction 0x00E7A023: offset=0, rs2=14, rs1=15
 Matched SW instruction 0x00F6A023: offset=0, rs2=15, rs1=13
 Matched SW instruction 0x00F72023: offset=0, rs2=15, rs1=14
-Matched SW instruction 0xFCF42E23: offset=4060, rs2=15, rs1=8
-Matched SW instruction 0xFEF42223: offset=4068, rs2=15, rs1=8
-Matched SW instruction 0xFEF42423: offset=4072, rs2=15, rs1=8
-Matched SW instruction 0xFEF42623: offset=4076, rs2=15, rs1=8
+Matched SW instruction 0xFCF42E23: offset=-36, rs2=15, rs1=8
+Matched SW instruction 0xFEF42223: offset=-28, rs2=15, rs1=8
+Matched SW instruction 0xFEF42423: offset=-24, rs2=15, rs1=8
+Matched SW instruction 0xFEF42623: offset=-20, rs2=15, rs1=8
 Matched URET instruction 0x00200073
 Matched WFI instruction 0x10500073
 Matched XOR instruction 0x00F747B3: rs2=15, rs1=14, rd=15
