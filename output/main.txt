@@ -782,12 +782,12 @@ Matched FENCE instruction 0x0FF0000F: pred=15, succ=15
 Matched FENCE.I instruction 0x0000100F
 Matched FEQ.D instruction 0xA210A353: rs2=1, rs1=1, rd=6
 Matched FEQ.S instruction 0xA00022D3: rs2=0, rs1=0, rd=5
-Matched FLD instruction 0xFE843787
+Matched FLD instruction 0xFE843787: imm=-24, rs1=8, rd=15
 Matched FLE.D instruction 0xA2108E53: rs2=1, rs1=1, rd=28
 Matched FLE.S instruction 0xA00003D3: rs2=0, rs1=0, rd=7
 Matched FLT.D instruction 0xA2109F53: rs2=1, rs1=1, rd=30
 Matched FLT.S instruction 0xA0001ED3: rs2=0, rs1=0, rd=29
-Matched FLW instruction 0xFEC42787
+Matched FLW instruction 0xFEC42787: imm=-20, rs1=8, rd=15
 Matched FMADD.D instruction 0x0A10FFC3: rs3=1, rs2=1, rs1=1, rm=7, rd=31
 Matched FMADD.S instruction 0x00007F43: rs3=0, rs2=0, rs1=0, rm=7, rd=30
 Matched FMAX.D instruction 0x2A1090D3: rs2=1, rs1=1, rd=1

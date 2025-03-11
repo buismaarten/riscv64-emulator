@@ -1474,9 +1474,13 @@ void test_inst32() {
         }
 
         if (OP_FLD(inst)) {
-            // TODO
+            int32_t imm = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FLD instruction 0x%08X\n", inst);
+            imm = sign_extend_32(imm, 12);
+
+            printf("Matched FLD instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
@@ -1517,9 +1521,13 @@ void test_inst32() {
         }
 
         if (OP_FLW(inst)) {
-            // TODO
+            int32_t imm = EXTRACT_BITS(inst, 31, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched FLW instruction 0x%08X\n", inst);
+            imm = sign_extend_32(imm, 12);
+
+            printf("Matched FLW instruction 0x%08X: imm=%d, rs1=%u, rd=%u\n", inst, imm, rs1, rd);
             count++;
         }
 
