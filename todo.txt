@@ -1,4 +1,3 @@
-BEQ: 80000038:	00e78663          	beq	a5,a4,80000044 <equal>
 BGE
 BGEU
 BLT

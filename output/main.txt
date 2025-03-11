@@ -644,50 +644,50 @@ Matched ANDI instruction 0xFFEE7513: imm=-2, rs1=28, rd=10
 Matched AUIPC instruction 0x00000517: imm=0, rd=10
 Matched AUIPC instruction 0x00000717: imm=0, rd=14
 Matched AUIPC instruction 0x00010117: imm=65536, rd=2
-Matched BEQ instruction 0x00078863
-Matched BEQ instruction 0x00078A63
-Matched BEQ instruction 0x00078E63
-Matched BEQ instruction 0x00E78663
-Matched BEQ instruction 0x06C30A63
-Matched BEQ instruction 0x06C58A63
-Matched BEQ instruction 0x0AC30E63
-Matched BEQ instruction 0x0AC58E63
-Matched BEQ instruction 0x0DE70763
-Matched BEQ instruction 0x0DE78763
-Matched BEQ instruction 0x10BC8E63
-Matched BEQ instruction 0x11850E63
-Matched BEQ instruction 0x11F78663
-Matched BEQ instruction 0x13F68363
-Matched BEQ instruction 0x15E70A63
-Matched BEQ instruction 0x15E78A63
-Matched BEQ instruction 0x16968863
-Matched BEQ instruction 0x16FD0463
-Matched BEQ instruction 0x19F78E63
-Matched BEQ instruction 0x1A978863
-Matched BEQ instruction 0x1AEB0263
-Matched BEQ instruction 0x1CBC8063
-Matched BEQ instruction 0x1D5A0A63
-Matched BEQ instruction 0x1D850063
-Matched BEQ instruction 0x1DF68663
-Matched BEQ instruction 0x1F3A8863
-Matched BEQ instruction 0x22968C63
-Matched BEQ instruction 0x22990663
-Matched BEQ instruction 0x22FD0463
-Matched BEQ instruction 0x25B40663
-Matched BEQ instruction 0x28850063
-Matched BEQ instruction 0x28EB0663
-Matched BEQ instruction 0x2A950263
-Matched BEQ instruction 0x2A978263
-Matched BEQ instruction 0x2D5A0863
-Matched BEQ instruction 0x313A8263
-Matched BEQ instruction 0x34990A63
-Matched BEQ instruction 0x39B40863
-Matched BEQ instruction 0x3C850A63
-Matched BEQ instruction 0x40950C63
-Matched BEQ instruction 0xFACC06E3
-Matched BEQ instruction 0xFACD88E3
-Matched BEQ instruction 0xFCCC08E3
-Matched BEQ instruction 0xFCCD89E3
+Matched BEQ instruction 0x00078863: rs2=0, rs1=15, offset=16
+Matched BEQ instruction 0x00078A63: rs2=0, rs1=15, offset=20
+Matched BEQ instruction 0x00078E63: rs2=0, rs1=15, offset=28
+Matched BEQ instruction 0x00E78663: rs2=14, rs1=15, offset=12
+Matched BEQ instruction 0x06C30A63: rs2=12, rs1=6, offset=116
+Matched BEQ instruction 0x06C58A63: rs2=12, rs1=11, offset=116
+Matched BEQ instruction 0x0AC30E63: rs2=12, rs1=6, offset=188
+Matched BEQ instruction 0x0AC58E63: rs2=12, rs1=11, offset=188
+Matched BEQ instruction 0x0DE70763: rs2=30, rs1=14, offset=206
+Matched BEQ instruction 0x0DE78763: rs2=30, rs1=15, offset=206
+Matched BEQ instruction 0x10BC8E63: rs2=11, rs1=25, offset=284
+Matched BEQ instruction 0x11850E63: rs2=24, rs1=10, offset=284
+Matched BEQ instruction 0x11F78663: rs2=31, rs1=15, offset=268
+Matched BEQ instruction 0x13F68363: rs2=31, rs1=13, offset=294
+Matched BEQ instruction 0x15E70A63: rs2=30, rs1=14, offset=340
+Matched BEQ instruction 0x15E78A63: rs2=30, rs1=15, offset=340
+Matched BEQ instruction 0x16968863: rs2=9, rs1=13, offset=368
+Matched BEQ instruction 0x16FD0463: rs2=15, rs1=26, offset=360
+Matched BEQ instruction 0x19F78E63: rs2=31, rs1=15, offset=412
+Matched BEQ instruction 0x1A978863: rs2=9, rs1=15, offset=432
+Matched BEQ instruction 0x1AEB0263: rs2=14, rs1=22, offset=420
+Matched BEQ instruction 0x1CBC8063: rs2=11, rs1=25, offset=448
+Matched BEQ instruction 0x1D5A0A63: rs2=21, rs1=20, offset=468
+Matched BEQ instruction 0x1D850063: rs2=24, rs1=10, offset=448
+Matched BEQ instruction 0x1DF68663: rs2=31, rs1=13, offset=460
+Matched BEQ instruction 0x1F3A8863: rs2=19, rs1=21, offset=496
+Matched BEQ instruction 0x22968C63: rs2=9, rs1=13, offset=568
+Matched BEQ instruction 0x22990663: rs2=9, rs1=18, offset=556
+Matched BEQ instruction 0x22FD0463: rs2=15, rs1=26, offset=552
+Matched BEQ instruction 0x25B40663: rs2=27, rs1=8, offset=588
+Matched BEQ instruction 0x28850063: rs2=8, rs1=10, offset=640
+Matched BEQ instruction 0x28EB0663: rs2=14, rs1=22, offset=652
+Matched BEQ instruction 0x2A950263: rs2=9, rs1=10, offset=676
+Matched BEQ instruction 0x2A978263: rs2=9, rs1=15, offset=676
+Matched BEQ instruction 0x2D5A0863: rs2=21, rs1=20, offset=720
+Matched BEQ instruction 0x313A8263: rs2=19, rs1=21, offset=772
+Matched BEQ instruction 0x34990A63: rs2=9, rs1=18, offset=852
+Matched BEQ instruction 0x39B40863: rs2=27, rs1=8, offset=912
+Matched BEQ instruction 0x3C850A63: rs2=8, rs1=10, offset=980
+Matched BEQ instruction 0x40950C63: rs2=9, rs1=10, offset=1048
+Matched BEQ instruction 0xFACC06E3: rs2=12, rs1=24, offset=-84
+Matched BEQ instruction 0xFACD88E3: rs2=12, rs1=27, offset=-80
+Matched BEQ instruction 0xFCCC08E3: rs2=12, rs1=24, offset=-48
+Matched BEQ instruction 0xFCCD89E3: rs2=12, rs1=27, offset=-46
 Matched BGE instruction 0x00895963
 Matched BGE instruction 0x00895C63
 Matched BGE instruction 0x2AA75B63
