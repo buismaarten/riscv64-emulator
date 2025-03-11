@@ -312,6 +312,7 @@ static uint32_t program32[] = {
     /* BEQ */        0x00078863,
     /* BEQ */        0x00078A63,
     /* BEQ */        0x00078E63,
+    /* BEQ */        0x00E78663,
     /* BEQ */        0x06C30A63,
     /* BEQ */        0x06C58A63,
     /* BEQ */        0x0AC30E63,

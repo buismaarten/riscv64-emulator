@@ -647,6 +647,7 @@ Matched AUIPC instruction 0x00010117: imm=65536, rd=2
 Matched BEQ instruction 0x00078863
 Matched BEQ instruction 0x00078A63
 Matched BEQ instruction 0x00078E63
+Matched BEQ instruction 0x00E78663
 Matched BEQ instruction 0x06C30A63
 Matched BEQ instruction 0x06C58A63
 Matched BEQ instruction 0x0AC30E63
