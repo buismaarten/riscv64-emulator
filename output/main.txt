@@ -806,7 +806,7 @@ Matched FNMADD.D instruction 0x0A10F3CF: rs3=1, rs2=1, rs1=1, rm=7, rd=7
 Matched FNMADD.S instruction 0x0000734F: rs3=0, rs2=0, rs1=0, rm=7, rd=6
 Matched FNMSUB.D instruction 0x0A10FECB: rs3=1, rs2=1, rs1=1, rm=7, rd=29
 Matched FNMSUB.S instruction 0x00007E4B: rs3=0, rs2=0, rs1=0, rm=7, rd=28
-Matched FSD instruction 0x00F7B027
+Matched FSD instruction 0x00F7B027: imm=0, rs2=15, rs1=15
 Matched FSGNJ.D instruction 0x22310E53: rs2=3, rs1=2, rd=28
 Matched FSGNJ.S instruction 0x20520ED3: rs2=5, rs1=4, rd=29
 Matched FSGNJN.D instruction 0x22311F53: rs2=3, rs1=2, rd=30
@@ -817,7 +817,7 @@ Matched FSQRT.D instruction 0x5A00FFD3: rs1=1, rm=7, rd=31
 Matched FSQRT.S instruction 0x58007F53: rs1=0, rm=7, rd=30
 Matched FSUB.D instruction 0x0A10F0D3: rs2=1, rs1=1, rm=7, rd=1
 Matched FSUB.S instruction 0x08007053: rs2=0, rs1=0, rm=7, rd=0
-Matched FSW instruction 0x00F7A027
+Matched FSW instruction 0x00F7A027: imm=0, rs2=15, rs1=15
 Matched JAL instruction 0x0080006F: offset=8, rd=0
 Matched JAL instruction 0x00C0006F: offset=12, rd=0
 Matched JAL instruction 0x0100006F: offset=16, rd=0

@@ -10,5 +10,3 @@ C.LW
 C.LWSP
 C.SD
 C.SW
-FSD
-FSW

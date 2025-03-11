@@ -1708,9 +1708,15 @@ void test_inst32() {
         }
 
         if (OP_FSD(inst)) {
-            // TODO
+            int32_t imm = 0;
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
 
-            printf("Matched FSD instruction 0x%08X\n", inst);
+            imm |= EXTRACT_BITS(inst, 31, 25) << 5; // Bits 11-5
+            imm |= EXTRACT_BITS(inst, 11, 7) << 0;  // Bits 4-0
+            imm = sign_extend_32(imm, 12);
+
+            printf("Matched FSD instruction 0x%08X: imm=%d, rs2=%u, rs1=%u\n", inst, imm, rs2, rs1);
             count++;
         }
 
@@ -1807,9 +1813,15 @@ void test_inst32() {
         }
 
         if (OP_FSW(inst)) {
-            // TODO
+            int32_t imm = 0;
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
 
-            printf("Matched FSW instruction 0x%08X\n", inst);
+            imm |= EXTRACT_BITS(inst, 31, 25) << 5; // Bits 11-5
+            imm |= EXTRACT_BITS(inst, 11, 7) << 0;  // Bits 4-0
+            imm = sign_extend_32(imm, 12);
+
+            printf("Matched FSW instruction 0x%08X: imm=%d, rs2=%u, rs1=%u\n", inst, imm, rs2, rs1);
             count++;
         }
 
