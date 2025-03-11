@@ -1050,37 +1050,77 @@ void test_inst32() {
         }
 
         if (OP_BGE(inst)) {
-            // TODO
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t offset = 0;
 
-            printf("Matched BGE instruction 0x%08X\n", inst);
+            offset |= EXTRACT_BITS(inst, 31, 31) << 12; // Bit 12
+            offset |= EXTRACT_BITS(inst, 30, 25) << 5;  // Bit 10-5
+            offset |= EXTRACT_BITS(inst, 11, 8) << 1;   // Bit 4-1
+            offset |= EXTRACT_BITS(inst, 7, 7) << 11;   // Bit 11
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched BGE instruction 0x%08X: rs2=%u, rs1=%u, offset=%d\n", inst, rs2, rs1, offset);
             count++;
         }
 
         if (OP_BGEU(inst)) {
-            // TODO
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t offset = 0;
 
-            printf("Matched BGEU instruction 0x%08X\n", inst);
+            offset |= EXTRACT_BITS(inst, 31, 31) << 12; // Bit 12
+            offset |= EXTRACT_BITS(inst, 30, 25) << 5;  // Bit 10-5
+            offset |= EXTRACT_BITS(inst, 11, 8) << 1;   // Bit 4-1
+            offset |= EXTRACT_BITS(inst, 7, 7) << 11;   // Bit 11
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched BGEU instruction 0x%08X: rs2=%u, rs1=%u, offset=%d\n", inst, rs2, rs1, offset);
             count++;
         }
 
         if (OP_BLT(inst)) {
-            // TODO
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t offset = 0;
 
-            printf("Matched BLT instruction 0x%08X\n", inst);
+            offset |= EXTRACT_BITS(inst, 31, 31) << 12; // Bit 12
+            offset |= EXTRACT_BITS(inst, 30, 25) << 5;  // Bit 10-5
+            offset |= EXTRACT_BITS(inst, 11, 8) << 1;   // Bit 4-1
+            offset |= EXTRACT_BITS(inst, 7, 7) << 11;   // Bit 11
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched BLT instruction 0x%08X: rs2=%u, rs1=%u, offset=%d\n", inst, rs2, rs1, offset);
             count++;
         }
 
         if (OP_BLTU(inst)) {
-            // TODO
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t offset = 0;
 
-            printf("Matched BLTU instruction 0x%08X\n", inst);
+            offset |= EXTRACT_BITS(inst, 31, 31) << 12; // Bit 12
+            offset |= EXTRACT_BITS(inst, 30, 25) << 5;  // Bit 10-5
+            offset |= EXTRACT_BITS(inst, 11, 8) << 1;   // Bit 4-1
+            offset |= EXTRACT_BITS(inst, 7, 7) << 11;   // Bit 11
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched BLTU instruction 0x%08X: rs2=%u, rs1=%u, offset=%d\n", inst, rs2, rs1, offset);
             count++;
         }
 
         if (OP_BNE(inst)) {
-            // TODO
+            uint32_t rs2 = EXTRACT_BITS(inst, 24, 20);
+            uint32_t rs1 = EXTRACT_BITS(inst, 19, 15);
+            int32_t offset = 0;
 
-            printf("Matched BNE instruction 0x%08X\n", inst);
+            offset |= EXTRACT_BITS(inst, 31, 31) << 12; // Bit 12
+            offset |= EXTRACT_BITS(inst, 30, 25) << 5;  // Bit 10-5
+            offset |= EXTRACT_BITS(inst, 11, 8) << 1;   // Bit 4-1
+            offset |= EXTRACT_BITS(inst, 7, 7) << 11;   // Bit 11
+            offset = sign_extend_32(offset, 12);
+
+            printf("Matched BNE instruction 0x%08X: rs2=%u, rs1=%u, offset=%d\n", inst, rs2, rs1, offset);
             count++;
         }
 
