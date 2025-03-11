@@ -361,15 +361,15 @@ void test_inst16() {
         }
 
         if (OP_C_ADDI(inst)) {
-            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
             int16_t nzimm = 0;
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
 
             nzimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
             nzimm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
             nzimm = sign_extend_16(nzimm, 6);
 
             if (nzimm != 0 && rd != 0) {
-                printf("Matched C.ADDI instruction 0x%04X: rd=%u, nzimm=%d\n", inst, rd, nzimm);
+                printf("Matched C.ADDI instruction 0x%04X: nzimm=%d, rd=%u\n", inst, nzimm, rd);
                 count++;
             }
         }
@@ -398,15 +398,15 @@ void test_inst16() {
         }
 
         if (OP_C_ADDIW(inst)) {
-            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
             int16_t imm = 0;
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
 
             imm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
             imm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
             imm = sign_extend_16(imm, 6);
 
             if (rd != 0) {
-                printf("Matched C.ADDIW instruction 0x%04X: rd=%u, imm=%d\n", inst, rd, imm);
+                printf("Matched C.ADDIW instruction 0x%04X: imm=%d, rd=%u\n", inst, imm, rd);
                 count++;
             }
         }
@@ -428,14 +428,14 @@ void test_inst16() {
         }
 
         if (OP_C_ANDI(inst)) {
-            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
             int16_t imm = 0;
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 9, 7);
 
             imm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
             imm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
             imm = sign_extend_16(imm, 6);
 
-            printf("Matched C.ANDI instruction 0x%04X: rd=%u, imm=%d\n", inst, rd, imm);
+            printf("Matched C.ANDI instruction 0x%04X: imm=%d, rd=%u\n", inst, imm, rd);
             count++;
         }
 
@@ -480,13 +480,13 @@ void test_inst16() {
         }
 
         if (OP_C_FSDSP(inst)) {
-            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
             uint16_t uimm = 0;
+            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
 
             uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
             uimm |= EXTRACT_BITS(inst, 9, 7) << 6;   // Bit 8-6
 
-            printf("Matched C.FSDSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
+            printf("Matched C.FSDSP instruction 0x%04X: uimm=%u, rs2=%u\n", inst, uimm, rs2);
             count++;
         }
 
@@ -546,27 +546,27 @@ void test_inst16() {
         }
 
         if (OP_C_LDSP(inst)) {
-            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
             uint16_t uimm = 0;
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
 
             uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
             uimm |= EXTRACT_BITS(inst, 6, 5) << 3;   // Bit 4-3
             uimm |= EXTRACT_BITS(inst, 4, 2) << 6;   // Bit 8-6
 
-            printf("Matched C.LDSP instruction 0x%04X: rd=%u, uimm=%u\n", inst, rd, uimm);
+            printf("Matched C.LDSP instruction 0x%04X: uimm=%u, rd=%u\n", inst, uimm, rd);
             count++;
         }
 
         if (OP_C_LI(inst)) {
-            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
             int16_t imm = 0;
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
 
             imm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
             imm |= EXTRACT_BITS(inst, 6, 2);        // Bit 4-0
             imm = sign_extend_16(imm, 6);
 
             if (rd != 0) {
-                printf("Matched C.LI instruction 0x%04X: rd=%u, imm=%d\n", inst, rd, imm);
+                printf("Matched C.LI instruction 0x%04X: imm=%d, rd=%u\n", inst, imm, rd);
                 count++;
             }
         }
@@ -621,13 +621,13 @@ void test_inst16() {
         }
 
         if (OP_C_SDSP(inst)) {
-            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
             uint16_t uimm = 0;
+            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
 
             uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
             uimm |= EXTRACT_BITS(inst, 9, 7) << 6;   // Bit 8-6
 
-            printf("Matched C.SDSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
+            printf("Matched C.SDSP instruction 0x%04X: uimm=%u, rs2=%u\n", inst, uimm, rs2);
             count++;
         }
 
@@ -690,13 +690,13 @@ void test_inst16() {
         }
 
         if (OP_C_SWSP(inst)) {
-            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
             uint16_t uimm = 0;
+            uint16_t rs2 = EXTRACT_BITS(inst, 6, 2);
 
             uimm |= EXTRACT_BITS(inst, 12, 9) << 2; // Bit 5-2
             uimm |= EXTRACT_BITS(inst, 8, 7) << 6;  // Bit 7-6
 
-            printf("Matched C.SWSP instruction 0x%04X: rs2=%u, uimm=%u\n", inst, rs2, uimm);
+            printf("Matched C.SWSP instruction 0x%04X: uimm=%u, rs2=%u\n", inst, uimm, rs2);
             count++;
         }
 

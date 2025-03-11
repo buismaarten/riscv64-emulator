@@ -1,10 +1,10 @@
 Matched C.ADD instruction 0x97BA: rd=15, rs2=14
 Matched C.ADD instruction 0x9852: rd=16, rs2=20
-Matched C.ADDI instruction 0x0141: rd=2, nzimm=16
-Matched C.ADDI instruction 0x0505: rd=10, nzimm=1
-Matched C.ADDI instruction 0x0705: rd=14, nzimm=1
-Matched C.ADDI instruction 0x1101: rd=2, nzimm=-32
-Matched C.ADDI instruction 0x1141: rd=2, nzimm=-16
+Matched C.ADDI instruction 0x0141: nzimm=16, rd=2
+Matched C.ADDI instruction 0x0505: nzimm=1, rd=10
+Matched C.ADDI instruction 0x0705: nzimm=1, rd=14
+Matched C.ADDI instruction 0x1101: nzimm=-32, rd=2
+Matched C.ADDI instruction 0x1141: nzimm=-16, rd=2
 Matched C.ADDI16SP instruction 0x6151
 Matched C.ADDI16SP instruction 0x716D
 Matched C.ADDI16SP instruction 0x6105
@@ -13,22 +13,22 @@ Matched C.ADDI16SP instruction 0x7179
 Matched C.ADDI4SPN instruction 0x0800: nzuimm=16, rd=8
 Matched C.ADDI4SPN instruction 0x1000: nzuimm=32, rd=8
 Matched C.ADDI4SPN instruction 0x1800: nzuimm=48, rd=8
-Matched C.ADDIW instruction 0x2781: rd=15, imm=0
-Matched C.ADDIW instruction 0x3379: rd=6, imm=-2
-Matched C.ADDIW instruction 0x3479: rd=8, imm=-2
-Matched C.ADDIW instruction 0x34F9: rd=9, imm=-2
-Matched C.ADDIW instruction 0x356D: rd=10, imm=-5
-Matched C.ADDIW instruction 0x357D: rd=10, imm=-1
-Matched C.ADDIW instruction 0x35ED: rd=11, imm=-5
-Matched C.ADDIW instruction 0x35F9: rd=11, imm=-2
-Matched C.ADDIW instruction 0x3779: rd=14, imm=-2
-Matched C.ADDIW instruction 0x37F9: rd=15, imm=-2
-Matched C.ADDIW instruction 0x37FD: rd=15, imm=-1
-Matched C.ADDIW instruction 0x3979: rd=18, imm=-2
-Matched C.ADDIW instruction 0x39F9: rd=19, imm=-2
-Matched C.ADDIW instruction 0x3AF9: rd=21, imm=-2
-Matched C.ADDIW instruction 0x3BF9: rd=23, imm=-2
-Matched C.ADDIW instruction 0x3E79: rd=28, imm=-2
+Matched C.ADDIW instruction 0x2781: imm=0, rd=15
+Matched C.ADDIW instruction 0x3379: imm=-2, rd=6
+Matched C.ADDIW instruction 0x3479: imm=-2, rd=8
+Matched C.ADDIW instruction 0x34F9: imm=-2, rd=9
+Matched C.ADDIW instruction 0x356D: imm=-5, rd=10
+Matched C.ADDIW instruction 0x357D: imm=-1, rd=10
+Matched C.ADDIW instruction 0x35ED: imm=-5, rd=11
+Matched C.ADDIW instruction 0x35F9: imm=-2, rd=11
+Matched C.ADDIW instruction 0x3779: imm=-2, rd=14
+Matched C.ADDIW instruction 0x37F9: imm=-2, rd=15
+Matched C.ADDIW instruction 0x37FD: imm=-1, rd=15
+Matched C.ADDIW instruction 0x3979: imm=-2, rd=18
+Matched C.ADDIW instruction 0x39F9: imm=-2, rd=19
+Matched C.ADDIW instruction 0x3AF9: imm=-2, rd=21
+Matched C.ADDIW instruction 0x3BF9: imm=-2, rd=23
+Matched C.ADDIW instruction 0x3E79: imm=-2, rd=28
 Matched C.ADDW instruction 0x9CAD: rd=9, rs2=11
 Matched C.ADDW instruction 0x9D2D: rd=10, rs2=11
 Matched C.ADDW instruction 0x9EA1: rd=13, rs2=8
@@ -37,7 +37,7 @@ Matched C.ADDW instruction 0x9FA5: rd=15, rs2=9
 Matched C.ADDW instruction 0x9FA9: rd=15, rs2=10
 Matched C.ADDW instruction 0x9FB9: rd=15, rs2=14
 Matched C.AND instruction 0x8FF9: rd=15, rs2=14
-Matched C.ANDI instruction 0x8A25: rd=12, imm=9
+Matched C.ANDI instruction 0x8A25: imm=9, rd=12
 Matched C.BEQZ instruction 0xC001
 Matched C.BEQZ instruction 0xC791
 Matched C.BEQZ instruction 0xCB89
@@ -51,7 +51,7 @@ Matched C.EBREAK instruction 0x9002
 Matched C.FLD instruction 0x239C
 Matched C.FLDSP instruction 0x2022
 Matched C.FSD instruction 0xA79C
-Matched C.FSDSP instruction 0xA43E: rs2=15, uimm=8
+Matched C.FSDSP instruction 0xA43E: uimm=8, rs2=15
 Matched C.J instruction 0xA021: imm=8
 Matched C.J instruction 0xA025: imm=40
 Matched C.J instruction 0xA029: imm=10
@@ -67,77 +67,77 @@ Matched C.JAL instruction 0x3001: imm=2048
 Matched C.JALR instruction 0x9082: rs1=1
 Matched C.JR instruction 0x8082: rs1=1
 Matched C.JR instruction 0x8782: rs1=15
-Matched C.LDSP instruction 0x60B2: rd=1, uimm=264
-Matched C.LDSP instruction 0x6346: rd=6, uimm=80
-Matched C.LDSP instruction 0x6366: rd=6, uimm=88
-Matched C.LDSP instruction 0x63E2: rd=7, uimm=24
-Matched C.LDSP instruction 0x63EA: rd=7, uimm=152
-Matched C.LDSP instruction 0x6412: rd=8, uimm=256
-Matched C.LDSP instruction 0x64A2: rd=9, uimm=8
-Matched C.LDSP instruction 0x65E6: rd=11, uimm=88
-Matched C.LDSP instruction 0x6706: rd=14, uimm=64
-Matched C.LDSP instruction 0x6722: rd=14, uimm=8
-Matched C.LDSP instruction 0x6742: rd=14, uimm=16
-Matched C.LDSP instruction 0x6786: rd=15, uimm=64
+Matched C.LDSP instruction 0x60B2: uimm=264, rd=1
+Matched C.LDSP instruction 0x6346: uimm=80, rd=6
+Matched C.LDSP instruction 0x6366: uimm=88, rd=6
+Matched C.LDSP instruction 0x63E2: uimm=24, rd=7
+Matched C.LDSP instruction 0x63EA: uimm=152, rd=7
+Matched C.LDSP instruction 0x6412: uimm=256, rd=8
+Matched C.LDSP instruction 0x64A2: uimm=8, rd=9
+Matched C.LDSP instruction 0x65E6: uimm=88, rd=11
+Matched C.LDSP instruction 0x6706: uimm=64, rd=14
+Matched C.LDSP instruction 0x6722: uimm=8, rd=14
+Matched C.LDSP instruction 0x6742: uimm=16, rd=14
+Matched C.LDSP instruction 0x6786: uimm=64, rd=15
 Matched C.LD instruction 0x679C
-Matched C.LDSP instruction 0x67A2: rd=15, uimm=8
-Matched C.LDSP instruction 0x67C2: rd=15, uimm=16
-Matched C.LDSP instruction 0x680A: rd=16, uimm=128
-Matched C.LDSP instruction 0x688A: rd=17, uimm=128
-Matched C.LDSP instruction 0x68AA: rd=17, uimm=136
-Matched C.LDSP instruction 0x6AEE: rd=21, uimm=216
-Matched C.LDSP instruction 0x6B4E: rd=22, uimm=208
-Matched C.LDSP instruction 0x6BAE: rd=23, uimm=200
-Matched C.LDSP instruction 0x6C0E: rd=24, uimm=192
-Matched C.LDSP instruction 0x6E2A: rd=28, uimm=136
-Matched C.LDSP instruction 0x6E46: rd=28, uimm=80
-Matched C.LDSP instruction 0x6ECA: rd=29, uimm=144
-Matched C.LDSP instruction 0x6F26: rd=30, uimm=72
-Matched C.LDSP instruction 0x72E2: rd=5, uimm=56
-Matched C.LDSP instruction 0x74EE: rd=9, uimm=248
-Matched C.LDSP instruction 0x75C2: rd=11, uimm=48
-Matched C.LDSP instruction 0x75E6: rd=11, uimm=120
-Matched C.LDSP instruction 0x7686: rd=13, uimm=96
-Matched C.LDSP instruction 0x76A6: rd=13, uimm=104
-Matched C.LDSP instruction 0x7706: rd=14, uimm=96
-Matched C.LDSP instruction 0x77A6: rd=15, uimm=104
-Matched C.LDSP instruction 0x7822: rd=16, uimm=40
-Matched C.LDSP instruction 0x7842: rd=16, uimm=48
-Matched C.LDSP instruction 0x7866: rd=16, uimm=120
-Matched C.LDSP instruction 0x78A2: rd=17, uimm=40
-Matched C.LDSP instruction 0x794E: rd=18, uimm=240
-Matched C.LDSP instruction 0x79AE: rd=19, uimm=232
-Matched C.LDSP instruction 0x7A0E: rd=20, uimm=224
-Matched C.LDSP instruction 0x7CEA: rd=25, uimm=184
-Matched C.LDSP instruction 0x7D4A: rd=26, uimm=176
-Matched C.LDSP instruction 0x7DAA: rd=27, uimm=168
-Matched C.LDSP instruction 0x7E82: rd=29, uimm=32
-Matched C.LDSP instruction 0x7FC6: rd=31, uimm=112
-Matched C.LDSP instruction 0x60A2: rd=1, uimm=8
-Matched C.LDSP instruction 0x60E2: rd=1, uimm=24
-Matched C.LDSP instruction 0x6402: rd=8, uimm=0
-Matched C.LDSP instruction 0x6442: rd=8, uimm=16
-Matched C.LDSP instruction 0x64E2: rd=9, uimm=24
-Matched C.LDSP instruction 0x70A2: rd=1, uimm=40
-Matched C.LDSP instruction 0x7402: rd=8, uimm=32
-Matched C.LI instruction 0x4281: rd=5, imm=0
-Matched C.LI instruction 0x4401: rd=8, imm=0
-Matched C.LI instruction 0x4501: rd=10, imm=0
-Matched C.LI instruction 0x4505: rd=10, imm=1
-Matched C.LI instruction 0x450D: rd=10, imm=3
-Matched C.LI instruction 0x4515: rd=10, imm=5
-Matched C.LI instruction 0x4605: rd=12, imm=1
-Matched C.LI instruction 0x4701: rd=14, imm=0
-Matched C.LI instruction 0x4705: rd=14, imm=1
-Matched C.LI instruction 0x4781: rd=15, imm=0
-Matched C.LI instruction 0x4785: rd=15, imm=1
-Matched C.LI instruction 0x4795: rd=15, imm=5
-Matched C.LI instruction 0x479D: rd=15, imm=7
-Matched C.LI instruction 0x4901: rd=18, imm=0
-Matched C.LI instruction 0x4981: rd=19, imm=0
-Matched C.LI instruction 0x4B01: rd=22, imm=0
-Matched C.LI instruction 0x4C01: rd=24, imm=0
-Matched C.LI instruction 0x4D01: rd=26, imm=0
+Matched C.LDSP instruction 0x67A2: uimm=8, rd=15
+Matched C.LDSP instruction 0x67C2: uimm=16, rd=15
+Matched C.LDSP instruction 0x680A: uimm=128, rd=16
+Matched C.LDSP instruction 0x688A: uimm=128, rd=17
+Matched C.LDSP instruction 0x68AA: uimm=136, rd=17
+Matched C.LDSP instruction 0x6AEE: uimm=216, rd=21
+Matched C.LDSP instruction 0x6B4E: uimm=208, rd=22
+Matched C.LDSP instruction 0x6BAE: uimm=200, rd=23
+Matched C.LDSP instruction 0x6C0E: uimm=192, rd=24
+Matched C.LDSP instruction 0x6E2A: uimm=136, rd=28
+Matched C.LDSP instruction 0x6E46: uimm=80, rd=28
+Matched C.LDSP instruction 0x6ECA: uimm=144, rd=29
+Matched C.LDSP instruction 0x6F26: uimm=72, rd=30
+Matched C.LDSP instruction 0x72E2: uimm=56, rd=5
+Matched C.LDSP instruction 0x74EE: uimm=248, rd=9
+Matched C.LDSP instruction 0x75C2: uimm=48, rd=11
+Matched C.LDSP instruction 0x75E6: uimm=120, rd=11
+Matched C.LDSP instruction 0x7686: uimm=96, rd=13
+Matched C.LDSP instruction 0x76A6: uimm=104, rd=13
+Matched C.LDSP instruction 0x7706: uimm=96, rd=14
+Matched C.LDSP instruction 0x77A6: uimm=104, rd=15
+Matched C.LDSP instruction 0x7822: uimm=40, rd=16
+Matched C.LDSP instruction 0x7842: uimm=48, rd=16
+Matched C.LDSP instruction 0x7866: uimm=120, rd=16
+Matched C.LDSP instruction 0x78A2: uimm=40, rd=17
+Matched C.LDSP instruction 0x794E: uimm=240, rd=18
+Matched C.LDSP instruction 0x79AE: uimm=232, rd=19
+Matched C.LDSP instruction 0x7A0E: uimm=224, rd=20
+Matched C.LDSP instruction 0x7CEA: uimm=184, rd=25
+Matched C.LDSP instruction 0x7D4A: uimm=176, rd=26
+Matched C.LDSP instruction 0x7DAA: uimm=168, rd=27
+Matched C.LDSP instruction 0x7E82: uimm=32, rd=29
+Matched C.LDSP instruction 0x7FC6: uimm=112, rd=31
+Matched C.LDSP instruction 0x60A2: uimm=8, rd=1
+Matched C.LDSP instruction 0x60E2: uimm=24, rd=1
+Matched C.LDSP instruction 0x6402: uimm=0, rd=8
+Matched C.LDSP instruction 0x6442: uimm=16, rd=8
+Matched C.LDSP instruction 0x64E2: uimm=24, rd=9
+Matched C.LDSP instruction 0x70A2: uimm=40, rd=1
+Matched C.LDSP instruction 0x7402: uimm=32, rd=8
+Matched C.LI instruction 0x4281: imm=0, rd=5
+Matched C.LI instruction 0x4401: imm=0, rd=8
+Matched C.LI instruction 0x4501: imm=0, rd=10
+Matched C.LI instruction 0x4505: imm=1, rd=10
+Matched C.LI instruction 0x450D: imm=3, rd=10
+Matched C.LI instruction 0x4515: imm=5, rd=10
+Matched C.LI instruction 0x4605: imm=1, rd=12
+Matched C.LI instruction 0x4701: imm=0, rd=14
+Matched C.LI instruction 0x4705: imm=1, rd=14
+Matched C.LI instruction 0x4781: imm=0, rd=15
+Matched C.LI instruction 0x4785: imm=1, rd=15
+Matched C.LI instruction 0x4795: imm=5, rd=15
+Matched C.LI instruction 0x479D: imm=7, rd=15
+Matched C.LI instruction 0x4901: imm=0, rd=18
+Matched C.LI instruction 0x4981: imm=0, rd=19
+Matched C.LI instruction 0x4B01: imm=0, rd=22
+Matched C.LI instruction 0x4C01: imm=0, rd=24
+Matched C.LI instruction 0x4D01: imm=0, rd=26
 Matched C.LUI instruction 0x67C9
 Matched C.LW instruction 0x4000
 Matched C.LWSP instruction 0x4792
@@ -270,58 +270,58 @@ Matched C.MV instruction 0x8F7E: rd=30, rs2=31
 Matched C.NOP instruction 0x0001
 Matched C.OR instruction 0x8FD9: rd=15, rs2=14
 Matched C.SD instruction 0xF550
-Matched C.SDSP instruction 0xE022: rs2=8, uimm=0
-Matched C.SDSP instruction 0xE0BA: rs2=14, uimm=64
-Matched C.SDSP instruction 0xE0BE: rs2=15, uimm=64
-Matched C.SDSP instruction 0xE142: rs2=16, uimm=128
-Matched C.SDSP instruction 0xE146: rs2=17, uimm=128
-Matched C.SDSP instruction 0xE1E2: rs2=24, uimm=192
-Matched C.SDSP instruction 0xE222: rs2=8, uimm=256
-Matched C.SDSP instruction 0xE406: rs2=1, uimm=8
-Matched C.SDSP instruction 0xE426: rs2=9, uimm=8
-Matched C.SDSP instruction 0xE43A: rs2=14, uimm=8
-Matched C.SDSP instruction 0xE43E: rs2=15, uimm=8
-Matched C.SDSP instruction 0xE4FA: rs2=30, uimm=72
-Matched C.SDSP instruction 0xE546: rs2=17, uimm=136
-Matched C.SDSP instruction 0xE572: rs2=28, uimm=136
-Matched C.SDSP instruction 0xE5DE: rs2=23, uimm=200
-Matched C.SDSP instruction 0xE606: rs2=1, uimm=264
-Matched C.SDSP instruction 0xE822: rs2=8, uimm=16
-Matched C.SDSP instruction 0xE82A: rs2=10, uimm=16
-Matched C.SDSP instruction 0xE876: rs2=29, uimm=16
-Matched C.SDSP instruction 0xE89A: rs2=6, uimm=80
-Matched C.SDSP instruction 0xE8F2: rs2=28, uimm=80
-Matched C.SDSP instruction 0xE976: rs2=29, uimm=144
-Matched C.SDSP instruction 0xE9DA: rs2=22, uimm=208
-Matched C.SDSP instruction 0xEC06: rs2=1, uimm=24
-Matched C.SDSP instruction 0xEC1E: rs2=7, uimm=24
-Matched C.SDSP instruction 0xEC26: rs2=9, uimm=24
-Matched C.SDSP instruction 0xEC9A: rs2=6, uimm=88
-Matched C.SDSP instruction 0xECAE: rs2=11, uimm=88
-Matched C.SDSP instruction 0xED1E: rs2=7, uimm=152
-Matched C.SDSP instruction 0xEDD6: rs2=21, uimm=216
-Matched C.SDSP instruction 0xF022: rs2=8, uimm=32
-Matched C.SDSP instruction 0xF076: rs2=29, uimm=32
-Matched C.SDSP instruction 0xF0B6: rs2=13, uimm=96
-Matched C.SDSP instruction 0xF0BA: rs2=14, uimm=96
-Matched C.SDSP instruction 0xF1D2: rs2=20, uimm=224
-Matched C.SDSP instruction 0xF406: rs2=1, uimm=40
-Matched C.SDSP instruction 0xF442: rs2=16, uimm=40
-Matched C.SDSP instruction 0xF446: rs2=17, uimm=40
-Matched C.SDSP instruction 0xF4B6: rs2=13, uimm=104
-Matched C.SDSP instruction 0xF4BE: rs2=15, uimm=104
-Matched C.SDSP instruction 0xF56E: rs2=27, uimm=168
-Matched C.SDSP instruction 0xF5CE: rs2=19, uimm=232
-Matched C.SDSP instruction 0xF82E: rs2=11, uimm=48
-Matched C.SDSP instruction 0xF842: rs2=16, uimm=48
-Matched C.SDSP instruction 0xF8FE: rs2=31, uimm=112
-Matched C.SDSP instruction 0xF96A: rs2=26, uimm=176
-Matched C.SDSP instruction 0xF9CA: rs2=18, uimm=240
-Matched C.SDSP instruction 0xFC16: rs2=5, uimm=56
-Matched C.SDSP instruction 0xFCAE: rs2=11, uimm=120
-Matched C.SDSP instruction 0xFCC2: rs2=16, uimm=120
-Matched C.SDSP instruction 0xFD66: rs2=25, uimm=184
-Matched C.SDSP instruction 0xFDA6: rs2=9, uimm=248
+Matched C.SDSP instruction 0xE022: uimm=0, rs2=8
+Matched C.SDSP instruction 0xE0BA: uimm=64, rs2=14
+Matched C.SDSP instruction 0xE0BE: uimm=64, rs2=15
+Matched C.SDSP instruction 0xE142: uimm=128, rs2=16
+Matched C.SDSP instruction 0xE146: uimm=128, rs2=17
+Matched C.SDSP instruction 0xE1E2: uimm=192, rs2=24
+Matched C.SDSP instruction 0xE222: uimm=256, rs2=8
+Matched C.SDSP instruction 0xE406: uimm=8, rs2=1
+Matched C.SDSP instruction 0xE426: uimm=8, rs2=9
+Matched C.SDSP instruction 0xE43A: uimm=8, rs2=14
+Matched C.SDSP instruction 0xE43E: uimm=8, rs2=15
+Matched C.SDSP instruction 0xE4FA: uimm=72, rs2=30
+Matched C.SDSP instruction 0xE546: uimm=136, rs2=17
+Matched C.SDSP instruction 0xE572: uimm=136, rs2=28
+Matched C.SDSP instruction 0xE5DE: uimm=200, rs2=23
+Matched C.SDSP instruction 0xE606: uimm=264, rs2=1
+Matched C.SDSP instruction 0xE822: uimm=16, rs2=8
+Matched C.SDSP instruction 0xE82A: uimm=16, rs2=10
+Matched C.SDSP instruction 0xE876: uimm=16, rs2=29
+Matched C.SDSP instruction 0xE89A: uimm=80, rs2=6
+Matched C.SDSP instruction 0xE8F2: uimm=80, rs2=28
+Matched C.SDSP instruction 0xE976: uimm=144, rs2=29
+Matched C.SDSP instruction 0xE9DA: uimm=208, rs2=22
+Matched C.SDSP instruction 0xEC06: uimm=24, rs2=1
+Matched C.SDSP instruction 0xEC1E: uimm=24, rs2=7
+Matched C.SDSP instruction 0xEC26: uimm=24, rs2=9
+Matched C.SDSP instruction 0xEC9A: uimm=88, rs2=6
+Matched C.SDSP instruction 0xECAE: uimm=88, rs2=11
+Matched C.SDSP instruction 0xED1E: uimm=152, rs2=7
+Matched C.SDSP instruction 0xEDD6: uimm=216, rs2=21
+Matched C.SDSP instruction 0xF022: uimm=32, rs2=8
+Matched C.SDSP instruction 0xF076: uimm=32, rs2=29
+Matched C.SDSP instruction 0xF0B6: uimm=96, rs2=13
+Matched C.SDSP instruction 0xF0BA: uimm=96, rs2=14
+Matched C.SDSP instruction 0xF1D2: uimm=224, rs2=20
+Matched C.SDSP instruction 0xF406: uimm=40, rs2=1
+Matched C.SDSP instruction 0xF442: uimm=40, rs2=16
+Matched C.SDSP instruction 0xF446: uimm=40, rs2=17
+Matched C.SDSP instruction 0xF4B6: uimm=104, rs2=13
+Matched C.SDSP instruction 0xF4BE: uimm=104, rs2=15
+Matched C.SDSP instruction 0xF56E: uimm=168, rs2=27
+Matched C.SDSP instruction 0xF5CE: uimm=232, rs2=19
+Matched C.SDSP instruction 0xF82E: uimm=48, rs2=11
+Matched C.SDSP instruction 0xF842: uimm=48, rs2=16
+Matched C.SDSP instruction 0xF8FE: uimm=112, rs2=31
+Matched C.SDSP instruction 0xF96A: uimm=176, rs2=26
+Matched C.SDSP instruction 0xF9CA: uimm=240, rs2=18
+Matched C.SDSP instruction 0xFC16: uimm=56, rs2=5
+Matched C.SDSP instruction 0xFCAE: uimm=120, rs2=11
+Matched C.SDSP instruction 0xFCC2: uimm=120, rs2=16
+Matched C.SDSP instruction 0xFD66: uimm=184, rs2=25
+Matched C.SDSP instruction 0xFDA6: uimm=248, rs2=9
 Matched C.SLLI instruction 0x078E: rd=15, shamt=3
 Matched C.SRAI instruction 0x878D: rd=15, shamt=3
 Matched C.SRLI instruction 0x8389: rd=15, shamt=2
@@ -333,11 +333,11 @@ Matched C.SW instruction 0xC29C
 Matched C.SW instruction 0xC31C
 Matched C.SW instruction 0xC388
 Matched C.SW instruction 0xC398
-Matched C.SWSP instruction 0xC23E: rs2=15, uimm=4
-Matched C.SWSP instruction 0xC286: rs2=1, uimm=68
-Matched C.SWSP instruction 0xC2BE: rs2=15, uimm=68
-Matched C.SWSP instruction 0xC43E: rs2=15, uimm=8
-Matched C.SWSP instruction 0xD03E: rs2=15, uimm=32
+Matched C.SWSP instruction 0xC23E: uimm=4, rs2=15
+Matched C.SWSP instruction 0xC286: uimm=68, rs2=1
+Matched C.SWSP instruction 0xC2BE: uimm=68, rs2=15
+Matched C.SWSP instruction 0xC43E: uimm=8, rs2=15
+Matched C.SWSP instruction 0xD03E: uimm=32, rs2=15
 Matched C.XOR instruction 0x8FB9: rd=15, rs2=14
 Matched ADD instruction 0x00E787B3, rs2=14, rs1=15, rd=15
 Matched ADDI instruction 0x00000013: imm=0, rs1=0, rd=0
@@ -644,104 +644,104 @@ Matched ANDI instruction 0xFFEE7513: imm=-2, rs1=28, rd=10
 Matched AUIPC instruction 0x00000517: imm=0, rd=10
 Matched AUIPC instruction 0x00000717: imm=0, rd=14
 Matched AUIPC instruction 0x00010117: imm=65536, rd=2
-Matched BEQ instruction 0x00078863: rs2=0, rs1=15, offset=16
-Matched BEQ instruction 0x00078A63: rs2=0, rs1=15, offset=20
-Matched BEQ instruction 0x00078E63: rs2=0, rs1=15, offset=28
-Matched BEQ instruction 0x00E78663: rs2=14, rs1=15, offset=12
-Matched BEQ instruction 0x06C30A63: rs2=12, rs1=6, offset=116
-Matched BEQ instruction 0x06C58A63: rs2=12, rs1=11, offset=116
-Matched BEQ instruction 0x0AC30E63: rs2=12, rs1=6, offset=188
-Matched BEQ instruction 0x0AC58E63: rs2=12, rs1=11, offset=188
-Matched BEQ instruction 0x0DE70763: rs2=30, rs1=14, offset=206
-Matched BEQ instruction 0x0DE78763: rs2=30, rs1=15, offset=206
-Matched BEQ instruction 0x10BC8E63: rs2=11, rs1=25, offset=284
-Matched BEQ instruction 0x11850E63: rs2=24, rs1=10, offset=284
-Matched BEQ instruction 0x11F78663: rs2=31, rs1=15, offset=268
-Matched BEQ instruction 0x13F68363: rs2=31, rs1=13, offset=294
-Matched BEQ instruction 0x15E70A63: rs2=30, rs1=14, offset=340
-Matched BEQ instruction 0x15E78A63: rs2=30, rs1=15, offset=340
-Matched BEQ instruction 0x16968863: rs2=9, rs1=13, offset=368
-Matched BEQ instruction 0x16FD0463: rs2=15, rs1=26, offset=360
-Matched BEQ instruction 0x19F78E63: rs2=31, rs1=15, offset=412
-Matched BEQ instruction 0x1A978863: rs2=9, rs1=15, offset=432
-Matched BEQ instruction 0x1AEB0263: rs2=14, rs1=22, offset=420
-Matched BEQ instruction 0x1CBC8063: rs2=11, rs1=25, offset=448
-Matched BEQ instruction 0x1D5A0A63: rs2=21, rs1=20, offset=468
-Matched BEQ instruction 0x1D850063: rs2=24, rs1=10, offset=448
-Matched BEQ instruction 0x1DF68663: rs2=31, rs1=13, offset=460
-Matched BEQ instruction 0x1F3A8863: rs2=19, rs1=21, offset=496
-Matched BEQ instruction 0x22968C63: rs2=9, rs1=13, offset=568
-Matched BEQ instruction 0x22990663: rs2=9, rs1=18, offset=556
-Matched BEQ instruction 0x22FD0463: rs2=15, rs1=26, offset=552
-Matched BEQ instruction 0x25B40663: rs2=27, rs1=8, offset=588
-Matched BEQ instruction 0x28850063: rs2=8, rs1=10, offset=640
-Matched BEQ instruction 0x28EB0663: rs2=14, rs1=22, offset=652
-Matched BEQ instruction 0x2A950263: rs2=9, rs1=10, offset=676
-Matched BEQ instruction 0x2A978263: rs2=9, rs1=15, offset=676
-Matched BEQ instruction 0x2D5A0863: rs2=21, rs1=20, offset=720
-Matched BEQ instruction 0x313A8263: rs2=19, rs1=21, offset=772
-Matched BEQ instruction 0x34990A63: rs2=9, rs1=18, offset=852
-Matched BEQ instruction 0x39B40863: rs2=27, rs1=8, offset=912
-Matched BEQ instruction 0x3C850A63: rs2=8, rs1=10, offset=980
-Matched BEQ instruction 0x40950C63: rs2=9, rs1=10, offset=1048
-Matched BEQ instruction 0xFACC06E3: rs2=12, rs1=24, offset=-84
-Matched BEQ instruction 0xFACD88E3: rs2=12, rs1=27, offset=-80
-Matched BEQ instruction 0xFCCC08E3: rs2=12, rs1=24, offset=-48
-Matched BEQ instruction 0xFCCD89E3: rs2=12, rs1=27, offset=-46
-Matched BGE instruction 0x00895963: rs2=8, rs1=18, offset=18
-Matched BGE instruction 0x00895C63: rs2=8, rs1=18, offset=24
-Matched BGE instruction 0x2AA75B63: rs2=10, rs1=14, offset=694
-Matched BGE instruction 0x2CA75D63: rs2=10, rs1=14, offset=730
-Matched BGE instruction 0x42A75663: rs2=10, rs1=14, offset=1068
-Matched BGE instruction 0x46A75863: rs2=10, rs1=14, offset=1136
-Matched BGEU instruction 0x00B57463: rs2=11, rs1=10, offset=8
-Matched BLT instruction 0x00A7C763: rs2=10, rs1=15, offset=14
-Matched BLT instruction 0x00A7CC63: rs2=10, rs1=15, offset=24
-Matched BLT instruction 0x00E7C563: rs2=14, rs1=15, offset=10
-Matched BLT instruction 0x00E7C663: rs2=14, rs1=15, offset=12
-Matched BLTU instruction 0x00B56463: rs2=11, rs1=10, offset=8
-Matched BNE instruction 0x00051663: rs2=0, rs1=10, offset=12
-Matched BNE instruction 0x00079463: rs2=0, rs1=15, offset=8
-Matched BNE instruction 0x00079663: rs2=0, rs1=15, offset=12
-Matched BNE instruction 0x02CC1C63: rs2=12, rs1=24, offset=56
-Matched BNE instruction 0x02CD9B63: rs2=12, rs1=27, offset=54
-Matched BNE instruction 0x04CC1E63: rs2=12, rs1=24, offset=92
-Matched BNE instruction 0x04CD9C63: rs2=12, rs1=27, offset=88
-Matched BNE instruction 0xBE9518E3: rs2=9, rs1=10, offset=-1040
-Matched BNE instruction 0xC2851AE3: rs2=8, rs1=10, offset=-972
-Matched BNE instruction 0xCCC414E3: rs2=12, rs1=8, offset=-824
-Matched BNE instruction 0xD0C910E3: rs2=12, rs1=18, offset=-768
-Matched BNE instruction 0xD0CA96E3: rs2=12, rs1=21, offset=-756
-Matched BNE instruction 0xD2CA9EE3: rs2=12, rs1=21, offset=-708
-Matched BNE instruction 0xD69512E3: rs2=9, rs1=10, offset=-668
-Matched BNE instruction 0xD88514E3: rs2=8, rs1=10, offset=-632
-Matched BNE instruction 0xDAC716E3: rs2=12, rs1=14, offset=-596
-Matched BNE instruction 0xDAC792E3: rs2=12, rs1=15, offset=-604
-Matched BNE instruction 0xDEC414E3: rs2=12, rs1=8, offset=-536
-Matched BNE instruction 0xE0C913E3: rs2=12, rs1=18, offset=-506
-Matched BNE instruction 0xE0C91AE3: rs2=12, rs1=18, offset=-492
-Matched BNE instruction 0xE0C99AE3: rs2=12, rs1=19, offset=-492
-Matched BNE instruction 0xE0CA9DE3: rs2=12, rs1=21, offset=-486
-Matched BNE instruction 0xE2CA9AE3: rs2=12, rs1=21, offset=-460
-Matched BNE instruction 0xE4C416E3: rs2=12, rs1=8, offset=-436
-Matched BNE instruction 0xE4CD96E3: rs2=12, rs1=27, offset=-436
-Matched BNE instruction 0xE6C71EE3: rs2=12, rs1=14, offset=-388
-Matched BNE instruction 0xE6C79CE3: rs2=12, rs1=15, offset=-392
-Matched BNE instruction 0xEAC91FE3: rs2=12, rs1=18, offset=-322
-Matched BNE instruction 0xEAC99EE3: rs2=12, rs1=19, offset=-324
-Matched BNE instruction 0xEBE71AE3: rs2=30, rs1=14, offset=-332
-Matched BNE instruction 0xEBE79AE3: rs2=30, rs1=15, offset=-332
-Matched BNE instruction 0xEEC417E3: rs2=12, rs1=8, offset=-274
-Matched BNE instruction 0xEECD97E3: rs2=12, rs1=27, offset=-274
-Matched BNE instruction 0xF3E71DE3: rs2=30, rs1=14, offset=-198
-Matched BNE instruction 0xF3E79DE3: rs2=30, rs1=15, offset=-198
-Matched BNE instruction 0xF4C494E3: rs2=12, rs1=9, offset=-184
-Matched BNE instruction 0xF8C498E3: rs2=12, rs1=9, offset=-112
-Matched BNE instruction 0xF93412E3: rs2=19, rs1=8, offset=-124
-Matched BNE instruction 0xFB341FE3: rs2=19, rs1=8, offset=-66
-Matched BNE instruction 0xFE0790E3: rs2=0, rs1=15, offset=-32
-Matched BNE instruction 0xFE0798E3: rs2=0, rs1=15, offset=-16
-Matched BNE instruction 0xFE079AE3: rs2=0, rs1=15, offset=-12
+Matched BEQ instruction 0x00078863: offset=16, rs2=0, rs1=15
+Matched BEQ instruction 0x00078A63: offset=20, rs2=0, rs1=15
+Matched BEQ instruction 0x00078E63: offset=28, rs2=0, rs1=15
+Matched BEQ instruction 0x00E78663: offset=12, rs2=14, rs1=15
+Matched BEQ instruction 0x06C30A63: offset=116, rs2=12, rs1=6
+Matched BEQ instruction 0x06C58A63: offset=116, rs2=12, rs1=11
+Matched BEQ instruction 0x0AC30E63: offset=188, rs2=12, rs1=6
+Matched BEQ instruction 0x0AC58E63: offset=188, rs2=12, rs1=11
+Matched BEQ instruction 0x0DE70763: offset=206, rs2=30, rs1=14
+Matched BEQ instruction 0x0DE78763: offset=206, rs2=30, rs1=15
+Matched BEQ instruction 0x10BC8E63: offset=284, rs2=11, rs1=25
+Matched BEQ instruction 0x11850E63: offset=284, rs2=24, rs1=10
+Matched BEQ instruction 0x11F78663: offset=268, rs2=31, rs1=15
+Matched BEQ instruction 0x13F68363: offset=294, rs2=31, rs1=13
+Matched BEQ instruction 0x15E70A63: offset=340, rs2=30, rs1=14
+Matched BEQ instruction 0x15E78A63: offset=340, rs2=30, rs1=15
+Matched BEQ instruction 0x16968863: offset=368, rs2=9, rs1=13
+Matched BEQ instruction 0x16FD0463: offset=360, rs2=15, rs1=26
+Matched BEQ instruction 0x19F78E63: offset=412, rs2=31, rs1=15
+Matched BEQ instruction 0x1A978863: offset=432, rs2=9, rs1=15
+Matched BEQ instruction 0x1AEB0263: offset=420, rs2=14, rs1=22
+Matched BEQ instruction 0x1CBC8063: offset=448, rs2=11, rs1=25
+Matched BEQ instruction 0x1D5A0A63: offset=468, rs2=21, rs1=20
+Matched BEQ instruction 0x1D850063: offset=448, rs2=24, rs1=10
+Matched BEQ instruction 0x1DF68663: offset=460, rs2=31, rs1=13
+Matched BEQ instruction 0x1F3A8863: offset=496, rs2=19, rs1=21
+Matched BEQ instruction 0x22968C63: offset=568, rs2=9, rs1=13
+Matched BEQ instruction 0x22990663: offset=556, rs2=9, rs1=18
+Matched BEQ instruction 0x22FD0463: offset=552, rs2=15, rs1=26
+Matched BEQ instruction 0x25B40663: offset=588, rs2=27, rs1=8
+Matched BEQ instruction 0x28850063: offset=640, rs2=8, rs1=10
+Matched BEQ instruction 0x28EB0663: offset=652, rs2=14, rs1=22
+Matched BEQ instruction 0x2A950263: offset=676, rs2=9, rs1=10
+Matched BEQ instruction 0x2A978263: offset=676, rs2=9, rs1=15
+Matched BEQ instruction 0x2D5A0863: offset=720, rs2=21, rs1=20
+Matched BEQ instruction 0x313A8263: offset=772, rs2=19, rs1=21
+Matched BEQ instruction 0x34990A63: offset=852, rs2=9, rs1=18
+Matched BEQ instruction 0x39B40863: offset=912, rs2=27, rs1=8
+Matched BEQ instruction 0x3C850A63: offset=980, rs2=8, rs1=10
+Matched BEQ instruction 0x40950C63: offset=1048, rs2=9, rs1=10
+Matched BEQ instruction 0xFACC06E3: offset=-84, rs2=12, rs1=24
+Matched BEQ instruction 0xFACD88E3: offset=-80, rs2=12, rs1=27
+Matched BEQ instruction 0xFCCC08E3: offset=-48, rs2=12, rs1=24
+Matched BEQ instruction 0xFCCD89E3: offset=-46, rs2=12, rs1=27
+Matched BGE instruction 0x00895963: offset=18, rs2=8, rs1=18
+Matched BGE instruction 0x00895C63: offset=24, rs2=8, rs1=18
+Matched BGE instruction 0x2AA75B63: offset=694, rs2=10, rs1=14
+Matched BGE instruction 0x2CA75D63: offset=730, rs2=10, rs1=14
+Matched BGE instruction 0x42A75663: offset=1068, rs2=10, rs1=14
+Matched BGE instruction 0x46A75863: offset=1136, rs2=10, rs1=14
+Matched BGEU instruction 0x00B57463: offset=8, rs2=11, rs1=10
+Matched BLT instruction 0x00A7C763: offset=14, rs2=10, rs1=15
+Matched BLT instruction 0x00A7CC63: offset=24, rs2=10, rs1=15
+Matched BLT instruction 0x00E7C563: offset=10, rs2=14, rs1=15
+Matched BLT instruction 0x00E7C663: offset=12, rs2=14, rs1=15
+Matched BLTU instruction 0x00B56463: offset=8, rs2=11, rs1=10
+Matched BNE instruction 0x00051663: offset=12, rs2=0, rs1=10
+Matched BNE instruction 0x00079463: offset=8, rs2=0, rs1=15
+Matched BNE instruction 0x00079663: offset=12, rs2=0, rs1=15
+Matched BNE instruction 0x02CC1C63: offset=56, rs2=12, rs1=24
+Matched BNE instruction 0x02CD9B63: offset=54, rs2=12, rs1=27
+Matched BNE instruction 0x04CC1E63: offset=92, rs2=12, rs1=24
+Matched BNE instruction 0x04CD9C63: offset=88, rs2=12, rs1=27
+Matched BNE instruction 0xBE9518E3: offset=-1040, rs2=9, rs1=10
+Matched BNE instruction 0xC2851AE3: offset=-972, rs2=8, rs1=10
+Matched BNE instruction 0xCCC414E3: offset=-824, rs2=12, rs1=8
+Matched BNE instruction 0xD0C910E3: offset=-768, rs2=12, rs1=18
+Matched BNE instruction 0xD0CA96E3: offset=-756, rs2=12, rs1=21
+Matched BNE instruction 0xD2CA9EE3: offset=-708, rs2=12, rs1=21
+Matched BNE instruction 0xD69512E3: offset=-668, rs2=9, rs1=10
+Matched BNE instruction 0xD88514E3: offset=-632, rs2=8, rs1=10
+Matched BNE instruction 0xDAC716E3: offset=-596, rs2=12, rs1=14
+Matched BNE instruction 0xDAC792E3: offset=-604, rs2=12, rs1=15
+Matched BNE instruction 0xDEC414E3: offset=-536, rs2=12, rs1=8
+Matched BNE instruction 0xE0C913E3: offset=-506, rs2=12, rs1=18
+Matched BNE instruction 0xE0C91AE3: offset=-492, rs2=12, rs1=18
+Matched BNE instruction 0xE0C99AE3: offset=-492, rs2=12, rs1=19
+Matched BNE instruction 0xE0CA9DE3: offset=-486, rs2=12, rs1=21
+Matched BNE instruction 0xE2CA9AE3: offset=-460, rs2=12, rs1=21
+Matched BNE instruction 0xE4C416E3: offset=-436, rs2=12, rs1=8
+Matched BNE instruction 0xE4CD96E3: offset=-436, rs2=12, rs1=27
+Matched BNE instruction 0xE6C71EE3: offset=-388, rs2=12, rs1=14
+Matched BNE instruction 0xE6C79CE3: offset=-392, rs2=12, rs1=15
+Matched BNE instruction 0xEAC91FE3: offset=-322, rs2=12, rs1=18
+Matched BNE instruction 0xEAC99EE3: offset=-324, rs2=12, rs1=19
+Matched BNE instruction 0xEBE71AE3: offset=-332, rs2=30, rs1=14
+Matched BNE instruction 0xEBE79AE3: offset=-332, rs2=30, rs1=15
+Matched BNE instruction 0xEEC417E3: offset=-274, rs2=12, rs1=8
+Matched BNE instruction 0xEECD97E3: offset=-274, rs2=12, rs1=27
+Matched BNE instruction 0xF3E71DE3: offset=-198, rs2=30, rs1=14
+Matched BNE instruction 0xF3E79DE3: offset=-198, rs2=30, rs1=15
+Matched BNE instruction 0xF4C494E3: offset=-184, rs2=12, rs1=9
+Matched BNE instruction 0xF8C498E3: offset=-112, rs2=12, rs1=9
+Matched BNE instruction 0xF93412E3: offset=-124, rs2=19, rs1=8
+Matched BNE instruction 0xFB341FE3: offset=-66, rs2=19, rs1=8
+Matched BNE instruction 0xFE0790E3: offset=-32, rs2=0, rs1=15
+Matched BNE instruction 0xFE0798E3: offset=-16, rs2=0, rs1=15
+Matched BNE instruction 0xFE079AE3: offset=-12, rs2=0, rs1=15
 Matched CSRRC instruction 0x3002B373: csr=768, rs1=5, rd=6
 Matched CSRRCI instruction 0x30047373: csr=768, rs1=8, rd=6
 Matched CSRRS instruction 0x3002A373: csr=768, rs1=5, rd=6
