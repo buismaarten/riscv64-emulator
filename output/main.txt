@@ -778,7 +778,7 @@ Matched FCVT.WU.D instruction 0xC2117653: rs1=2, rm=7, rd=12
 Matched FCVT.WU.S instruction 0xC01276D3: rs1=4, rm=7, rd=13
 Matched FDIV.D instruction 0x1A10FED3: rs2=1, rs1=1, rm=7, rd=29
 Matched FDIV.S instruction 0x18007E53: rs2=0, rs1=0, rm=7, rd=28
-Matched FENCE instruction 0x0FF0000F
+Matched FENCE instruction 0x0FF0000F: pred=15, succ=15
 Matched FENCE.I instruction 0x0000100F
 Matched FEQ.D instruction 0xA210A353: rs2=1, rs1=1, rd=6
 Matched FEQ.S instruction 0xA00022D3: rs2=0, rs1=0, rd=5

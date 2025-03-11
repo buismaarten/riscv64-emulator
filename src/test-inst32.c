@@ -1443,9 +1443,10 @@ void test_inst32() {
         }
 
         if (OP_FENCE(inst)) {
-            // TODO
+            uint32_t pred = EXTRACT_BITS(inst, 27, 24);
+            uint32_t succ = EXTRACT_BITS(inst, 23, 20);
 
-            printf("Matched FENCE instruction 0x%08X\n", inst);
+            printf("Matched FENCE instruction 0x%08X: pred=%u, succ=%u\n", inst, pred, succ);
             count++;
         }
 
