@@ -1805,9 +1805,16 @@ void test_inst32() {
         }
 
         if (OP_JAL(inst)) {
-            // TODO
+            uint32_t rd = EXTRACT_BITS(inst, 11, 7);
+            int32_t offset = 0;
 
-            printf("Matched JAL instruction 0x%08X\n", inst);
+            offset |= EXTRACT_BITS(inst, 31, 31) << 20; // Bit 20
+            offset |= EXTRACT_BITS(inst, 30, 21) << 1;  // Bit 10:1
+            offset |= EXTRACT_BITS(inst, 20, 20) << 11; // Bit 11
+            offset |= EXTRACT_BITS(inst, 19, 12) << 12; // Bit 19-12
+            offset = sign_extend_32(offset, 20);
+
+            printf("Matched JAL instruction 0x%08X: offset=%d, rd=%u\n", inst, offset, rd);
             count++;
         }
 

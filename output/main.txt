@@ -818,80 +818,80 @@ Matched FSQRT.S instruction 0x58007F53: rs1=0, rm=7, rd=30
 Matched FSUB.D instruction 0x0A10F0D3: rs2=1, rs1=1, rm=7, rd=1
 Matched FSUB.S instruction 0x08007053: rs2=0, rs1=0, rm=7, rd=0
 Matched FSW instruction 0x00F7A027
-Matched JAL instruction 0x0080006F
-Matched JAL instruction 0x00C0006F
-Matched JAL instruction 0x0100006F
-Matched JAL instruction 0x0140006F
-Matched JAL instruction 0x0160006F
-Matched JAL instruction 0x01C0006F
-Matched JAL instruction 0x0200006F
-Matched JAL instruction 0x0240006F
-Matched JAL instruction 0x0280006F
-Matched JAL instruction 0x0300006F
-Matched JAL instruction 0x0320006F
-Matched JAL instruction 0x0340006F
-Matched JAL instruction 0x0360006F
-Matched JAL instruction 0x0380006F
-Matched JAL instruction 0x03C0006F
-Matched JAL instruction 0x0400006F
-Matched JAL instruction 0x0420006F
-Matched JAL instruction 0x0480006F
-Matched JAL instruction 0x0500006F
-Matched JAL instruction 0x0540006F
-Matched JAL instruction 0x0580006F
-Matched JAL instruction 0x05A0006F
-Matched JAL instruction 0x0680006F
-Matched JAL instruction 0x06C0006F
-Matched JAL instruction 0x08C0006F
-Matched JAL instruction 0x09C0006F
-Matched JAL instruction 0x2CA0006F
-Matched JAL instruction 0x2EE0006F
-Matched JAL instruction 0x44C0006F
-Matched JAL instruction 0x4900006F
-Matched JAL instruction 0xB59FF0EF
-Matched JAL instruction 0xB61FF0EF
-Matched JAL instruction 0xB69FF0EF
-Matched JAL instruction 0xBADFF0EF
-Matched JAL instruction 0xD05FF0EF
-Matched JAL instruction 0xD0BFF0EF
-Matched JAL instruction 0xD11FF0EF
-Matched JAL instruction 0xD35FF0EF
-Matched JAL instruction 0xDF5FF0EF
-Matched JAL instruction 0xE09FF0EF
-Matched JAL instruction 0xE49FF06F
-Matched JAL instruction 0xE79FF06F
-Matched JAL instruction 0xEABFF0EF
-Matched JAL instruction 0xEB5FF0EF
-Matched JAL instruction 0xF65FF0EF
-Matched JAL instruction 0xF85FF0EF
-Matched JAL instruction 0xF89FF0EF
-Matched JAL instruction 0xF91FF0EF
-Matched JAL instruction 0xF95FF0EF
-Matched JAL instruction 0xFA1FF0EF
-Matched JAL instruction 0xFA5FF0EF
-Matched JAL instruction 0xFB3FF0EF
-Matched JAL instruction 0xFB5FF06F
-Matched JAL instruction 0xFB7FF0EF
-Matched JAL instruction 0xFB9FF0EF
-Matched JAL instruction 0xFBDFF0EF
-Matched JAL instruction 0xFC1FF0EF
-Matched JAL instruction 0xFC5FF06F
-Matched JAL instruction 0xFC5FF0EF
-Matched JAL instruction 0xFC9FF0EF
-Matched JAL instruction 0xFCDFF06F
-Matched JAL instruction 0xFCDFF0EF
-Matched JAL instruction 0xFD1FF0EF
-Matched JAL instruction 0xFD3FF0EF
-Matched JAL instruction 0xFD9FF0EF
-Matched JAL instruction 0xFDBFF0EF
-Matched JAL instruction 0xFDDFF0EF
-Matched JAL instruction 0xFE1FF0EF
-Matched JAL instruction 0xFE5FF0EF
-Matched JAL instruction 0xFE9FF06F
-Matched JAL instruction 0xFE9FF0EF
-Matched JAL instruction 0xFEDFF06F
-Matched JAL instruction 0xFF1FF0EF
-Matched JAL instruction 0xFF5FF06F
+Matched JAL instruction 0x0080006F: offset=8, rd=0
+Matched JAL instruction 0x00C0006F: offset=12, rd=0
+Matched JAL instruction 0x0100006F: offset=16, rd=0
+Matched JAL instruction 0x0140006F: offset=20, rd=0
+Matched JAL instruction 0x0160006F: offset=22, rd=0
+Matched JAL instruction 0x01C0006F: offset=28, rd=0
+Matched JAL instruction 0x0200006F: offset=32, rd=0
+Matched JAL instruction 0x0240006F: offset=36, rd=0
+Matched JAL instruction 0x0280006F: offset=40, rd=0
+Matched JAL instruction 0x0300006F: offset=48, rd=0
+Matched JAL instruction 0x0320006F: offset=50, rd=0
+Matched JAL instruction 0x0340006F: offset=52, rd=0
+Matched JAL instruction 0x0360006F: offset=54, rd=0
+Matched JAL instruction 0x0380006F: offset=56, rd=0
+Matched JAL instruction 0x03C0006F: offset=60, rd=0
+Matched JAL instruction 0x0400006F: offset=64, rd=0
+Matched JAL instruction 0x0420006F: offset=66, rd=0
+Matched JAL instruction 0x0480006F: offset=72, rd=0
+Matched JAL instruction 0x0500006F: offset=80, rd=0
+Matched JAL instruction 0x0540006F: offset=84, rd=0
+Matched JAL instruction 0x0580006F: offset=88, rd=0
+Matched JAL instruction 0x05A0006F: offset=90, rd=0
+Matched JAL instruction 0x0680006F: offset=104, rd=0
+Matched JAL instruction 0x06C0006F: offset=108, rd=0
+Matched JAL instruction 0x08C0006F: offset=140, rd=0
+Matched JAL instruction 0x09C0006F: offset=156, rd=0
+Matched JAL instruction 0x2CA0006F: offset=714, rd=0
+Matched JAL instruction 0x2EE0006F: offset=750, rd=0
+Matched JAL instruction 0x44C0006F: offset=1100, rd=0
+Matched JAL instruction 0x4900006F: offset=1168, rd=0
+Matched JAL instruction 0xB59FF0EF: offset=-1192, rd=1
+Matched JAL instruction 0xB61FF0EF: offset=-1184, rd=1
+Matched JAL instruction 0xB69FF0EF: offset=-1176, rd=1
+Matched JAL instruction 0xBADFF0EF: offset=-1108, rd=1
+Matched JAL instruction 0xD05FF0EF: offset=-764, rd=1
+Matched JAL instruction 0xD0BFF0EF: offset=-758, rd=1
+Matched JAL instruction 0xD11FF0EF: offset=-752, rd=1
+Matched JAL instruction 0xD35FF0EF: offset=-716, rd=1
+Matched JAL instruction 0xDF5FF0EF: offset=-524, rd=1
+Matched JAL instruction 0xE09FF0EF: offset=-504, rd=1
+Matched JAL instruction 0xE49FF06F: offset=-440, rd=0
+Matched JAL instruction 0xE79FF06F: offset=-392, rd=0
+Matched JAL instruction 0xEABFF0EF: offset=-342, rd=1
+Matched JAL instruction 0xEB5FF0EF: offset=-332, rd=1
+Matched JAL instruction 0xF65FF0EF: offset=-156, rd=1
+Matched JAL instruction 0xF85FF0EF: offset=-124, rd=1
+Matched JAL instruction 0xF89FF0EF: offset=-120, rd=1
+Matched JAL instruction 0xF91FF0EF: offset=-112, rd=1
+Matched JAL instruction 0xF95FF0EF: offset=-108, rd=1
+Matched JAL instruction 0xFA1FF0EF: offset=-96, rd=1
+Matched JAL instruction 0xFA5FF0EF: offset=-92, rd=1
+Matched JAL instruction 0xFB3FF0EF: offset=-78, rd=1
+Matched JAL instruction 0xFB5FF06F: offset=-76, rd=0
+Matched JAL instruction 0xFB7FF0EF: offset=-74, rd=1
+Matched JAL instruction 0xFB9FF0EF: offset=-72, rd=1
+Matched JAL instruction 0xFBDFF0EF: offset=-68, rd=1
+Matched JAL instruction 0xFC1FF0EF: offset=-64, rd=1
+Matched JAL instruction 0xFC5FF06F: offset=-60, rd=0
+Matched JAL instruction 0xFC5FF0EF: offset=-60, rd=1
+Matched JAL instruction 0xFC9FF0EF: offset=-56, rd=1
+Matched JAL instruction 0xFCDFF06F: offset=-52, rd=0
+Matched JAL instruction 0xFCDFF0EF: offset=-52, rd=1
+Matched JAL instruction 0xFD1FF0EF: offset=-48, rd=1
+Matched JAL instruction 0xFD3FF0EF: offset=-46, rd=1
+Matched JAL instruction 0xFD9FF0EF: offset=-40, rd=1
+Matched JAL instruction 0xFDBFF0EF: offset=-38, rd=1
+Matched JAL instruction 0xFDDFF0EF: offset=-36, rd=1
+Matched JAL instruction 0xFE1FF0EF: offset=-32, rd=1
+Matched JAL instruction 0xFE5FF0EF: offset=-28, rd=1
+Matched JAL instruction 0xFE9FF06F: offset=-24, rd=0
+Matched JAL instruction 0xFE9FF0EF: offset=-24, rd=1
+Matched JAL instruction 0xFEDFF06F: offset=-20, rd=0
+Matched JAL instruction 0xFF1FF0EF: offset=-16, rd=1
+Matched JAL instruction 0xFF5FF06F: offset=-12, rd=0
 Matched JALR instruction 0x00008067: offset=0, rs1=1, rd=0
 Matched LB instruction 0x00050603: offset=0, rs1=10, rd=12
 Matched LBU instruction 0x00054783: offset=0, rs1=10, rd=15
