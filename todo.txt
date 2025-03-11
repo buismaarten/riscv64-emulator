@@ -15,5 +15,5 @@ FLD
 FLW
 FSD
 FSW
-JAL
+JAL: 8000007c: f91ff0ef jal	8000000c <uart_putc>
 SD
