@@ -49,7 +49,7 @@ Matched C.BNEZ instruction 0xFBFD
 Matched C.BNEZ instruction 0xFFE5
 Matched C.EBREAK instruction 0x9002
 Matched C.FLD instruction 0x239C: uimm=0, rs1=15, rd=15
-Matched C.FLDSP instruction 0x2022: uimm=8, rd=8
+Matched C.FLDSP instruction 0x2022: uimm=8, rd=0
 Matched C.FSD instruction 0xA388: uimm=0, rs1=15, rs2=10
 Matched C.FSD instruction 0xA79C: uimm=8, rs1=15, rs2=15
 Matched C.FSDSP instruction 0xA43E: uimm=8, rs2=15
@@ -139,10 +139,10 @@ Matched C.LI instruction 0x4981: imm=0, rd=19
 Matched C.LI instruction 0x4B01: imm=0, rd=22
 Matched C.LI instruction 0x4C01: imm=0, rd=24
 Matched C.LI instruction 0x4D01: imm=0, rd=26
-Matched C.LUI instruction 0x6785: nzimm=4096, rd=23
-Matched C.LUI instruction 0x67C9: nzimm=8192, rd=23
+Matched C.LUI instruction 0x6785: nzimm=4096, rd=15
+Matched C.LUI instruction 0x67C9: nzimm=8192, rd=15
 Matched C.LW instruction 0x4000: uimm=0, rs1=8, rd=8
-Matched C.LWSP instruction 0x4792: uimm=4, rd=23
+Matched C.LWSP instruction 0x4792: uimm=4, rd=15
 Matched C.MV instruction 0x833A: rd=6, rs2=14
 Matched C.MV instruction 0x836A: rd=6, rs2=26
 Matched C.MV instruction 0x8376: rd=6, rs2=29

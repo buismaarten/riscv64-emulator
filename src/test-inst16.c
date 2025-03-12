@@ -474,7 +474,7 @@ void test_inst16() {
 
         if (OP_C_FLDSP(inst)) {
             uint16_t uimm = 0;
-            uint16_t rd = 8 + EXTRACT_BITS(inst, 11, 7);
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
 
             uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
             uimm |= EXTRACT_BITS(inst, 6, 5) << 3;   // Bit 4-3
@@ -595,7 +595,7 @@ void test_inst16() {
 
         if (OP_C_LUI(inst)) {
             int16_t nzimm = 0;
-            uint16_t rd = 8 + EXTRACT_BITS(inst, 11, 7);
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
 
             nzimm |= EXTRACT_BITS(inst, 12, 12) << 17; // Bit 17
             nzimm |= EXTRACT_BITS(inst, 6, 2) << 12;   // Bit 16-12
@@ -622,7 +622,7 @@ void test_inst16() {
 
         if (OP_C_LWSP(inst)) {
             uint16_t uimm = 0;
-            uint16_t rd = 8 + EXTRACT_BITS(inst, 11, 7);
+            uint16_t rd = EXTRACT_BITS(inst, 11, 7);
 
             uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
             uimm |= EXTRACT_BITS(inst, 6, 4) << 2;   // Bit 4-2
