@@ -139,7 +139,8 @@ Matched C.LI instruction 0x4981: imm=0, rd=19
 Matched C.LI instruction 0x4B01: imm=0, rd=22
 Matched C.LI instruction 0x4C01: imm=0, rd=24
 Matched C.LI instruction 0x4D01: imm=0, rd=26
-Matched C.LUI instruction 0x67C9
+Matched C.LUI instruction 0x6785: nzimm=4096, rd=23
+Matched C.LUI instruction 0x67C9: nzimm=8192, rd=23
 Matched C.LW instruction 0x4000: uimm=0, rs1=8, rd=8
 Matched C.LWSP instruction 0x4792: uimm=4, rd=23
 Matched C.MV instruction 0x833A: rd=6, rs2=14

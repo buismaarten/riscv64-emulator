@@ -145,6 +145,7 @@ static uint16_t program16[] = {
     /* C.LI */       0x4B01,
     /* C.LI */       0x4C01,
     /* C.LI */       0x4D01,
+    /* C.LUI */      0x6785,
     /* C.LUI */      0x67C9,
     /* C.LW */       0x4000,
     /* C.LWSP */     0x4792,
@@ -593,10 +594,17 @@ void test_inst16() {
         }
 
         if (OP_C_LUI(inst)) {
-            // TODO
+            int16_t nzimm = 0;
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched C.LUI instruction 0x%04X\n", inst);
-            count++;
+            nzimm |= EXTRACT_BITS(inst, 12, 12) << 17; // Bit 17
+            nzimm |= EXTRACT_BITS(inst, 6, 2) << 12;   // Bit 16-12
+            nzimm = sign_extend_16(nzimm, 6);
+
+            if (nzimm != 0 && rd != 0 && rd != 2) {
+                printf("Matched C.LUI instruction 0x%04X: nzimm=%d, rd=%u\n", inst, nzimm, rd);
+                count++;
+            }
         }
 
         if (OP_C_LW(inst)) {
