@@ -393,9 +393,16 @@ void test_inst16() {
         }
 
         if (OP_C_ADDI16SP(inst)) {
-            // TODO
+            int16_t imm = 0;
 
-            printf("Matched C.ADDI16SP instruction 0x%04X\n", inst);
+            imm |= EXTRACT_BITS(inst, 12, 12) << 9; // Bit 9
+            imm |= EXTRACT_BITS(inst, 6, 6) << 4;   // Bit 4
+            imm |= EXTRACT_BITS(inst, 5, 5) << 6;   // Bit 6
+            imm |= EXTRACT_BITS(inst, 4, 3) << 7;   // Bit 8-7
+            imm |= EXTRACT_BITS(inst, 2, 2) << 5;   // Bit 5
+            imm = sign_extend_16(imm, 6);
+
+            printf("Matched C.ADDI16SP instruction 0x%04X: imm=%d\n", inst, imm);
             count++;
         }
 

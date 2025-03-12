@@ -5,11 +5,11 @@ Matched C.ADDI instruction 0x0505: nzimm=1, rd=10
 Matched C.ADDI instruction 0x0705: nzimm=1, rd=14
 Matched C.ADDI instruction 0x1101: nzimm=-32, rd=2
 Matched C.ADDI instruction 0x1141: nzimm=-16, rd=2
-Matched C.ADDI16SP instruction 0x6151
-Matched C.ADDI16SP instruction 0x716D
-Matched C.ADDI16SP instruction 0x6105
-Matched C.ADDI16SP instruction 0x6145
-Matched C.ADDI16SP instruction 0x7179
+Matched C.ADDI16SP instruction 0x6151: imm=272
+Matched C.ADDI16SP instruction 0x716D: imm=-16
+Matched C.ADDI16SP instruction 0x6105: imm=-32
+Matched C.ADDI16SP instruction 0x6145: imm=-16
+Matched C.ADDI16SP instruction 0x7179: imm=976
 Matched C.ADDI4SPN instruction 0x0800: nzuimm=16, rd=8
 Matched C.ADDI4SPN instruction 0x1000: nzuimm=32, rd=8
 Matched C.ADDI4SPN instruction 0x1800: nzuimm=48, rd=8
