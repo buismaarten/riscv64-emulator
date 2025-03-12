@@ -472,9 +472,14 @@ void test_inst16() {
         }
 
         if (OP_C_FLDSP(inst)) {
-            // TODO
+            uint16_t uimm = 0;
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched C.FLDSP instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            uimm |= EXTRACT_BITS(inst, 6, 5) << 3;   // Bit 4-3
+            uimm |= EXTRACT_BITS(inst, 4, 2) << 6;   // Bit 8-6
+
+            printf("Matched C.FLDSP instruction 0x%04X: uimm=%u, rd=%u\n", inst, uimm, rd);
             count++;
         }
 

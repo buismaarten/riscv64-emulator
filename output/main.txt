@@ -49,7 +49,7 @@ Matched C.BNEZ instruction 0xFBFD
 Matched C.BNEZ instruction 0xFFE5
 Matched C.EBREAK instruction 0x9002
 Matched C.FLD instruction 0x239C: uimm=0, rs1=15, rd=15
-Matched C.FLDSP instruction 0x2022
+Matched C.FLDSP instruction 0x2022: uimm=8, rd=8
 Matched C.FSD instruction 0xA388: uimm=0, rs1=15, rs2=10
 Matched C.FSD instruction 0xA79C: uimm=8, rs1=15, rs2=15
 Matched C.FSDSP instruction 0xA43E: uimm=8, rs2=15
