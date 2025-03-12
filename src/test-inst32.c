@@ -1024,10 +1024,9 @@ void test_inst32() {
         }
 
         if (OP_AUIPC(inst)) {
-            int32_t imm = EXTRACT_BITS(inst, 31, 12);
+            int32_t imm = EXTRACT_BITS(inst, 31, 12) << 12; // Bit 31-12
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            imm <<= 12;
             imm = sign_extend_32(imm, 20);
 
             printf("Matched AUIPC instruction 0x%08X: imm=%d, rd=%u\n", inst, imm, rd);
@@ -1927,10 +1926,9 @@ void test_inst32() {
         }
 
         if (OP_LUI(inst)) {
-            int32_t imm = EXTRACT_BITS(inst, 31, 12);
+            int32_t imm = EXTRACT_BITS(inst, 31, 12) << 12; // Bit 31-12
             uint32_t rd = EXTRACT_BITS(inst, 11, 7);
 
-            imm <<= 12;
             imm = sign_extend_32(imm, 20);
 
             printf("Matched LUI instruction 0x%08X: imm=%d, rd=%u\n", inst, imm, rd);
