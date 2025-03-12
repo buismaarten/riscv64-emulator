@@ -38,15 +38,15 @@ Matched C.ADDW instruction 0x9FA9: rd=15, rs2=10
 Matched C.ADDW instruction 0x9FB9: rd=15, rs2=14
 Matched C.AND instruction 0x8FF9: rd=15, rs2=14
 Matched C.ANDI instruction 0x8A25: imm=9, rd=12
-Matched C.BEQZ instruction 0xC001: offset=0, rs1=8
-Matched C.BEQZ instruction 0xC791: offset=12, rs1=15
-Matched C.BEQZ instruction 0xCB89: offset=18, rs1=15
-Matched C.BNEZ instruction 0xE001: offset=0, rs1=8
-Matched C.BNEZ instruction 0xE119: offset=6, rs1=10
-Matched C.BNEZ instruction 0xE399: offset=6, rs1=15
-Matched C.BNEZ instruction 0xF3ED: offset=-30, rs1=15
-Matched C.BNEZ instruction 0xFBFD: offset=-10, rs1=15
-Matched C.BNEZ instruction 0xFFE5: offset=-8, rs1=15
+Matched C.BEQZ instruction 0xC001: imm=0, rs1=8
+Matched C.BEQZ instruction 0xC791: imm=12, rs1=15
+Matched C.BEQZ instruction 0xCB89: imm=18, rs1=15
+Matched C.BNEZ instruction 0xE001: imm=0, rs1=8
+Matched C.BNEZ instruction 0xE119: imm=6, rs1=10
+Matched C.BNEZ instruction 0xE399: imm=6, rs1=15
+Matched C.BNEZ instruction 0xF3ED: imm=-30, rs1=15
+Matched C.BNEZ instruction 0xFBFD: imm=-10, rs1=15
+Matched C.BNEZ instruction 0xFFE5: imm=-8, rs1=15
 Matched C.EBREAK instruction 0x9002
 Matched C.FLD instruction 0x239C: uimm=0, rs1=15, rd=15
 Matched C.FLDSP instruction 0x2022: uimm=8, rd=0
@@ -646,104 +646,104 @@ Matched ANDI instruction 0xFFEE7513: imm=-2, rs1=28, rd=10
 Matched AUIPC instruction 0x00000517: imm=0, rd=10
 Matched AUIPC instruction 0x00000717: imm=0, rd=14
 Matched AUIPC instruction 0x00010117: imm=65536, rd=2
-Matched BEQ instruction 0x00078863: offset=16, rs2=0, rs1=15
-Matched BEQ instruction 0x00078A63: offset=20, rs2=0, rs1=15
-Matched BEQ instruction 0x00078E63: offset=28, rs2=0, rs1=15
-Matched BEQ instruction 0x00E78663: offset=12, rs2=14, rs1=15
-Matched BEQ instruction 0x06C30A63: offset=116, rs2=12, rs1=6
-Matched BEQ instruction 0x06C58A63: offset=116, rs2=12, rs1=11
-Matched BEQ instruction 0x0AC30E63: offset=188, rs2=12, rs1=6
-Matched BEQ instruction 0x0AC58E63: offset=188, rs2=12, rs1=11
-Matched BEQ instruction 0x0DE70763: offset=206, rs2=30, rs1=14
-Matched BEQ instruction 0x0DE78763: offset=206, rs2=30, rs1=15
-Matched BEQ instruction 0x10BC8E63: offset=284, rs2=11, rs1=25
-Matched BEQ instruction 0x11850E63: offset=284, rs2=24, rs1=10
-Matched BEQ instruction 0x11F78663: offset=268, rs2=31, rs1=15
-Matched BEQ instruction 0x13F68363: offset=294, rs2=31, rs1=13
-Matched BEQ instruction 0x15E70A63: offset=340, rs2=30, rs1=14
-Matched BEQ instruction 0x15E78A63: offset=340, rs2=30, rs1=15
-Matched BEQ instruction 0x16968863: offset=368, rs2=9, rs1=13
-Matched BEQ instruction 0x16FD0463: offset=360, rs2=15, rs1=26
-Matched BEQ instruction 0x19F78E63: offset=412, rs2=31, rs1=15
-Matched BEQ instruction 0x1A978863: offset=432, rs2=9, rs1=15
-Matched BEQ instruction 0x1AEB0263: offset=420, rs2=14, rs1=22
-Matched BEQ instruction 0x1CBC8063: offset=448, rs2=11, rs1=25
-Matched BEQ instruction 0x1D5A0A63: offset=468, rs2=21, rs1=20
-Matched BEQ instruction 0x1D850063: offset=448, rs2=24, rs1=10
-Matched BEQ instruction 0x1DF68663: offset=460, rs2=31, rs1=13
-Matched BEQ instruction 0x1F3A8863: offset=496, rs2=19, rs1=21
-Matched BEQ instruction 0x22968C63: offset=568, rs2=9, rs1=13
-Matched BEQ instruction 0x22990663: offset=556, rs2=9, rs1=18
-Matched BEQ instruction 0x22FD0463: offset=552, rs2=15, rs1=26
-Matched BEQ instruction 0x25B40663: offset=588, rs2=27, rs1=8
-Matched BEQ instruction 0x28850063: offset=640, rs2=8, rs1=10
-Matched BEQ instruction 0x28EB0663: offset=652, rs2=14, rs1=22
-Matched BEQ instruction 0x2A950263: offset=676, rs2=9, rs1=10
-Matched BEQ instruction 0x2A978263: offset=676, rs2=9, rs1=15
-Matched BEQ instruction 0x2D5A0863: offset=720, rs2=21, rs1=20
-Matched BEQ instruction 0x313A8263: offset=772, rs2=19, rs1=21
-Matched BEQ instruction 0x34990A63: offset=852, rs2=9, rs1=18
-Matched BEQ instruction 0x39B40863: offset=912, rs2=27, rs1=8
-Matched BEQ instruction 0x3C850A63: offset=980, rs2=8, rs1=10
-Matched BEQ instruction 0x40950C63: offset=1048, rs2=9, rs1=10
-Matched BEQ instruction 0xFACC06E3: offset=-84, rs2=12, rs1=24
-Matched BEQ instruction 0xFACD88E3: offset=-80, rs2=12, rs1=27
-Matched BEQ instruction 0xFCCC08E3: offset=-48, rs2=12, rs1=24
-Matched BEQ instruction 0xFCCD89E3: offset=-46, rs2=12, rs1=27
-Matched BGE instruction 0x00895963: offset=18, rs2=8, rs1=18
-Matched BGE instruction 0x00895C63: offset=24, rs2=8, rs1=18
-Matched BGE instruction 0x2AA75B63: offset=694, rs2=10, rs1=14
-Matched BGE instruction 0x2CA75D63: offset=730, rs2=10, rs1=14
-Matched BGE instruction 0x42A75663: offset=1068, rs2=10, rs1=14
-Matched BGE instruction 0x46A75863: offset=1136, rs2=10, rs1=14
-Matched BGEU instruction 0x00B57463: offset=8, rs2=11, rs1=10
-Matched BLT instruction 0x00A7C763: offset=14, rs2=10, rs1=15
-Matched BLT instruction 0x00A7CC63: offset=24, rs2=10, rs1=15
-Matched BLT instruction 0x00E7C563: offset=10, rs2=14, rs1=15
-Matched BLT instruction 0x00E7C663: offset=12, rs2=14, rs1=15
-Matched BLTU instruction 0x00B56463: offset=8, rs2=11, rs1=10
-Matched BNE instruction 0x00051663: offset=12, rs2=0, rs1=10
-Matched BNE instruction 0x00079463: offset=8, rs2=0, rs1=15
-Matched BNE instruction 0x00079663: offset=12, rs2=0, rs1=15
-Matched BNE instruction 0x02CC1C63: offset=56, rs2=12, rs1=24
-Matched BNE instruction 0x02CD9B63: offset=54, rs2=12, rs1=27
-Matched BNE instruction 0x04CC1E63: offset=92, rs2=12, rs1=24
-Matched BNE instruction 0x04CD9C63: offset=88, rs2=12, rs1=27
-Matched BNE instruction 0xBE9518E3: offset=-1040, rs2=9, rs1=10
-Matched BNE instruction 0xC2851AE3: offset=-972, rs2=8, rs1=10
-Matched BNE instruction 0xCCC414E3: offset=-824, rs2=12, rs1=8
-Matched BNE instruction 0xD0C910E3: offset=-768, rs2=12, rs1=18
-Matched BNE instruction 0xD0CA96E3: offset=-756, rs2=12, rs1=21
-Matched BNE instruction 0xD2CA9EE3: offset=-708, rs2=12, rs1=21
-Matched BNE instruction 0xD69512E3: offset=-668, rs2=9, rs1=10
-Matched BNE instruction 0xD88514E3: offset=-632, rs2=8, rs1=10
-Matched BNE instruction 0xDAC716E3: offset=-596, rs2=12, rs1=14
-Matched BNE instruction 0xDAC792E3: offset=-604, rs2=12, rs1=15
-Matched BNE instruction 0xDEC414E3: offset=-536, rs2=12, rs1=8
-Matched BNE instruction 0xE0C913E3: offset=-506, rs2=12, rs1=18
-Matched BNE instruction 0xE0C91AE3: offset=-492, rs2=12, rs1=18
-Matched BNE instruction 0xE0C99AE3: offset=-492, rs2=12, rs1=19
-Matched BNE instruction 0xE0CA9DE3: offset=-486, rs2=12, rs1=21
-Matched BNE instruction 0xE2CA9AE3: offset=-460, rs2=12, rs1=21
-Matched BNE instruction 0xE4C416E3: offset=-436, rs2=12, rs1=8
-Matched BNE instruction 0xE4CD96E3: offset=-436, rs2=12, rs1=27
-Matched BNE instruction 0xE6C71EE3: offset=-388, rs2=12, rs1=14
-Matched BNE instruction 0xE6C79CE3: offset=-392, rs2=12, rs1=15
-Matched BNE instruction 0xEAC91FE3: offset=-322, rs2=12, rs1=18
-Matched BNE instruction 0xEAC99EE3: offset=-324, rs2=12, rs1=19
-Matched BNE instruction 0xEBE71AE3: offset=-332, rs2=30, rs1=14
-Matched BNE instruction 0xEBE79AE3: offset=-332, rs2=30, rs1=15
-Matched BNE instruction 0xEEC417E3: offset=-274, rs2=12, rs1=8
-Matched BNE instruction 0xEECD97E3: offset=-274, rs2=12, rs1=27
-Matched BNE instruction 0xF3E71DE3: offset=-198, rs2=30, rs1=14
-Matched BNE instruction 0xF3E79DE3: offset=-198, rs2=30, rs1=15
-Matched BNE instruction 0xF4C494E3: offset=-184, rs2=12, rs1=9
-Matched BNE instruction 0xF8C498E3: offset=-112, rs2=12, rs1=9
-Matched BNE instruction 0xF93412E3: offset=-124, rs2=19, rs1=8
-Matched BNE instruction 0xFB341FE3: offset=-66, rs2=19, rs1=8
-Matched BNE instruction 0xFE0790E3: offset=-32, rs2=0, rs1=15
-Matched BNE instruction 0xFE0798E3: offset=-16, rs2=0, rs1=15
-Matched BNE instruction 0xFE079AE3: offset=-12, rs2=0, rs1=15
+Matched BEQ instruction 0x00078863: imm=16, rs2=0, rs1=15
+Matched BEQ instruction 0x00078A63: imm=20, rs2=0, rs1=15
+Matched BEQ instruction 0x00078E63: imm=28, rs2=0, rs1=15
+Matched BEQ instruction 0x00E78663: imm=12, rs2=14, rs1=15
+Matched BEQ instruction 0x06C30A63: imm=116, rs2=12, rs1=6
+Matched BEQ instruction 0x06C58A63: imm=116, rs2=12, rs1=11
+Matched BEQ instruction 0x0AC30E63: imm=188, rs2=12, rs1=6
+Matched BEQ instruction 0x0AC58E63: imm=188, rs2=12, rs1=11
+Matched BEQ instruction 0x0DE70763: imm=206, rs2=30, rs1=14
+Matched BEQ instruction 0x0DE78763: imm=206, rs2=30, rs1=15
+Matched BEQ instruction 0x10BC8E63: imm=284, rs2=11, rs1=25
+Matched BEQ instruction 0x11850E63: imm=284, rs2=24, rs1=10
+Matched BEQ instruction 0x11F78663: imm=268, rs2=31, rs1=15
+Matched BEQ instruction 0x13F68363: imm=294, rs2=31, rs1=13
+Matched BEQ instruction 0x15E70A63: imm=340, rs2=30, rs1=14
+Matched BEQ instruction 0x15E78A63: imm=340, rs2=30, rs1=15
+Matched BEQ instruction 0x16968863: imm=368, rs2=9, rs1=13
+Matched BEQ instruction 0x16FD0463: imm=360, rs2=15, rs1=26
+Matched BEQ instruction 0x19F78E63: imm=412, rs2=31, rs1=15
+Matched BEQ instruction 0x1A978863: imm=432, rs2=9, rs1=15
+Matched BEQ instruction 0x1AEB0263: imm=420, rs2=14, rs1=22
+Matched BEQ instruction 0x1CBC8063: imm=448, rs2=11, rs1=25
+Matched BEQ instruction 0x1D5A0A63: imm=468, rs2=21, rs1=20
+Matched BEQ instruction 0x1D850063: imm=448, rs2=24, rs1=10
+Matched BEQ instruction 0x1DF68663: imm=460, rs2=31, rs1=13
+Matched BEQ instruction 0x1F3A8863: imm=496, rs2=19, rs1=21
+Matched BEQ instruction 0x22968C63: imm=568, rs2=9, rs1=13
+Matched BEQ instruction 0x22990663: imm=556, rs2=9, rs1=18
+Matched BEQ instruction 0x22FD0463: imm=552, rs2=15, rs1=26
+Matched BEQ instruction 0x25B40663: imm=588, rs2=27, rs1=8
+Matched BEQ instruction 0x28850063: imm=640, rs2=8, rs1=10
+Matched BEQ instruction 0x28EB0663: imm=652, rs2=14, rs1=22
+Matched BEQ instruction 0x2A950263: imm=676, rs2=9, rs1=10
+Matched BEQ instruction 0x2A978263: imm=676, rs2=9, rs1=15
+Matched BEQ instruction 0x2D5A0863: imm=720, rs2=21, rs1=20
+Matched BEQ instruction 0x313A8263: imm=772, rs2=19, rs1=21
+Matched BEQ instruction 0x34990A63: imm=852, rs2=9, rs1=18
+Matched BEQ instruction 0x39B40863: imm=912, rs2=27, rs1=8
+Matched BEQ instruction 0x3C850A63: imm=980, rs2=8, rs1=10
+Matched BEQ instruction 0x40950C63: imm=1048, rs2=9, rs1=10
+Matched BEQ instruction 0xFACC06E3: imm=-84, rs2=12, rs1=24
+Matched BEQ instruction 0xFACD88E3: imm=-80, rs2=12, rs1=27
+Matched BEQ instruction 0xFCCC08E3: imm=-48, rs2=12, rs1=24
+Matched BEQ instruction 0xFCCD89E3: imm=-46, rs2=12, rs1=27
+Matched BGE instruction 0x00895963: imm=18, rs2=8, rs1=18
+Matched BGE instruction 0x00895C63: imm=24, rs2=8, rs1=18
+Matched BGE instruction 0x2AA75B63: imm=694, rs2=10, rs1=14
+Matched BGE instruction 0x2CA75D63: imm=730, rs2=10, rs1=14
+Matched BGE instruction 0x42A75663: imm=1068, rs2=10, rs1=14
+Matched BGE instruction 0x46A75863: imm=1136, rs2=10, rs1=14
+Matched BGEU instruction 0x00B57463: imm=8, rs2=11, rs1=10
+Matched BLT instruction 0x00A7C763: imm=14, rs2=10, rs1=15
+Matched BLT instruction 0x00A7CC63: imm=24, rs2=10, rs1=15
+Matched BLT instruction 0x00E7C563: imm=10, rs2=14, rs1=15
+Matched BLT instruction 0x00E7C663: imm=12, rs2=14, rs1=15
+Matched BLTU instruction 0x00B56463: imm=8, rs2=11, rs1=10
+Matched BNE instruction 0x00051663: imm=12, rs2=0, rs1=10
+Matched BNE instruction 0x00079463: imm=8, rs2=0, rs1=15
+Matched BNE instruction 0x00079663: imm=12, rs2=0, rs1=15
+Matched BNE instruction 0x02CC1C63: imm=56, rs2=12, rs1=24
+Matched BNE instruction 0x02CD9B63: imm=54, rs2=12, rs1=27
+Matched BNE instruction 0x04CC1E63: imm=92, rs2=12, rs1=24
+Matched BNE instruction 0x04CD9C63: imm=88, rs2=12, rs1=27
+Matched BNE instruction 0xBE9518E3: imm=-1040, rs2=9, rs1=10
+Matched BNE instruction 0xC2851AE3: imm=-972, rs2=8, rs1=10
+Matched BNE instruction 0xCCC414E3: imm=-824, rs2=12, rs1=8
+Matched BNE instruction 0xD0C910E3: imm=-768, rs2=12, rs1=18
+Matched BNE instruction 0xD0CA96E3: imm=-756, rs2=12, rs1=21
+Matched BNE instruction 0xD2CA9EE3: imm=-708, rs2=12, rs1=21
+Matched BNE instruction 0xD69512E3: imm=-668, rs2=9, rs1=10
+Matched BNE instruction 0xD88514E3: imm=-632, rs2=8, rs1=10
+Matched BNE instruction 0xDAC716E3: imm=-596, rs2=12, rs1=14
+Matched BNE instruction 0xDAC792E3: imm=-604, rs2=12, rs1=15
+Matched BNE instruction 0xDEC414E3: imm=-536, rs2=12, rs1=8
+Matched BNE instruction 0xE0C913E3: imm=-506, rs2=12, rs1=18
+Matched BNE instruction 0xE0C91AE3: imm=-492, rs2=12, rs1=18
+Matched BNE instruction 0xE0C99AE3: imm=-492, rs2=12, rs1=19
+Matched BNE instruction 0xE0CA9DE3: imm=-486, rs2=12, rs1=21
+Matched BNE instruction 0xE2CA9AE3: imm=-460, rs2=12, rs1=21
+Matched BNE instruction 0xE4C416E3: imm=-436, rs2=12, rs1=8
+Matched BNE instruction 0xE4CD96E3: imm=-436, rs2=12, rs1=27
+Matched BNE instruction 0xE6C71EE3: imm=-388, rs2=12, rs1=14
+Matched BNE instruction 0xE6C79CE3: imm=-392, rs2=12, rs1=15
+Matched BNE instruction 0xEAC91FE3: imm=-322, rs2=12, rs1=18
+Matched BNE instruction 0xEAC99EE3: imm=-324, rs2=12, rs1=19
+Matched BNE instruction 0xEBE71AE3: imm=-332, rs2=30, rs1=14
+Matched BNE instruction 0xEBE79AE3: imm=-332, rs2=30, rs1=15
+Matched BNE instruction 0xEEC417E3: imm=-274, rs2=12, rs1=8
+Matched BNE instruction 0xEECD97E3: imm=-274, rs2=12, rs1=27
+Matched BNE instruction 0xF3E71DE3: imm=-198, rs2=30, rs1=14
+Matched BNE instruction 0xF3E79DE3: imm=-198, rs2=30, rs1=15
+Matched BNE instruction 0xF4C494E3: imm=-184, rs2=12, rs1=9
+Matched BNE instruction 0xF8C498E3: imm=-112, rs2=12, rs1=9
+Matched BNE instruction 0xF93412E3: imm=-124, rs2=19, rs1=8
+Matched BNE instruction 0xFB341FE3: imm=-66, rs2=19, rs1=8
+Matched BNE instruction 0xFE0790E3: imm=-32, rs2=0, rs1=15
+Matched BNE instruction 0xFE0798E3: imm=-16, rs2=0, rs1=15
+Matched BNE instruction 0xFE079AE3: imm=-12, rs2=0, rs1=15
 Matched CSRRC instruction 0x3002B373: csr=768, rs1=5, rd=6
 Matched CSRRCI instruction 0x30047373: csr=768, rs1=8, rd=6
 Matched CSRRS instruction 0x3002A373: csr=768, rs1=5, rd=6
@@ -808,7 +808,7 @@ Matched FNMADD.D instruction 0x0A10F3CF: rs3=1, rs2=1, rs1=1, rm=7, rd=7
 Matched FNMADD.S instruction 0x0000734F: rs3=0, rs2=0, rs1=0, rm=7, rd=6
 Matched FNMSUB.D instruction 0x0A10FECB: rs3=1, rs2=1, rs1=1, rm=7, rd=29
 Matched FNMSUB.S instruction 0x00007E4B: rs3=0, rs2=0, rs1=0, rm=7, rd=28
-Matched FSD instruction 0x00F7B027: offset=0, rs2=15, rs1=15
+Matched FSD instruction 0x00F7B027: imm=0, rs2=15, rs1=15
 Matched FSGNJ.D instruction 0x22310E53: rs2=3, rs1=2, rd=28
 Matched FSGNJ.S instruction 0x20520ED3: rs2=5, rs1=4, rd=29
 Matched FSGNJN.D instruction 0x22311F53: rs2=3, rs1=2, rd=30
@@ -819,144 +819,144 @@ Matched FSQRT.D instruction 0x5A00FFD3: rs1=1, rm=7, rd=31
 Matched FSQRT.S instruction 0x58007F53: rs1=0, rm=7, rd=30
 Matched FSUB.D instruction 0x0A10F0D3: rs2=1, rs1=1, rm=7, rd=1
 Matched FSUB.S instruction 0x08007053: rs2=0, rs1=0, rm=7, rd=0
-Matched FSW instruction 0x00F7A027: offset=0, rs2=15, rs1=15
-Matched JAL instruction 0x0080006F: offset=8, rd=0
-Matched JAL instruction 0x00C0006F: offset=12, rd=0
-Matched JAL instruction 0x0100006F: offset=16, rd=0
-Matched JAL instruction 0x0140006F: offset=20, rd=0
-Matched JAL instruction 0x0160006F: offset=22, rd=0
-Matched JAL instruction 0x01C0006F: offset=28, rd=0
-Matched JAL instruction 0x0200006F: offset=32, rd=0
-Matched JAL instruction 0x0240006F: offset=36, rd=0
-Matched JAL instruction 0x0280006F: offset=40, rd=0
-Matched JAL instruction 0x0300006F: offset=48, rd=0
-Matched JAL instruction 0x0320006F: offset=50, rd=0
-Matched JAL instruction 0x0340006F: offset=52, rd=0
-Matched JAL instruction 0x0360006F: offset=54, rd=0
-Matched JAL instruction 0x0380006F: offset=56, rd=0
-Matched JAL instruction 0x03C0006F: offset=60, rd=0
-Matched JAL instruction 0x0400006F: offset=64, rd=0
-Matched JAL instruction 0x0420006F: offset=66, rd=0
-Matched JAL instruction 0x0480006F: offset=72, rd=0
-Matched JAL instruction 0x0500006F: offset=80, rd=0
-Matched JAL instruction 0x0540006F: offset=84, rd=0
-Matched JAL instruction 0x0580006F: offset=88, rd=0
-Matched JAL instruction 0x05A0006F: offset=90, rd=0
-Matched JAL instruction 0x0680006F: offset=104, rd=0
-Matched JAL instruction 0x06C0006F: offset=108, rd=0
-Matched JAL instruction 0x08C0006F: offset=140, rd=0
-Matched JAL instruction 0x09C0006F: offset=156, rd=0
-Matched JAL instruction 0x2CA0006F: offset=714, rd=0
-Matched JAL instruction 0x2EE0006F: offset=750, rd=0
-Matched JAL instruction 0x44C0006F: offset=1100, rd=0
-Matched JAL instruction 0x4900006F: offset=1168, rd=0
-Matched JAL instruction 0xB59FF0EF: offset=-1192, rd=1
-Matched JAL instruction 0xB61FF0EF: offset=-1184, rd=1
-Matched JAL instruction 0xB69FF0EF: offset=-1176, rd=1
-Matched JAL instruction 0xBADFF0EF: offset=-1108, rd=1
-Matched JAL instruction 0xD05FF0EF: offset=-764, rd=1
-Matched JAL instruction 0xD0BFF0EF: offset=-758, rd=1
-Matched JAL instruction 0xD11FF0EF: offset=-752, rd=1
-Matched JAL instruction 0xD35FF0EF: offset=-716, rd=1
-Matched JAL instruction 0xDF5FF0EF: offset=-524, rd=1
-Matched JAL instruction 0xE09FF0EF: offset=-504, rd=1
-Matched JAL instruction 0xE49FF06F: offset=-440, rd=0
-Matched JAL instruction 0xE79FF06F: offset=-392, rd=0
-Matched JAL instruction 0xEABFF0EF: offset=-342, rd=1
-Matched JAL instruction 0xEB5FF0EF: offset=-332, rd=1
-Matched JAL instruction 0xF65FF0EF: offset=-156, rd=1
-Matched JAL instruction 0xF85FF0EF: offset=-124, rd=1
-Matched JAL instruction 0xF89FF0EF: offset=-120, rd=1
-Matched JAL instruction 0xF91FF0EF: offset=-112, rd=1
-Matched JAL instruction 0xF95FF0EF: offset=-108, rd=1
-Matched JAL instruction 0xFA1FF0EF: offset=-96, rd=1
-Matched JAL instruction 0xFA5FF0EF: offset=-92, rd=1
-Matched JAL instruction 0xFB3FF0EF: offset=-78, rd=1
-Matched JAL instruction 0xFB5FF06F: offset=-76, rd=0
-Matched JAL instruction 0xFB7FF0EF: offset=-74, rd=1
-Matched JAL instruction 0xFB9FF0EF: offset=-72, rd=1
-Matched JAL instruction 0xFBDFF0EF: offset=-68, rd=1
-Matched JAL instruction 0xFC1FF0EF: offset=-64, rd=1
-Matched JAL instruction 0xFC5FF06F: offset=-60, rd=0
-Matched JAL instruction 0xFC5FF0EF: offset=-60, rd=1
-Matched JAL instruction 0xFC9FF0EF: offset=-56, rd=1
-Matched JAL instruction 0xFCDFF06F: offset=-52, rd=0
-Matched JAL instruction 0xFCDFF0EF: offset=-52, rd=1
-Matched JAL instruction 0xFD1FF0EF: offset=-48, rd=1
-Matched JAL instruction 0xFD3FF0EF: offset=-46, rd=1
-Matched JAL instruction 0xFD9FF0EF: offset=-40, rd=1
-Matched JAL instruction 0xFDBFF0EF: offset=-38, rd=1
-Matched JAL instruction 0xFDDFF0EF: offset=-36, rd=1
-Matched JAL instruction 0xFE1FF0EF: offset=-32, rd=1
-Matched JAL instruction 0xFE5FF0EF: offset=-28, rd=1
-Matched JAL instruction 0xFE9FF06F: offset=-24, rd=0
-Matched JAL instruction 0xFE9FF0EF: offset=-24, rd=1
-Matched JAL instruction 0xFEDFF06F: offset=-20, rd=0
-Matched JAL instruction 0xFF1FF0EF: offset=-16, rd=1
-Matched JAL instruction 0xFF5FF06F: offset=-12, rd=0
-Matched JALR instruction 0x00008067: offset=0, rs1=1, rd=0
-Matched LB instruction 0x00050603: offset=0, rs1=10, rd=12
-Matched LBU instruction 0x00054783: offset=0, rs1=10, rd=15
-Matched LBU instruction 0x0007C783: offset=0, rs1=15, rd=15
-Matched LBU instruction 0x00154783: offset=1, rs1=10, rd=15
-Matched LBU instruction 0x00174783: offset=1, rs1=14, rd=15
-Matched LBU instruction 0xFDF44783: offset=-33, rs1=8, rd=15
-Matched LD instruction 0x00013403: offset=0, rs1=2, rd=8
-Matched LD instruction 0x00013903: offset=0, rs1=2, rd=18
-Matched LD instruction 0x00813083: offset=8, rs1=2, rd=1
-Matched LD instruction 0x00813483: offset=8, rs1=2, rd=9
-Matched LD instruction 0x00813703: offset=8, rs1=2, rd=14
-Matched LD instruction 0x00813783: offset=8, rs1=2, rd=15
-Matched LD instruction 0x01013403: offset=16, rs1=2, rd=8
-Matched LD instruction 0x01013703: offset=16, rs1=2, rd=14
-Matched LD instruction 0x01013783: offset=16, rs1=2, rd=15
-Matched LD instruction 0x01813083: offset=24, rs1=2, rd=1
-Matched LD instruction 0x01813383: offset=24, rs1=2, rd=7
-Matched LD instruction 0x01813483: offset=24, rs1=2, rd=9
-Matched LD instruction 0x02013403: offset=32, rs1=2, rd=8
-Matched LD instruction 0x02013E83: offset=32, rs1=2, rd=29
-Matched LD instruction 0x02813083: offset=40, rs1=2, rd=1
-Matched LD instruction 0x02813803: offset=40, rs1=2, rd=16
-Matched LD instruction 0x02813883: offset=40, rs1=2, rd=17
-Matched LD instruction 0x03013583: offset=48, rs1=2, rd=11
-Matched LD instruction 0x03013803: offset=48, rs1=2, rd=16
-Matched LD instruction 0x03813283: offset=56, rs1=2, rd=5
-Matched LD instruction 0x04013703: offset=64, rs1=2, rd=14
-Matched LD instruction 0x04013783: offset=64, rs1=2, rd=15
-Matched LD instruction 0x04813F03: offset=72, rs1=2, rd=30
-Matched LD instruction 0x05013303: offset=80, rs1=2, rd=6
-Matched LD instruction 0x05013E03: offset=80, rs1=2, rd=28
-Matched LD instruction 0x05813303: offset=88, rs1=2, rd=6
-Matched LD instruction 0x05813583: offset=88, rs1=2, rd=11
-Matched LD instruction 0x06013683: offset=96, rs1=2, rd=13
-Matched LD instruction 0x06013703: offset=96, rs1=2, rd=14
-Matched LD instruction 0x06813683: offset=104, rs1=2, rd=13
-Matched LD instruction 0x06813783: offset=104, rs1=2, rd=15
-Matched LD instruction 0x07013F83: offset=112, rs1=2, rd=31
-Matched LD instruction 0x07813583: offset=120, rs1=2, rd=11
-Matched LD instruction 0x07813803: offset=120, rs1=2, rd=16
-Matched LD instruction 0x08013803: offset=128, rs1=2, rd=16
-Matched LD instruction 0x08013883: offset=128, rs1=2, rd=17
-Matched LD instruction 0x08813883: offset=136, rs1=2, rd=17
-Matched LD instruction 0x08813E03: offset=136, rs1=2, rd=28
-Matched LD instruction 0x09013E83: offset=144, rs1=2, rd=29
-Matched LD instruction 0x09813383: offset=152, rs1=2, rd=7
-Matched LD instruction 0x0A813D83: offset=168, rs1=2, rd=27
-Matched LD instruction 0x0B013D03: offset=176, rs1=2, rd=26
-Matched LD instruction 0x0B813C83: offset=184, rs1=2, rd=25
-Matched LD instruction 0x0C013C03: offset=192, rs1=2, rd=24
-Matched LD instruction 0x0C813B83: offset=200, rs1=2, rd=23
-Matched LD instruction 0x0D013B03: offset=208, rs1=2, rd=22
-Matched LD instruction 0x0D813A83: offset=216, rs1=2, rd=21
-Matched LD instruction 0x0E013A03: offset=224, rs1=2, rd=20
-Matched LD instruction 0x0E813983: offset=232, rs1=2, rd=19
-Matched LD instruction 0x0F013903: offset=240, rs1=2, rd=18
-Matched LD instruction 0x0F813483: offset=248, rs1=2, rd=9
-Matched LD instruction 0x10013403: offset=256, rs1=2, rd=8
-Matched LD instruction 0x10813083: offset=264, rs1=2, rd=1
-Matched LD instruction 0xFE843783: offset=-24, rs1=8, rd=15
-Matched LH instruction 0x00451683: offset=4, rs1=10, rd=13
-Matched LHU instruction 0x00855703: offset=8, rs1=10, rd=14
+Matched FSW instruction 0x00F7A027: imm=0, rs2=15, rs1=15
+Matched JAL instruction 0x0080006F: imm=8, rd=0
+Matched JAL instruction 0x00C0006F: imm=12, rd=0
+Matched JAL instruction 0x0100006F: imm=16, rd=0
+Matched JAL instruction 0x0140006F: imm=20, rd=0
+Matched JAL instruction 0x0160006F: imm=22, rd=0
+Matched JAL instruction 0x01C0006F: imm=28, rd=0
+Matched JAL instruction 0x0200006F: imm=32, rd=0
+Matched JAL instruction 0x0240006F: imm=36, rd=0
+Matched JAL instruction 0x0280006F: imm=40, rd=0
+Matched JAL instruction 0x0300006F: imm=48, rd=0
+Matched JAL instruction 0x0320006F: imm=50, rd=0
+Matched JAL instruction 0x0340006F: imm=52, rd=0
+Matched JAL instruction 0x0360006F: imm=54, rd=0
+Matched JAL instruction 0x0380006F: imm=56, rd=0
+Matched JAL instruction 0x03C0006F: imm=60, rd=0
+Matched JAL instruction 0x0400006F: imm=64, rd=0
+Matched JAL instruction 0x0420006F: imm=66, rd=0
+Matched JAL instruction 0x0480006F: imm=72, rd=0
+Matched JAL instruction 0x0500006F: imm=80, rd=0
+Matched JAL instruction 0x0540006F: imm=84, rd=0
+Matched JAL instruction 0x0580006F: imm=88, rd=0
+Matched JAL instruction 0x05A0006F: imm=90, rd=0
+Matched JAL instruction 0x0680006F: imm=104, rd=0
+Matched JAL instruction 0x06C0006F: imm=108, rd=0
+Matched JAL instruction 0x08C0006F: imm=140, rd=0
+Matched JAL instruction 0x09C0006F: imm=156, rd=0
+Matched JAL instruction 0x2CA0006F: imm=714, rd=0
+Matched JAL instruction 0x2EE0006F: imm=750, rd=0
+Matched JAL instruction 0x44C0006F: imm=1100, rd=0
+Matched JAL instruction 0x4900006F: imm=1168, rd=0
+Matched JAL instruction 0xB59FF0EF: imm=-1192, rd=1
+Matched JAL instruction 0xB61FF0EF: imm=-1184, rd=1
+Matched JAL instruction 0xB69FF0EF: imm=-1176, rd=1
+Matched JAL instruction 0xBADFF0EF: imm=-1108, rd=1
+Matched JAL instruction 0xD05FF0EF: imm=-764, rd=1
+Matched JAL instruction 0xD0BFF0EF: imm=-758, rd=1
+Matched JAL instruction 0xD11FF0EF: imm=-752, rd=1
+Matched JAL instruction 0xD35FF0EF: imm=-716, rd=1
+Matched JAL instruction 0xDF5FF0EF: imm=-524, rd=1
+Matched JAL instruction 0xE09FF0EF: imm=-504, rd=1
+Matched JAL instruction 0xE49FF06F: imm=-440, rd=0
+Matched JAL instruction 0xE79FF06F: imm=-392, rd=0
+Matched JAL instruction 0xEABFF0EF: imm=-342, rd=1
+Matched JAL instruction 0xEB5FF0EF: imm=-332, rd=1
+Matched JAL instruction 0xF65FF0EF: imm=-156, rd=1
+Matched JAL instruction 0xF85FF0EF: imm=-124, rd=1
+Matched JAL instruction 0xF89FF0EF: imm=-120, rd=1
+Matched JAL instruction 0xF91FF0EF: imm=-112, rd=1
+Matched JAL instruction 0xF95FF0EF: imm=-108, rd=1
+Matched JAL instruction 0xFA1FF0EF: imm=-96, rd=1
+Matched JAL instruction 0xFA5FF0EF: imm=-92, rd=1
+Matched JAL instruction 0xFB3FF0EF: imm=-78, rd=1
+Matched JAL instruction 0xFB5FF06F: imm=-76, rd=0
+Matched JAL instruction 0xFB7FF0EF: imm=-74, rd=1
+Matched JAL instruction 0xFB9FF0EF: imm=-72, rd=1
+Matched JAL instruction 0xFBDFF0EF: imm=-68, rd=1
+Matched JAL instruction 0xFC1FF0EF: imm=-64, rd=1
+Matched JAL instruction 0xFC5FF06F: imm=-60, rd=0
+Matched JAL instruction 0xFC5FF0EF: imm=-60, rd=1
+Matched JAL instruction 0xFC9FF0EF: imm=-56, rd=1
+Matched JAL instruction 0xFCDFF06F: imm=-52, rd=0
+Matched JAL instruction 0xFCDFF0EF: imm=-52, rd=1
+Matched JAL instruction 0xFD1FF0EF: imm=-48, rd=1
+Matched JAL instruction 0xFD3FF0EF: imm=-46, rd=1
+Matched JAL instruction 0xFD9FF0EF: imm=-40, rd=1
+Matched JAL instruction 0xFDBFF0EF: imm=-38, rd=1
+Matched JAL instruction 0xFDDFF0EF: imm=-36, rd=1
+Matched JAL instruction 0xFE1FF0EF: imm=-32, rd=1
+Matched JAL instruction 0xFE5FF0EF: imm=-28, rd=1
+Matched JAL instruction 0xFE9FF06F: imm=-24, rd=0
+Matched JAL instruction 0xFE9FF0EF: imm=-24, rd=1
+Matched JAL instruction 0xFEDFF06F: imm=-20, rd=0
+Matched JAL instruction 0xFF1FF0EF: imm=-16, rd=1
+Matched JAL instruction 0xFF5FF06F: imm=-12, rd=0
+Matched JALR instruction 0x00008067: imm=0, rs1=1, rd=0
+Matched LB instruction 0x00050603: imm=0, rs1=10, rd=12
+Matched LBU instruction 0x00054783: imm=0, rs1=10, rd=15
+Matched LBU instruction 0x0007C783: imm=0, rs1=15, rd=15
+Matched LBU instruction 0x00154783: imm=1, rs1=10, rd=15
+Matched LBU instruction 0x00174783: imm=1, rs1=14, rd=15
+Matched LBU instruction 0xFDF44783: imm=-33, rs1=8, rd=15
+Matched LD instruction 0x00013403: imm=0, rs1=2, rd=8
+Matched LD instruction 0x00013903: imm=0, rs1=2, rd=18
+Matched LD instruction 0x00813083: imm=8, rs1=2, rd=1
+Matched LD instruction 0x00813483: imm=8, rs1=2, rd=9
+Matched LD instruction 0x00813703: imm=8, rs1=2, rd=14
+Matched LD instruction 0x00813783: imm=8, rs1=2, rd=15
+Matched LD instruction 0x01013403: imm=16, rs1=2, rd=8
+Matched LD instruction 0x01013703: imm=16, rs1=2, rd=14
+Matched LD instruction 0x01013783: imm=16, rs1=2, rd=15
+Matched LD instruction 0x01813083: imm=24, rs1=2, rd=1
+Matched LD instruction 0x01813383: imm=24, rs1=2, rd=7
+Matched LD instruction 0x01813483: imm=24, rs1=2, rd=9
+Matched LD instruction 0x02013403: imm=32, rs1=2, rd=8
+Matched LD instruction 0x02013E83: imm=32, rs1=2, rd=29
+Matched LD instruction 0x02813083: imm=40, rs1=2, rd=1
+Matched LD instruction 0x02813803: imm=40, rs1=2, rd=16
+Matched LD instruction 0x02813883: imm=40, rs1=2, rd=17
+Matched LD instruction 0x03013583: imm=48, rs1=2, rd=11
+Matched LD instruction 0x03013803: imm=48, rs1=2, rd=16
+Matched LD instruction 0x03813283: imm=56, rs1=2, rd=5
+Matched LD instruction 0x04013703: imm=64, rs1=2, rd=14
+Matched LD instruction 0x04013783: imm=64, rs1=2, rd=15
+Matched LD instruction 0x04813F03: imm=72, rs1=2, rd=30
+Matched LD instruction 0x05013303: imm=80, rs1=2, rd=6
+Matched LD instruction 0x05013E03: imm=80, rs1=2, rd=28
+Matched LD instruction 0x05813303: imm=88, rs1=2, rd=6
+Matched LD instruction 0x05813583: imm=88, rs1=2, rd=11
+Matched LD instruction 0x06013683: imm=96, rs1=2, rd=13
+Matched LD instruction 0x06013703: imm=96, rs1=2, rd=14
+Matched LD instruction 0x06813683: imm=104, rs1=2, rd=13
+Matched LD instruction 0x06813783: imm=104, rs1=2, rd=15
+Matched LD instruction 0x07013F83: imm=112, rs1=2, rd=31
+Matched LD instruction 0x07813583: imm=120, rs1=2, rd=11
+Matched LD instruction 0x07813803: imm=120, rs1=2, rd=16
+Matched LD instruction 0x08013803: imm=128, rs1=2, rd=16
+Matched LD instruction 0x08013883: imm=128, rs1=2, rd=17
+Matched LD instruction 0x08813883: imm=136, rs1=2, rd=17
+Matched LD instruction 0x08813E03: imm=136, rs1=2, rd=28
+Matched LD instruction 0x09013E83: imm=144, rs1=2, rd=29
+Matched LD instruction 0x09813383: imm=152, rs1=2, rd=7
+Matched LD instruction 0x0A813D83: imm=168, rs1=2, rd=27
+Matched LD instruction 0x0B013D03: imm=176, rs1=2, rd=26
+Matched LD instruction 0x0B813C83: imm=184, rs1=2, rd=25
+Matched LD instruction 0x0C013C03: imm=192, rs1=2, rd=24
+Matched LD instruction 0x0C813B83: imm=200, rs1=2, rd=23
+Matched LD instruction 0x0D013B03: imm=208, rs1=2, rd=22
+Matched LD instruction 0x0D813A83: imm=216, rs1=2, rd=21
+Matched LD instruction 0x0E013A03: imm=224, rs1=2, rd=20
+Matched LD instruction 0x0E813983: imm=232, rs1=2, rd=19
+Matched LD instruction 0x0F013903: imm=240, rs1=2, rd=18
+Matched LD instruction 0x0F813483: imm=248, rs1=2, rd=9
+Matched LD instruction 0x10013403: imm=256, rs1=2, rd=8
+Matched LD instruction 0x10813083: imm=264, rs1=2, rd=1
+Matched LD instruction 0xFE843783: imm=-24, rs1=8, rd=15
+Matched LH instruction 0x00451683: imm=4, rs1=10, rd=13
+Matched LHU instruction 0x00855703: imm=8, rs1=10, rd=14
 Matched LR.D instruction 0x1005B32F: aq=0, rl=0, rs2=0, rs1=11, rd=6
 Matched LR.D instruction 0x1005B6AF: aq=0, rl=0, rs2=0, rs1=11, rd=13
 Matched LR.W instruction 0x100522AF: aq=0, rl=0, rs1=10, rd=5
@@ -964,12 +964,12 @@ Matched LR.W instruction 0x1005262F: aq=0, rl=0, rs1=10, rd=12
 Matched LUI instruction 0x100006B7: imm=268435456, rd=13
 Matched LUI instruction 0x10000737: imm=268435456, rd=14
 Matched LUI instruction 0x100007B7: imm=268435456, rd=15
-Matched LW instruction 0xFDC42783: offset=-36, rs1=8, rd=15
-Matched LW instruction 0xFE842703: offset=-24, rs1=8, rd=14
-Matched LW instruction 0xFE842783: offset=-24, rs1=8, rd=15
-Matched LW instruction 0xFEC42703: offset=-20, rs1=8, rd=14
-Matched LW instruction 0xFEC42783: offset=-20, rs1=8, rd=15
-Matched LWU instruction 0x00056603: offset=0, rs1=10, rd=12
+Matched LW instruction 0xFDC42783: imm=-36, rs1=8, rd=15
+Matched LW instruction 0xFE842703: imm=-24, rs1=8, rd=14
+Matched LW instruction 0xFE842783: imm=-24, rs1=8, rd=15
+Matched LW instruction 0xFEC42703: imm=-20, rs1=8, rd=14
+Matched LW instruction 0xFEC42783: imm=-20, rs1=8, rd=15
+Matched LWU instruction 0x00056603: imm=0, rs1=10, rd=12
 Matched MRET instruction 0x30200073
 Matched MUL instruction 0x02B502B3: rs2=11, rs1=10, rd=5
 Matched MULH instruction 0x02B51333: rs2=11, rs1=10, rd=6
@@ -985,67 +985,67 @@ Matched REM instruction 0x02E7E7B3: rs2=14, rs1=15, rd=15
 Matched REMU instruction 0x02E7F7B3: rs2=14, rs1=15, rd=15
 Matched REMUW instruction 0x02F777BB: rs2=15, rs1=14, rd=15
 Matched REMW instruction 0x02F767BB: rs2=15, rs1=14, rd=15
-Matched SB instruction 0xFCF40FA3: offset=-33, rs2=15, rs1=8
+Matched SB instruction 0xFCF40FA3: imm=-33, rs2=15, rs1=8
 Matched SC.D instruction 0x1865B6AF: aq=0, rl=0, rs2=6, rs1=11, rd=13
 Matched SC.W instruction 0x1855262F: aq=0, rl=0, rs2=5, rs1=10, rd=12
-Matched SD instruction 0x00113423: offset=8, rs2=1, rs1=2
-Matched SD instruction 0x00113C23: offset=24, rs2=1, rs1=2
-Matched SD instruction 0x00713C23: offset=24, rs2=7, rs1=2
-Matched SD instruction 0x00813023: offset=0, rs2=8, rs1=2
-Matched SD instruction 0x00813823: offset=16, rs2=8, rs1=2
-Matched SD instruction 0x00913423: offset=8, rs2=9, rs1=2
-Matched SD instruction 0x00913C23: offset=24, rs2=9, rs1=2
-Matched SD instruction 0x00A13823: offset=16, rs2=10, rs1=2
-Matched SD instruction 0x00E13423: offset=8, rs2=14, rs1=2
-Matched SD instruction 0x00F13423: offset=8, rs2=15, rs1=2
-Matched SD instruction 0x01213023: offset=0, rs2=18, rs1=2
-Matched SD instruction 0x01D13823: offset=16, rs2=29, rs1=2
-Matched SD instruction 0x02113423: offset=40, rs2=1, rs1=2
-Matched SD instruction 0x02513C23: offset=56, rs2=5, rs1=2
-Matched SD instruction 0x02813023: offset=32, rs2=8, rs1=2
-Matched SD instruction 0x02B13823: offset=48, rs2=11, rs1=2
-Matched SD instruction 0x03013423: offset=40, rs2=16, rs1=2
-Matched SD instruction 0x03013823: offset=48, rs2=16, rs1=2
-Matched SD instruction 0x03113423: offset=40, rs2=17, rs1=2
-Matched SD instruction 0x03D13023: offset=32, rs2=29, rs1=2
-Matched SD instruction 0x04613823: offset=80, rs2=6, rs1=2
-Matched SD instruction 0x04613C23: offset=88, rs2=6, rs1=2
-Matched SD instruction 0x04B13C23: offset=88, rs2=11, rs1=2
-Matched SD instruction 0x04E13023: offset=64, rs2=14, rs1=2
-Matched SD instruction 0x04F13023: offset=64, rs2=15, rs1=2
-Matched SD instruction 0x05C13823: offset=80, rs2=28, rs1=2
-Matched SD instruction 0x05E13423: offset=72, rs2=30, rs1=2
-Matched SD instruction 0x06B13C23: offset=120, rs2=11, rs1=2
-Matched SD instruction 0x06D13023: offset=96, rs2=13, rs1=2
-Matched SD instruction 0x06D13423: offset=104, rs2=13, rs1=2
-Matched SD instruction 0x06E13023: offset=96, rs2=14, rs1=2
-Matched SD instruction 0x06F13423: offset=104, rs2=15, rs1=2
-Matched SD instruction 0x07013C23: offset=120, rs2=16, rs1=2
-Matched SD instruction 0x07F13823: offset=112, rs2=31, rs1=2
-Matched SD instruction 0x08713C23: offset=152, rs2=7, rs1=2
-Matched SD instruction 0x09013023: offset=128, rs2=16, rs1=2
-Matched SD instruction 0x09113023: offset=128, rs2=17, rs1=2
-Matched SD instruction 0x09113423: offset=136, rs2=17, rs1=2
-Matched SD instruction 0x09C13423: offset=136, rs2=28, rs1=2
-Matched SD instruction 0x09D13823: offset=144, rs2=29, rs1=2
-Matched SD instruction 0x0B913C23: offset=184, rs2=25, rs1=2
-Matched SD instruction 0x0BA13823: offset=176, rs2=26, rs1=2
-Matched SD instruction 0x0BB13423: offset=168, rs2=27, rs1=2
-Matched SD instruction 0x0D513C23: offset=216, rs2=21, rs1=2
-Matched SD instruction 0x0D613823: offset=208, rs2=22, rs1=2
-Matched SD instruction 0x0D713423: offset=200, rs2=23, rs1=2
-Matched SD instruction 0x0D813023: offset=192, rs2=24, rs1=2
-Matched SD instruction 0x0E913C23: offset=248, rs2=9, rs1=2
-Matched SD instruction 0x0F213823: offset=240, rs2=18, rs1=2
-Matched SD instruction 0x0F313423: offset=232, rs2=19, rs1=2
-Matched SD instruction 0x0F413023: offset=224, rs2=20, rs1=2
-Matched SD instruction 0x10113423: offset=264, rs2=1, rs1=2
-Matched SD instruction 0x10813023: offset=256, rs2=8, rs1=2
-Matched SD instruction 0xFEA43423: offset=-24, rs2=10, rs1=8
-Matched SD instruction 0xFEE43423: offset=-24, rs2=14, rs1=8
-Matched SD instruction 0xFEF43423: offset=-24, rs2=15, rs1=8
+Matched SD instruction 0x00113423: imm=8, rs2=1, rs1=2
+Matched SD instruction 0x00113C23: imm=24, rs2=1, rs1=2
+Matched SD instruction 0x00713C23: imm=24, rs2=7, rs1=2
+Matched SD instruction 0x00813023: imm=0, rs2=8, rs1=2
+Matched SD instruction 0x00813823: imm=16, rs2=8, rs1=2
+Matched SD instruction 0x00913423: imm=8, rs2=9, rs1=2
+Matched SD instruction 0x00913C23: imm=24, rs2=9, rs1=2
+Matched SD instruction 0x00A13823: imm=16, rs2=10, rs1=2
+Matched SD instruction 0x00E13423: imm=8, rs2=14, rs1=2
+Matched SD instruction 0x00F13423: imm=8, rs2=15, rs1=2
+Matched SD instruction 0x01213023: imm=0, rs2=18, rs1=2
+Matched SD instruction 0x01D13823: imm=16, rs2=29, rs1=2
+Matched SD instruction 0x02113423: imm=40, rs2=1, rs1=2
+Matched SD instruction 0x02513C23: imm=56, rs2=5, rs1=2
+Matched SD instruction 0x02813023: imm=32, rs2=8, rs1=2
+Matched SD instruction 0x02B13823: imm=48, rs2=11, rs1=2
+Matched SD instruction 0x03013423: imm=40, rs2=16, rs1=2
+Matched SD instruction 0x03013823: imm=48, rs2=16, rs1=2
+Matched SD instruction 0x03113423: imm=40, rs2=17, rs1=2
+Matched SD instruction 0x03D13023: imm=32, rs2=29, rs1=2
+Matched SD instruction 0x04613823: imm=80, rs2=6, rs1=2
+Matched SD instruction 0x04613C23: imm=88, rs2=6, rs1=2
+Matched SD instruction 0x04B13C23: imm=88, rs2=11, rs1=2
+Matched SD instruction 0x04E13023: imm=64, rs2=14, rs1=2
+Matched SD instruction 0x04F13023: imm=64, rs2=15, rs1=2
+Matched SD instruction 0x05C13823: imm=80, rs2=28, rs1=2
+Matched SD instruction 0x05E13423: imm=72, rs2=30, rs1=2
+Matched SD instruction 0x06B13C23: imm=120, rs2=11, rs1=2
+Matched SD instruction 0x06D13023: imm=96, rs2=13, rs1=2
+Matched SD instruction 0x06D13423: imm=104, rs2=13, rs1=2
+Matched SD instruction 0x06E13023: imm=96, rs2=14, rs1=2
+Matched SD instruction 0x06F13423: imm=104, rs2=15, rs1=2
+Matched SD instruction 0x07013C23: imm=120, rs2=16, rs1=2
+Matched SD instruction 0x07F13823: imm=112, rs2=31, rs1=2
+Matched SD instruction 0x08713C23: imm=152, rs2=7, rs1=2
+Matched SD instruction 0x09013023: imm=128, rs2=16, rs1=2
+Matched SD instruction 0x09113023: imm=128, rs2=17, rs1=2
+Matched SD instruction 0x09113423: imm=136, rs2=17, rs1=2
+Matched SD instruction 0x09C13423: imm=136, rs2=28, rs1=2
+Matched SD instruction 0x09D13823: imm=144, rs2=29, rs1=2
+Matched SD instruction 0x0B913C23: imm=184, rs2=25, rs1=2
+Matched SD instruction 0x0BA13823: imm=176, rs2=26, rs1=2
+Matched SD instruction 0x0BB13423: imm=168, rs2=27, rs1=2
+Matched SD instruction 0x0D513C23: imm=216, rs2=21, rs1=2
+Matched SD instruction 0x0D613823: imm=208, rs2=22, rs1=2
+Matched SD instruction 0x0D713423: imm=200, rs2=23, rs1=2
+Matched SD instruction 0x0D813023: imm=192, rs2=24, rs1=2
+Matched SD instruction 0x0E913C23: imm=248, rs2=9, rs1=2
+Matched SD instruction 0x0F213823: imm=240, rs2=18, rs1=2
+Matched SD instruction 0x0F313423: imm=232, rs2=19, rs1=2
+Matched SD instruction 0x0F413023: imm=224, rs2=20, rs1=2
+Matched SD instruction 0x10113423: imm=264, rs2=1, rs1=2
+Matched SD instruction 0x10813023: imm=256, rs2=8, rs1=2
+Matched SD instruction 0xFEA43423: imm=-24, rs2=10, rs1=8
+Matched SD instruction 0xFEE43423: imm=-24, rs2=14, rs1=8
+Matched SD instruction 0xFEF43423: imm=-24, rs2=15, rs1=8
 Matched SFENCE.VMA instruction 0x12000073: rs2=0, rs1=0, rd=0
-Matched SH instruction 0x00C51223: offset=4, rs2=12, rs1=10
+Matched SH instruction 0x00C51223: imm=4, rs2=12, rs1=10
 Matched SLL instruction 0x00E797B3: rs2=14, rs1=15, rd=15
 Matched SLLI instruction 0x00579793: shamt=5, rs1=15, rd=15
 Matched SLLIW instruction 0x0057979B: shamt=5, rs1=15, rd=15
@@ -1083,14 +1083,14 @@ Matched SUBW instruction 0x40FB0A3B: rs2=15, rs1=22, rd=20
 Matched SUBW instruction 0x41850C3B: rs2=24, rs1=10, rd=24
 Matched SUBW instruction 0x41958CBB: rs2=25, rs1=11, rd=25
 Matched SUBW instruction 0x41DF0EBB: rs2=29, rs1=30, rd=29
-Matched SW instruction 0x00A7A023: offset=0, rs2=10, rs1=15
-Matched SW instruction 0x00E7A023: offset=0, rs2=14, rs1=15
-Matched SW instruction 0x00F6A023: offset=0, rs2=15, rs1=13
-Matched SW instruction 0x00F72023: offset=0, rs2=15, rs1=14
-Matched SW instruction 0xFCF42E23: offset=-36, rs2=15, rs1=8
-Matched SW instruction 0xFEF42223: offset=-28, rs2=15, rs1=8
-Matched SW instruction 0xFEF42423: offset=-24, rs2=15, rs1=8
-Matched SW instruction 0xFEF42623: offset=-20, rs2=15, rs1=8
+Matched SW instruction 0x00A7A023: imm=0, rs2=10, rs1=15
+Matched SW instruction 0x00E7A023: imm=0, rs2=14, rs1=15
+Matched SW instruction 0x00F6A023: imm=0, rs2=15, rs1=13
+Matched SW instruction 0x00F72023: imm=0, rs2=15, rs1=14
+Matched SW instruction 0xFCF42E23: imm=-36, rs2=15, rs1=8
+Matched SW instruction 0xFEF42223: imm=-28, rs2=15, rs1=8
+Matched SW instruction 0xFEF42423: imm=-24, rs2=15, rs1=8
+Matched SW instruction 0xFEF42623: imm=-20, rs2=15, rs1=8
 Matched URET instruction 0x00200073
 Matched WFI instruction 0x10500073
 Matched XOR instruction 0x00F747B3: rs2=15, rs1=14, rd=15

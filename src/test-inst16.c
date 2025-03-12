@@ -442,32 +442,32 @@ void test_inst16() {
         }
 
         if (OP_C_BEQZ(inst)) {
-            int16_t offset = 0;
+            int16_t imm = 0;
             uint16_t rs1 = 8 + EXTRACT_BITS(inst, 9, 7);
 
-            offset |= EXTRACT_BITS(inst, 12, 12) << 8; // Bit 8
-            offset |= EXTRACT_BITS(inst, 11, 10) << 3; // Bit 4-3
-            offset |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
-            offset |= EXTRACT_BITS(inst, 4, 3) << 1;   // Bit 2-1
-            offset |= EXTRACT_BITS(inst, 2, 2) << 5;   // Bit 5
-            offset = sign_extend_16(offset, 8);
+            imm |= EXTRACT_BITS(inst, 12, 12) << 8; // Bit 8
+            imm |= EXTRACT_BITS(inst, 11, 10) << 3; // Bit 4-3
+            imm |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
+            imm |= EXTRACT_BITS(inst, 4, 3) << 1;   // Bit 2-1
+            imm |= EXTRACT_BITS(inst, 2, 2) << 5;   // Bit 5
+            imm = sign_extend_16(imm, 8);
 
-            printf("Matched C.BEQZ instruction 0x%04X: offset=%d, rs1=%u\n", inst, offset, rs1);
+            printf("Matched C.BEQZ instruction 0x%04X: imm=%d, rs1=%u\n", inst, imm, rs1);
             count++;
         }
 
         if (OP_C_BNEZ(inst)) {
-            int16_t offset = 0;
+            int16_t imm = 0;
             uint16_t rs1 = 8 + EXTRACT_BITS(inst, 9, 7);
 
-            offset |= EXTRACT_BITS(inst, 12, 12) << 8; // Bit 8
-            offset |= EXTRACT_BITS(inst, 11, 10) << 3; // Bit 4-3
-            offset |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
-            offset |= EXTRACT_BITS(inst, 4, 3) << 1;   // Bit 2-1
-            offset |= EXTRACT_BITS(inst, 2, 2) << 5;   // Bit 5
-            offset = sign_extend_16(offset, 8);
+            imm |= EXTRACT_BITS(inst, 12, 12) << 8; // Bit 8
+            imm |= EXTRACT_BITS(inst, 11, 10) << 3; // Bit 4-3
+            imm |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
+            imm |= EXTRACT_BITS(inst, 4, 3) << 1;   // Bit 2-1
+            imm |= EXTRACT_BITS(inst, 2, 2) << 5;   // Bit 5
+            imm = sign_extend_16(imm, 8);
 
-            printf("Matched C.BNEZ instruction 0x%04X: offset=%d, rs1=%u\n", inst, offset, rs1);
+            printf("Matched C.BNEZ instruction 0x%04X: imm=%d, rs1=%u\n", inst, imm, rs1);
             count++;
         }
 
