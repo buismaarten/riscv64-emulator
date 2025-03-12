@@ -4,3 +4,5 @@ C.BNEZ
 C.FLDSP
 C.LUI
 C.LWSP
+
+C.FSD
