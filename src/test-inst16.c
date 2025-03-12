@@ -56,6 +56,7 @@ static uint16_t program16[] = {
     /* C.EBREAK */   0x9002,
     /* C.FLD */      0x239C,
     /* C.FLDSP */    0x2022,
+    /* C.FSD */      0xA388,
     /* C.FSD */      0xA79C,
     /* C.FSDSP */    0xA43E,
     /* C.J */        0xA021,
