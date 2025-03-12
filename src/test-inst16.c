@@ -608,9 +608,14 @@ void test_inst16() {
         }
 
         if (OP_C_LWSP(inst)) {
-            // TODO
+            uint16_t uimm = 0;
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 11, 7);
 
-            printf("Matched C.LWSP instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 12) << 5; // Bit 5
+            uimm |= EXTRACT_BITS(inst, 6, 4) << 2;   // Bit 4-2
+            uimm |= EXTRACT_BITS(inst, 3, 2) << 6;   // Bit 7-6
+
+            printf("Matched C.LWSP instruction 0x%04X: uimm=%u, rd=%u\n", inst, uimm, rd);
             count++;
         }
 
