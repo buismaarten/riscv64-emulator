@@ -459,9 +459,14 @@ void test_inst16() {
         }
 
         if (OP_C_FLD(inst)) {
-            // TODO
+            uint16_t uimm = 0;
+            uint16_t rs1 = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
 
-            printf("Matched C.FLD instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
+            uimm |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
+
+            printf("Matched C.FLD instruction 0x%04X: uimm=%u, rs1=%u, rd=%u\n", inst, uimm, rs1, rd);
             count++;
         }
 
@@ -473,9 +478,14 @@ void test_inst16() {
         }
 
         if (OP_C_FSD(inst)) {
-            // TODO
+            uint16_t uimm = 0;
+            uint16_t rs1 = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
-            printf("Matched C.FSD instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
+            uimm |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
+
+            printf("Matched C.FSD instruction 0x%04X: uimm=%u, rs1=%u, rs2=%u\n", inst, uimm, rs1, rs2);
             count++;
         }
 
@@ -539,9 +549,14 @@ void test_inst16() {
         }
 
         if (OP_C_LD(inst)) {
-            // TODO
+            uint16_t uimm = 0;
+            uint16_t rs1 = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rd = 8 + EXTRACT_BITS(inst, 4, 2);
 
-            printf("Matched C.LD instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
+            uimm |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
+
+            printf("Matched C.LD instruction 0x%04X: uimm=%u, rs1=%u, rd=%u\n", inst, uimm, rs1, rd);
             count++;
         }
 
@@ -614,9 +629,14 @@ void test_inst16() {
         }
 
         if (OP_C_SD(inst)) {
-            // TODO
+            uint16_t uimm = 0;
+            uint16_t rs1 = 8 + EXTRACT_BITS(inst, 9, 7);
+            uint16_t rs2 = 8 + EXTRACT_BITS(inst, 4, 2);
 
-            printf("Matched C.SD instruction 0x%04X\n", inst);
+            uimm |= EXTRACT_BITS(inst, 12, 10) << 3; // Bit 5-3
+            uimm |= EXTRACT_BITS(inst, 6, 5) << 6;   // Bit 7-6
+
+            printf("Matched C.SD instruction 0x%04X: uimm=%u, rs1=%u, rs2=%u\n", inst, uimm, rs1, rs2);
             count++;
         }
 
