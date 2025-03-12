@@ -139,7 +139,7 @@ Matched C.LI instruction 0x4B01: imm=0, rd=22
 Matched C.LI instruction 0x4C01: imm=0, rd=24
 Matched C.LI instruction 0x4D01: imm=0, rd=26
 Matched C.LUI instruction 0x67C9
-Matched C.LW instruction 0x4000
+Matched C.LW instruction 0x4000: uimm=0, rs1=8, rd=8
 Matched C.LWSP instruction 0x4792
 Matched C.MV instruction 0x833A: rd=6, rs2=14
 Matched C.MV instruction 0x836A: rd=6, rs2=26
@@ -328,11 +328,11 @@ Matched C.SRLI instruction 0x8389: rd=15, shamt=2
 Matched C.SUB instruction 0x8F99: rd=15, rs2=14
 Matched C.SUBW instruction 0x9C09: rd=8, rs2=10
 Matched C.SUBW instruction 0x9F99: rd=15, rs2=14
-Matched C.SW instruction 0xC000
-Matched C.SW instruction 0xC29C
-Matched C.SW instruction 0xC31C
-Matched C.SW instruction 0xC388
-Matched C.SW instruction 0xC398
+Matched C.SW instruction 0xC000: uimm=0, rs1=8, rs2=8
+Matched C.SW instruction 0xC29C: uimm=0, rs1=13, rs2=15
+Matched C.SW instruction 0xC31C: uimm=0, rs1=14, rs2=15
+Matched C.SW instruction 0xC388: uimm=0, rs1=15, rs2=10
+Matched C.SW instruction 0xC398: uimm=0, rs1=15, rs2=14
 Matched C.SWSP instruction 0xC23E: uimm=4, rs2=15
 Matched C.SWSP instruction 0xC286: uimm=68, rs2=1
 Matched C.SWSP instruction 0xC2BE: uimm=68, rs2=15
