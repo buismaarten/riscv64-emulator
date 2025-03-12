@@ -38,15 +38,15 @@ Matched C.ADDW instruction 0x9FA9: rd=15, rs2=10
 Matched C.ADDW instruction 0x9FB9: rd=15, rs2=14
 Matched C.AND instruction 0x8FF9: rd=15, rs2=14
 Matched C.ANDI instruction 0x8A25: imm=9, rd=12
-Matched C.BEQZ instruction 0xC001
-Matched C.BEQZ instruction 0xC791
-Matched C.BEQZ instruction 0xCB89
-Matched C.BNEZ instruction 0xE001
-Matched C.BNEZ instruction 0xE119
-Matched C.BNEZ instruction 0xE399
-Matched C.BNEZ instruction 0xF3ED
-Matched C.BNEZ instruction 0xFBFD
-Matched C.BNEZ instruction 0xFFE5
+Matched C.BEQZ instruction 0xC001: offset=0, rs1=8
+Matched C.BEQZ instruction 0xC791: offset=12, rs1=15
+Matched C.BEQZ instruction 0xCB89: offset=18, rs1=15
+Matched C.BNEZ instruction 0xE001: offset=0, rs1=8
+Matched C.BNEZ instruction 0xE119: offset=6, rs1=10
+Matched C.BNEZ instruction 0xE399: offset=6, rs1=15
+Matched C.BNEZ instruction 0xF3ED: offset=-30, rs1=15
+Matched C.BNEZ instruction 0xFBFD: offset=-10, rs1=15
+Matched C.BNEZ instruction 0xFFE5: offset=-8, rs1=15
 Matched C.EBREAK instruction 0x9002
 Matched C.FLD instruction 0x239C: uimm=0, rs1=15, rd=15
 Matched C.FLDSP instruction 0x2022: uimm=8, rd=0
