@@ -1,7 +1,8 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-void decode_riscv(const uint8_t* bytes, size_t length) {
+void print_binary(const uint8_t* bytes, size_t length) {
     size_t i = 0;
 
     while (i < length) {
@@ -19,13 +20,37 @@ void decode_riscv(const uint8_t* bytes, size_t length) {
     }
 }
 
-int main() {
-    uint8_t binary[] = {
-        0x2E, 0x87,             // 16-bit instruction: 0x872E
-        0x23, 0x26, 0xF4, 0xFE, // 32-bit instruction: 0xFEF42623
-        0xBA, 0x87,             // 16-bit instruction: 0x87BA
-    };
+int main(int argc, char* argv[]) {
+    if (argc < 2) {
+        fprintf(stderr, "Usage: %s <filename>\n", argv[0]);
 
-    decode_riscv(binary, sizeof(binary));
-    return 0;
+        return EXIT_FAILURE;
+    }
+
+    FILE* file = fopen(argv[1], "rb");
+    if (!file) {
+        printf("Error: failed to open file\n");
+
+        return EXIT_FAILURE;
+    }
+
+    fseek(file, 0, SEEK_END);
+    size_t size = ftell(file);
+    rewind(file);
+
+    uint8_t* buffer = malloc(size);
+    if (!buffer) {
+        printf("Error: failed to allocate memory\n");
+        fclose(file);
+
+        return EXIT_FAILURE;
+    }
+
+    fread(buffer, 1, size, file);
+    fclose(file);
+
+    print_binary(buffer, size);
+    free(buffer);
+
+    return EXIT_SUCCESS;
 }
